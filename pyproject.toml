@@ -7,7 +7,7 @@ name = "tcode"
 version = "0.1.0"
 description = "tcode is an ai terminal tutor"
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.12"
 dependencies = [
     "anthropic>=0.84.0",
     "textual>=8.1.1",
