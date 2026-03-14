@@ -1,0 +1,33 @@
+{
+  "id": "3556",
+  "slug": "sum-of-largest-prime-substrings",
+  "title": "Sum of Largest Prime Substrings",
+  "difficulty": "Medium",
+  "topics": [
+    "Hash Table",
+    "Math",
+    "String",
+    "Sorting",
+    "Number Theory"
+  ],
+  "description": "Given a string s, find the sum of the 3 largest unique prime numbers that can be formed using any of its substrings.\nReturn the sum of the three largest unique prime numbers that can be formed. If fewer than three exist, return the sum of all available primes. If no prime numbers can be formed, return 0.\nNote: Each prime number should be counted only once, even if it appears in multiple substrings. Additionally, when converting a substring to an integer, any leading zeros are ignored.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= s.length <= 10",
+    "s consists of only digits."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"12234\"\nOutput: 1469\nExplanation:"
+    },
+    {
+      "example_text": "Input: s = \"111\"\nOutput: 11\nExplanation:"
+    }
+  ],
+  "hints": [
+    "Iterate over all substrings of <code>s</code> to generate candidate numbers.",
+    "Check each candidate for primality in <code>O(sqrt(n))</code> time.",
+    "Store unique primes, then sum the three largest (or all if fewer than three)."
+  ],
+  "starter_code": "class Solution:\n    def sumOfLargestPrimes(self, s: str) -> int:\n        ",
+  "test_cases": []
+}

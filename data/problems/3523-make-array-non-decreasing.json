@@ -1,0 +1,31 @@
+{
+  "id": "3523",
+  "slug": "make-array-non-decreasing",
+  "title": "Make Array Non-decreasing",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Stack",
+    "Greedy",
+    "Monotonic Stack"
+  ],
+  "description": "You are given an integer array nums. In one operation, you can select a subarray and replace it with a single element equal to its maximum value.\nReturn the maximum possible size of the array after performing zero or more operations such that the resulting array is non-decreasing.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= nums.length <= 2 * 105",
+    "1 <= nums[i] <= 2 * 105"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [4,2,5,3,5]\nOutput: 3\nExplanation:\nOne way to achieve the maximum size is:\nThe final array [4, 5, 5] is non-decreasing with size 3."
+    },
+    {
+      "example_text": "Input: nums = [1,2,3]\nOutput: 3\nExplanation:\nNo operation is needed as the array [1,2,3] is already non-decreasing."
+    }
+  ],
+  "hints": [
+    "Iterate backwards.",
+    "Can you remove the largest element in the array? Is that ever helpful?"
+  ],
+  "starter_code": "class Solution:\n    def maximumPossibleSize(self, nums: List[int]) -> int:\n        ",
+  "test_cases": []
+}

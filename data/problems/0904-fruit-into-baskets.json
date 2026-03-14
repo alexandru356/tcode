@@ -1,0 +1,30 @@
+{
+  "id": "0904",
+  "slug": "fruit-into-baskets",
+  "title": "Fruit Into Baskets",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Sliding Window"
+  ],
+  "description": "You are visiting a farm that has a single row of fruit trees arranged from left to right. The trees are represented by an integer array fruits where fruits[i] is the type of fruit the ith tree produces.\nYou want to collect as much fruit as possible. However, the owner has some strict rules that you must follow:\nGiven the integer array fruits, return the maximum number of fruits you can pick.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= fruits.length <= 105",
+    "0 <= fruits[i] < fruits.length"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: fruits = [1,2,1]\nOutput: 3\nExplanation: We can pick from all 3 trees."
+    },
+    {
+      "example_text": "Input: fruits = [0,1,2,2]\nOutput: 3\nExplanation: We can pick from trees [1,2,2].\nIf we had started at the first tree, we would only pick from trees [0,1]."
+    },
+    {
+      "example_text": "Input: fruits = [1,2,3,2,2]\nOutput: 4\nExplanation: We can pick from trees [2,3,2,2].\nIf we had started at the first tree, we would only pick from trees [1,2]."
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def totalFruit(self, fruits: List[int]) -> int:\n        ",
+  "test_cases": []
+}

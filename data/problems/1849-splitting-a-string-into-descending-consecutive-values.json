@@ -1,0 +1,33 @@
+{
+  "id": "1849",
+  "slug": "splitting-a-string-into-descending-consecutive-values",
+  "title": "Splitting a String Into Descending Consecutive Values",
+  "difficulty": "Medium",
+  "topics": [
+    "String",
+    "Backtracking",
+    "Enumeration"
+  ],
+  "description": "You are given a string s that consists of only digits.\nCheck if we can split s into two or more non-empty substrings such that the numerical values of the substrings are in descending order and the difference between numerical values of every two adjacent substrings is equal to 1.\nReturn true if it is possible to split s​​​​​​ as described above, or false otherwise.\nA substring is a contiguous sequence of characters in a string.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= s.length <= 20",
+    "s only consists of digits."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"1234\"\nOutput: false\nExplanation: There is no valid way to split s."
+    },
+    {
+      "example_text": "Input: s = \"050043\"\nOutput: true\nExplanation: s can be split into [\"05\", \"004\", \"3\"] with numerical values [5,4,3].\nThe values are in descending order with adjacent values differing by 1."
+    },
+    {
+      "example_text": "Input: s = \"9080701\"\nOutput: false\nExplanation: There is no valid way to split s."
+    }
+  ],
+  "hints": [
+    "One solution is to try all possible splits using backtrack",
+    "Look out for trailing zeros in string"
+  ],
+  "starter_code": "class Solution:\n    def splitString(self, s: str) -> bool:\n        ",
+  "test_cases": []
+}

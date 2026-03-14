@@ -1,0 +1,31 @@
+{
+  "id": "0168",
+  "slug": "excel-sheet-column-title",
+  "title": "Excel Sheet Column Title",
+  "difficulty": "Easy",
+  "topics": [
+    "Math",
+    "String"
+  ],
+  "description": "Given an integer columnNumber, return its corresponding column title as it appears in an Excel sheet.\nFor example:\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= columnNumber <= 231 - 1"
+  ],
+  "examples": [
+    {
+      "example_text": "A -> 1\nB -> 2\nC -> 3\n...\nZ -> 26\nAA -> 27\nAB -> 28 \n..."
+    },
+    {
+      "example_text": "Input: columnNumber = 1\nOutput: \"A\""
+    },
+    {
+      "example_text": "Input: columnNumber = 28\nOutput: \"AB\""
+    },
+    {
+      "example_text": "Input: columnNumber = 701\nOutput: \"ZY\""
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def convertToTitle(self, columnNumber: int) -> str:\n        ",
+  "test_cases": []
+}

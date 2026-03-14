@@ -1,0 +1,30 @@
+{
+  "id": "1773",
+  "slug": "count-items-matching-a-rule",
+  "title": "Count Items Matching a Rule",
+  "difficulty": "Easy",
+  "topics": [
+    "Array",
+    "String"
+  ],
+  "description": "You are given an array items, where each items[i] = [typei, colori, namei] describes the type, color, and name of the ith item. You are also given a rule represented by two strings, ruleKey and ruleValue.\nThe ith item is said to match the rule if one of the following is true:\nReturn the number of items that match the given rule.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= items.length <= 104",
+    "1 <= typei.length, colori.length, namei.length, ruleValue.length <= 10",
+    "ruleKey is equal to either \"type\", \"color\", or \"name\".",
+    "All strings consist only of lowercase letters."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: items = [[\"phone\",\"blue\",\"pixel\"],[\"computer\",\"silver\",\"lenovo\"],[\"phone\",\"gold\",\"iphone\"]], ruleKey = \"color\", ruleValue = \"silver\"\nOutput: 1\nExplanation: There is only one item matching the given rule, which is [\"computer\",\"silver\",\"lenovo\"]."
+    },
+    {
+      "example_text": "Input: items = [[\"phone\",\"blue\",\"pixel\"],[\"computer\",\"silver\",\"phone\"],[\"phone\",\"gold\",\"iphone\"]], ruleKey = \"type\", ruleValue = \"phone\"\nOutput: 2\nExplanation: There are only two items matching the given rule, which are [\"phone\",\"blue\",\"pixel\"] and [\"phone\",\"gold\",\"iphone\"]. Note that the item [\"computer\",\"silver\",\"phone\"] does not match."
+    }
+  ],
+  "hints": [
+    "Iterate on each item, and check if each one matches the rule according to the statement."
+  ],
+  "starter_code": "class Solution:\n    def countMatches(self, items: List[List[str]], ruleKey: str, ruleValue: str) -> int:\n        ",
+  "test_cases": []
+}

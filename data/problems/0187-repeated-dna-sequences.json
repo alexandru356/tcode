@@ -1,0 +1,30 @@
+{
+  "id": "0187",
+  "slug": "repeated-dna-sequences",
+  "title": "Repeated DNA Sequences",
+  "difficulty": "Medium",
+  "topics": [
+    "Hash Table",
+    "String",
+    "Bit Manipulation",
+    "Sliding Window",
+    "Rolling Hash",
+    "Hash Function"
+  ],
+  "description": "The DNA sequence is composed of a series of nucleotides abbreviated as 'A', 'C', 'G', and 'T'.\nWhen studying DNA, it is useful to identify repeated sequences within the DNA.\nGiven a string s that represents a DNA sequence, return all the 10-letter-long sequences (substrings) that occur more than once in a DNA molecule. You may return the answer in any order.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= s.length <= 105",
+    "s[i] is either 'A', 'C', 'G', or 'T'."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT\"\nOutput: [\"AAAAACCCCC\",\"CCCCCAAAAA\"]"
+    },
+    {
+      "example_text": "Input: s = \"AAAAAAAAAAAAA\"\nOutput: [\"AAAAAAAAAA\"]"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def findRepeatedDnaSequences(self, s: str) -> List[str]:\n        ",
+  "test_cases": []
+}

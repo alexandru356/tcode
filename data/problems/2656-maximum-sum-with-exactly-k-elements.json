@@ -1,0 +1,27 @@
+{
+  "id": "2656",
+  "slug": "maximum-sum-with-exactly-k-elements",
+  "title": "Maximum Sum With Exactly K Elements ",
+  "difficulty": "Easy",
+  "topics": [
+    "Array",
+    "Greedy"
+  ],
+  "description": "You are given a 0-indexed integer array nums and an integer k. Your task is to perform the following operation exactly k times in order to maximize your score:\nReturn the maximum score you can achieve after performing the operation exactly k times.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= nums.length <= 100",
+    "1 <= nums[i] <= 100",
+    "1 <= k <= 100"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [1,2,3,4,5], k = 3\nOutput: 18\nExplanation: We need to choose exactly 3 elements from nums to maximize the sum.\nFor the first iteration, we choose 5. Then sum is 5 and nums = [1,2,3,4,6]\nFor the second iteration, we choose 6. Then sum is 5 + 6 and nums = [1,2,3,4,7]\nFor the third iteration, we choose 7. Then sum is 5 + 6 + 7 = 18 and nums = [1,2,3,4,8]\nSo, we will return 18.\nIt can be proven, that 18 is the maximum answer that we can achieve."
+    },
+    {
+      "example_text": "Input: nums = [5,5,5], k = 2\nOutput: 11\nExplanation: We need to choose exactly 2 elements from nums to maximize the sum.\nFor the first iteration, we choose 5. Then sum is 5 and nums = [5,5,6]\nFor the second iteration, we choose 6. Then sum is 5 + 6 = 11 and nums = [5,5,7]\nSo, we will return 11.\nIt can be proven, that 11 is the maximum answer that we can achieve."
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def maximizeSum(self, nums: List[int], k: int) -> int:\n        ",
+  "test_cases": []
+}

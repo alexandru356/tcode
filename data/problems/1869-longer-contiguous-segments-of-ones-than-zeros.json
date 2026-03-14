@@ -1,0 +1,31 @@
+{
+  "id": "1869",
+  "slug": "longer-contiguous-segments-of-ones-than-zeros",
+  "title": "Longer Contiguous Segments of Ones than Zeros",
+  "difficulty": "Easy",
+  "topics": [
+    "String"
+  ],
+  "description": "Given a binary string s, return true if the longest contiguous segment of 1's is strictly longer than the longest contiguous segment of 0's in s, or return false otherwise.\nNote that if there are no 0's, then the longest continuous segment of 0's is considered to have a length 0. The same applies if there is no 1's.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= s.length <= 100",
+    "s[i] is either '0' or '1'."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"1101\"\nOutput: true\nExplanation:\nThe longest contiguous segment of 1s has length 2: \"1101\"\nThe longest contiguous segment of 0s has length 1: \"1101\"\nThe segment of 1s is longer, so return true."
+    },
+    {
+      "example_text": "Input: s = \"111000\"\nOutput: false\nExplanation:\nThe longest contiguous segment of 1s has length 3: \"111000\"\nThe longest contiguous segment of 0s has length 3: \"111000\"\nThe segment of 1s is not longer, so return false."
+    },
+    {
+      "example_text": "Input: s = \"110100010\"\nOutput: false\nExplanation:\nThe longest contiguous segment of 1s has length 2: \"110100010\"\nThe longest contiguous segment of 0s has length 3: \"110100010\"\nThe segment of 1s is not longer, so return false."
+    }
+  ],
+  "hints": [
+    "Check every possible segment of 0s and 1s.",
+    "Is there a way to iterate through the string to keep track of the current character and its count?"
+  ],
+  "starter_code": "class Solution:\n    def checkZeroOnes(self, s: str) -> bool:\n        ",
+  "test_cases": []
+}

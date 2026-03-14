@@ -1,0 +1,35 @@
+{
+  "id": "3093",
+  "slug": "longest-common-suffix-queries",
+  "title": "Longest Common Suffix Queries",
+  "difficulty": "Hard",
+  "topics": [
+    "Array",
+    "String",
+    "Trie"
+  ],
+  "description": "You are given two arrays of strings wordsContainer and wordsQuery.\nFor each wordsQuery[i], you need to find a string from wordsContainer that has the longest common suffix with wordsQuery[i]. If there are two or more strings in wordsContainer that share the longest common suffix, find the string that is the smallest in length. If there are two or more such strings that have the same smallest length, find the one that occurred earlier in wordsContainer.\nReturn an array of integers ans, where ans[i] is the index of the string in wordsContainer that has the longest common suffix with wordsQuery[i].\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= wordsContainer.length, wordsQuery.length <= 104",
+    "1 <= wordsContainer[i].length <= 5 * 103",
+    "1 <= wordsQuery[i].length <= 5 * 103",
+    "wordsContainer[i] consists only of lowercase English letters.",
+    "wordsQuery[i] consists only of lowercase English letters.",
+    "Sum of wordsContainer[i].length is at most 5 * 105.",
+    "Sum of wordsQuery[i].length is at most 5 * 105."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: wordsContainer = [\"abcd\",\"bcd\",\"xbcd\"], wordsQuery = [\"cd\",\"bcd\",\"xyz\"]\nOutput: [1,1,1]\nExplanation:\nLet's look at each wordsQuery[i] separately:"
+    },
+    {
+      "example_text": "Input: wordsContainer = [\"abcdefgh\",\"poiuygh\",\"ghghgh\"], wordsQuery = [\"gh\",\"acbfgh\",\"acbfegh\"]\nOutput: [2,0,2]\nExplanation:\nLet's look at each wordsQuery[i] separately:"
+    }
+  ],
+  "hints": [
+    "If we reverse the strings, the problem changes to finding the longest common prefix.",
+    "Build a Trie, each node is a letter and only saves the best word’s index in each node, based on the criteria."
+  ],
+  "starter_code": "class Solution:\n    def stringIndices(self, wordsContainer: List[str], wordsQuery: List[str]) -> List[int]:\n        ",
+  "test_cases": []
+}

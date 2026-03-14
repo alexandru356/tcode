@@ -1,0 +1,33 @@
+{
+  "id": "3006",
+  "slug": "find-beautiful-indices-in-the-given-array-i",
+  "title": "Find Beautiful Indices in the Given Array I",
+  "difficulty": "Medium",
+  "topics": [
+    "Two Pointers",
+    "String",
+    "Binary Search",
+    "Rolling Hash",
+    "String Matching",
+    "Hash Function"
+  ],
+  "description": "You are given a 0-indexed string s, a string a, a string b, and an integer k.\nAn index i is beautiful if:\nReturn the array that contains beautiful indices in sorted order from smallest to largest.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= k <= s.length <= 105",
+    "1 <= a.length, b.length <= 10",
+    "s, a, and b contain only lowercase English letters."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"isawsquirrelnearmysquirrelhouseohmy\", a = \"my\", b = \"squirrel\", k = 15\nOutput: [16,33]\nExplanation: There are 2 beautiful indices: [16,33].\n- The index 16 is beautiful as s[16..17] == \"my\" and there exists an index 4 with s[4..11] == \"squirrel\" and |16 - 4| <= 15.\n- The index 33 is beautiful as s[33..34] == \"my\" and there exists an index 18 with s[18..25] == \"squirrel\" and |33 - 18| <= 15.\nThus we return [16,33] as the result."
+    },
+    {
+      "example_text": "Input: s = \"abcd\", a = \"a\", b = \"a\", k = 4\nOutput: [0]\nExplanation: There is 1 beautiful index: [0].\n- The index 0 is beautiful as s[0..0] == \"a\" and there exists an index 0 with s[0..0] == \"a\" and |0 - 0| <= 4.\nThus we return [0] as the result."
+    }
+  ],
+  "hints": [
+    "For each <code>i</code>, you can iterate over all <code>j</code>s and determine if <code>i</code> is beautiful or not."
+  ],
+  "starter_code": "class Solution:\n    def beautifulIndices(self, s: str, a: str, b: str, k: int) -> List[int]:\n        ",
+  "test_cases": []
+}

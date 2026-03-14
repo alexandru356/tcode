@@ -1,0 +1,26 @@
+{
+  "id": "2769",
+  "slug": "find-the-maximum-achievable-number",
+  "title": "Find the Maximum Achievable Number",
+  "difficulty": "Easy",
+  "topics": [
+    "Math"
+  ],
+  "description": "Given two integers, num and t. A number x is achievable if it can become equal to num after applying the following operation at most t times:\nReturn the maximum possible value of x.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= num, t <= 50"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: num = 4, t = 1\nOutput: 6\nExplanation:\nApply the following operation once to make the maximum achievable number equal to num :"
+    },
+    {
+      "example_text": "Input: num = 3, t = 2\nOutput: 7\nExplanation:\nApply the following operation twice to make the maximum achievable number equal to num :"
+    }
+  ],
+  "hints": [
+    "Let x be the answer, it’s always optimal to decrease x in each operation and increase nums."
+  ],
+  "starter_code": "class Solution:\n    def theMaximumAchievableX(self, num: int, t: int) -> int:\n        ",
+  "test_cases": []
+}

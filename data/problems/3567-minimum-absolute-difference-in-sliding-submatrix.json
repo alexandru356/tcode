@@ -1,0 +1,34 @@
+{
+  "id": "3567",
+  "slug": "minimum-absolute-difference-in-sliding-submatrix",
+  "title": "Minimum Absolute Difference in Sliding Submatrix",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Sorting",
+    "Matrix"
+  ],
+  "description": "You are given an m x n integer matrix grid and an integer k.\nFor every contiguous k x k submatrix of grid, compute the minimum absolute difference between any two distinct values within that submatrix.\nReturn a 2D array ans of size (m - k + 1) x (n - k + 1), where ans[i][j] is the minimum absolute difference in the submatrix whose top-left corner is (i, j) in grid.\nNote: If all elements in the submatrix have the same value, the answer will be 0.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= m == grid.length <= 30",
+    "1 <= n == grid[i].length <= 30",
+    "-105 <= grid[i][j] <= 105",
+    "1 <= k <= min(m, n)"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: grid = [[1,8],[3,-2]], k = 2\nOutput: [[2]]\nExplanation:"
+    },
+    {
+      "example_text": "Input: grid = [[3,-1]], k = 1\nOutput: [[0,0]]\nExplanation:"
+    },
+    {
+      "example_text": "Input: grid = [[1,-2,3],[2,3,5]], k = 2\nOutput: [[1,2]]\nExplanation:"
+    }
+  ],
+  "hints": [
+    "Use bruteforce over the submatrices"
+  ],
+  "starter_code": "class Solution:\n    def minAbsDiff(self, grid: List[List[int]], k: int) -> List[List[int]]:\n        ",
+  "test_cases": []
+}

@@ -1,0 +1,32 @@
+{
+  "id": "3577",
+  "slug": "count-the-number-of-computer-unlocking-permutations",
+  "title": "Count the Number of Computer Unlocking Permutations",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Math",
+    "Brainteaser",
+    "Combinatorics"
+  ],
+  "description": "You are given an array complexity of length n.\nThere are n locked computers in a room with labels from 0 to n - 1, each with its own unique password. The password of the computer i has a complexity complexity[i].\nThe password for the computer labeled 0 is already decrypted and serves as the root. All other computers must be unlocked using it or another previously unlocked computer, following this information:\nFind the number of permutations of [0, 1, 2, ..., (n - 1)] that represent a valid order in which the computers can be unlocked, starting from computer 0 as the only initially unlocked one.\nSince the answer may be large, return it modulo 109 + 7.\nNote that the password for the computer with label 0 is decrypted, and not the computer with the first position in the permutation.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "2 <= complexity.length <= 105",
+    "1 <= complexity[i] <= 109"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: complexity = [1,2,3]\nOutput: 2\nExplanation:\nThe valid permutations are:"
+    },
+    {
+      "example_text": "Input: complexity = [3,3,3,4,4,4]\nOutput: 0\nExplanation:\nThere are no possible permutations which can unlock all computers."
+    }
+  ],
+  "hints": [
+    "Ensure that the element at index 0 has the unique minimum complexity (no other element can match its value).",
+    "Fix index 0 as the first in the unlocking order.",
+    "The remaining indices from <code>1</code> to <code>n - 1</code> can then be arranged arbitrarily, yielding <code>factorial(n - 1)</code> possible orders."
+  ],
+  "starter_code": "class Solution:\n    def countPermutations(self, complexity: List[int]) -> int:\n        ",
+  "test_cases": []
+}

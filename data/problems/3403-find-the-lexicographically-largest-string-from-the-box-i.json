@@ -1,0 +1,30 @@
+{
+  "id": "3403",
+  "slug": "find-the-lexicographically-largest-string-from-the-box-i",
+  "title": "Find the Lexicographically Largest String From the Box I",
+  "difficulty": "Medium",
+  "topics": [
+    "Two Pointers",
+    "String",
+    "Enumeration"
+  ],
+  "description": "You are given a string word, and an integer numFriends.\nAlice is organizing a game for her numFriends friends. There are multiple rounds in the game, where in each round:\nFind the lexicographically largest string from the box after all the rounds are finished.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= word.length <= 5 * 103",
+    "word consists only of lowercase English letters.",
+    "1 <= numFriends <= word.length"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: word = \"dbca\", numFriends = 2\nOutput: \"dbc\"\nExplanation:\nAll possible splits are:"
+    },
+    {
+      "example_text": "Input: word = \"gggg\", numFriends = 4\nOutput: \"g\"\nExplanation:\nThe only possible split is: \"g\" , \"g\" , \"g\" , and \"g\" ."
+    }
+  ],
+  "hints": [
+    "Find lexicographically largest substring of size <code>n - numFriends + 1</code> or less starting at every index."
+  ],
+  "starter_code": "class Solution:\n    def answerString(self, word: str, numFriends: int) -> str:\n        ",
+  "test_cases": []
+}

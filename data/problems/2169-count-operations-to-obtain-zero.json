@@ -1,0 +1,28 @@
+{
+  "id": "2169",
+  "slug": "count-operations-to-obtain-zero",
+  "title": "Count Operations to Obtain Zero",
+  "difficulty": "Easy",
+  "topics": [
+    "Math",
+    "Simulation"
+  ],
+  "description": "You are given two non-negative integers num1 and num2.\nIn one operation, if num1 >= num2, you must subtract num2 from num1, otherwise subtract num1 from num2.\nReturn the number of operations required to make either num1 = 0 or num2 = 0.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "0 <= num1, num2 <= 105"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: num1 = 2, num2 = 3\nOutput: 3\nExplanation: \n- Operation 1: num1 = 2, num2 = 3. Since num1 < num2, we subtract num1 from num2 and get num1 = 2, num2 = 3 - 2 = 1.\n- Operation 2: num1 = 2, num2 = 1. Since num1 > num2, we subtract num2 from num1.\n- Operation 3: num1 = 1, num2 = 1. Since num1 == num2, we subtract num2 from num1.\nNow num1 = 0 and num2 = 1. Since num1 == 0, we do not need to perform any further operations.\nSo the total number of operations required is 3."
+    },
+    {
+      "example_text": "Input: num1 = 10, num2 = 10\nOutput: 1\nExplanation: \n- Operation 1: num1 = 10, num2 = 10. Since num1 == num2, we subtract num2 from num1 and get num1 = 10 - 10 = 0.\nNow num1 = 0 and num2 = 10. Since num1 == 0, we are done.\nSo the total number of operations required is 1."
+    }
+  ],
+  "hints": [
+    "Try simulating the process until either of the two integers is zero.",
+    "Count the number of operations done."
+  ],
+  "starter_code": "class Solution:\n    def countOperations(self, num1: int, num2: int) -> int:\n        ",
+  "test_cases": []
+}

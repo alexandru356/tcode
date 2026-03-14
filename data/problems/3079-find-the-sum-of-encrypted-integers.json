@@ -1,0 +1,28 @@
+{
+  "id": "3079",
+  "slug": "find-the-sum-of-encrypted-integers",
+  "title": "Find the Sum of Encrypted Integers",
+  "difficulty": "Easy",
+  "topics": [
+    "Array",
+    "Math"
+  ],
+  "description": "You are given an integer array nums containing positive integers. We define a function encrypt such that encrypt(x) replaces every digit in x with the largest digit in x. For example, encrypt(523) = 555 and encrypt(213) = 333.\nReturn the sum of encrypted elements.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= nums.length <= 50",
+    "1 <= nums[i] <= 1000"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [1,2,3]\nOutput: 6\nExplanation: The encrypted elements are [1,2,3] . The sum of encrypted elements is 1 + 2 + 3 == 6 ."
+    },
+    {
+      "example_text": "Input: nums = [10,21,31]\nOutput: 66\nExplanation: The encrypted elements are [11,22,33] . The sum of encrypted elements is 11 + 22 + 33 == 66 ."
+    }
+  ],
+  "hints": [
+    "Encrypted numbers are of the form <code>11…1 * maxDigit</code>."
+  ],
+  "starter_code": "class Solution:\n    def sumOfEncryptedInt(self, nums: List[int]) -> int:\n        ",
+  "test_cases": []
+}

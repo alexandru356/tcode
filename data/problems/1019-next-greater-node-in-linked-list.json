@@ -1,0 +1,31 @@
+{
+  "id": "1019",
+  "slug": "next-greater-node-in-linked-list",
+  "title": "Next Greater Node In Linked List",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Linked List",
+    "Stack",
+    "Monotonic Stack"
+  ],
+  "description": "You are given the head of a linked list with n nodes.\nFor each node in the list, find the value of the next greater node. That is, for each node, find the value of the first node that is next to it and has a strictly larger value than it.\nReturn an integer array answer where answer[i] is the value of the next greater node of the ith node (1-indexed). If the ith node does not have a next greater node, set answer[i] = 0.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "The number of nodes in the list is n.",
+    "1 <= n <= 104",
+    "1 <= Node.val <= 109"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: head = [2,1,5]\nOutput: [5,5,0]"
+    },
+    {
+      "example_text": "Input: head = [2,7,4,3,5]\nOutput: [7,0,5,5,0]"
+    }
+  ],
+  "hints": [
+    "We can use a stack that stores nodes in monotone decreasing order of value.  When we see a node_j with a larger value, every node_i in the stack has next_larger(node_i) = node_j ."
+  ],
+  "starter_code": "# Definition for singly-linked list.\n# class ListNode:\n#     def __init__(self, val=0, next=None):\n#         self.val = val\n#         self.next = next\nclass Solution:\n    def nextLargerNodes(self, head: Optional[ListNode]) -> List[int]:\n        ",
+  "test_cases": []
+}

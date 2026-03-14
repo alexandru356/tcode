@@ -1,0 +1,33 @@
+{
+  "id": "1189",
+  "slug": "maximum-number-of-balloons",
+  "title": "Maximum Number of Balloons",
+  "difficulty": "Easy",
+  "topics": [
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "description": "Given a string text, you want to use the characters of text to form as many instances of the word \"balloon\" as possible.\nYou can use each character in text at most once. Return the maximum number of instances that can be formed.\nExample 1:\nExample 2:\nExample 3:\nConstraints:\nNote: This question is the same as  2287: Rearrange Characters to Make Target String.",
+  "constraints": [
+    "1 <= text.length <= 104",
+    "text consists of lower case English letters only."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: text = \"nlaebolko\"\nOutput: 1"
+    },
+    {
+      "example_text": "Input: text = \"loonbalxballpoon\"\nOutput: 2"
+    },
+    {
+      "example_text": "Input: text = \"leetcode\"\nOutput: 0"
+    }
+  ],
+  "hints": [
+    "Count the frequency of letters in the given string.",
+    "Find the letter than can make the minimum number of instances of the word \"balloon\"."
+  ],
+  "starter_code": "class Solution:\n    def maxNumberOfBalloons(self, text: str) -> int:\n        ",
+  "test_cases": []
+}

@@ -1,0 +1,33 @@
+{
+  "id": "1297",
+  "slug": "maximum-number-of-occurrences-of-a-substring",
+  "title": "Maximum Number of Occurrences of a Substring",
+  "difficulty": "Medium",
+  "topics": [
+    "Hash Table",
+    "String",
+    "Sliding Window"
+  ],
+  "description": "Given a string s, return the maximum number of occurrences of any substring under the following rules:\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= s.length <= 105",
+    "1 <= maxLetters <= 26",
+    "1 <= minSize <= maxSize <= min(26, s.length)",
+    "s consists of only lowercase English letters."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"aababcaab\", maxLetters = 2, minSize = 3, maxSize = 4\nOutput: 2\nExplanation: Substring \"aab\" has 2 occurrences in the original string.\nIt satisfies the conditions, 2 unique letters and size 3 (between minSize and maxSize)."
+    },
+    {
+      "example_text": "Input: s = \"aaaa\", maxLetters = 1, minSize = 3, maxSize = 3\nOutput: 2\nExplanation: Substring \"aaa\" occur 2 times in the string. It can overlap."
+    }
+  ],
+  "hints": [
+    "Check out the constraints, (maxSize <=26).",
+    "This means you can explore all substrings in O(n * 26).",
+    "Find the Maximum Number of Occurrences of a Substring with bruteforce."
+  ],
+  "starter_code": "class Solution:\n    def maxFreq(self, s: str, maxLetters: int, minSize: int, maxSize: int) -> int:\n        ",
+  "test_cases": []
+}

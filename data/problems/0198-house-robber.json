@@ -1,0 +1,26 @@
+{
+  "id": "0198",
+  "slug": "house-robber",
+  "title": "House Robber",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "description": "You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed, the only constraint stopping you from robbing each of them is that adjacent houses have security systems connected and it will automatically contact the police if two adjacent houses were broken into on the same night.\nGiven an integer array nums representing the amount of money of each house, return the maximum amount of money you can rob tonight without alerting the police.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= nums.length <= 100",
+    "0 <= nums[i] <= 400"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [1,2,3,1]\nOutput: 4\nExplanation: Rob house 1 (money = 1) and then rob house 3 (money = 3).\nTotal amount you can rob = 1 + 3 = 4."
+    },
+    {
+      "example_text": "Input: nums = [2,7,9,3,1]\nOutput: 12\nExplanation: Rob house 1 (money = 2), rob house 3 (money = 9) and rob house 5 (money = 1).\nTotal amount you can rob = 2 + 9 + 1 = 12."
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def rob(self, nums: List[int]) -> int:\n        ",
+  "test_cases": []
+}

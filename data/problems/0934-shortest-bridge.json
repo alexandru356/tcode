@@ -1,0 +1,33 @@
+{
+  "id": "0934",
+  "slug": "shortest-bridge",
+  "title": "Shortest Bridge",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Matrix"
+  ],
+  "description": "You are given an n x n binary matrix grid where 1 represents land and 0 represents water.\nAn island is a 4-directionally connected group of 1's not connected to any other 1's. There are exactly two islands in grid.\nYou may change 0's to 1's to connect the two islands to form one island.\nReturn the smallest number of 0's you must flip to connect the two islands.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "n == grid.length == grid[i].length",
+    "2 <= n <= 100",
+    "grid[i][j] is either 0 or 1.",
+    "There are exactly two islands in grid."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: grid = [[0,1],[1,0]]\nOutput: 1"
+    },
+    {
+      "example_text": "Input: grid = [[0,1,0],[0,0,0],[0,0,1]]\nOutput: 2"
+    },
+    {
+      "example_text": "Input: grid = [[1,1,1,1,1],[1,0,0,0,1],[1,0,1,0,1],[1,0,0,0,1],[1,1,1,1,1]]\nOutput: 1"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def shortestBridge(self, grid: List[List[int]]) -> int:\n        ",
+  "test_cases": []
+}

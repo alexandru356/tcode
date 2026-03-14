@@ -1,0 +1,28 @@
+{
+  "id": "0179",
+  "slug": "largest-number",
+  "title": "Largest Number",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "String",
+    "Greedy",
+    "Sorting"
+  ],
+  "description": "Given a list of non-negative integers nums, arrange them such that they form the largest number and return it.\nSince the result may be very large, so you need to return a string instead of an integer.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= nums.length <= 100",
+    "0 <= nums[i] <= 109"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [10,2]\nOutput: \"210\""
+    },
+    {
+      "example_text": "Input: nums = [3,30,34,5,9]\nOutput: \"9534330\""
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def largestNumber(self, nums: List[int]) -> str:\n        ",
+  "test_cases": []
+}

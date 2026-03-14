@@ -1,0 +1,30 @@
+{
+  "id": "0624",
+  "slug": "maximum-distance-in-arrays",
+  "title": "Maximum Distance in Arrays",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Greedy"
+  ],
+  "description": "You are given m arrays, where each array is sorted in ascending order.\nYou can pick up two integers from two different arrays (each array picks one) and calculate the distance. We define the distance between two integers a and b to be their absolute difference |a - b|.\nReturn the maximum distance.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "m == arrays.length",
+    "2 <= m <= 105",
+    "1 <= arrays[i].length <= 500",
+    "-104 <= arrays[i][j] <= 104",
+    "arrays[i] is sorted in ascending order.",
+    "There will be at most 105 integers in all the arrays."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: arrays = [[1,2,3],[4,5],[1,2,3]]\nOutput: 4\nExplanation: One way to reach the maximum distance 4 is to pick 1 in the first or third array and pick 5 in the second array."
+    },
+    {
+      "example_text": "Input: arrays = [[1],[1]]\nOutput: 0"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def maxDistance(self, arrays: List[List[int]]) -> int:\n        ",
+  "test_cases": []
+}

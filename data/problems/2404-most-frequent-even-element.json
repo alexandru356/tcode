@@ -1,0 +1,33 @@
+{
+  "id": "2404",
+  "slug": "most-frequent-even-element",
+  "title": "Most Frequent Even Element",
+  "difficulty": "Easy",
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Counting"
+  ],
+  "description": "Given an integer array nums, return the most frequent even element.\nIf there is a tie, return the smallest one. If there is no such element, return -1.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= nums.length <= 2000",
+    "0 <= nums[i] <= 105"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [0,1,2,2,4,4,1]\nOutput: 2\nExplanation:\nThe even elements are 0, 2, and 4. Of these, 2 and 4 appear the most.\nWe return the smallest one, which is 2."
+    },
+    {
+      "example_text": "Input: nums = [4,4,4,9,2,4]\nOutput: 4\nExplanation: 4 is the even element appears the most."
+    },
+    {
+      "example_text": "Input: nums = [29,47,21,41,13,37,25,7]\nOutput: -1\nExplanation: There is no even element."
+    }
+  ],
+  "hints": [
+    "Could you count the frequency of each even element in the array?",
+    "Would a hashmap help?"
+  ],
+  "starter_code": "class Solution:\n    def mostFrequentEven(self, nums: List[int]) -> int:\n        ",
+  "test_cases": []
+}

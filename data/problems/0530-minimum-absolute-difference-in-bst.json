@@ -1,0 +1,29 @@
+{
+  "id": "0530",
+  "slug": "minimum-absolute-difference-in-bst",
+  "title": "Minimum Absolute Difference in BST",
+  "difficulty": "Easy",
+  "topics": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Binary Search Tree",
+    "Binary Tree"
+  ],
+  "description": "Given the root of a Binary Search Tree (BST), return the minimum absolute difference between the values of any two different nodes in the tree.\nExample 1:\nExample 2:\nConstraints:\nNote: This question is the same as 783: https://leetcode.com/problems/minimum-distance-between-bst-nodes/",
+  "constraints": [
+    "The number of nodes in the tree is in the range [2, 104].",
+    "0 <= Node.val <= 105"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: root = [4,2,6,1,3]\nOutput: 1"
+    },
+    {
+      "example_text": "Input: root = [1,0,48,null,null,12,49]\nOutput: 1"
+    }
+  ],
+  "hints": [],
+  "starter_code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def getMinimumDifference(self, root: Optional[TreeNode]) -> int:\n        ",
+  "test_cases": []
+}

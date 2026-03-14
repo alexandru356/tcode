@@ -1,0 +1,33 @@
+{
+  "id": "0227",
+  "slug": "basic-calculator-ii",
+  "title": "Basic Calculator II",
+  "difficulty": "Medium",
+  "topics": [
+    "Math",
+    "String",
+    "Stack"
+  ],
+  "description": "Given a string s which represents an expression, evaluate this expression and return its value.\nThe integer division should truncate toward zero.\nYou may assume that the given expression is always valid. All intermediate results will be in the range of [-231, 231 - 1].\nNote: You are not allowed to use any built-in function which evaluates strings as mathematical expressions, such as eval().\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= s.length <= 3 * 105",
+    "s consists of integers and operators ('+', '-', '*', '/') separated by some number of spaces.",
+    "s represents a valid expression.",
+    "All the integers in the expression are non-negative integers in the range [0, 231 - 1].",
+    "The answer is guaranteed to fit in a 32-bit integer."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"3+2*2\"\nOutput: 7"
+    },
+    {
+      "example_text": "Input: s = \" 3/2 \"\nOutput: 1"
+    },
+    {
+      "example_text": "Input: s = \" 3+5 / 2 \"\nOutput: 5"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def calculate(self, s: str) -> int:\n        ",
+  "test_cases": []
+}

@@ -1,0 +1,28 @@
+{
+  "id": "0793",
+  "slug": "preimage-size-of-factorial-zeroes-function",
+  "title": "Preimage Size of Factorial Zeroes Function",
+  "difficulty": "Hard",
+  "topics": [
+    "Math",
+    "Binary Search"
+  ],
+  "description": "Let f(x) be the number of zeroes at the end of x!. Recall that x! = 1 * 2 * 3 * ... * x and by convention, 0! = 1.\nGiven an integer k, return the number of non-negative integers x have the property that f(x) = k.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "0 <= k <= 109"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: k = 0\nOutput: 5\nExplanation: 0!, 1!, 2!, 3!, and 4! end with k = 0 zeroes."
+    },
+    {
+      "example_text": "Input: k = 5\nOutput: 0\nExplanation: There is no x such that x! ends in k = 5 zeroes."
+    },
+    {
+      "example_text": "Input: k = 3\nOutput: 5"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def preimageSizeFZF(self, k: int) -> int:\n        ",
+  "test_cases": []
+}

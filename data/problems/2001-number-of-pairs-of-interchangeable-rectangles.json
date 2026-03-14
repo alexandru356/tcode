@@ -1,0 +1,34 @@
+{
+  "id": "2001",
+  "slug": "number-of-pairs-of-interchangeable-rectangles",
+  "title": "Number of Pairs of Interchangeable Rectangles",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Counting",
+    "Number Theory"
+  ],
+  "description": "You are given n rectangles represented by a 0-indexed 2D integer array rectangles, where rectangles[i] = [widthi, heighti] denotes the width and height of the ith rectangle.\nTwo rectangles i and j (i < j) are considered interchangeable if they have the same width-to-height ratio. More formally, two rectangles are interchangeable if widthi/heighti == widthj/heightj (using decimal division, not integer division).\nReturn the number of pairs of interchangeable rectangles in rectangles.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "n == rectangles.length",
+    "1 <= n <= 105",
+    "rectangles[i].length == 2",
+    "1 <= widthi, heighti <= 105"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: rectangles = [[4,8],[3,6],[10,20],[15,30]]\nOutput: 6\nExplanation: The following are the interchangeable pairs of rectangles by index (0-indexed):\n- Rectangle 0 with rectangle 1: 4/8 == 3/6.\n- Rectangle 0 with rectangle 2: 4/8 == 10/20.\n- Rectangle 0 with rectangle 3: 4/8 == 15/30.\n- Rectangle 1 with rectangle 2: 3/6 == 10/20.\n- Rectangle 1 with rectangle 3: 3/6 == 15/30.\n- Rectangle 2 with rectangle 3: 10/20 == 15/30."
+    },
+    {
+      "example_text": "Input: rectangles = [[4,5],[7,8]]\nOutput: 0\nExplanation: There are no interchangeable pairs of rectangles."
+    }
+  ],
+  "hints": [
+    "Store the rectangle height and width ratio in a hashmap.",
+    "Traverse the ratios, and for each ratio, use the frequency of the ratio to add to the total pair count."
+  ],
+  "starter_code": "class Solution:\n    def interchangeableRectangles(self, rectangles: List[List[int]]) -> int:\n        ",
+  "test_cases": []
+}

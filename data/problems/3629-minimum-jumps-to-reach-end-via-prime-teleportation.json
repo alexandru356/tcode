@@ -1,0 +1,30 @@
+{
+  "id": "3629",
+  "slug": "minimum-jumps-to-reach-end-via-prime-teleportation",
+  "title": "Minimum Jumps to Reach End via Prime Teleportation",
+  "difficulty": "Medium",
+  "topics": [],
+  "description": "You are given an integer array nums of length n.\nYou start at index 0, and your goal is to reach index n - 1.\nFrom any index i, you may perform one of the following operations:\nReturn the minimum number of jumps required to reach index n - 1.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= n == nums.length <= 105",
+    "1 <= nums[i] <= 106"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [1,2,4,6]\nOutput: 2\nExplanation:\nOne optimal sequence of jumps is:\nThus, the answer is 2."
+    },
+    {
+      "example_text": "Input: nums = [2,3,4,7,9]\nOutput: 2\nExplanation:\nOne optimal sequence of jumps is:\nThus, the answer is 2."
+    },
+    {
+      "example_text": "Input: nums = [4,6,5,8]\nOutput: 3\nExplanation:"
+    }
+  ],
+  "hints": [
+    "Use a breadth-first search.",
+    "Precompute prime factors of each <code>nums[i]</code> via a sieve, and build a bucket <code>bucket[p]</code> mapping each prime <code>p</code> to all indices <code>j</code> with <code>nums[j] % p == 0</code>.",
+    "During the BFS, when at index <code>i</code>, enqueue its adjacent steps (<code>i+1</code> and <code>i-1</code>) and all indices in <code>bucket[p]</code> for each prime <code>p</code> dividing <code>nums[i]</code>, then clear <code>bucket[p]</code> so each prime's bucket is visited only once."
+  ],
+  "starter_code": "class Solution:\n    def minJumps(self, nums: List[int]) -> int:\n        ",
+  "test_cases": []
+}

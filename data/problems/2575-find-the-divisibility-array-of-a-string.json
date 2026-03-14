@@ -1,0 +1,32 @@
+{
+  "id": "2575",
+  "slug": "find-the-divisibility-array-of-a-string",
+  "title": "Find the Divisibility Array of a String",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Math",
+    "String"
+  ],
+  "description": "You are given a 0-indexed string word of length n consisting of digits, and a positive integer m.\nThe divisibility array div of word is an integer array of length n such that:\nReturn the divisibility array of word.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= n <= 105",
+    "word.length == n",
+    "word consists of digits from 0 to 9",
+    "1 <= m <= 109"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: word = \"998244353\", m = 3\nOutput: [1,1,0,0,0,1,1,0,0]\nExplanation: There are only 4 prefixes that are divisible by 3: \"9\", \"99\", \"998244\", and \"9982443\"."
+    },
+    {
+      "example_text": "Input: word = \"1010\", m = 10\nOutput: [0,1,0,1]\nExplanation: There are only 2 prefixes that are divisible by 10: \"10\", and \"1010\"."
+    }
+  ],
+  "hints": [
+    "We can check if the numeric value of the prefix of the given string is divisible by m by computing the remainder of the numeric value of the prefix when divided by m.",
+    "The remainder of the numeric value of a prefix ending at index i can be computed from the remainder of the prefix ending at index i-1."
+  ],
+  "starter_code": "class Solution:\n    def divisibilityArray(self, word: str, m: int) -> List[int]:\n        ",
+  "test_cases": []
+}

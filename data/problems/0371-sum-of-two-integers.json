@@ -1,0 +1,25 @@
+{
+  "id": "0371",
+  "slug": "sum-of-two-integers",
+  "title": "Sum of Two Integers",
+  "difficulty": "Medium",
+  "topics": [
+    "Math",
+    "Bit Manipulation"
+  ],
+  "description": "Given two integers a and b, return the sum of the two integers without using the operators + and -.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "-1000 <= a, b <= 1000"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: a = 1, b = 2\nOutput: 3"
+    },
+    {
+      "example_text": "Input: a = 2, b = 3\nOutput: 5"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def getSum(self, a: int, b: int) -> int:\n        ",
+  "test_cases": []
+}

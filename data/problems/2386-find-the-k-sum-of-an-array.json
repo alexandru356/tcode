@@ -1,0 +1,32 @@
+{
+  "id": "2386",
+  "slug": "find-the-k-sum-of-an-array",
+  "title": "Find the K-Sum of an Array",
+  "difficulty": "Hard",
+  "topics": [
+    "Array",
+    "Sorting",
+    "Heap (Priority Queue)"
+  ],
+  "description": "You are given an integer array nums and a positive integer k. You can choose any subsequence of the array and sum all of its elements together.\nWe define the K-Sum of the array as the kth largest subsequence sum that can be obtained (not necessarily distinct).\nReturn the K-Sum of the array.\nA subsequence is an array that can be derived from another array by deleting some or no elements without changing the order of the remaining elements.\nNote that the empty subsequence is considered to have a sum of 0.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "n == nums.length",
+    "1 <= n <= 105",
+    "-109 <= nums[i] <= 109",
+    "1 <= k <= min(2000, 2n)"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [2,4,-2], k = 5\nOutput: 2\nExplanation: All the possible subsequence sums that we can obtain are the following sorted in decreasing order:\n- 6, 4, 4, 2, 2, 0, 0, -2.\nThe 5-Sum of the array is 2."
+    },
+    {
+      "example_text": "Input: nums = [1,-2,3,4,-10,12], k = 16\nOutput: 10\nExplanation: The 16-Sum of the array is 10."
+    }
+  ],
+  "hints": [
+    "Start from the largest sum possible, and keep finding the next largest sum until you reach the kth sum.",
+    "Starting from a sum, what are the two next largest sums that you can obtain from it?"
+  ],
+  "starter_code": "class Solution:\n    def kSum(self, nums: List[int], k: int) -> int:\n        ",
+  "test_cases": []
+}

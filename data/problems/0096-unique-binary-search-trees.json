@@ -1,0 +1,28 @@
+{
+  "id": "0096",
+  "slug": "unique-binary-search-trees",
+  "title": "Unique Binary Search Trees",
+  "difficulty": "Medium",
+  "topics": [
+    "Math",
+    "Dynamic Programming",
+    "Tree",
+    "Binary Search Tree",
+    "Binary Tree"
+  ],
+  "description": "Given an integer n, return the number of structurally unique BST's (binary search trees) which has exactly n nodes of unique values from 1 to n.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= n <= 19"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = 3\nOutput: 5"
+    },
+    {
+      "example_text": "Input: n = 1\nOutput: 1"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def numTrees(self, n: int) -> int:\n        ",
+  "test_cases": []
+}

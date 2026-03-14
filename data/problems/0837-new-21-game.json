@@ -1,0 +1,31 @@
+{
+  "id": "0837",
+  "slug": "new-21-game",
+  "title": "New 21 Game",
+  "difficulty": "Medium",
+  "topics": [
+    "Math",
+    "Dynamic Programming",
+    "Sliding Window",
+    "Probability and Statistics"
+  ],
+  "description": "Alice plays the following game, loosely based on the card game \"21\".\nAlice starts with 0 points and draws numbers while she has less than k points. During each draw, she gains an integer number of points randomly from the range [1, maxPts], where maxPts is an integer. Each draw is independent and the outcomes have equal probabilities.\nAlice stops drawing numbers when she gets k or more points.\nReturn the probability that Alice has n or fewer points.\nAnswers within 10-5 of the actual answer are considered accepted.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "0 <= k <= n <= 104",
+    "1 <= maxPts <= 104"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = 10, k = 1, maxPts = 10\nOutput: 1.00000\nExplanation: Alice gets a single card, then stops."
+    },
+    {
+      "example_text": "Input: n = 6, k = 1, maxPts = 10\nOutput: 0.60000\nExplanation: Alice gets a single card, then stops.\nIn 6 out of 10 possibilities, she is at or below 6 points."
+    },
+    {
+      "example_text": "Input: n = 21, k = 17, maxPts = 10\nOutput: 0.73278"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def new21Game(self, n: int, k: int, maxPts: int) -> float:\n        ",
+  "test_cases": []
+}

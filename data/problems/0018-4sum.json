@@ -1,0 +1,28 @@
+{
+  "id": "0018",
+  "slug": "4sum",
+  "title": "4Sum",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Sorting"
+  ],
+  "description": "Given an array nums of n integers, return an array of all the unique quadruplets [nums[a], nums[b], nums[c], nums[d]] such that:\nYou may return the answer in any order.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= nums.length <= 200",
+    "-109 <= nums[i] <= 109",
+    "-109 <= target <= 109"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [1,0,-1,0,-2,2], target = 0\nOutput: [[-2,-1,1,2],[-2,0,0,2],[-1,0,0,1]]"
+    },
+    {
+      "example_text": "Input: nums = [2,2,2,2,2], target = 8\nOutput: [[2,2,2,2]]"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def fourSum(self, nums: List[int], target: int) -> List[List[int]]:\n        ",
+  "test_cases": []
+}

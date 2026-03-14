@@ -1,0 +1,30 @@
+{
+  "id": "0397",
+  "slug": "integer-replacement",
+  "title": "Integer Replacement",
+  "difficulty": "Medium",
+  "topics": [
+    "Dynamic Programming",
+    "Greedy",
+    "Bit Manipulation",
+    "Memoization"
+  ],
+  "description": "Given a positive integer n, you can apply one of the following operations:\nReturn the minimum number of operations needed for n to become 1.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= n <= 231 - 1"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = 8\nOutput: 3\nExplanation: 8 -> 4 -> 2 -> 1"
+    },
+    {
+      "example_text": "Input: n = 7\nOutput: 4\nExplanation: 7 -> 8 -> 4 -> 2 -> 1\nor 7 -> 6 -> 3 -> 2 -> 1"
+    },
+    {
+      "example_text": "Input: n = 4\nOutput: 2"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def integerReplacement(self, n: int) -> int:\n        ",
+  "test_cases": []
+}

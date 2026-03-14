@@ -1,0 +1,39 @@
+{
+  "id": "2612",
+  "slug": "minimum-reverse-operations",
+  "title": "Minimum Reverse Operations",
+  "difficulty": "Hard",
+  "topics": [
+    "Array",
+    "Breadth-First Search",
+    "Ordered Set"
+  ],
+  "description": "You are given an integer n and an integer p representing an array arr of length n where all elements are set to 0's, except position p which is set to 1. You are also given an integer array banned containing restricted positions. Perform the following operation on arr:\nReturn an integer array answer with n results where the ith result is the minimum number of operations needed to bring the single 1 to position i in arr, or -1 if it is impossible.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= n <= 105",
+    "0 <= p <= n - 1",
+    "0 <= banned.length <= n - 1",
+    "0 <= banned[i] <= n - 1",
+    "1 <= k <= n",
+    "banned[i] != p",
+    "all values in banned are unique"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = 4, p = 0, banned = [1,2], k = 4\nOutput: [0,-1,-1,1]\nExplanation:"
+    },
+    {
+      "example_text": "Input: n = 5, p = 0, banned = [2,4], k = 3\nOutput: [0,-1,-1,-1,-1]\nExplanation:"
+    },
+    {
+      "example_text": "Input: n = 4, p = 2, banned = [0,1,3], k = 1\nOutput: [-1,-1,0,-1]\nExplanation:\nPerform operations of size 1 and 1 never changes its position."
+    }
+  ],
+  "hints": [
+    "Can we use a breadth-first search to find the minimum number of operations?",
+    "Find the beginning and end indices of the subarray of size k that can be reversed to bring 1 to a particular position.",
+    "Can we visit every index or do we need to consider the parity of k?"
+  ],
+  "starter_code": "class Solution:\n    def minReverseOperations(self, n: int, p: int, banned: List[int], k: int) -> List[int]:\n        ",
+  "test_cases": []
+}

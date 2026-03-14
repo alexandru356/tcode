@@ -1,0 +1,33 @@
+{
+  "id": "0952",
+  "slug": "largest-component-size-by-common-factor",
+  "title": "Largest Component Size by Common Factor",
+  "difficulty": "Hard",
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Union Find",
+    "Number Theory"
+  ],
+  "description": "You are given an integer array of unique positive integers nums. Consider the following graph:\nReturn the size of the largest connected component in the graph.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= nums.length <= 2 * 104",
+    "1 <= nums[i] <= 105",
+    "All the values of nums are unique."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [4,6,15,35]\nOutput: 4"
+    },
+    {
+      "example_text": "Input: nums = [20,50,9,63]\nOutput: 2"
+    },
+    {
+      "example_text": "Input: nums = [2,3,6,7,4,12,21,39]\nOutput: 8"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def largestComponentSize(self, nums: List[int]) -> int:\n        ",
+  "test_cases": []
+}

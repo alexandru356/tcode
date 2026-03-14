@@ -1,0 +1,28 @@
+{
+  "id": "0606",
+  "slug": "construct-string-from-binary-tree",
+  "title": "Construct String from Binary Tree",
+  "difficulty": "Medium",
+  "topics": [
+    "String",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "description": "Given the root node of a binary tree, your task is to create a string representation of the tree following a specific set of formatting rules. The representation should be based on a preorder traversal of the binary tree and must adhere to the following guidelines:\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "The number of nodes in the tree is in the range [1, 104].",
+    "-1000 <= Node.val <= 1000"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: root = [1,2,3,4]\nOutput: \"1(2(4))(3)\"\nExplanation: Originally, it needs to be \"1(2(4)())(3()())\", but you need to omit all the empty parenthesis pairs. And it will be \"1(2(4))(3)\"."
+    },
+    {
+      "example_text": "Input: root = [1,2,3,null,4]\nOutput: \"1(2()(4))(3)\"\nExplanation: Almost the same as the first example, except the () after 2 is necessary to indicate the absence of a left child for 2 and the presence of a right child."
+    }
+  ],
+  "hints": [],
+  "starter_code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def tree2str(self, root: Optional[TreeNode]) -> str:\n        ",
+  "test_cases": []
+}

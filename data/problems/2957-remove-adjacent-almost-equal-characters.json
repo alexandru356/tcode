@@ -1,0 +1,33 @@
+{
+  "id": "2957",
+  "slug": "remove-adjacent-almost-equal-characters",
+  "title": "Remove Adjacent Almost-Equal Characters",
+  "difficulty": "Medium",
+  "topics": [
+    "String",
+    "Dynamic Programming",
+    "Greedy"
+  ],
+  "description": "You are given a 0-indexed string word.\nIn one operation, you can pick any index i of word and change word[i] to any lowercase English letter.\nReturn the minimum number of operations needed to remove all adjacent almost-equal characters from word.\nTwo characters a and b are almost-equal if a == b or a and b are adjacent in the alphabet.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= word.length <= 100",
+    "word consists only of lowercase English letters."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: word = \"aaaaa\"\nOutput: 2\nExplanation: We can change word into \"acaca\" which does not have any adjacent almost-equal characters.\nIt can be shown that the minimum number of operations needed to remove all adjacent almost-equal characters from word is 2."
+    },
+    {
+      "example_text": "Input: word = \"abddez\"\nOutput: 2\nExplanation: We can change word into \"ybdoez\" which does not have any adjacent almost-equal characters.\nIt can be shown that the minimum number of operations needed to remove all adjacent almost-equal characters from word is 2."
+    },
+    {
+      "example_text": "Input: word = \"zyxyxyz\"\nOutput: 3\nExplanation: We can change word into \"zaxaxaz\" which does not have any adjacent almost-equal characters. \nIt can be shown that the minimum number of operations needed to remove all adjacent almost-equal characters from word is 3."
+    }
+  ],
+  "hints": [
+    "For <code>i > 0</code>, if <code>word[i]</code> and <code>word[i - 1]</code> are adjacent, we will change <code>word[i]</code> to another character. Which character should we change it to?",
+    "We will change <code>word[i]</code> to some character that is not adjacent to <code>word[i - 1]</code> nor <code>word[i + 1]</code> (if it exists). Such a character always exists. However, since the problem does not ask for the final state of the string, It is enough to prove that the character exists and we do not need to find it."
+  ],
+  "starter_code": "class Solution:\n    def removeAlmostEqualCharacters(self, word: str) -> int:\n        ",
+  "test_cases": []
+}

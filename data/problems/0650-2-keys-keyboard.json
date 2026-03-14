@@ -1,0 +1,27 @@
+{
+  "id": "0650",
+  "slug": "2-keys-keyboard",
+  "title": "2 Keys Keyboard",
+  "difficulty": "Medium",
+  "topics": [
+    "Math",
+    "Dynamic Programming"
+  ],
+  "description": "There is only one character 'A' on the screen of a notepad. You can perform one of two operations on this notepad for each step:\nGiven an integer n, return the minimum number of operations to get the character 'A' exactly n times on the screen.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= n <= 1000"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = 3\nOutput: 3\nExplanation: Initially, we have one character 'A'.\nIn step 1, we use Copy All operation.\nIn step 2, we use Paste operation to get 'AA'.\nIn step 3, we use Paste operation to get 'AAA'."
+    },
+    {
+      "example_text": "Input: n = 1\nOutput: 0"
+    }
+  ],
+  "hints": [
+    "How many characters may be there in the clipboard at the last step if n = 3? n = 7? n = 10? n = 24?"
+  ],
+  "starter_code": "class Solution:\n    def minSteps(self, n: int) -> int:\n        ",
+  "test_cases": []
+}

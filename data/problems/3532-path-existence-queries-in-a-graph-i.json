@@ -1,0 +1,37 @@
+{
+  "id": "3532",
+  "slug": "path-existence-queries-in-a-graph-i",
+  "title": "Path Existence Queries in a Graph I",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
+    "Union Find",
+    "Graph"
+  ],
+  "description": "You are given an integer n representing the number of nodes in a graph, labeled from 0 to n - 1.\nYou are also given an integer array nums of length n sorted in non-decreasing order, and an integer maxDiff.\nAn undirected edge exists between nodes i and j if the absolute difference between nums[i] and nums[j] is at most maxDiff (i.e., |nums[i] - nums[j]| <= maxDiff).\nYou are also given a 2D integer array queries. For each queries[i] = [ui, vi], determine whether there exists a path between nodes ui and vi.\nReturn a boolean array answer, where answer[i] is true if there exists a path between ui and vi in the ith query and false otherwise.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= n == nums.length <= 105",
+    "0 <= nums[i] <= 105",
+    "nums is sorted in non-decreasing order.",
+    "0 <= maxDiff <= 105",
+    "1 <= queries.length <= 105",
+    "queries[i] == [ui, vi]",
+    "0 <= ui, vi < n"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = 2, nums = [1,3], maxDiff = 1, queries = [[0,0],[0,1]]\nOutput: [true,false]\nExplanation:"
+    },
+    {
+      "example_text": "Input: n = 4, nums = [2,5,6,8], maxDiff = 2, queries = [[0,1],[0,2],[1,3],[2,3]]\nOutput: [false,false,true,true]\nExplanation:\nThe resulting graph is:\n"
+    }
+  ],
+  "hints": [
+    "How do the connected components look? Do they appear in segments (i.e., are they continuous)?",
+    "Preprocess the connected components."
+  ],
+  "starter_code": "class Solution:\n    def pathExistenceQueries(self, n: int, nums: List[int], maxDiff: int, queries: List[List[int]]) -> List[bool]:\n        ",
+  "test_cases": []
+}

@@ -1,0 +1,28 @@
+{
+  "id": "3210",
+  "slug": "find-the-encrypted-string",
+  "title": "Find the Encrypted String",
+  "difficulty": "Easy",
+  "topics": [
+    "String"
+  ],
+  "description": "You are given a string s and an integer k. Encrypt the string using the following algorithm:\nReturn the encrypted string.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= s.length <= 100",
+    "1 <= k <= 104",
+    "s consists only of lowercase English letters."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"dart\", k = 3\nOutput: \"tdar\"\nExplanation:"
+    },
+    {
+      "example_text": "Input: s = \"aaa\", k = 1\nOutput: \"aaa\"\nExplanation:\nAs all the characters are the same, the encrypted string will also be the same."
+    }
+  ],
+  "hints": [
+    "Make a new string such that for each character in <code>s</code>, character <code>i</code> will correspond to <code>(i + k) % s.length</code> character in the original string."
+  ],
+  "starter_code": "class Solution:\n    def getEncryptedString(self, s: str, k: int) -> str:\n        ",
+  "test_cases": []
+}

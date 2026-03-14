@@ -1,0 +1,30 @@
+{
+  "id": "1669",
+  "slug": "merge-in-between-linked-lists",
+  "title": "Merge In Between Linked Lists",
+  "difficulty": "Medium",
+  "topics": [
+    "Linked List"
+  ],
+  "description": "You are given two linked lists: list1 and list2 of sizes n and m respectively.\nRemove list1's nodes from the ath node to the bth node, and put list2 in their place.\nThe blue edges and nodes in the following figure indicate the result:\nBuild the result list and return its head.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "3 <= list1.length <= 104",
+    "1 <= a <= b < list1.length - 1",
+    "1 <= list2.length <= 104"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: list1 = [10,1,13,6,9,5], a = 3, b = 4, list2 = [1000000,1000001,1000002]\nOutput: [10,1,13,1000000,1000001,1000002,5]\nExplanation: We remove the nodes 3 and 4 and put the entire list2 in their place. The blue edges and nodes in the above figure indicate the result."
+    },
+    {
+      "example_text": "Input: list1 = [0,1,2,3,4,5,6], a = 2, b = 5, list2 = [1000000,1000001,1000002,1000003,1000004]\nOutput: [0,1,1000000,1000001,1000002,1000003,1000004,6]\nExplanation: The blue edges and nodes in the above figure indicate the result."
+    }
+  ],
+  "hints": [
+    "Check which edges need to be changed.",
+    "Let the next node of the (a-1)th node of list1 be the 0-th node in list 2.",
+    "Let the next node of the last node of list2 be the (b+1)-th node in list 1."
+  ],
+  "starter_code": "# Definition for singly-linked list.\n# class ListNode:\n#     def __init__(self, val=0, next=None):\n#         self.val = val\n#         self.next = next\nclass Solution:\n    def mergeInBetween(self, list1: ListNode, a: int, b: int, list2: ListNode) -> ListNode:\n        ",
+  "test_cases": []
+}

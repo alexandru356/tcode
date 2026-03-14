@@ -1,0 +1,32 @@
+{
+  "id": "1419",
+  "slug": "minimum-number-of-frogs-croaking",
+  "title": "Minimum Number of Frogs Croaking",
+  "difficulty": "Medium",
+  "topics": [
+    "String",
+    "Counting"
+  ],
+  "description": "You are given the string croakOfFrogs, which represents a combination of the string \"croak\" from different frogs, that is, multiple frogs can croak at the same time, so multiple \"croak\" are mixed.\nReturn the minimum number of different frogs to finish all the croaks in the given string.\nA valid \"croak\" means a frog is printing five letters 'c', 'r', 'o', 'a', and 'k' sequentially. The frogs have to print all five letters to finish a croak. If the given string is not a combination of a valid \"croak\" return -1.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= croakOfFrogs.length <= 105",
+    "croakOfFrogs is either 'c', 'r', 'o', 'a', or 'k'."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: croakOfFrogs = \"croakcroak\"\nOutput: 1 \nExplanation: One frog yelling \"croak\" twice."
+    },
+    {
+      "example_text": "Input: croakOfFrogs = \"crcoakroak\"\nOutput: 2 \nExplanation: The minimum number of frogs is two. \nThe first frog could yell \"crcoakroak\".\nThe second frog could yell later \"crcoakroak\"."
+    },
+    {
+      "example_text": "Input: croakOfFrogs = \"croakcrook\"\nOutput: -1\nExplanation: The given string is an invalid combination of \"croak\" from different frogs."
+    }
+  ],
+  "hints": [
+    "keep the frequency of all characters from \"croak\" using a hashmap.",
+    "For each character in the given string, greedily match it to a possible \"croak\"."
+  ],
+  "starter_code": "class Solution:\n    def minNumberOfFrogs(self, croakOfFrogs: str) -> int:\n        ",
+  "test_cases": []
+}

@@ -1,0 +1,31 @@
+{
+  "id": "2221",
+  "slug": "find-triangular-sum-of-an-array",
+  "title": "Find Triangular Sum of an Array",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Math",
+    "Simulation",
+    "Combinatorics"
+  ],
+  "description": "You are given a 0-indexed integer array nums, where nums[i] is a digit between 0 and 9 (inclusive).\nThe triangular sum of nums is the value of the only element present in nums after the following process terminates:\nReturn the triangular sum of nums.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= nums.length <= 1000",
+    "0 <= nums[i] <= 9"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [1,2,3,4,5]\nOutput: 8\nExplanation:\nThe above diagram depicts the process from which we obtain the triangular sum of the array."
+    },
+    {
+      "example_text": "Input: nums = [5]\nOutput: 5\nExplanation:\nSince there is only one element in nums, the triangular sum is the value of that element itself."
+    }
+  ],
+  "hints": [
+    "Try simulating the entire process.",
+    "To reduce space, use a temporary array to update nums in every step instead of creating a new array at each step."
+  ],
+  "starter_code": "class Solution:\n    def triangularSum(self, nums: List[int]) -> int:\n        ",
+  "test_cases": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": "1952",
+  "slug": "three-divisors",
+  "title": "Three Divisors",
+  "difficulty": "Easy",
+  "topics": [
+    "Math",
+    "Enumeration",
+    "Number Theory"
+  ],
+  "description": "Given an integer n, return true if n has exactly three positive divisors. Otherwise, return false.\nAn integer m is a divisor of n if there exists an integer k such that n = k * m.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= n <= 104"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = 2\nOutput: false\nExplantion: 2 has only two divisors: 1 and 2."
+    },
+    {
+      "example_text": "Input: n = 4\nOutput: true\nExplantion: 4 has three divisors: 1, 2, and 4."
+    }
+  ],
+  "hints": [
+    "You can count the number of divisors and just check that they are 3",
+    "Beware of the case of n equal 1 as some solutions might fail in it"
+  ],
+  "starter_code": "class Solution:\n    def isThree(self, n: int) -> bool:\n        ",
+  "test_cases": []
+}

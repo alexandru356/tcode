@@ -1,0 +1,27 @@
+{
+  "id": "0693",
+  "slug": "binary-number-with-alternating-bits",
+  "title": "Binary Number with Alternating Bits",
+  "difficulty": "Easy",
+  "topics": [
+    "Bit Manipulation"
+  ],
+  "description": "Given a positive integer, check whether it has alternating bits: namely, if two adjacent bits will always have different values.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= n <= 231 - 1"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = 5\nOutput: true\nExplanation: The binary representation of 5 is: 101"
+    },
+    {
+      "example_text": "Input: n = 7\nOutput: false\nExplanation: The binary representation of 7 is: 111."
+    },
+    {
+      "example_text": "Input: n = 11\nOutput: false\nExplanation: The binary representation of 11 is: 1011."
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def hasAlternatingBits(self, n: int) -> bool:\n        ",
+  "test_cases": []
+}

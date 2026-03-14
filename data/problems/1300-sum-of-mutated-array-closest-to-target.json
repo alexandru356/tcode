@@ -1,0 +1,34 @@
+{
+  "id": "1300",
+  "slug": "sum-of-mutated-array-closest-to-target",
+  "title": "Sum of Mutated Array Closest to Target",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Sorting"
+  ],
+  "description": "Given an integer array arr and a target value target, return the integer value such that when we change all the integers larger than value in the given array to be equal to value, the sum of the array gets as close as possible (in absolute difference) to target.\nIn case of a tie, return the minimum such integer.\nNotice that the answer is not neccesarilly a number from arr.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= arr.length <= 104",
+    "1 <= arr[i], target <= 105"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: arr = [4,9,3], target = 10\nOutput: 3\nExplanation: When using 3 arr converts to [3, 3, 3] which sums 9 and that's the optimal answer."
+    },
+    {
+      "example_text": "Input: arr = [2,3,5], target = 10\nOutput: 5"
+    },
+    {
+      "example_text": "Input: arr = [60864,25176,27249,21296,20204], target = 56803\nOutput: 11361"
+    }
+  ],
+  "hints": [
+    "If you draw a graph with the value on one axis and the absolute difference between the target and the array sum, what will you get?",
+    "That graph is uni-modal.",
+    "Use ternary search on that graph to find the best value."
+  ],
+  "starter_code": "class Solution:\n    def findBestValue(self, arr: List[int], target: int) -> int:\n        ",
+  "test_cases": []
+}

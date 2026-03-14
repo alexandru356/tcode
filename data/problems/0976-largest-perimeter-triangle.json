@@ -1,0 +1,28 @@
+{
+  "id": "0976",
+  "slug": "largest-perimeter-triangle",
+  "title": "Largest Perimeter Triangle",
+  "difficulty": "Easy",
+  "topics": [
+    "Array",
+    "Math",
+    "Greedy",
+    "Sorting"
+  ],
+  "description": "Given an integer array nums, return the largest perimeter of a triangle with a non-zero area, formed from three of these lengths. If it is impossible to form any triangle of a non-zero area, return 0.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "3 <= nums.length <= 104",
+    "1 <= nums[i] <= 106"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [2,1,2]\nOutput: 5\nExplanation: You can form a triangle with three side lengths: 1, 2, and 2."
+    },
+    {
+      "example_text": "Input: nums = [1,2,1,10]\nOutput: 0\nExplanation: \nYou cannot use the side lengths 1, 1, and 2 to form a triangle.\nYou cannot use the side lengths 1, 1, and 10 to form a triangle.\nYou cannot use the side lengths 1, 2, and 10 to form a triangle.\nAs we cannot use any three side lengths to form a triangle of non-zero area, we return 0."
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def largestPerimeter(self, nums: List[int]) -> int:\n        ",
+  "test_cases": []
+}

@@ -1,0 +1,28 @@
+{
+  "id": "0907",
+  "slug": "sum-of-subarray-minimums",
+  "title": "Sum of Subarray Minimums",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Stack",
+    "Monotonic Stack"
+  ],
+  "description": "Given an array of integers arr, find the sum of min(b), where b ranges over every (contiguous) subarray of arr. Since the answer may be large, return the answer modulo 109 + 7.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= arr.length <= 3 * 104",
+    "1 <= arr[i] <= 3 * 104"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: arr = [3,1,2,4]\nOutput: 17\nExplanation: \nSubarrays are [3], [1], [2], [4], [3,1], [1,2], [2,4], [3,1,2], [1,2,4], [3,1,2,4]. \nMinimums are 3, 1, 2, 4, 1, 1, 2, 1, 1, 1.\nSum is 17."
+    },
+    {
+      "example_text": "Input: arr = [11,81,94,43,3]\nOutput: 444"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def sumSubarrayMins(self, arr: List[int]) -> int:\n        ",
+  "test_cases": []
+}

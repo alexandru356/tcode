@@ -1,0 +1,31 @@
+{
+  "id": "1370",
+  "slug": "increasing-decreasing-string",
+  "title": "Increasing Decreasing String",
+  "difficulty": "Easy",
+  "topics": [
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "description": "You are given a string s. Reorder the string using the following algorithm:\nIf the smallest or largest character appears more than once, you may choose any occurrence to append to the result.\nReturn the resulting string after reordering s using this algorithm.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= s.length <= 500",
+    "s consists of only lowercase English letters."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"aaaabbbbcccc\"\nOutput: \"abccbaabccba\"\nExplanation: After steps 1, 2 and 3 of the first iteration, result = \"abc\"\nAfter steps 4, 5 and 6 of the first iteration, result = \"abccba\"\nFirst iteration is done. Now s = \"aabbcc\" and we go back to step 1\nAfter steps 1, 2 and 3 of the second iteration, result = \"abccbaabc\"\nAfter steps 4, 5 and 6 of the second iteration, result = \"abccbaabccba\""
+    },
+    {
+      "example_text": "Input: s = \"rat\"\nOutput: \"art\"\nExplanation: The word \"rat\" becomes \"art\" after re-ordering it with the mentioned algorithm."
+    }
+  ],
+  "hints": [
+    "Count the frequency of each character.",
+    "Loop over all character from 'a' to 'z' and append the character if it exists and decrease frequency by 1. Do the same from 'z' to 'a'.",
+    "Keep repeating until the frequency of all characters is zero."
+  ],
+  "starter_code": "class Solution:\n    def sortString(self, s: str) -> str:\n        ",
+  "test_cases": []
+}

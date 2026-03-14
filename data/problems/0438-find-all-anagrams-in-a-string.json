@@ -1,0 +1,27 @@
+{
+  "id": "0438",
+  "slug": "find-all-anagrams-in-a-string",
+  "title": "Find All Anagrams in a String",
+  "difficulty": "Medium",
+  "topics": [
+    "Hash Table",
+    "String",
+    "Sliding Window"
+  ],
+  "description": "Given two strings s and p, return an array of all the start indices of p's anagrams in s. You may return the answer in any order.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= s.length, p.length <= 3 * 104",
+    "s and p consist of lowercase English letters."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"cbaebabacd\", p = \"abc\"\nOutput: [0,6]\nExplanation:\nThe substring with start index = 0 is \"cba\", which is an anagram of \"abc\".\nThe substring with start index = 6 is \"bac\", which is an anagram of \"abc\"."
+    },
+    {
+      "example_text": "Input: s = \"abab\", p = \"ab\"\nOutput: [0,1,2]\nExplanation:\nThe substring with start index = 0 is \"ab\", which is an anagram of \"ab\".\nThe substring with start index = 1 is \"ba\", which is an anagram of \"ab\".\nThe substring with start index = 2 is \"ab\", which is an anagram of \"ab\"."
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def findAnagrams(self, s: str, p: str) -> List[int]:\n        ",
+  "test_cases": []
+}

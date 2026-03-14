@@ -1,0 +1,28 @@
+{
+  "id": "0319",
+  "slug": "bulb-switcher",
+  "title": "Bulb Switcher",
+  "difficulty": "Medium",
+  "topics": [
+    "Math",
+    "Brainteaser"
+  ],
+  "description": "There are n bulbs that are initially off. You first turn on all the bulbs, then you turn off every second bulb.\nOn the third round, you toggle every third bulb (turning on if it's off or turning off if it's on). For the ith round, you toggle every i bulb. For the nth round, you only toggle the last bulb.\nReturn the number of bulbs that are on after n rounds.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "0 <= n <= 109"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = 3\nOutput: 1\nExplanation: At first, the three bulbs are [off, off, off].\nAfter the first round, the three bulbs are [on, on, on].\nAfter the second round, the three bulbs are [on, off, on].\nAfter the third round, the three bulbs are [on, off, off]. \nSo you should return 1 because there is only one bulb is on."
+    },
+    {
+      "example_text": "Input: n = 0\nOutput: 0"
+    },
+    {
+      "example_text": "Input: n = 1\nOutput: 1"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def bulbSwitch(self, n: int) -> int:\n        ",
+  "test_cases": []
+}

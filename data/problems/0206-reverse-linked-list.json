@@ -1,0 +1,29 @@
+{
+  "id": "0206",
+  "slug": "reverse-linked-list",
+  "title": "Reverse Linked List",
+  "difficulty": "Easy",
+  "topics": [
+    "Linked List",
+    "Recursion"
+  ],
+  "description": "Given the head of a singly linked list, reverse the list, and return the reversed list.\nExample 1:\nExample 2:\nExample 3:\nConstraints:\nFollow up: A linked list can be reversed either iteratively or recursively. Could you implement both?",
+  "constraints": [
+    "The number of nodes in the list is the range [0, 5000].",
+    "-5000 <= Node.val <= 5000"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: head = [1,2,3,4,5]\nOutput: [5,4,3,2,1]"
+    },
+    {
+      "example_text": "Input: head = [1,2]\nOutput: [2,1]"
+    },
+    {
+      "example_text": "Input: head = []\nOutput: []"
+    }
+  ],
+  "hints": [],
+  "starter_code": "# Definition for singly-linked list.\n# class ListNode:\n#     def __init__(self, val=0, next=None):\n#         self.val = val\n#         self.next = next\nclass Solution:\n    def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:\n        ",
+  "test_cases": []
+}

@@ -1,0 +1,28 @@
+{
+  "id": "1437",
+  "slug": "check-if-all-1s-are-at-least-length-k-places-away",
+  "title": "Check If All 1's Are at Least Length K Places Away",
+  "difficulty": "Easy",
+  "topics": [
+    "Array"
+  ],
+  "description": "Given an binary array nums and an integer k, return true if all 1's are at least k places away from each other, otherwise return false.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "0 <= k <= nums.length",
+    "nums[i] is 0 or 1"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [1,0,0,0,1,0,0,1], k = 2\nOutput: true\nExplanation: Each of the 1s are at least 2 places away from each other."
+    },
+    {
+      "example_text": "Input: nums = [1,0,0,1,0,1], k = 2\nOutput: false\nExplanation: The second 1 and third 1 are only one apart from each other."
+    }
+  ],
+  "hints": [
+    "Each time you find a number 1, check whether or not it is K or more places away from the next one. If it's not, return false."
+  ],
+  "starter_code": "class Solution:\n    def kLengthApart(self, nums: List[int], k: int) -> bool:\n        ",
+  "test_cases": []
+}

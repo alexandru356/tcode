@@ -1,0 +1,26 @@
+{
+  "id": "0876",
+  "slug": "middle-of-the-linked-list",
+  "title": "Middle of the Linked List",
+  "difficulty": "Easy",
+  "topics": [
+    "Linked List",
+    "Two Pointers"
+  ],
+  "description": "Given the head of a singly linked list, return the middle node of the linked list.\nIf there are two middle nodes, return the second middle node.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "The number of nodes in the list is in the range [1, 100].",
+    "1 <= Node.val <= 100"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: head = [1,2,3,4,5]\nOutput: [3,4,5]\nExplanation: The middle node of the list is node 3."
+    },
+    {
+      "example_text": "Input: head = [1,2,3,4,5,6]\nOutput: [4,5,6]\nExplanation: Since the list has two middle nodes with values 3 and 4, we return the second one."
+    }
+  ],
+  "hints": [],
+  "starter_code": "# Definition for singly-linked list.\n# class ListNode:\n#     def __init__(self, val=0, next=None):\n#         self.val = val\n#         self.next = next\nclass Solution:\n    def middleNode(self, head: Optional[ListNode]) -> Optional[ListNode]:\n        ",
+  "test_cases": []
+}

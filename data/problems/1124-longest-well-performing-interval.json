@@ -1,0 +1,32 @@
+{
+  "id": "1124",
+  "slug": "longest-well-performing-interval",
+  "title": "Longest Well-Performing Interval",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Stack",
+    "Monotonic Stack",
+    "Prefix Sum"
+  ],
+  "description": "We are given hours, a list of the number of hours worked per day for a given employee.\nA day is considered to be a tiring day if and only if the number of hours worked is (strictly) greater than 8.\nA well-performing interval is an interval of days for which the number of tiring days is strictly larger than the number of non-tiring days.\nReturn the length of the longest well-performing interval.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= hours.length <= 104",
+    "0 <= hours[i] <= 16"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: hours = [9,9,6,0,6,6,9]\nOutput: 3\nExplanation: The longest well-performing interval is [9,9,6]."
+    },
+    {
+      "example_text": "Input: hours = [6,6,6]\nOutput: 0"
+    }
+  ],
+  "hints": [
+    "Make a new array A of +1/-1s corresponding to if hours[i] is > 8 or not. The goal is to find the longest subarray with positive sum.",
+    "Using prefix sums (PrefixSum[i+1] = A[0] + A[1] + ... + A[i]), you need to find for each j, the smallest i < j with PrefixSum[i] + 1 == PrefixSum[j]."
+  ],
+  "starter_code": "class Solution:\n    def longestWPI(self, hours: List[int]) -> int:\n        ",
+  "test_cases": []
+}

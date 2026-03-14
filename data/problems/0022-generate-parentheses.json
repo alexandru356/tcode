@@ -1,0 +1,26 @@
+{
+  "id": "0022",
+  "slug": "generate-parentheses",
+  "title": "Generate Parentheses",
+  "difficulty": "Medium",
+  "topics": [
+    "String",
+    "Dynamic Programming",
+    "Backtracking"
+  ],
+  "description": "Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= n <= 8"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = 3\nOutput: [\"((()))\",\"(()())\",\"(())()\",\"()(())\",\"()()()\"]"
+    },
+    {
+      "example_text": "Input: n = 1\nOutput: [\"()\"]"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def generateParenthesis(self, n: int) -> List[str]:\n        ",
+  "test_cases": []
+}

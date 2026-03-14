@@ -1,0 +1,32 @@
+{
+  "id": "0148",
+  "slug": "sort-list",
+  "title": "Sort List",
+  "difficulty": "Medium",
+  "topics": [
+    "Linked List",
+    "Two Pointers",
+    "Divide and Conquer",
+    "Sorting",
+    "Merge Sort"
+  ],
+  "description": "Given the head of a linked list, return the list after sorting it in ascending order.\nExample 1:\nExample 2:\nExample 3:\nConstraints:\nFollow up: Can you sort the linked list in O(n logn) time and O(1) memory (i.e. constant space)?",
+  "constraints": [
+    "The number of nodes in the list is in the range [0, 5 * 104].",
+    "-105 <= Node.val <= 105"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: head = [4,2,1,3]\nOutput: [1,2,3,4]"
+    },
+    {
+      "example_text": "Input: head = [-1,5,3,4,0]\nOutput: [-1,0,3,4,5]"
+    },
+    {
+      "example_text": "Input: head = []\nOutput: []"
+    }
+  ],
+  "hints": [],
+  "starter_code": "# Definition for singly-linked list.\n# class ListNode:\n#     def __init__(self, val=0, next=None):\n#         self.val = val\n#         self.next = next\nclass Solution:\n    def sortList(self, head: Optional[ListNode]) -> Optional[ListNode]:\n        ",
+  "test_cases": []
+}

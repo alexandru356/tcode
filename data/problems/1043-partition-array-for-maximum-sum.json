@@ -1,0 +1,33 @@
+{
+  "id": "1043",
+  "slug": "partition-array-for-maximum-sum",
+  "title": "Partition Array for Maximum Sum",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "description": "Given an integer array arr, partition the array into (contiguous) subarrays of length at most k. After partitioning, each subarray has their values changed to become the maximum value of that subarray.\nReturn the largest sum of the given array after partitioning. Test cases are generated so that the answer fits in a 32-bit integer.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= arr.length <= 500",
+    "0 <= arr[i] <= 109",
+    "1 <= k <= arr.length"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: arr = [1,15,7,9,2,5,10], k = 3\nOutput: 84\nExplanation: arr becomes [15,15,15,9,10,10,10]"
+    },
+    {
+      "example_text": "Input: arr = [1,4,1,5,7,3,6,1,9,9,3], k = 4\nOutput: 83"
+    },
+    {
+      "example_text": "Input: arr = [1], k = 1\nOutput: 1"
+    }
+  ],
+  "hints": [
+    "Think dynamic programming:  dp[i] will be the answer for array A[0], ..., A[i-1].",
+    "For j = 1 .. k that keeps everything in bounds, dp[i] is the maximum of dp[i-j] + max(A[i-1], ..., A[i-j]) * j ."
+  ],
+  "starter_code": "class Solution:\n    def maxSumAfterPartitioning(self, arr: List[int], k: int) -> int:\n        ",
+  "test_cases": []
+}

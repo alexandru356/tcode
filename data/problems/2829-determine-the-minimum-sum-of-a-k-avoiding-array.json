@@ -1,0 +1,30 @@
+{
+  "id": "2829",
+  "slug": "determine-the-minimum-sum-of-a-k-avoiding-array",
+  "title": "Determine the Minimum Sum of a k-avoiding Array",
+  "difficulty": "Medium",
+  "topics": [
+    "Math",
+    "Greedy"
+  ],
+  "description": "You are given two integers, n and k.\nAn array of distinct positive integers is called a k-avoiding array if there does not exist any pair of distinct elements that sum to k.\nReturn the minimum possible sum of a k-avoiding array of length n.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= n, k <= 50"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = 5, k = 4\nOutput: 18\nExplanation: Consider the k-avoiding array [1,2,4,5,6], which has a sum of 18.\nIt can be proven that there is no k-avoiding array with a sum less than 18."
+    },
+    {
+      "example_text": "Input: n = 2, k = 6\nOutput: 3\nExplanation: We can construct the array [1,2], which has a sum of 3.\nIt can be proven that there is no k-avoiding array with a sum less than 3."
+    }
+  ],
+  "hints": [
+    "<div class=\"_1l1MA\">Try to start with the smallest possible integers.</div>",
+    "<div class=\"_1l1MA\">Check if the current number can be added to the array.</div>",
+    "<div class=\"_1l1MA\">To check if the current number can be added, keep track of already added numbers in a set.</div>",
+    "<div class=\"_1l1MA\">If the number <code>i</code> is added to the array, then <code>i + k</code> can not be added.</div>"
+  ],
+  "starter_code": "class Solution:\n    def minimumSum(self, n: int, k: int) -> int:\n        ",
+  "test_cases": []
+}

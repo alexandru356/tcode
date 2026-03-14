@@ -1,0 +1,33 @@
+{
+  "id": "3095",
+  "slug": "shortest-subarray-with-or-at-least-k-i",
+  "title": "Shortest Subarray With OR at Least K I",
+  "difficulty": "Easy",
+  "topics": [
+    "Array",
+    "Bit Manipulation",
+    "Sliding Window"
+  ],
+  "description": "You are given an array nums of non-negative integers and an integer k.\nAn array is called special if the bitwise OR of all of its elements is at least k.\nReturn the length of the shortest special non-empty subarray of nums, or return -1 if no special subarray exists.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= nums.length <= 50",
+    "0 <= nums[i] <= 50",
+    "0 <= k < 64"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [1,2,3], k = 2\nOutput: 1\nExplanation:\nThe subarray [3] has OR value of 3 . Hence, we return 1 .\nNote that [2] is also a special subarray."
+    },
+    {
+      "example_text": "Input: nums = [2,1,8], k = 10\nOutput: 3\nExplanation:\nThe subarray [2,1,8] has OR value of 11 . Hence, we return 3 ."
+    },
+    {
+      "example_text": "Input: nums = [1,2], k = 0\nOutput: 1\nExplanation:\nThe subarray [1] has OR value of 1 . Hence, we return 1 ."
+    }
+  ],
+  "hints": [
+    "The constraints are small. Brute force checking all the subarrays."
+  ],
+  "starter_code": "class Solution:\n    def minimumSubarrayLength(self, nums: List[int], k: int) -> int:\n        ",
+  "test_cases": []
+}

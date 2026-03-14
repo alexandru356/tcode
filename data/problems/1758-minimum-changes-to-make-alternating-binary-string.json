@@ -1,0 +1,32 @@
+{
+  "id": "1758",
+  "slug": "minimum-changes-to-make-alternating-binary-string",
+  "title": "Minimum Changes To Make Alternating Binary String",
+  "difficulty": "Easy",
+  "topics": [
+    "String"
+  ],
+  "description": "You are given a string s consisting only of the characters '0' and '1'. In one operation, you can change any '0' to '1' or vice versa.\nThe string is called alternating if no two adjacent characters are equal. For example, the string \"010\" is alternating, while the string \"0100\" is not.\nReturn the minimum number of operations needed to make s alternating.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= s.length <= 104",
+    "s[i] is either '0' or '1'."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"0100\"\nOutput: 1\nExplanation: If you change the last character to '1', s will be \"0101\", which is alternating."
+    },
+    {
+      "example_text": "Input: s = \"10\"\nOutput: 0\nExplanation: s is already alternating."
+    },
+    {
+      "example_text": "Input: s = \"1111\"\nOutput: 2\nExplanation: You need two operations to reach \"0101\" or \"1010\"."
+    }
+  ],
+  "hints": [
+    "Think about how the final string will look like.",
+    "It will either start with a '0' and be like '010101010..' or with a '1' and be like '10101010..'",
+    "Try both ways, and check for each way, the number of changes needed to reach it from the given string. The answer is the minimum of both ways."
+  ],
+  "starter_code": "class Solution:\n    def minOperations(self, s: str) -> int:\n        ",
+  "test_cases": []
+}

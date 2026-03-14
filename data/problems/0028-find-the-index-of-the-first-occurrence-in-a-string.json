@@ -1,0 +1,27 @@
+{
+  "id": "0028",
+  "slug": "find-the-index-of-the-first-occurrence-in-a-string",
+  "title": "Find the Index of the First Occurrence in a String",
+  "difficulty": "Easy",
+  "topics": [
+    "Two Pointers",
+    "String",
+    "String Matching"
+  ],
+  "description": "Given two strings needle and haystack, return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= haystack.length, needle.length <= 104",
+    "haystack and needle consist of only lowercase English characters."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: haystack = \"sadbutsad\", needle = \"sad\"\nOutput: 0\nExplanation: \"sad\" occurs at index 0 and 6.\nThe first occurrence is at index 0, so we return 0."
+    },
+    {
+      "example_text": "Input: haystack = \"leetcode\", needle = \"leeto\"\nOutput: -1\nExplanation: \"leeto\" did not occur in \"leetcode\", so we return -1."
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def strStr(self, haystack: str, needle: str) -> int:\n        ",
+  "test_cases": []
+}

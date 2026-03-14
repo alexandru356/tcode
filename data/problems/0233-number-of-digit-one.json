@@ -1,0 +1,28 @@
+{
+  "id": "0233",
+  "slug": "number-of-digit-one",
+  "title": "Number of Digit One",
+  "difficulty": "Hard",
+  "topics": [
+    "Math",
+    "Dynamic Programming",
+    "Recursion"
+  ],
+  "description": "Given an integer n, count the total number of digit 1 appearing in all non-negative integers less than or equal to n.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "0 <= n <= 109"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = 13\nOutput: 6"
+    },
+    {
+      "example_text": "Input: n = 0\nOutput: 0"
+    }
+  ],
+  "hints": [
+    "Beware of overflow."
+  ],
+  "starter_code": "class Solution:\n    def countDigitOne(self, n: int) -> int:\n        ",
+  "test_cases": []
+}

@@ -1,0 +1,28 @@
+{
+  "id": "0539",
+  "slug": "minimum-time-difference",
+  "title": "Minimum Time Difference",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Math",
+    "String",
+    "Sorting"
+  ],
+  "description": "Example 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "2 <= timePoints.length <= 2 * 104",
+    "timePoints[i] is in the format \"HH:MM\"."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: timePoints = [\"23:59\",\"00:00\"]\nOutput: 1"
+    },
+    {
+      "example_text": "Input: timePoints = [\"00:00\",\"23:59\",\"00:00\"]\nOutput: 0"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def findMinDifference(self, timePoints: List[str]) -> int:\n        ",
+  "test_cases": []
+}

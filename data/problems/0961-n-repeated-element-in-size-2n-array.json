@@ -1,0 +1,31 @@
+{
+  "id": "0961",
+  "slug": "n-repeated-element-in-size-2n-array",
+  "title": "N-Repeated Element in Size 2N Array",
+  "difficulty": "Easy",
+  "topics": [
+    "Array",
+    "Hash Table"
+  ],
+  "description": "You are given an integer array nums with the following properties:\nReturn the element that is repeated n times.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "2 <= n <= 5000",
+    "nums.length == 2 * n",
+    "0 <= nums[i] <= 104",
+    "nums contains n + 1 unique elements and one of them is repeated exactly n times."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [1,2,3,3]\nOutput: 3"
+    },
+    {
+      "example_text": "Input: nums = [2,1,2,5,3,2]\nOutput: 2"
+    },
+    {
+      "example_text": "Input: nums = [5,1,5,2,5,3,5,4]\nOutput: 5"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def repeatedNTimes(self, nums: List[int]) -> int:\n        ",
+  "test_cases": []
+}

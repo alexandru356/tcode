@@ -1,0 +1,33 @@
+{
+  "id": "3138",
+  "slug": "minimum-length-of-anagram-concatenation",
+  "title": "Minimum Length of Anagram Concatenation",
+  "difficulty": "Medium",
+  "topics": [
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "description": "You are given a string s, which is known to be a concatenation of anagrams of some string t.\nReturn the minimum possible length of the string t.\nAn anagram is formed by rearranging the letters of a string. For example, \"aab\", \"aba\", and, \"baa\" are anagrams of \"aab\".\nExample 1:\nExample 2:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= s.length <= 105",
+    "s consist only of lowercase English letters."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"abba\"\nOutput: 2\nExplanation:\nOne possible string t could be \"ba\" ."
+    },
+    {
+      "example_text": "Input: s = \"cdef\"\nOutput: 4\nExplanation:\nOne possible string t could be \"cdef\" , notice that t can be equal to s ."
+    },
+    {
+      "example_text": "Input: s = \"abcbcacabbaccba\"\nOutput: 3"
+    }
+  ],
+  "hints": [
+    "The answer should be a divisor of <code>s.length</code>.",
+    "Check each candidate naively."
+  ],
+  "starter_code": "class Solution:\n    def minAnagramLength(self, s: str) -> int:\n        ",
+  "test_cases": []
+}

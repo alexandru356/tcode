@@ -1,0 +1,29 @@
+{
+  "id": "0060",
+  "slug": "permutation-sequence",
+  "title": "Permutation Sequence",
+  "difficulty": "Hard",
+  "topics": [
+    "Math",
+    "Recursion"
+  ],
+  "description": "The set [1, 2, 3, ..., n] contains a total of n! unique permutations.\nBy listing and labeling all of the permutations in order, we get the following sequence for n = 3:\nGiven n and k, return the kth permutation sequence.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= n <= 9",
+    "1 <= k <= n!"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = 3, k = 3\nOutput: \"213\""
+    },
+    {
+      "example_text": "Input: n = 4, k = 9\nOutput: \"2314\""
+    },
+    {
+      "example_text": "Input: n = 3, k = 1\nOutput: \"123\""
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def getPermutation(self, n: int, k: int) -> str:\n        ",
+  "test_cases": []
+}

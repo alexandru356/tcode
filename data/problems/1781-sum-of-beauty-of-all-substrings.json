@@ -1,0 +1,30 @@
+{
+  "id": "1781",
+  "slug": "sum-of-beauty-of-all-substrings",
+  "title": "Sum of Beauty of All Substrings",
+  "difficulty": "Medium",
+  "topics": [
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "description": "The beauty of a string is the difference in frequencies between the most frequent and least frequent characters.\nGiven a string s, return the sum of beauty of all of its substrings.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= s.length <= 500",
+    "s consists of only lowercase English letters."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"aabcb\"\nOutput: 5\nExplanation: The substrings with non-zero beauty are [\"aab\",\"aabc\",\"aabcb\",\"abcb\",\"bcb\"], each with beauty equal to 1."
+    },
+    {
+      "example_text": "Input: s = \"aabcbaa\"\nOutput: 17"
+    }
+  ],
+  "hints": [
+    "Maintain a prefix sum for the frequencies of characters.",
+    "You can iterate over all substring then iterate over the alphabet and find which character appears most and which appears least using the prefix sum array"
+  ],
+  "starter_code": "class Solution:\n    def beautySum(self, s: str) -> int:\n        ",
+  "test_cases": []
+}

@@ -1,0 +1,33 @@
+{
+  "id": "2608",
+  "slug": "shortest-cycle-in-a-graph",
+  "title": "Shortest Cycle in a Graph",
+  "difficulty": "Hard",
+  "topics": [
+    "Breadth-First Search",
+    "Graph"
+  ],
+  "description": "There is a bi-directional graph with n vertices, where each vertex is labeled from 0 to n - 1. The edges in the graph are represented by a given 2D integer array edges, where edges[i] = [ui, vi] denotes an edge between vertex ui and vertex vi. Every vertex pair is connected by at most one edge, and no vertex has an edge to itself.\nReturn the length of the shortest cycle in the graph. If no cycle exists, return -1.\nA cycle is a path that starts and ends at the same node, and each edge in the path is used only once.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "2 <= n <= 1000",
+    "1 <= edges.length <= 1000",
+    "edges[i].length == 2",
+    "0 <= ui, vi < n",
+    "ui != vi",
+    "There are no repeated edges."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = 7, edges = [[0,1],[1,2],[2,0],[3,4],[4,5],[5,6],[6,3]]\nOutput: 3\nExplanation: The cycle with the smallest length is : 0 -> 1 -> 2 -> 0"
+    },
+    {
+      "example_text": "Input: n = 4, edges = [[0,1],[0,2]]\nOutput: -1\nExplanation: There are no cycles in this graph."
+    }
+  ],
+  "hints": [
+    "How can BFS be used?",
+    "For each vertex u, calculate the length of the shortest cycle that contains vertex u using BFS"
+  ],
+  "starter_code": "class Solution:\n    def findShortestCycle(self, n: int, edges: List[List[int]]) -> int:\n        ",
+  "test_cases": []
+}

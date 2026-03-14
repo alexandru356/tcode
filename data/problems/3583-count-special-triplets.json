@@ -1,0 +1,33 @@
+{
+  "id": "3583",
+  "slug": "count-special-triplets",
+  "title": "Count Special Triplets",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Counting"
+  ],
+  "description": "You are given an integer array nums.\nA special triplet is defined as a triplet of indices (i, j, k) such that:\nReturn the total number of special triplets in the array.\nSince the answer may be large, return it modulo 109 + 7.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "3 <= n == nums.length <= 105",
+    "0 <= nums[i] <= 105"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [6,3,6]\nOutput: 1\nExplanation:\nThe only special triplet is (i, j, k) = (0, 1, 2) , where:"
+    },
+    {
+      "example_text": "Input: nums = [0,1,0,0]\nOutput: 1\nExplanation:\nThe only special triplet is (i, j, k) = (0, 2, 3) , where:"
+    },
+    {
+      "example_text": "Input: nums = [8,4,2,8,4]\nOutput: 2\nExplanation:\nThere are exactly two special triplets:"
+    }
+  ],
+  "hints": [
+    "Use frequency arrays or maps, e.g. <code>freqPrev</code> and <code>freqNext</code>—to track how many times each value appears before and after the current index.",
+    "For each index <code>j</code> in the triplet (<code>i</code>,<code>j</code>,<code>k</code>), compute its contribution to the answer using your freqPrev and freqNext counts."
+  ],
+  "starter_code": "class Solution:\n    def specialTriplets(self, nums: List[int]) -> int:\n        ",
+  "test_cases": []
+}

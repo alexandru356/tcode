@@ -1,0 +1,33 @@
+{
+  "id": "1394",
+  "slug": "find-lucky-integer-in-an-array",
+  "title": "Find Lucky Integer in an Array",
+  "difficulty": "Easy",
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Counting"
+  ],
+  "description": "Given an array of integers arr, a lucky integer is an integer that has a frequency in the array equal to its value.\nReturn the largest lucky integer in the array. If there is no lucky integer return -1.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= arr.length <= 500",
+    "1 <= arr[i] <= 500"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: arr = [2,2,3,4]\nOutput: 2\nExplanation: The only lucky number in the array is 2 because frequency[2] == 2."
+    },
+    {
+      "example_text": "Input: arr = [1,2,2,3,3,3]\nOutput: 3\nExplanation: 1, 2 and 3 are all lucky numbers, return the largest of them."
+    },
+    {
+      "example_text": "Input: arr = [2,2,2,3,3]\nOutput: -1\nExplanation: There are no lucky numbers in the array."
+    }
+  ],
+  "hints": [
+    "Count the frequency of each integer in the array.",
+    "Get all lucky numbers and return the largest of them."
+  ],
+  "starter_code": "class Solution:\n    def findLucky(self, arr: List[int]) -> int:\n        ",
+  "test_cases": []
+}

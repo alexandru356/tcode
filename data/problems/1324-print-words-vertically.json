@@ -1,0 +1,33 @@
+{
+  "id": "1324",
+  "slug": "print-words-vertically",
+  "title": "Print Words Vertically",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "String",
+    "Simulation"
+  ],
+  "description": "Given a string s. Return all the words vertically in the same order in which they appear in s.\r\nWords are returned as a list of strings, complete with spaces when is necessary. (Trailing spaces are not allowed).\r\nEach word would be put on only one column and that in one column there will be only one word.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= s.length <= 200",
+    "s contains only upper case English letters.",
+    "It's guaranteed that there is only one space between 2 words."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"HOW ARE YOU\"\r\nOutput: [\"HAY\",\"ORO\",\"WEU\"]\r\nExplanation: Each word is printed vertically. \r\n \"HAY\"\r\n \"ORO\"\r\n \"WEU\""
+    },
+    {
+      "example_text": "Input: s = \"TO BE OR NOT TO BE\"\r\nOutput: [\"TBONTB\",\"OEROOE\",\"   T\"]\r\nExplanation: Trailing spaces is not allowed. \r\n\"TBONTB\"\r\n\"OEROOE\"\r\n\"   T\""
+    },
+    {
+      "example_text": "Input: s = \"CONTEST IS COMING\"\r\nOutput: [\"CIC\",\"OSO\",\"N M\",\"T I\",\"E N\",\"S G\",\"T\"]"
+    }
+  ],
+  "hints": [
+    "Use the maximum length of words to determine the length of the returned answer. However, don't forget to remove trailing spaces."
+  ],
+  "starter_code": "class Solution:\n    def printVertically(self, s: str) -> List[str]:\n        ",
+  "test_cases": []
+}

@@ -1,0 +1,33 @@
+{
+  "id": "0019",
+  "slug": "remove-nth-node-from-end-of-list",
+  "title": "Remove Nth Node From End of List",
+  "difficulty": "Medium",
+  "topics": [
+    "Linked List",
+    "Two Pointers"
+  ],
+  "description": "Given the head of a linked list, remove the nth node from the end of the list and return its head.\nExample 1:\nExample 2:\nExample 3:\nConstraints:\nFollow up: Could you do this in one pass?",
+  "constraints": [
+    "The number of nodes in the list is sz.",
+    "1 <= sz <= 30",
+    "0 <= Node.val <= 100",
+    "1 <= n <= sz"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: head = [1,2,3,4,5], n = 2\nOutput: [1,2,3,5]"
+    },
+    {
+      "example_text": "Input: head = [1], n = 1\nOutput: []"
+    },
+    {
+      "example_text": "Input: head = [1,2], n = 1\nOutput: [1]"
+    }
+  ],
+  "hints": [
+    "Maintain two pointers and update one with a delay of n steps."
+  ],
+  "starter_code": "# Definition for singly-linked list.\n# class ListNode:\n#     def __init__(self, val=0, next=None):\n#         self.val = val\n#         self.next = next\nclass Solution:\n    def removeNthFromEnd(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:\n        ",
+  "test_cases": []
+}

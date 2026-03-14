@@ -1,0 +1,33 @@
+{
+  "id": "3557",
+  "slug": "find-maximum-number-of-non-intersecting-substrings",
+  "title": "Find Maximum Number of Non Intersecting Substrings",
+  "difficulty": "Medium",
+  "topics": [
+    "Hash Table",
+    "String",
+    "Dynamic Programming",
+    "Greedy"
+  ],
+  "description": "You are given a string word.\nReturn the maximum number of non-intersecting substrings of word that are at least four characters long and start and end with the same letter.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= word.length <= 2 * 105",
+    "word consists only of lowercase English letters."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: word = \"abcdeafdef\"\nOutput: 2\nExplanation:\nThe two substrings are \"abcdea\" and \"fdef\" ."
+    },
+    {
+      "example_text": "Input: word = \"bcdaaaab\"\nOutput: 1\nExplanation:\nThe only substring is \"aaaa\" . Note that we cannot also choose \"bcdaaaab\" since it intersects with the other substring."
+    }
+  ],
+  "hints": [
+    "Can we solve the problem using Dynamic Programming?",
+    "For each character <code>c</code>, store all occurrence indices in order",
+    "At each position <code>i</code>, let <code>j</code> be the first index of <code>word[i]</code>; if <code>i - j >= 3</code>, we can form substring <code>[j, i]</code>",
+    "For each index, also store the maximum for <b>any</b> substring ending before that index in the dp."
+  ],
+  "starter_code": "class Solution:\n    def maxSubstrings(self, word: str) -> int:\n        ",
+  "test_cases": []
+}

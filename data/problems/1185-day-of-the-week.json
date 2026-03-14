@@ -1,0 +1,31 @@
+{
+  "id": "1185",
+  "slug": "day-of-the-week",
+  "title": "Day of the Week",
+  "difficulty": "Easy",
+  "topics": [
+    "Math"
+  ],
+  "description": "Given a date, return the corresponding day of the week for that date.\nThe input is given as three integers representing the day, month and year respectively.\nReturn the answer as one of the following values {\"Sunday\", \"Monday\", \"Tuesday\", \"Wednesday\", \"Thursday\", \"Friday\", \"Saturday\"}.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "The given dates are valid dates between the years 1971 and 2100."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: day = 31, month = 8, year = 2019\nOutput: \"Saturday\""
+    },
+    {
+      "example_text": "Input: day = 18, month = 7, year = 1999\nOutput: \"Sunday\""
+    },
+    {
+      "example_text": "Input: day = 15, month = 8, year = 1993\nOutput: \"Sunday\""
+    }
+  ],
+  "hints": [
+    "Sum up the number of days for the years before the given year.",
+    "Handle the case of a leap year.",
+    "Find the number of days for each month of the given year."
+  ],
+  "starter_code": "class Solution:\n    def dayOfTheWeek(self, day: int, month: int, year: int) -> str:\n        ",
+  "test_cases": []
+}

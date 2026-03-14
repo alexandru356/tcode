@@ -1,0 +1,28 @@
+{
+  "id": "0812",
+  "slug": "largest-triangle-area",
+  "title": "Largest Triangle Area",
+  "difficulty": "Easy",
+  "topics": [
+    "Array",
+    "Math",
+    "Geometry"
+  ],
+  "description": "Given an array of points on the X-Y plane points where points[i] = [xi, yi], return the area of the largest triangle that can be formed by any three different points. Answers within 10-5 of the actual answer will be accepted.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "3 <= points.length <= 50",
+    "-50 <= xi, yi <= 50",
+    "All the given points are unique."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: points = [[0,0],[0,1],[1,0],[0,2],[2,0]]\nOutput: 2.00000\nExplanation: The five points are shown in the above figure. The red triangle is the largest."
+    },
+    {
+      "example_text": "Input: points = [[1,0],[0,0],[0,1]]\nOutput: 0.50000"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def largestTriangleArea(self, points: List[List[int]]) -> float:\n        ",
+  "test_cases": []
+}

@@ -1,0 +1,33 @@
+{
+  "id": "2309",
+  "slug": "greatest-english-letter-in-upper-and-lower-case",
+  "title": "Greatest English Letter in Upper and Lower Case",
+  "difficulty": "Easy",
+  "topics": [
+    "Hash Table",
+    "String",
+    "Enumeration"
+  ],
+  "description": "Given a string of English letters s, return the greatest English letter which occurs as both a lowercase and uppercase letter in s. The returned letter should be in uppercase. If no such letter exists, return an empty string.\nAn English letter b is greater than another letter a if b appears after a in the English alphabet.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= s.length <= 1000",
+    "s consists of lowercase and uppercase English letters."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"lEeTcOdE\"\nOutput: \"E\"\nExplanation:\nThe letter 'E' is the only letter to appear in both lower and upper case."
+    },
+    {
+      "example_text": "Input: s = \"arRAzFif\"\nOutput: \"R\"\nExplanation:\nThe letter 'R' is the greatest letter to appear in both lower and upper case.\nNote that 'A' and 'F' also appear in both lower and upper case, but 'R' is greater than 'F' or 'A'."
+    },
+    {
+      "example_text": "Input: s = \"AbCdEfGhIjK\"\nOutput: \"\"\nExplanation:\nThere is no letter that appears in both lower and upper case."
+    }
+  ],
+  "hints": [
+    "Consider iterating through the string and storing each unique character that occurs in a set.",
+    "From Z to A, check whether both the uppercase and lowercase version occur in the set."
+  ],
+  "starter_code": "class Solution:\n    def greatestLetter(self, s: str) -> str:\n        ",
+  "test_cases": []
+}

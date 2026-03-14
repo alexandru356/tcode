@@ -1,0 +1,34 @@
+{
+  "id": "0827",
+  "slug": "making-a-large-island",
+  "title": "Making A Large Island",
+  "difficulty": "Hard",
+  "topics": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union Find",
+    "Matrix"
+  ],
+  "description": "You are given an n x n binary matrix grid. You are allowed to change at most one 0 to be 1.\nReturn the size of the largest island in grid after applying this operation.\nAn island is a 4-directionally connected group of 1s.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "n == grid.length",
+    "n == grid[i].length",
+    "1 <= n <= 500",
+    "grid[i][j] is either 0 or 1."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: grid = [[1,0],[0,1]]\nOutput: 3\nExplanation: Change one 0 to 1 and connect two 1s, then we get an island with area = 3."
+    },
+    {
+      "example_text": "Input: grid = [[1,1],[1,0]]\nOutput: 4\nExplanation: Change the 0 to 1 and make the island bigger, only one island with area = 4."
+    },
+    {
+      "example_text": "Input: grid = [[1,1],[1,1]]\nOutput: 4\nExplanation: Can't change any 0 to 1, only one island with area = 4."
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def largestIsland(self, grid: List[List[int]]) -> int:\n        ",
+  "test_cases": []
+}

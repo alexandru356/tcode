@@ -1,0 +1,27 @@
+{
+  "id": "0921",
+  "slug": "minimum-add-to-make-parentheses-valid",
+  "title": "Minimum Add to Make Parentheses Valid",
+  "difficulty": "Medium",
+  "topics": [
+    "String",
+    "Stack",
+    "Greedy"
+  ],
+  "description": "A parentheses string is valid if and only if:\nYou are given a parentheses string s. In one move, you can insert a parenthesis at any position of the string.\nReturn the minimum number of moves required to make s valid.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= s.length <= 1000",
+    "s[i] is either '(' or ')'."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"())\"\nOutput: 1"
+    },
+    {
+      "example_text": "Input: s = \"(((\"\nOutput: 3"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def minAddToMakeValid(self, s: str) -> int:\n        ",
+  "test_cases": []
+}

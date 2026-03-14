@@ -1,0 +1,28 @@
+{
+  "id": "2414",
+  "slug": "length-of-the-longest-alphabetical-continuous-substring",
+  "title": "Length of the Longest Alphabetical Continuous Substring",
+  "difficulty": "Medium",
+  "topics": [
+    "String"
+  ],
+  "description": "An alphabetical continuous string is a string consisting of consecutive letters in the alphabet. In other words, it is any substring of the string \"abcdefghijklmnopqrstuvwxyz\".\nGiven a string s consisting of lowercase letters only, return the length of the longest alphabetical continuous substring.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= s.length <= 105",
+    "s consists of only English lowercase letters."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"abacaba\"\nOutput: 2\nExplanation: There are 4 distinct continuous substrings: \"a\", \"b\", \"c\" and \"ab\".\n\"ab\" is the longest continuous substring."
+    },
+    {
+      "example_text": "Input: s = \"abcde\"\nOutput: 5\nExplanation: \"abcde\" is the longest continuous substring."
+    }
+  ],
+  "hints": [
+    "What is the longest possible continuous substring?",
+    "The size of the longest possible continuous substring is at most 26, so we can just brute force the answer."
+  ],
+  "starter_code": "class Solution:\n    def longestContinuousSubstring(self, s: str) -> int:\n        ",
+  "test_cases": []
+}

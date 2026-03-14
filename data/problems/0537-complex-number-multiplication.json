@@ -1,0 +1,26 @@
+{
+  "id": "0537",
+  "slug": "complex-number-multiplication",
+  "title": "Complex Number Multiplication",
+  "difficulty": "Medium",
+  "topics": [
+    "Math",
+    "String",
+    "Simulation"
+  ],
+  "description": "A complex number can be represented as a string on the form \"real+imaginaryi\" where:\nGiven two complex numbers num1 and num2 as strings, return a string of the complex number that represents their multiplications.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "num1 and num2 are valid complex numbers."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: num1 = \"1+1i\", num2 = \"1+1i\"\nOutput: \"0+2i\"\nExplanation: (1 + i) * (1 + i) = 1 + i2 + 2 * i = 2i, and you need convert it to the form of 0+2i."
+    },
+    {
+      "example_text": "Input: num1 = \"1+-1i\", num2 = \"1+-1i\"\nOutput: \"0+-2i\"\nExplanation: (1 - i) * (1 - i) = 1 + i2 - 2 * i = -2i, and you need convert it to the form of 0+-2i."
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def complexNumberMultiply(self, num1: str, num2: str) -> str:\n        ",
+  "test_cases": []
+}

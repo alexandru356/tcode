@@ -1,0 +1,30 @@
+{
+  "id": "0169",
+  "slug": "majority-element",
+  "title": "Majority Element",
+  "difficulty": "Easy",
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Divide and Conquer",
+    "Sorting",
+    "Counting"
+  ],
+  "description": "Given an array nums of size n, return the majority element.\nThe majority element is the element that appears more than ⌊n / 2⌋ times. You may assume that the majority element always exists in the array.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "n == nums.length",
+    "1 <= n <= 5 * 104",
+    "-109 <= nums[i] <= 109"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [3,2,3]\nOutput: 3"
+    },
+    {
+      "example_text": "Input: nums = [2,2,1,1,1,2,2]\nOutput: 2"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def majorityElement(self, nums: List[int]) -> int:\n        ",
+  "test_cases": []
+}

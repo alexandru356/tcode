@@ -1,0 +1,25 @@
+{
+  "id": "0504",
+  "slug": "base-7",
+  "title": "Base 7",
+  "difficulty": "Easy",
+  "topics": [
+    "Math",
+    "String"
+  ],
+  "description": "Given an integer num, return a string of its base 7 representation.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "-107 <= num <= 107"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: num = 100\nOutput: \"202\""
+    },
+    {
+      "example_text": "Input: num = -7\nOutput: \"-10\""
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def convertToBase7(self, num: int) -> str:\n        ",
+  "test_cases": []
+}

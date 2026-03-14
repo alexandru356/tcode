@@ -1,0 +1,31 @@
+{
+  "id": "1954",
+  "slug": "minimum-garden-perimeter-to-collect-enough-apples",
+  "title": "Minimum Garden Perimeter to Collect Enough Apples",
+  "difficulty": "Medium",
+  "topics": [
+    "Math",
+    "Binary Search"
+  ],
+  "description": "In a garden represented as an infinite 2D grid, there is an apple tree planted at every integer coordinate. The apple tree planted at an integer coordinate (i, j) has |i| + |j| apples growing on it.\nYou will buy an axis-aligned square plot of land that is centered at (0, 0).\nGiven an integer neededApples, return the minimum perimeter of a plot such that at least neededApples apples are inside or on the perimeter of that plot.\nThe value of |x| is defined as:\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= neededApples <= 1015"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: neededApples = 1\nOutput: 8\nExplanation: A square plot of side length 1 does not contain any apples.\nHowever, a square plot of side length 2 has 12 apples inside (as depicted in the image above).\nThe perimeter is 2 * 4 = 8."
+    },
+    {
+      "example_text": "Input: neededApples = 13\nOutput: 16"
+    },
+    {
+      "example_text": "Input: neededApples = 1000000000\nOutput: 5040"
+    }
+  ],
+  "hints": [
+    "Find a formula for the number of apples inside a square with a side length L.",
+    "Iterate over the possible lengths of the square until enough apples are collected."
+  ],
+  "starter_code": "class Solution:\n    def minimumPerimeter(self, neededApples: int) -> int:\n        ",
+  "test_cases": []
+}

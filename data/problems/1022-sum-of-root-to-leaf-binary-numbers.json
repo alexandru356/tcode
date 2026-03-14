@@ -1,0 +1,29 @@
+{
+  "id": "1022",
+  "slug": "sum-of-root-to-leaf-binary-numbers",
+  "title": "Sum of Root To Leaf Binary Numbers",
+  "difficulty": "Easy",
+  "topics": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "description": "You are given the root of a binary tree where each node has a value 0 or 1. Each root-to-leaf path represents a binary number starting with the most significant bit.\nFor all leaves in the tree, consider the numbers represented by the path from the root to that leaf. Return the sum of these numbers.\nThe test cases are generated so that the answer fits in a 32-bits integer.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "The number of nodes in the tree is in the range [1, 1000].",
+    "Node.val is 0 or 1."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: root = [1,0,1,0,1,0,1]\nOutput: 22\nExplanation: (100) + (101) + (110) + (111) = 4 + 5 + 6 + 7 = 22"
+    },
+    {
+      "example_text": "Input: root = [0]\nOutput: 0"
+    }
+  ],
+  "hints": [
+    "Find each path, then transform that path to an integer in base 10."
+  ],
+  "starter_code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def sumRootToLeaf(self, root: Optional[TreeNode]) -> int:\n        ",
+  "test_cases": []
+}

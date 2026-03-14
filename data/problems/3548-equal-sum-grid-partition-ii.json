@@ -1,0 +1,40 @@
+{
+  "id": "3548",
+  "slug": "equal-sum-grid-partition-ii",
+  "title": "Equal Sum Grid Partition II",
+  "difficulty": "Hard",
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Matrix",
+    "Enumeration",
+    "Prefix Sum"
+  ],
+  "description": "You are given an m x n matrix grid of positive integers. Your task is to determine if it is possible to make either one horizontal or one vertical cut on the grid such that:\nReturn true if such a partition exists; otherwise, return false.\nNote: A section is connected if every cell in it can be reached from any other cell by moving up, down, left, or right through other cells in the section.\nExample 1:\nExample 2:\nExample 3:\nExample 4:\nConstraints:",
+  "constraints": [
+    "1 <= m == grid.length <= 105",
+    "1 <= n == grid[i].length <= 105",
+    "2 <= m * n <= 105",
+    "1 <= grid[i][j] <= 105"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: grid = [[1,4],[2,3]]\nOutput: true\nExplanation:\n"
+    },
+    {
+      "example_text": "Input: grid = [[1,2],[3,4]]\nOutput: true\nExplanation:\n"
+    },
+    {
+      "example_text": "Input: grid = [[1,2,4],[2,3,5]]\nOutput: false\nExplanation:\n"
+    },
+    {
+      "example_text": "Input: grid = [[4,1,8],[3,2,6]]\nOutput: false\nExplanation:\nNo valid cut exists, so the answer is false ."
+    }
+  ],
+  "hints": [
+    "In a grid (or any subgrid), when can a section be disconnected? Can disconnected components occur if the section spans more than one row and more than one column?",
+    "Handle single rows or single columns separately. For all other partitions, maintain the sums and value frequencies of each section to check whether removing at most one element from one section can make the two sums equal."
+  ],
+  "starter_code": "class Solution:\n    def canPartitionGrid(self, grid: List[List[int]]) -> bool:\n        ",
+  "test_cases": []
+}

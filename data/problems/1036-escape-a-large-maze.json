@@ -1,0 +1,36 @@
+{
+  "id": "1036",
+  "slug": "escape-a-large-maze",
+  "title": "Escape a Large Maze",
+  "difficulty": "Hard",
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Depth-First Search",
+    "Breadth-First Search"
+  ],
+  "description": "There is a 1 million by 1 million grid on an XY-plane, and the coordinates of each grid square are (x, y).\nWe start at the source = [sx, sy] square and want to reach the target = [tx, ty] square. There is also an array of blocked squares, where each blocked[i] = [xi, yi] represents a blocked square with coordinates (xi, yi).\nEach move, we can walk one square north, east, south, or west if the square is not in the array of blocked squares. We are also not allowed to walk outside of the grid.\nReturn true if and only if it is possible to reach the target square from the source square through a sequence of valid moves.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "0 <= blocked.length <= 200",
+    "blocked[i].length == 2",
+    "0 <= xi, yi < 106",
+    "source.length == target.length == 2",
+    "0 <= sx, sy, tx, ty < 106",
+    "source != target",
+    "It is guaranteed that source and target are not blocked."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: blocked = [[0,1],[1,0]], source = [0,0], target = [0,2]\nOutput: false\nExplanation: The target square is inaccessible starting from the source square because we cannot move.\nWe cannot move north or east because those squares are blocked.\nWe cannot move south or west because we cannot go outside of the grid."
+    },
+    {
+      "example_text": "Input: blocked = [], source = [0,0], target = [999999,999999]\nOutput: true\nExplanation: Because there are no blocked cells, it is possible to reach the target square."
+    }
+  ],
+  "hints": [
+    "If we become stuck, there's either a loop around the source or around the target.",
+    "If there is a loop around say, the source, what is the maximum number of squares it can have?"
+  ],
+  "starter_code": "class Solution:\n    def isEscapePossible(self, blocked: List[List[int]], source: List[int], target: List[int]) -> bool:\n        ",
+  "test_cases": []
+}

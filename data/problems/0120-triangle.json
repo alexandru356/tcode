@@ -1,0 +1,28 @@
+{
+  "id": "0120",
+  "slug": "triangle",
+  "title": "Triangle",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "description": "Given a triangle array, return the minimum path sum from top to bottom.\nFor each step, you may move to an adjacent number of the row below. More formally, if you are on index i on the current row, you may move to either index i or index i + 1 on the next row.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= triangle.length <= 200",
+    "triangle[0].length == 1",
+    "triangle[i].length == triangle[i - 1].length + 1",
+    "-104 <= triangle[i][j] <= 104"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: triangle = [[2],[3,4],[6,5,7],[4,1,8,3]]\nOutput: 11\nExplanation: The triangle looks like:\n   2\n  3 4\n 6 5 7\n4 1 8 3\nThe minimum path sum from top to bottom is 2 + 3 + 5 + 1 = 11 (underlined above)."
+    },
+    {
+      "example_text": "Input: triangle = [[-10]]\nOutput: -10"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def minimumTotal(self, triangle: List[List[int]]) -> int:\n        ",
+  "test_cases": []
+}

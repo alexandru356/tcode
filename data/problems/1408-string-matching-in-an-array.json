@@ -1,0 +1,34 @@
+{
+  "id": "1408",
+  "slug": "string-matching-in-an-array",
+  "title": "String Matching in an Array",
+  "difficulty": "Easy",
+  "topics": [
+    "Array",
+    "String",
+    "String Matching"
+  ],
+  "description": "Given an array of string words, return all strings in words that are a substring of another word. You can return the answer in any order.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= words.length <= 100",
+    "1 <= words[i].length <= 30",
+    "words[i] contains only lowercase English letters.",
+    "All the strings of words are unique."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: words = [\"mass\",\"as\",\"hero\",\"superhero\"]\nOutput: [\"as\",\"hero\"]\nExplanation: \"as\" is substring of \"mass\" and \"hero\" is substring of \"superhero\".\n[\"hero\",\"as\"] is also a valid answer."
+    },
+    {
+      "example_text": "Input: words = [\"leetcode\",\"et\",\"code\"]\nOutput: [\"et\",\"code\"]\nExplanation: \"et\", \"code\" are substring of \"leetcode\"."
+    },
+    {
+      "example_text": "Input: words = [\"blue\",\"green\",\"bu\"]\nOutput: []\nExplanation: No string of words is substring of another string."
+    }
+  ],
+  "hints": [
+    "Bruteforce to find if one string is substring of another or use KMP algorithm."
+  ],
+  "starter_code": "class Solution:\n    def stringMatching(self, words: List[str]) -> List[str]:\n        ",
+  "test_cases": []
+}

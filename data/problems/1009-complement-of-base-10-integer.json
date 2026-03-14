@@ -1,0 +1,29 @@
+{
+  "id": "1009",
+  "slug": "complement-of-base-10-integer",
+  "title": "Complement of Base 10 Integer",
+  "difficulty": "Easy",
+  "topics": [
+    "Bit Manipulation"
+  ],
+  "description": "The complement of an integer is the integer you get when you flip all the 0's to 1's and all the 1's to 0's in its binary representation.\nGiven an integer n, return its complement.\nExample 1:\nExample 2:\nExample 3:\nConstraints:\nNote: This question is the same as 476: https://leetcode.com/problems/number-complement/",
+  "constraints": [
+    "0 <= n < 109"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = 5\nOutput: 2\nExplanation: 5 is \"101\" in binary, with complement \"010\" in binary, which is 2 in base-10."
+    },
+    {
+      "example_text": "Input: n = 7\nOutput: 0\nExplanation: 7 is \"111\" in binary, with complement \"000\" in binary, which is 0 in base-10."
+    },
+    {
+      "example_text": "Input: n = 10\nOutput: 5\nExplanation: 10 is \"1010\" in binary, with complement \"0101\" in binary, which is 5 in base-10."
+    }
+  ],
+  "hints": [
+    "A binary number plus its complement will equal 111....111 in binary.  Also, N = 0 is a corner case."
+  ],
+  "starter_code": "class Solution:\n    def bitwiseComplement(self, n: int) -> int:\n        ",
+  "test_cases": []
+}

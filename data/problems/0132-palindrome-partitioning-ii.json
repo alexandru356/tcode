@@ -1,0 +1,29 @@
+{
+  "id": "0132",
+  "slug": "palindrome-partitioning-ii",
+  "title": "Palindrome Partitioning II",
+  "difficulty": "Hard",
+  "topics": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "description": "Given a string s, partition s such that every substring of the partition is a palindrome.\nReturn the minimum cuts needed for a palindrome partitioning of s.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= s.length <= 2000",
+    "s consists of lowercase English letters only."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"aab\"\nOutput: 1\nExplanation: The palindrome partitioning [\"aa\",\"b\"] could be produced using 1 cut."
+    },
+    {
+      "example_text": "Input: s = \"a\"\nOutput: 0"
+    },
+    {
+      "example_text": "Input: s = \"ab\"\nOutput: 1"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def minCut(self, s: str) -> int:\n        ",
+  "test_cases": []
+}

@@ -1,0 +1,32 @@
+{
+  "id": "1415",
+  "slug": "the-k-th-lexicographical-string-of-all-happy-strings-of-length-n",
+  "title": "The k-th Lexicographical String of All Happy Strings of Length n",
+  "difficulty": "Medium",
+  "topics": [
+    "String",
+    "Backtracking"
+  ],
+  "description": "A happy string is a string that:\nFor example, strings \"abc\", \"ac\", \"b\" and \"abcbabcbcb\" are all happy strings and strings \"aa\", \"baa\" and \"ababbc\" are not happy strings.\nGiven two integers n and k, consider a list of all happy strings of length n sorted in lexicographical order.\nReturn the kth string of this list or return an empty string if there are less than k happy strings of length n.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= n <= 10",
+    "1 <= k <= 100"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = 1, k = 3\nOutput: \"c\"\nExplanation: The list [\"a\", \"b\", \"c\"] contains all happy strings of length 1. The third string is \"c\"."
+    },
+    {
+      "example_text": "Input: n = 1, k = 4\nOutput: \"\"\nExplanation: There are only 3 happy strings of length 1."
+    },
+    {
+      "example_text": "Input: n = 3, k = 9\nOutput: \"cab\"\nExplanation: There are 12 different happy string of length 3 [\"aba\", \"abc\", \"aca\", \"acb\", \"bab\", \"bac\", \"bca\", \"bcb\", \"cab\", \"cac\", \"cba\", \"cbc\"]. You will find the 9th string = \"cab\""
+    }
+  ],
+  "hints": [
+    "Generate recursively all the happy strings of length n.",
+    "Sort them in lexicographical order and return the kth string if it exists."
+  ],
+  "starter_code": "class Solution:\n    def getHappyString(self, n: int, k: int) -> str:\n        ",
+  "test_cases": []
+}

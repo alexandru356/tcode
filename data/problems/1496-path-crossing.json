@@ -1,0 +1,29 @@
+{
+  "id": "1496",
+  "slug": "path-crossing",
+  "title": "Path Crossing",
+  "difficulty": "Easy",
+  "topics": [
+    "Hash Table",
+    "String"
+  ],
+  "description": "Given a string path, where path[i] = 'N', 'S', 'E' or 'W', each representing moving one unit north, south, east, or west, respectively. You start at the origin (0, 0) on a 2D plane and walk on the path specified by path.\nReturn true if the path crosses itself at any point, that is, if at any time you are on a location you have previously visited. Return false otherwise.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= path.length <= 104",
+    "path[i] is either 'N', 'S', 'E', or 'W'."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: path = \"NES\"\nOutput: false \nExplanation: Notice that the path doesn't cross any point more than once."
+    },
+    {
+      "example_text": "Input: path = \"NESWW\"\nOutput: true\nExplanation: Notice that the path visits the origin twice."
+    }
+  ],
+  "hints": [
+    "Simulate the process while keeping track of visited points.",
+    "Use a set to store previously visited points."
+  ],
+  "starter_code": "class Solution:\n    def isPathCrossing(self, path: str) -> bool:\n        ",
+  "test_cases": []
+}

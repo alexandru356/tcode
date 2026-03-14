@@ -1,0 +1,32 @@
+{
+  "id": "3418",
+  "slug": "maximum-amount-of-money-robot-can-earn",
+  "title": "Maximum Amount of Money Robot Can Earn",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "description": "You are given an m x n grid. A robot starts at the top-left corner of the grid (0, 0) and wants to reach the bottom-right corner (m - 1, n - 1). The robot can move either right or down at any point in time.\nThe grid contains a value coins[i][j] in each cell:\nThe robot has a special ability to neutralize robbers in at most 2 cells on its path, preventing them from stealing coins in those cells.\nNote: The robot's total coins can be negative.\nReturn the maximum profit the robot can gain on the route.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "m == coins.length",
+    "n == coins[i].length",
+    "1 <= m, n <= 500",
+    "-1000 <= coins[i][j] <= 1000"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: coins = [[0,1,-1],[1,-2,3],[2,-3,4]]\nOutput: 8\nExplanation:\nAn optimal path for maximum coins is:"
+    },
+    {
+      "example_text": "Input: coins = [[10,10,10],[10,10,10]]\nOutput: 40\nExplanation:\nAn optimal path for maximum coins is:"
+    }
+  ],
+  "hints": [
+    "Use Dynamic Programming.",
+    "Let <code>dp[i][j][k]</code> denote the maximum amount of money a robot can earn by starting at cell <code>(i,j)</code> and having neutralized <code>k</code> robbers."
+  ],
+  "starter_code": "class Solution:\n    def maximumAmount(self, coins: List[List[int]]) -> int:\n        ",
+  "test_cases": []
+}

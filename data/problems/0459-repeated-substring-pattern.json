@@ -1,0 +1,29 @@
+{
+  "id": "0459",
+  "slug": "repeated-substring-pattern",
+  "title": "Repeated Substring Pattern",
+  "difficulty": "Easy",
+  "topics": [
+    "String",
+    "String Matching"
+  ],
+  "description": "Given a string s, check if it can be constructed by taking a substring of it and appending multiple copies of the substring together.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= s.length <= 104",
+    "s consists of lowercase English letters."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"abab\"\nOutput: true\nExplanation: It is the substring \"ab\" twice."
+    },
+    {
+      "example_text": "Input: s = \"aba\"\nOutput: false"
+    },
+    {
+      "example_text": "Input: s = \"abcabcabcabc\"\nOutput: true\nExplanation: It is the substring \"abc\" four times or the substring \"abcabc\" twice."
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def repeatedSubstringPattern(self, s: str) -> bool:\n        ",
+  "test_cases": []
+}

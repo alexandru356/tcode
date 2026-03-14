@@ -1,0 +1,31 @@
+{
+  "id": "1071",
+  "slug": "greatest-common-divisor-of-strings",
+  "title": "Greatest Common Divisor of Strings",
+  "difficulty": "Easy",
+  "topics": [
+    "Math",
+    "String"
+  ],
+  "description": "For two strings s and t, we say \"t divides s\" if and only if s = t + t + t + ... + t + t (i.e., t is concatenated with itself one or more times).\nGiven two strings str1 and str2, return the largest string x such that x divides both str1 and str2.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= str1.length, str2.length <= 1000",
+    "str1 and str2 consist of English uppercase letters."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: str1 = \"ABCABC\", str2 = \"ABC\"\nOutput: \"ABC\""
+    },
+    {
+      "example_text": "Input: str1 = \"ABABAB\", str2 = \"ABAB\"\nOutput: \"AB\""
+    },
+    {
+      "example_text": "Input: str1 = \"LEET\", str2 = \"CODE\"\nOutput: \"\""
+    }
+  ],
+  "hints": [
+    "The greatest common divisor must be a prefix of each string, so we can try all prefixes."
+  ],
+  "starter_code": "class Solution:\n    def gcdOfStrings(self, str1: str, str2: str) -> str:\n        ",
+  "test_cases": []
+}

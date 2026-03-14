@@ -1,0 +1,34 @@
+{
+  "id": "1221",
+  "slug": "split-a-string-in-balanced-strings",
+  "title": "Split a String in Balanced Strings",
+  "difficulty": "Easy",
+  "topics": [
+    "String",
+    "Greedy",
+    "Counting"
+  ],
+  "description": "Balanced strings are those that have an equal quantity of 'L' and 'R' characters.\nGiven a balanced string s, split it into some number of substrings such that:\nReturn the maximum number of balanced strings you can obtain.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "2 <= s.length <= 1000",
+    "s[i] is either 'L' or 'R'.",
+    "s is a balanced string."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"RLRRLLRLRL\"\nOutput: 4\nExplanation: s can be split into \"RL\", \"RRLL\", \"RL\", \"RL\", each substring contains same number of 'L' and 'R'."
+    },
+    {
+      "example_text": "Input: s = \"RLRRRLLRLL\"\nOutput: 2\nExplanation: s can be split into \"RL\", \"RRRLLRLL\", each substring contains same number of 'L' and 'R'.\nNote that s cannot be split into \"RL\", \"RR\", \"RL\", \"LR\", \"LL\", because the 2nd and 5th substrings are not balanced."
+    },
+    {
+      "example_text": "Input: s = \"LLLLRRRR\"\nOutput: 1\nExplanation: s can be split into \"LLLLRRRR\"."
+    }
+  ],
+  "hints": [
+    "Loop from left to right maintaining a balance variable when it gets an L increase it by one otherwise decrease it by one.",
+    "Whenever the balance variable reaches zero then we increase the answer by one."
+  ],
+  "starter_code": "class Solution:\n    def balancedStringSplit(self, s: str) -> int:\n        ",
+  "test_cases": []
+}

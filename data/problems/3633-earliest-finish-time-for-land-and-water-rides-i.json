@@ -1,0 +1,27 @@
+{
+  "id": "3633",
+  "slug": "earliest-finish-time-for-land-and-water-rides-i",
+  "title": "Earliest Finish Time for Land and Water Rides I",
+  "difficulty": "Easy",
+  "topics": [],
+  "description": "You are given two categories of theme park attractions: land rides and water rides.\nA tourist must experience exactly one ride from each category, in either order.\nReturn the earliest possible time at which the tourist can finish both rides.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= n, m <= 100",
+    "landStartTime.length == landDuration.length == n",
+    "waterStartTime.length == waterDuration.length == m",
+    "1 <= landStartTime[i], landDuration[i], waterStartTime[j], waterDuration[j] <= 1000"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: landStartTime = [2,8], landDuration = [4,1], waterStartTime = [6], waterDuration = [3]\nOutput: 9\nExplanation: ​​​​​​​\nPlan A gives the earliest finish time of 9."
+    },
+    {
+      "example_text": "Input: landStartTime = [5], landDuration = [3], waterStartTime = [1], waterDuration = [10]\nOutput: 14\nExplanation: ​​​​​​​\nPlan A provides the earliest finish time of 14. ​​​​​​​"
+    }
+  ],
+  "hints": [
+    "Use brute force"
+  ],
+  "starter_code": "class Solution:\n    def earliestFinishTime(self, landStartTime: List[int], landDuration: List[int], waterStartTime: List[int], waterDuration: List[int]) -> int:\n        ",
+  "test_cases": []
+}

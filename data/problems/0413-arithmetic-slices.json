@@ -1,0 +1,27 @@
+{
+  "id": "0413",
+  "slug": "arithmetic-slices",
+  "title": "Arithmetic Slices",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Sliding Window"
+  ],
+  "description": "An integer array is called arithmetic if it consists of at least three elements and if the difference between any two consecutive elements is the same.\nGiven an integer array nums, return the number of arithmetic subarrays of nums.\nA subarray is a contiguous subsequence of the array.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= nums.length <= 5000",
+    "-1000 <= nums[i] <= 1000"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [1,2,3,4]\nOutput: 3\nExplanation: We have 3 arithmetic slices in nums: [1, 2, 3], [2, 3, 4] and [1,2,3,4] itself."
+    },
+    {
+      "example_text": "Input: nums = [1]\nOutput: 0"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def numberOfArithmeticSlices(self, nums: List[int]) -> int:\n        ",
+  "test_cases": []
+}

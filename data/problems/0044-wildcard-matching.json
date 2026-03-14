@@ -1,0 +1,32 @@
+{
+  "id": "0044",
+  "slug": "wildcard-matching",
+  "title": "Wildcard Matching",
+  "difficulty": "Hard",
+  "topics": [
+    "String",
+    "Dynamic Programming",
+    "Greedy",
+    "Recursion"
+  ],
+  "description": "Given an input string (s) and a pattern (p), implement wildcard pattern matching with support for '?' and '*' where:\nThe matching should cover the entire input string (not partial).\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "0 <= s.length, p.length <= 2000",
+    "s contains only lowercase English letters.",
+    "p contains only lowercase English letters, '?' or '*'."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"aa\", p = \"a\"\nOutput: false\nExplanation: \"a\" does not match the entire string \"aa\"."
+    },
+    {
+      "example_text": "Input: s = \"aa\", p = \"*\"\nOutput: true\nExplanation: '*' matches any sequence."
+    },
+    {
+      "example_text": "Input: s = \"cb\", p = \"?a\"\nOutput: false\nExplanation: '?' matches 'c', but the second letter is 'a', which does not match 'b'."
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def isMatch(self, s: str, p: str) -> bool:\n        ",
+  "test_cases": []
+}
