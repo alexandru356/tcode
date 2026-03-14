@@ -1,0 +1,27 @@
+{
+  "id": "0061",
+  "slug": "rotate-list",
+  "title": "Rotate List",
+  "difficulty": "Medium",
+  "topics": [
+    "Linked List",
+    "Two Pointers"
+  ],
+  "description": "Given the head of a linked list, rotate the list to the right by k places.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "The number of nodes in the list is in the range [0, 500].",
+    "-100 <= Node.val <= 100",
+    "0 <= k <= 2 * 109"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: head = [1,2,3,4,5], k = 2\nOutput: [4,5,1,2,3]"
+    },
+    {
+      "example_text": "Input: head = [0,1,2], k = 4\nOutput: [2,0,1]"
+    }
+  ],
+  "hints": [],
+  "starter_code": "# Definition for singly-linked list.\n# class ListNode:\n#     def __init__(self, val=0, next=None):\n#         self.val = val\n#         self.next = next\nclass Solution:\n    def rotateRight(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:\n        ",
+  "test_cases": []
+}

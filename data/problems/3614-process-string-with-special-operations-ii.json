@@ -1,0 +1,34 @@
+{
+  "id": "3614",
+  "slug": "process-string-with-special-operations-ii",
+  "title": "Process String with Special Operations II",
+  "difficulty": "Hard",
+  "topics": [
+    "String",
+    "Simulation"
+  ],
+  "description": "You are given a string s consisting of lowercase English letters and the special characters: '*', '#', and '%'.\nYou are also given an integer k.\nBuild a new string result by processing s according to the following rules from left to right:\nReturn the kth character of the final string result. If k is out of the bounds of result, return '.'.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= s.length <= 105",
+    "s consists of only lowercase English letters and special characters '*', '#', and '%'.",
+    "0 <= k <= 1015",
+    "The length of result after processing s will not exceed 1015."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"a#b%*\", k = 1\nOutput: \"a\"\nExplanation:\nThe final result is \"ba\" . The character at index k = 1 is 'a' ."
+    },
+    {
+      "example_text": "Input: s = \"cd%#*#\", k = 3\nOutput: \"d\"\nExplanation:\nThe final result is \"dcddcd\" . The character at index k = 3 is 'd' ."
+    },
+    {
+      "example_text": "Input: s = \"z*#\", k = 0\nOutput: \".\"\nExplanation:\nThe final result is \"\" . Since index k = 0 is out of bounds, the output is '.' ."
+    }
+  ],
+  "hints": [
+    "Track the length of the string after each operation on <code>s</code>.",
+    "Walk backwards through <code>s</code>, undoing each # by using modulus on the tracked lengths, and undoing each % by mirroring across the midpoint, to pinpoint the <code>k</code>th character."
+  ],
+  "starter_code": "class Solution:\n    def processStr(self, s: str, k: int) -> str:\n        ",
+  "test_cases": []
+}

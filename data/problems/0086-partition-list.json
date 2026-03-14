@@ -1,0 +1,27 @@
+{
+  "id": "0086",
+  "slug": "partition-list",
+  "title": "Partition List",
+  "difficulty": "Medium",
+  "topics": [
+    "Linked List",
+    "Two Pointers"
+  ],
+  "description": "Given the head of a linked list and a value x, partition it such that all nodes less than x come before nodes greater than or equal to x.\nYou should preserve the original relative order of the nodes in each of the two partitions.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "The number of nodes in the list is in the range [0, 200].",
+    "-100 <= Node.val <= 100",
+    "-200 <= x <= 200"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: head = [1,4,3,2,5,2], x = 3\nOutput: [1,2,2,4,3,5]"
+    },
+    {
+      "example_text": "Input: head = [2,1], x = 2\nOutput: [1,2]"
+    }
+  ],
+  "hints": [],
+  "starter_code": "# Definition for singly-linked list.\n# class ListNode:\n#     def __init__(self, val=0, next=None):\n#         self.val = val\n#         self.next = next\nclass Solution:\n    def partition(self, head: Optional[ListNode], x: int) -> Optional[ListNode]:\n        ",
+  "test_cases": []
+}

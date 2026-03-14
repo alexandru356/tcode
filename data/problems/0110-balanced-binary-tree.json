@@ -1,0 +1,30 @@
+{
+  "id": "0110",
+  "slug": "balanced-binary-tree",
+  "title": "Balanced Binary Tree",
+  "difficulty": "Easy",
+  "topics": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "description": "Given a binary tree, determine if it is height-balanced.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "The number of nodes in the tree is in the range [0, 5000].",
+    "-104 <= Node.val <= 104"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: root = [3,9,20,null,null,15,7]\nOutput: true"
+    },
+    {
+      "example_text": "Input: root = [1,2,2,3,3,null,null,4,4]\nOutput: false"
+    },
+    {
+      "example_text": "Input: root = []\nOutput: true"
+    }
+  ],
+  "hints": [],
+  "starter_code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def isBalanced(self, root: Optional[TreeNode]) -> bool:\n        ",
+  "test_cases": []
+}

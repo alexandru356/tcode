@@ -1,0 +1,30 @@
+{
+  "id": "0103",
+  "slug": "binary-tree-zigzag-level-order-traversal",
+  "title": "Binary Tree Zigzag Level Order Traversal",
+  "difficulty": "Medium",
+  "topics": [
+    "Tree",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "description": "Given the root of a binary tree, return the zigzag level order traversal of its nodes' values. (i.e., from left to right, then right to left for the next level and alternate between).\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "The number of nodes in the tree is in the range [0, 2000].",
+    "-100 <= Node.val <= 100"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: root = [3,9,20,null,null,15,7]\nOutput: [[3],[20,9],[15,7]]"
+    },
+    {
+      "example_text": "Input: root = [1]\nOutput: [[1]]"
+    },
+    {
+      "example_text": "Input: root = []\nOutput: []"
+    }
+  ],
+  "hints": [],
+  "starter_code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def zigzagLevelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:\n        ",
+  "test_cases": []
+}

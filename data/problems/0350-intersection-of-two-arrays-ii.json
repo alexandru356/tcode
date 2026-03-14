@@ -1,0 +1,29 @@
+{
+  "id": "0350",
+  "slug": "intersection-of-two-arrays-ii",
+  "title": "Intersection of Two Arrays II",
+  "difficulty": "Easy",
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Two Pointers",
+    "Binary Search",
+    "Sorting"
+  ],
+  "description": "Given two integer arrays nums1 and nums2, return an array of their intersection. Each element in the result must appear as many times as it shows in both arrays and you may return the result in any order.\nExample 1:\nExample 2:\nConstraints:\nFollow up:",
+  "constraints": [
+    "1 <= nums1.length, nums2.length <= 1000",
+    "0 <= nums1[i], nums2[i] <= 1000"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums1 = [1,2,2,1], nums2 = [2,2]\nOutput: [2,2]"
+    },
+    {
+      "example_text": "Input: nums1 = [4,9,5], nums2 = [9,4,9,8,4]\nOutput: [4,9]\nExplanation: [9,4] is also accepted."
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def intersect(self, nums1: List[int], nums2: List[int]) -> List[int]:\n        ",
+  "test_cases": []
+}

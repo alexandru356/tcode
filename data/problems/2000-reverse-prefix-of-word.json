@@ -1,0 +1,34 @@
+{
+  "id": "2000",
+  "slug": "reverse-prefix-of-word",
+  "title": "Reverse Prefix of Word",
+  "difficulty": "Easy",
+  "topics": [
+    "Two Pointers",
+    "String",
+    "Stack"
+  ],
+  "description": "Given a 0-indexed string word and a character ch, reverse the segment of word that starts at index 0 and ends at the index of the first occurrence of ch (inclusive). If the character ch does not exist in word, do nothing.\nReturn the resulting string.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= word.length <= 250",
+    "word consists of lowercase English letters.",
+    "ch is a lowercase English letter."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: word = \"abcdefd\", ch = \"d\"\nOutput: \"dcbaefd\"\nExplanation: The first occurrence of \"d\" is at index 3. \nReverse the part of word from 0 to 3 (inclusive), the resulting string is \"dcbaefd\"."
+    },
+    {
+      "example_text": "Input: word = \"xyxzxe\", ch = \"z\"\nOutput: \"zxyxxe\"\nExplanation: The first and only occurrence of \"z\" is at index 3.\nReverse the part of word from 0 to 3 (inclusive), the resulting string is \"zxyxxe\"."
+    },
+    {
+      "example_text": "Input: word = \"abcd\", ch = \"z\"\nOutput: \"abcd\"\nExplanation: \"z\" does not exist in word.\nYou should not do any reverse operation, the resulting string is \"abcd\"."
+    }
+  ],
+  "hints": [
+    "Find the first index where ch appears.",
+    "Find a way to reverse a substring of word."
+  ],
+  "starter_code": "class Solution:\n    def reversePrefix(self, word: str, ch: str) -> str:\n        ",
+  "test_cases": []
+}

@@ -1,0 +1,30 @@
+{
+  "id": "0205",
+  "slug": "isomorphic-strings",
+  "title": "Isomorphic Strings",
+  "difficulty": "Easy",
+  "topics": [
+    "Hash Table",
+    "String"
+  ],
+  "description": "Given two strings s and t, determine if they are isomorphic.\nTwo strings s and t are isomorphic if the characters in s can be replaced to get t.\nAll occurrences of a character must be replaced with another character while preserving the order of characters. No two characters may map to the same character, but a character may map to itself.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= s.length <= 5 * 104",
+    "t.length == s.length",
+    "s and t consist of any valid ascii character."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"egg\", t = \"add\"\nOutput: true\nExplanation:\nThe strings s and t can be made identical by:"
+    },
+    {
+      "example_text": "Input: s = \"foo\", t = \"bar\"\nOutput: false\nExplanation:\nThe strings s and t can not be made identical as 'o' needs to be mapped to both 'a' and 'r' ."
+    },
+    {
+      "example_text": "Input: s = \"paper\", t = \"title\"\nOutput: true"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def isIsomorphic(self, s: str, t: str) -> bool:\n        ",
+  "test_cases": []
+}

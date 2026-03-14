@@ -1,0 +1,28 @@
+{
+  "id": "0894",
+  "slug": "all-possible-full-binary-trees",
+  "title": "All Possible Full Binary Trees",
+  "difficulty": "Medium",
+  "topics": [
+    "Dynamic Programming",
+    "Tree",
+    "Recursion",
+    "Memoization",
+    "Binary Tree"
+  ],
+  "description": "Given an integer n, return a list of all possible full binary trees with n nodes. Each node of each tree in the answer must have Node.val == 0.\nEach element of the answer is the root node of one possible tree. You may return the final list of trees in any order.\nA full binary tree is a binary tree where each node has exactly 0 or 2 children.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= n <= 20"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = 7\nOutput: [[0,0,0,null,null,0,0,null,null,0,0],[0,0,0,null,null,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,null,null,null,null,0,0],[0,0,0,0,0,null,null,0,0]]"
+    },
+    {
+      "example_text": "Input: n = 3\nOutput: [[0,0,0]]"
+    }
+  ],
+  "hints": [],
+  "starter_code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def allPossibleFBT(self, n: int) -> List[Optional[TreeNode]]:\n        ",
+  "test_cases": []
+}

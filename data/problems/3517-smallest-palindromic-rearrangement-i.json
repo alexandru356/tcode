@@ -1,0 +1,34 @@
+{
+  "id": "3517",
+  "slug": "smallest-palindromic-rearrangement-i",
+  "title": "Smallest Palindromic Rearrangement I",
+  "difficulty": "Medium",
+  "topics": [
+    "String",
+    "Sorting",
+    "Counting Sort"
+  ],
+  "description": "You are given a palindromic string s.\nReturn the lexicographically smallest palindromic permutation of s.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= s.length <= 105",
+    "s consists of lowercase English letters.",
+    "s is guaranteed to be palindromic."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"z\"\nOutput: \"z\"\nExplanation:\nA string of only one character is already the lexicographically smallest palindrome."
+    },
+    {
+      "example_text": "Input: s = \"babab\"\nOutput: \"abbba\"\nExplanation:\nRearranging \"babab\" → \"abbba\" gives the smallest lexicographic palindrome."
+    },
+    {
+      "example_text": "Input: s = \"daccad\"\nOutput: \"acddca\"\nExplanation:\nRearranging \"daccad\" → \"acddca\" gives the smallest lexicographic palindrome."
+    }
+  ],
+  "hints": [
+    "Consider a palindrome as composed of two mirror-image halves.",
+    "Construct one half (using <code>s</code>), and then the other half is its reverse to obtain the lexicographically smallest permutation."
+  ],
+  "starter_code": "class Solution:\n    def smallestPalindrome(self, s: str) -> str:\n        ",
+  "test_cases": []
+}

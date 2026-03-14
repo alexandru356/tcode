@@ -1,0 +1,24 @@
+{
+  "id": "2235",
+  "slug": "add-two-integers",
+  "title": "Add Two Integers",
+  "difficulty": "Easy",
+  "topics": [
+    "Math"
+  ],
+  "description": "Example 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "-100 <= num1, num2 <= 100"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: num1 = 12, num2 = 5\nOutput: 17\nExplanation: num1 is 12, num2 is 5, and their sum is 12 + 5 = 17, so 17 is returned."
+    },
+    {
+      "example_text": "Input: num1 = -10, num2 = 4\nOutput: -6\nExplanation: num1 + num2 = -6, so -6 is returned."
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def sum(self, num1: int, num2: int) -> int:\n        ",
+  "test_cases": []
+}

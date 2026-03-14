@@ -1,0 +1,33 @@
+{
+  "id": "1079",
+  "slug": "letter-tile-possibilities",
+  "title": "Letter Tile Possibilities",
+  "difficulty": "Medium",
+  "topics": [
+    "Hash Table",
+    "String",
+    "Backtracking",
+    "Counting"
+  ],
+  "description": "You have n  tiles, where each tile has one letter tiles[i] printed on it.\nReturn the number of possible non-empty sequences of letters you can make using the letters printed on those tiles.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= tiles.length <= 7",
+    "tiles consists of uppercase English letters."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: tiles = \"AAB\"\nOutput: 8\nExplanation: The possible sequences are \"A\", \"B\", \"AA\", \"AB\", \"BA\", \"AAB\", \"ABA\", \"BAA\"."
+    },
+    {
+      "example_text": "Input: tiles = \"AAABBC\"\nOutput: 188"
+    },
+    {
+      "example_text": "Input: tiles = \"V\"\nOutput: 1"
+    }
+  ],
+  "hints": [
+    "Try to build the string with a backtracking DFS by considering what you can put in every position."
+  ],
+  "starter_code": "class Solution:\n    def numTilePossibilities(self, tiles: str) -> int:\n        ",
+  "test_cases": []
+}

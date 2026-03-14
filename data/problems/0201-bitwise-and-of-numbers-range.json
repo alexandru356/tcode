@@ -1,0 +1,27 @@
+{
+  "id": "0201",
+  "slug": "bitwise-and-of-numbers-range",
+  "title": "Bitwise AND of Numbers Range",
+  "difficulty": "Medium",
+  "topics": [
+    "Bit Manipulation"
+  ],
+  "description": "Given two integers left and right that represent the range [left, right], return the bitwise AND of all numbers in this range, inclusive.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "0 <= left <= right <= 231 - 1"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: left = 5, right = 7\nOutput: 4"
+    },
+    {
+      "example_text": "Input: left = 0, right = 0\nOutput: 0"
+    },
+    {
+      "example_text": "Input: left = 1, right = 2147483647\nOutput: 0"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def rangeBitwiseAnd(self, left: int, right: int) -> int:\n        ",
+  "test_cases": []
+}

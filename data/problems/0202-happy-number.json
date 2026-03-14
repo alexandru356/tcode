@@ -1,0 +1,26 @@
+{
+  "id": "0202",
+  "slug": "happy-number",
+  "title": "Happy Number",
+  "difficulty": "Easy",
+  "topics": [
+    "Hash Table",
+    "Math",
+    "Two Pointers"
+  ],
+  "description": "Write an algorithm to determine if a number n is happy.\nA happy number is a number defined by the following process:\nReturn true if n is a happy number, and false if not.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= n <= 231 - 1"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = 19\nOutput: true\nExplanation:\n12 + 92 = 82\n82 + 22 = 68\n62 + 82 = 100\n12 + 02 + 02 = 1"
+    },
+    {
+      "example_text": "Input: n = 2\nOutput: false"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def isHappy(self, n: int) -> bool:\n        ",
+  "test_cases": []
+}

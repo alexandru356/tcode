@@ -1,0 +1,28 @@
+{
+  "id": "0462",
+  "slug": "minimum-moves-to-equal-array-elements-ii",
+  "title": "Minimum Moves to Equal Array Elements II",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Math",
+    "Sorting"
+  ],
+  "description": "Given an integer array nums of size n, return the minimum number of moves required to make all array elements equal.\nIn one move, you can increment or decrement an element of the array by 1.\nTest cases are designed so that the answer will fit in a 32-bit integer.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "n == nums.length",
+    "1 <= nums.length <= 105",
+    "-109 <= nums[i] <= 109"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [1,2,3]\nOutput: 2\nExplanation:\nOnly two moves are needed (remember each move increments or decrements one element):\n[1,2,3]  =>  [2,2,3]  =>  [2,2,2]"
+    },
+    {
+      "example_text": "Input: nums = [1,10,2,9]\nOutput: 16"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def minMoves2(self, nums: List[int]) -> int:\n        ",
+  "test_cases": []
+}

@@ -1,0 +1,31 @@
+{
+  "id": "0654",
+  "slug": "maximum-binary-tree",
+  "title": "Maximum Binary Tree",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Divide and Conquer",
+    "Stack",
+    "Tree",
+    "Monotonic Stack",
+    "Binary Tree"
+  ],
+  "description": "You are given an integer array nums with no duplicates. A maximum binary tree can be built recursively from nums using the following algorithm:\nReturn the maximum binary tree built from nums.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= nums.length <= 1000",
+    "0 <= nums[i] <= 1000",
+    "All integers in nums are unique."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [3,2,1,6,0,5]\nOutput: [6,3,5,null,2,0,null,null,1]\nExplanation: The recursive calls are as follow:\n- The largest value in [3,2,1,6,0,5] is 6. Left prefix is [3,2,1] and right suffix is [0,5].\n    - The largest value in [3,2,1] is 3. Left prefix is [] and right suffix is [2,1].\n        - Empty array, so no child.\n        - The largest value in [2,1] is 2. Left prefix is [] and right suffix is [1].\n            - Empty array, so no child.\n            - Only one element, so child is a node with value 1.\n    - The largest value in [0,5] is 5. Left prefix is [0] and right suffix is [].\n        - Only one element, so child is a node with value 0.\n        - Empty array, so no child."
+    },
+    {
+      "example_text": "Input: nums = [3,2,1]\nOutput: [3,null,2,null,1]"
+    }
+  ],
+  "hints": [],
+  "starter_code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def constructMaximumBinaryTree(self, nums: List[int]) -> Optional[TreeNode]:\n        ",
+  "test_cases": []
+}

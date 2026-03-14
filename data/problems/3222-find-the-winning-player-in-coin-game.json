@@ -1,0 +1,30 @@
+{
+  "id": "3222",
+  "slug": "find-the-winning-player-in-coin-game",
+  "title": "Find the Winning Player in Coin Game",
+  "difficulty": "Easy",
+  "topics": [
+    "Math",
+    "Simulation",
+    "Game Theory"
+  ],
+  "description": "You are given two positive integers x and y, denoting the number of coins with values 75 and 10 respectively.\nAlice and Bob are playing a game. Each turn, starting with Alice, the player must pick up coins with a total value 115. If the player is unable to do so, they lose the game.\nReturn the name of the player who wins the game if both players play optimally.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= x, y <= 100"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: x = 2, y = 7\nOutput: \"Alice\"\nExplanation:\nThe game ends in a single turn:"
+    },
+    {
+      "example_text": "Input: x = 4, y = 11\nOutput: \"Bob\"\nExplanation:\nThe game ends in 2 turns:"
+    }
+  ],
+  "hints": [
+    "The only way to make 115 is to use one coin of value 75 and four coins of value 10. Each turn uses up these many coins.",
+    "Hence the number of turns is <code>min(x, y / 4)</code>.",
+    "Determine the winner from its parity."
+  ],
+  "starter_code": "class Solution:\n    def winningPlayer(self, x: int, y: int) -> str:\n        ",
+  "test_cases": []
+}

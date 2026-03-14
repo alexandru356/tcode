@@ -1,0 +1,26 @@
+{
+  "id": "0686",
+  "slug": "repeated-string-match",
+  "title": "Repeated String Match",
+  "difficulty": "Medium",
+  "topics": [
+    "String",
+    "String Matching"
+  ],
+  "description": "Given two strings a and b, return the minimum number of times you should repeat string a so that string b is a substring of it. If it is impossible for b​​​​​​ to be a substring of a after repeating it, return -1.\nNotice: string \"abc\" repeated 0 times is \"\", repeated 1 time is \"abc\" and repeated 2 times is \"abcabc\".\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= a.length, b.length <= 104",
+    "a and b consist of lowercase English letters."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: a = \"abcd\", b = \"cdabcdab\"\nOutput: 3\nExplanation: We return 3 because by repeating a three times \"abcdabcdabcd\", b is a substring of it."
+    },
+    {
+      "example_text": "Input: a = \"a\", b = \"aa\"\nOutput: 2"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def repeatedStringMatch(self, a: str, b: str) -> int:\n        ",
+  "test_cases": []
+}

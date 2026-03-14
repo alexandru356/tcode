@@ -1,0 +1,30 @@
+{
+  "id": "0840",
+  "slug": "magic-squares-in-grid",
+  "title": "Magic Squares In Grid",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Matrix"
+  ],
+  "description": "A 3 x 3 magic square is a 3 x 3 grid filled with distinct numbers from 1 to 9 such that each row, column, and both diagonals all have the same sum.\nGiven a row x col grid of integers, how many 3 x 3 magic square subgrids are there?\nNote: while a magic square can only contain numbers from 1 to 9, grid may contain numbers up to 15.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "row == grid.length",
+    "col == grid[i].length",
+    "1 <= row, col <= 10",
+    "0 <= grid[i][j] <= 15"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: grid = [[4,3,8,4],[9,5,1,9],[2,7,6,2]]\nOutput: 1\nExplanation: \nThe following subgrid is a 3 x 3 magic square:\n\nwhile this one is not:\n\nIn total, there is only one magic square inside the given grid."
+    },
+    {
+      "example_text": "Input: grid = [[8]]\nOutput: 0"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def numMagicSquaresInside(self, grid: List[List[int]]) -> int:\n        ",
+  "test_cases": []
+}

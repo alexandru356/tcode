@@ -1,0 +1,41 @@
+{
+  "id": "3539",
+  "slug": "find-sum-of-array-product-of-magical-sequences",
+  "title": "Find Sum of Array Product of Magical Sequences",
+  "difficulty": "Hard",
+  "topics": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Combinatorics",
+    "Bitmask"
+  ],
+  "description": "You are given two integers, m and k, and an integer array nums.\nThe array product of this sequence is defined as prod(seq) = (nums[seq[0]] * nums[seq[1]] * ... * nums[seq[m - 1]]).\nReturn the sum of the array products for all valid magical sequences.\nSince the answer may be large, return it modulo 109 + 7.\nA set bit refers to a bit in the binary representation of a number that has a value of 1.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= k <= m <= 30",
+    "1 <= nums.length <= 50",
+    "1 <= nums[i] <= 108"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: m = 5, k = 5, nums = [1,10,100,10000,1000000]\nOutput: 991600007\nExplanation:\nAll permutations of [0, 1, 2, 3, 4] are magical sequences, each with an array product of 10 13 ."
+    },
+    {
+      "example_text": "Input: m = 2, k = 2, nums = [5,4,3,2,1]\nOutput: 170\nExplanation:\nThe magical sequences are [0, 1] , [0, 2] , [0, 3] , [0, 4] , [1, 0] , [1, 2] , [1, 3] , [1, 4] , [2, 0] , [2, 1] , [2, 3] , [2, 4] , [3, 0] , [3, 1] , [3, 2] , [3, 4] , [4, 0] , [4, 1] , [4, 2] , and [4, 3] ."
+    },
+    {
+      "example_text": "Input: m = 1, k = 1, nums = [28]\nOutput: 28\nExplanation:\nThe only magical sequence is [0] ."
+    }
+  ],
+  "hints": [
+    "Use Dynamic Programming",
+    "Let <code>dp[i][j][mask]</code> be the state after choosing <code>i</code> numbers (indices)",
+    "The partial sum <code>S = 2^(seq[0]) + 2^(seq[1]) + ... + 2^(seq[i - 1])</code> has produced exactly <code>j</code> set bits once you’ve fully propagated any carries",
+    "The <code>mask</code> represents the \"window\" of lower-order bits from <code>S</code> that have not yet been fully processed (i.e. bits that might later create new set bits when additional terms are added)",
+    "Use combinatorics",
+    "How many ways are there to permute a sequence of entities where some are repetitive?"
+  ],
+  "starter_code": "class Solution:\n    def magicalSum(self, m: int, k: int, nums: List[int]) -> int:\n        ",
+  "test_cases": []
+}

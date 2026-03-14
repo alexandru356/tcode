@@ -1,0 +1,34 @@
+{
+  "id": "1689",
+  "slug": "partitioning-into-minimum-number-of-deci-binary-numbers",
+  "title": "Partitioning Into Minimum Number Of Deci-Binary Numbers",
+  "difficulty": "Medium",
+  "topics": [
+    "String",
+    "Greedy"
+  ],
+  "description": "A decimal number is called deci-binary if each of its digits is either 0 or 1 without any leading zeros. For example, 101 and 1100 are deci-binary, while 112 and 3001 are not.\nGiven a string n that represents a positive decimal integer, return the minimum number of positive deci-binary numbers needed so that they sum up to n.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= n.length <= 105",
+    "n consists of only digits.",
+    "n does not contain any leading zeros and represents a positive integer."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = \"32\"\nOutput: 3\nExplanation: 10 + 11 + 11 = 32"
+    },
+    {
+      "example_text": "Input: n = \"82734\"\nOutput: 8"
+    },
+    {
+      "example_text": "Input: n = \"27346209830709182346\"\nOutput: 9"
+    }
+  ],
+  "hints": [
+    "Think about if the input was only one digit. Then you need to add up as many ones as the value of this digit.",
+    "If the input has multiple digits, then you can solve for each digit independently, and merge the answers to form numbers that add up to that input.",
+    "Thus the answer is equal to the max digit."
+  ],
+  "starter_code": "class Solution:\n    def minPartitions(self, n: str) -> int:\n        ",
+  "test_cases": []
+}

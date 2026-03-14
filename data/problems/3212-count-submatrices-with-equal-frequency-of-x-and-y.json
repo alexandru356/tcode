@@ -1,0 +1,34 @@
+{
+  "id": "3212",
+  "slug": "count-submatrices-with-equal-frequency-of-x-and-y",
+  "title": "Count Submatrices With Equal Frequency of X and Y",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Matrix",
+    "Prefix Sum"
+  ],
+  "description": "Given a 2D character matrix grid, where grid[i][j] is either 'X', 'Y', or '.', return the number of submatrices that contain:\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= grid.length, grid[i].length <= 1000",
+    "grid[i][j] is either 'X', 'Y', or '.'."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: grid = [[\"X\",\"Y\",\".\"],[\"Y\",\".\",\".\"]]\nOutput: 3\nExplanation:\n"
+    },
+    {
+      "example_text": "Input: grid = [[\"X\",\"X\"],[\"X\",\"Y\"]]\nOutput: 0\nExplanation:\nNo submatrix has an equal frequency of 'X' and 'Y' ."
+    },
+    {
+      "example_text": "Input: grid = [[\".\",\".\"],[\".\",\".\"]]\nOutput: 0\nExplanation:\nNo submatrix has at least one 'X' ."
+    }
+  ],
+  "hints": [
+    "Replace <code>’X’</code> with 1, <code>’Y’</code> with -1 and <code>’.’</code> with 0.",
+    "You need to find how many submatrices <code>grid[0..x][0..y]</code> have a sum of 0 and at least one <code>’X’</code>.",
+    "Use prefix sum to calculate submatrices sum."
+  ],
+  "starter_code": "class Solution:\n    def numberOfSubmatrices(self, grid: List[List[str]]) -> int:\n        ",
+  "test_cases": []
+}

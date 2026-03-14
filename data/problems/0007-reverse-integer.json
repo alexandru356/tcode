@@ -1,0 +1,27 @@
+{
+  "id": "0007",
+  "slug": "reverse-integer",
+  "title": "Reverse Integer",
+  "difficulty": "Medium",
+  "topics": [
+    "Math"
+  ],
+  "description": "Given a signed 32-bit integer x, return x with its digits reversed. If reversing x causes the value to go outside the signed 32-bit integer range [-231, 231 - 1], then return 0.\nAssume the environment does not allow you to store 64-bit integers (signed or unsigned).\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "-231 <= x <= 231 - 1"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: x = 123\nOutput: 321"
+    },
+    {
+      "example_text": "Input: x = -123\nOutput: -321"
+    },
+    {
+      "example_text": "Input: x = 120\nOutput: 21"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def reverse(self, x: int) -> int:\n        ",
+  "test_cases": []
+}

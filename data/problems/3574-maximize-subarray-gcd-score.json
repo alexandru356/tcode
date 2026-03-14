@@ -1,0 +1,35 @@
+{
+  "id": "3574",
+  "slug": "maximize-subarray-gcd-score",
+  "title": "Maximize Subarray GCD Score",
+  "difficulty": "Hard",
+  "topics": [
+    "Array",
+    "Math",
+    "Enumeration",
+    "Number Theory"
+  ],
+  "description": "You are given an array of positive integers nums and an integer k.\nYou may perform at most k operations. In each operation, you can choose one element in the array and double its value. Each element can be doubled at most once.\nThe score of a contiguous subarray is defined as the product of its length and the greatest common divisor (GCD) of all its elements.\nYour task is to return the maximum score that can be achieved by selecting a contiguous subarray from the modified array.\nNote:\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= n == nums.length <= 1500",
+    "1 <= nums[i] <= 109",
+    "1 <= k <= n"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [2,4], k = 1\nOutput: 8\nExplanation:"
+    },
+    {
+      "example_text": "Input: nums = [3,5,7], k = 2\nOutput: 14\nExplanation:"
+    },
+    {
+      "example_text": "Input: nums = [5,5,5], k = 1\nOutput: 15\nExplanation:"
+    }
+  ],
+  "hints": [
+    "Try iterating over the subarrays",
+    "Handle the 2s in the factors of elements separately"
+  ],
+  "starter_code": "class Solution:\n    def maxGCDScore(self, nums: List[int], k: int) -> int:\n        ",
+  "test_cases": []
+}

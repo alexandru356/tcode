@@ -1,0 +1,32 @@
+{
+  "id": "0363",
+  "slug": "max-sum-of-rectangle-no-larger-than-k",
+  "title": "Max Sum of Rectangle No Larger Than K",
+  "difficulty": "Hard",
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Matrix",
+    "Prefix Sum",
+    "Ordered Set"
+  ],
+  "description": "Given an m x n matrix matrix and an integer k, return the max sum of a rectangle in the matrix such that its sum is no larger than k.\nIt is guaranteed that there will be a rectangle with a sum no larger than k.\nExample 1:\nExample 2:\nConstraints:\nFollow up: What if the number of rows is much larger than the number of columns?",
+  "constraints": [
+    "m == matrix.length",
+    "n == matrix[i].length",
+    "1 <= m, n <= 100",
+    "-100 <= matrix[i][j] <= 100",
+    "-105 <= k <= 105"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: matrix = [[1,0,1],[0,-2,3]], k = 2\nOutput: 2\nExplanation: Because the sum of the blue rectangle [[0, 1], [-2, 3]] is 2, and 2 is the max number no larger than k (k = 2)."
+    },
+    {
+      "example_text": "Input: matrix = [[2,2,-1]], k = 3\nOutput: 3"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def maxSumSubmatrix(self, matrix: List[List[int]], k: int) -> int:\n        ",
+  "test_cases": []
+}

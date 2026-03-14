@@ -1,0 +1,27 @@
+{
+  "id": "0082",
+  "slug": "remove-duplicates-from-sorted-list-ii",
+  "title": "Remove Duplicates from Sorted List II",
+  "difficulty": "Medium",
+  "topics": [
+    "Linked List",
+    "Two Pointers"
+  ],
+  "description": "Given the head of a sorted linked list, delete all nodes that have duplicate numbers, leaving only distinct numbers from the original list. Return the linked list sorted as well.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "The number of nodes in the list is in the range [0, 300].",
+    "-100 <= Node.val <= 100",
+    "The list is guaranteed to be sorted in ascending order."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: head = [1,2,3,3,4,4,5]\nOutput: [1,2,5]"
+    },
+    {
+      "example_text": "Input: head = [1,1,1,2,3]\nOutput: [2,3]"
+    }
+  ],
+  "hints": [],
+  "starter_code": "# Definition for singly-linked list.\n# class ListNode:\n#     def __init__(self, val=0, next=None):\n#         self.val = val\n#         self.next = next\nclass Solution:\n    def deleteDuplicates(self, head: Optional[ListNode]) -> Optional[ListNode]:\n        ",
+  "test_cases": []
+}

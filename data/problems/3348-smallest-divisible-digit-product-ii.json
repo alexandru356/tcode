@@ -1,0 +1,38 @@
+{
+  "id": "3348",
+  "slug": "smallest-divisible-digit-product-ii",
+  "title": "Smallest Divisible Digit Product II",
+  "difficulty": "Hard",
+  "topics": [
+    "Math",
+    "String",
+    "Backtracking",
+    "Greedy",
+    "Number Theory"
+  ],
+  "description": "You are given a string num which represents a positive integer, and an integer t.\nA number is called zero-free if none of its digits are 0.\nReturn a string representing the smallest zero-free number greater than or equal to num such that the product of its digits is divisible by t. If no such number exists, return \"-1\".\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "2 <= num.length <= 2 * 105",
+    "num consists only of digits in the range ['0', '9'].",
+    "num does not contain leading zeros.",
+    "1 <= t <= 1014"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: num = \"1234\", t = 256\nOutput: \"1488\"\nExplanation:\nThe smallest zero-free number that is greater than 1234 and has the product of its digits divisible by 256 is 1488, with the product of its digits equal to 256."
+    },
+    {
+      "example_text": "Input: num = \"12355\", t = 50\nOutput: \"12355\"\nExplanation:\n12355 is already zero-free and has the product of its digits divisible by 50, with the product of its digits equal to 150."
+    },
+    {
+      "example_text": "Input: num = \"11111\", t = 26\nOutput: \"-1\"\nExplanation:\nNo number greater than 11111 has the product of its digits divisible by 26."
+    }
+  ],
+  "hints": [
+    "<code>t</code> should only have 2, 3, 5 and 7 as prime factors.",
+    "Find the shortest suffix that must be changed.",
+    "Try to form the string greedily."
+  ],
+  "starter_code": "class Solution:\n    def smallestNumber(self, num: str, t: int) -> str:\n        ",
+  "test_cases": []
+}

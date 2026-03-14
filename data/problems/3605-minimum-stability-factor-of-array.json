@@ -1,0 +1,38 @@
+{
+  "id": "3605",
+  "slug": "minimum-stability-factor-of-array",
+  "title": "Minimum Stability Factor of Array",
+  "difficulty": "Hard",
+  "topics": [
+    "Array",
+    "Math",
+    "Binary Search",
+    "Greedy",
+    "Segment Tree",
+    "Number Theory"
+  ],
+  "description": "You are given an integer array nums and an integer maxC.\nA subarray is called stable if the highest common factor (HCF) of all its elements is greater than or equal to 2.\nThe stability factor of an array is defined as the length of its longest stable subarray.\nYou may modify at most maxC elements of the array to any integer.\nReturn the minimum possible stability factor of the array after at most maxC modifications. If no stable subarray remains, return 0.\nNote:\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= n == nums.length <= 105",
+    "1 <= nums[i] <= 109",
+    "0 <= maxC <= n"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [3,5,10], maxC = 1\nOutput: 1\nExplanation:"
+    },
+    {
+      "example_text": "Input: nums = [2,6,8], maxC = 2\nOutput: 1\nExplanation:"
+    },
+    {
+      "example_text": "Input: nums = [2,4,9,6], maxC = 1\nOutput: 2\nExplanation:"
+    }
+  ],
+  "hints": [
+    "Binary‐search the target length <code>k</code>",
+    "For each <code>k</code>, use fast range‐GCD queries",
+    "Greedily \"hit\" every window of size <code>k+1</code> with an edit if its <code>GCD > 1</code>"
+  ],
+  "starter_code": "class Solution:\n    def minStable(self, nums: List[int], maxC: int) -> int:\n        ",
+  "test_cases": []
+}

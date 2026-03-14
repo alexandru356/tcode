@@ -1,0 +1,32 @@
+{
+  "id": "1614",
+  "slug": "maximum-nesting-depth-of-the-parentheses",
+  "title": "Maximum Nesting Depth of the Parentheses",
+  "difficulty": "Easy",
+  "topics": [
+    "String",
+    "Stack"
+  ],
+  "description": "Given a valid parentheses string s, return the nesting depth of s. The nesting depth is the maximum number of nested parentheses.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= s.length <= 100",
+    "s consists of digits 0-9 and characters '+', '-', '*', '/', '(', and ')'.",
+    "It is guaranteed that parentheses expression s is a VPS."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"(1+(2*3)+((8)/4))+1\"\nOutput: 3\nExplanation:\nDigit 8 is inside of 3 nested parentheses in the string."
+    },
+    {
+      "example_text": "Input: s = \"(1)+((2))+(((3)))\"\nOutput: 3\nExplanation:\nDigit 3 is inside of 3 nested parentheses in the string."
+    },
+    {
+      "example_text": "Input: s = \"()(())((()()))\"\nOutput: 3"
+    }
+  ],
+  "hints": [
+    "The depth of any character in the VPS is the ( number of left brackets before it ) - ( number of right brackets before it )"
+  ],
+  "starter_code": "class Solution:\n    def maxDepth(self, s: str) -> int:\n        ",
+  "test_cases": []
+}

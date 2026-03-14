@@ -1,0 +1,30 @@
+{
+  "id": "2447",
+  "slug": "number-of-subarrays-with-gcd-equal-to-k",
+  "title": "Number of Subarrays With GCD Equal to K",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Math",
+    "Number Theory"
+  ],
+  "description": "Given an integer array nums and an integer k, return the number of subarrays of nums where the greatest common divisor of the subarray's elements is k.\nA subarray is a contiguous non-empty sequence of elements within an array.\nThe greatest common divisor of an array is the largest integer that evenly divides all the array elements.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= nums.length <= 1000",
+    "1 <= nums[i], k <= 109"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [9,3,1,2,6,3], k = 3\nOutput: 4\nExplanation: The subarrays of nums where 3 is the greatest common divisor of all the subarray's elements are:\n- [9,3,1,2,6,3]\n- [9,3,1,2,6,3]\n- [9,3,1,2,6,3]\n- [9,3,1,2,6,3]"
+    },
+    {
+      "example_text": "Input: nums = [4], k = 7\nOutput: 0\nExplanation: There are no subarrays of nums where 7 is the greatest common divisor of all the subarray's elements."
+    }
+  ],
+  "hints": [
+    "The constraints on nums.length are small. It is possible to check every subarray.",
+    "To calculate GCD, you can use a built-in function or the Euclidean Algorithm."
+  ],
+  "starter_code": "class Solution:\n    def subarrayGCD(self, nums: List[int], k: int) -> int:\n        ",
+  "test_cases": []
+}

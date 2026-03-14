@@ -1,0 +1,35 @@
+{
+  "id": "3428",
+  "slug": "maximum-and-minimum-sums-of-at-most-size-k-subsequences",
+  "title": "Maximum and Minimum Sums of at Most Size K Subsequences",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Sorting",
+    "Combinatorics"
+  ],
+  "description": "You are given an integer array nums and a positive integer k. Return the sum of the maximum and minimum elements of all subsequences of nums with at most k elements.\nSince the answer may be very large, return it modulo 109 + 7.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "0 <= nums[i] <= 109",
+    "1 <= k <= min(70, nums.length)"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [1,2,3], k = 2\nOutput: 24\nExplanation:\nThe subsequences of nums with at most 2 elements are:\nThe output would be 24."
+    },
+    {
+      "example_text": "Input: nums = [5,0,6], k = 1\nOutput: 2 2\nExplanation:\nFor subsequences with exactly 1 element, the minimum and maximum values are the element itself. Therefore, the total is 5 + 5 + 0 + 0 + 6 + 6 = 22 ."
+    },
+    {
+      "example_text": "Input: nums = [1,1,1], k = 2\nOutput: 12\nExplanation:\nThe subsequences [1, 1] and [1] each appear 3 times. For all of them, the minimum and maximum are both 1. Thus, the total is 12."
+    }
+  ],
+  "hints": [
+    "Sort the array."
+  ],
+  "starter_code": "class Solution:\n    def minMaxSums(self, nums: List[int], k: int) -> int:\n        ",
+  "test_cases": []
+}

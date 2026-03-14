@@ -1,0 +1,31 @@
+{
+  "id": "1110",
+  "slug": "delete-nodes-and-return-forest",
+  "title": "Delete Nodes And Return Forest",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "description": "Given the root of a binary tree, each node in the tree has a distinct value.\nAfter deleting all nodes with a value in to_delete, we are left with a forest (a disjoint union of trees).\nReturn the roots of the trees in the remaining forest. You may return the result in any order.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "The number of nodes in the given tree is at most 1000.",
+    "Each node has a distinct value between 1 and 1000.",
+    "to_delete.length <= 1000",
+    "to_delete contains distinct values between 1 and 1000."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: root = [1,2,3,4,5,6,7], to_delete = [3,5]\nOutput: [[1,2,null,4],[6],[7]]"
+    },
+    {
+      "example_text": "Input: root = [1,2,4,null,3], to_delete = [3]\nOutput: [[1,2,4]]"
+    }
+  ],
+  "hints": [],
+  "starter_code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def delNodes(self, root: Optional[TreeNode], to_delete: List[int]) -> List[TreeNode]:\n        ",
+  "test_cases": []
+}

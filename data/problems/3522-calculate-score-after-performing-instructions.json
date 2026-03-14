@@ -1,0 +1,36 @@
+{
+  "id": "3522",
+  "slug": "calculate-score-after-performing-instructions",
+  "title": "Calculate Score After Performing Instructions",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Simulation"
+  ],
+  "description": "You are given two arrays, instructions and values, both of size n.\nYou need to simulate a process based on the following rules:\nThe process ends when you either:\nReturn your score at the end of the process.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "n == instructions.length == values.length",
+    "1 <= n <= 105",
+    "instructions[i] is either \"add\" or \"jump\".",
+    "-105 <= values[i] <= 105"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: instructions = [\"jump\",\"add\",\"add\",\"jump\",\"add\",\"jump\"], values = [2,1,3,1,-2,-3]\nOutput: 1\nExplanation:\nSimulate the process starting at instruction 0:"
+    },
+    {
+      "example_text": "Input: instructions = [\"jump\",\"add\",\"add\"], values = [3,1,1]\nOutput: 0\nExplanation:\nSimulate the process starting at instruction 0:"
+    },
+    {
+      "example_text": "Input: instructions = [\"jump\"], values = [0]\nOutput: 0\nExplanation:\nSimulate the process starting at instruction 0:"
+    }
+  ],
+  "hints": [
+    "Simulate the process step by step, following the rules for each instruction.",
+    "Use a data structure to track which instructions have already been executed to detect revisits."
+  ],
+  "starter_code": "class Solution:\n    def calculateScore(self, instructions: List[str], values: List[int]) -> int:\n        ",
+  "test_cases": []
+}

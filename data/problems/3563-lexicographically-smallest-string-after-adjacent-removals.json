@@ -1,0 +1,34 @@
+{
+  "id": "3563",
+  "slug": "lexicographically-smallest-string-after-adjacent-removals",
+  "title": "Lexicographically Smallest String After Adjacent Removals",
+  "difficulty": "Hard",
+  "topics": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "description": "You are given a string s consisting of lowercase English letters.\nYou can perform the following operation any number of times (including zero):\nReturn the lexicographically smallest string that can be obtained after performing the operations optimally.\nNote: Consider the alphabet as circular, thus 'a' and 'z' are consecutive.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= s.length <= 250",
+    "s consists only of lowercase English letters."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"abc\"\nOutput: \"a\"\nExplanation:"
+    },
+    {
+      "example_text": "Input: s = \"bcda\"\nOutput: \"\"\nExplanation:"
+    },
+    {
+      "example_text": "Input: s = \"zdce\"\nOutput: \"zdce\"\nExplanation:"
+    }
+  ],
+  "hints": [
+    "As a result of the operation, some of the substrings can be removed",
+    "Find out using DP, which substrings can we remove",
+    "Now, try to build the ans using this DP",
+    "Define ans[i] = lex smallest string that can be made in [i, n - 1], then ans[i] = lex_smallest of { choose one char s[j] in [i, n - 1] + ans[j + 1] }"
+  ],
+  "starter_code": "class Solution:\n    def lexicographicallySmallestString(self, s: str) -> str:\n        ",
+  "test_cases": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": "0930",
+  "slug": "binary-subarrays-with-sum",
+  "title": "Binary Subarrays With Sum",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Sliding Window",
+    "Prefix Sum"
+  ],
+  "description": "Given a binary array nums and an integer goal, return the number of non-empty subarrays with a sum goal.\nA subarray is a contiguous part of the array.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= nums.length <= 3 * 104",
+    "nums[i] is either 0 or 1.",
+    "0 <= goal <= nums.length"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [1,0,1,0,1], goal = 2\nOutput: 4\nExplanation: The 4 subarrays are bolded and underlined below:\n[1,0,1,0,1]\n[1,0,1,0,1]\n[1,0,1,0,1]\n[1,0,1,0,1]"
+    },
+    {
+      "example_text": "Input: nums = [0,0,0,0,0], goal = 0\nOutput: 15"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def numSubarraysWithSum(self, nums: List[int], goal: int) -> int:\n        ",
+  "test_cases": []
+}

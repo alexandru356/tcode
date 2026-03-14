@@ -1,0 +1,32 @@
+{
+  "id": "0394",
+  "slug": "decode-string",
+  "title": "Decode String",
+  "difficulty": "Medium",
+  "topics": [
+    "String",
+    "Stack",
+    "Recursion"
+  ],
+  "description": "Given an encoded string, return its decoded string.\nThe encoding rule is: k[encoded_string], where the encoded_string inside the square brackets is being repeated exactly k times. Note that k is guaranteed to be a positive integer.\nYou may assume that the input string is always valid; there are no extra white spaces, square brackets are well-formed, etc. Furthermore, you may assume that the original data does not contain any digits and that digits are only for those repeat numbers, k. For example, there will not be input like 3a or 2[4].\nThe test cases are generated so that the length of the output will never exceed 105.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= s.length <= 30",
+    "s consists of lowercase English letters, digits, and square brackets '[]'.",
+    "s is guaranteed to be a valid input.",
+    "All the integers in s are in the range [1, 300]."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"3[a]2[bc]\"\nOutput: \"aaabcbc\""
+    },
+    {
+      "example_text": "Input: s = \"3[a2[c]]\"\nOutput: \"accaccacc\""
+    },
+    {
+      "example_text": "Input: s = \"2[abc]3[cd]ef\"\nOutput: \"abcabccdcdcdef\""
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def decodeString(self, s: str) -> str:\n        ",
+  "test_cases": []
+}

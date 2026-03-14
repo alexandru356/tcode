@@ -1,0 +1,26 @@
+{
+  "id": "0984",
+  "slug": "string-without-aaa-or-bbb",
+  "title": "String Without AAA or BBB",
+  "difficulty": "Medium",
+  "topics": [
+    "String",
+    "Greedy"
+  ],
+  "description": "Given two integers a and b, return any string s such that:\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "0 <= a, b <= 100",
+    "It is guaranteed such an s exists for the given a and b."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: a = 1, b = 2\nOutput: \"abb\"\nExplanation: \"abb\", \"bab\" and \"bba\" are all correct answers."
+    },
+    {
+      "example_text": "Input: a = 4, b = 1\nOutput: \"aabaa\""
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def strWithout3a3b(self, a: int, b: int) -> str:\n        ",
+  "test_cases": []
+}

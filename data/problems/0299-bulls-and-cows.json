@@ -1,0 +1,28 @@
+{
+  "id": "0299",
+  "slug": "bulls-and-cows",
+  "title": "Bulls and Cows",
+  "difficulty": "Medium",
+  "topics": [
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "description": "You are playing the Bulls and Cows game with your friend.\nYou write down a secret number and ask your friend to guess what the number is. When your friend makes a guess, you provide a hint with the following info:\nGiven the secret number secret and your friend's guess guess, return the hint for your friend's guess.\nThe hint should be formatted as \"xAyB\", where x is the number of bulls and y is the number of cows. Note that both secret and guess may contain duplicate digits.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= secret.length, guess.length <= 1000",
+    "secret.length == guess.length",
+    "secret and guess consist of digits only."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: secret = \"1807\", guess = \"7810\"\nOutput: \"1A3B\"\nExplanation: Bulls are connected with a '|' and cows are underlined:\n\"1807\"\n  |\n\"7810\""
+    },
+    {
+      "example_text": "Input: secret = \"1123\", guess = \"0111\"\nOutput: \"1A1B\"\nExplanation: Bulls are connected with a '|' and cows are underlined:\n\"1123\"        \"1123\"\n  |      or     |\n\"0111\"        \"0111\"\nNote that only one of the two unmatched 1s is counted as a cow since the non-bull digits can only be rearranged to allow one 1 to be a bull."
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def getHint(self, secret: str, guess: str) -> str:\n        ",
+  "test_cases": []
+}

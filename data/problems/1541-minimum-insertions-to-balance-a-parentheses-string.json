@@ -1,0 +1,33 @@
+{
+  "id": "1541",
+  "slug": "minimum-insertions-to-balance-a-parentheses-string",
+  "title": "Minimum Insertions to Balance a Parentheses String",
+  "difficulty": "Medium",
+  "topics": [
+    "String",
+    "Stack",
+    "Greedy"
+  ],
+  "description": "Given a parentheses string s containing only the characters '(' and ')'. A parentheses string is balanced if:\nIn other words, we treat '(' as an opening parenthesis and '))' as a closing parenthesis.\nYou can insert the characters '(' and ')' at any position of the string to balance it if needed.\nReturn the minimum number of insertions needed to make s balanced.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= s.length <= 105",
+    "s consists of '(' and ')' only."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"(()))\"\nOutput: 1\nExplanation: The second '(' has two matching '))', but the first '(' has only ')' matching. We need to add one more ')' at the end of the string to be \"(())))\" which is balanced."
+    },
+    {
+      "example_text": "Input: s = \"())\"\nOutput: 0\nExplanation: The string is already balanced."
+    },
+    {
+      "example_text": "Input: s = \"))())(\"\nOutput: 3\nExplanation: Add '(' to match the first '))', Add '))' to match the last '('."
+    }
+  ],
+  "hints": [
+    "Use a stack to keep opening brackets. If you face single closing ')' add 1 to the answer and consider it as '))'.",
+    "If you have '))' with empty stack, add 1 to the answer, If after finishing you have x opening remaining in the stack, add 2x to the answer."
+  ],
+  "starter_code": "class Solution:\n    def minInsertions(self, s: str) -> int:\n        ",
+  "test_cases": []
+}

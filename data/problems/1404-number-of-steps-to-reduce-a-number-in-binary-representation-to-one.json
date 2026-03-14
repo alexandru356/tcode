@@ -1,0 +1,34 @@
+{
+  "id": "1404",
+  "slug": "number-of-steps-to-reduce-a-number-in-binary-representation-to-one",
+  "title": "Number of Steps to Reduce a Number in Binary Representation to One",
+  "difficulty": "Medium",
+  "topics": [
+    "String",
+    "Bit Manipulation",
+    "Simulation"
+  ],
+  "description": "Given the binary representation of an integer as a string s, return the number of steps to reduce it to 1 under the following rules:\nIt is guaranteed that you can always reach one for all test cases.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= s.length <= 500",
+    "s consists of characters '0' or '1'",
+    "s[0] == '1'"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"1101\"\nOutput: 6\nExplanation: \"1101\" corressponds to number 13 in their decimal representation.\nStep 1) 13 is odd, add 1 and obtain 14. \nStep 2) 14 is even, divide by 2 and obtain 7.\nStep 3) 7 is odd, add 1 and obtain 8.\nStep 4) 8 is even, divide by 2 and obtain 4.  \nStep 5) 4 is even, divide by 2 and obtain 2. \nStep 6) 2 is even, divide by 2 and obtain 1."
+    },
+    {
+      "example_text": "Input: s = \"10\"\nOutput: 1\nExplanation: \"10\" corresponds to number 2 in their decimal representation.\nStep 1) 2 is even, divide by 2 and obtain 1."
+    },
+    {
+      "example_text": "Input: s = \"1\"\nOutput: 0"
+    }
+  ],
+  "hints": [
+    "Read the string from right to left, if the string ends in '0' then the number is even otherwise it is odd.",
+    "Simulate the steps described in the binary string."
+  ],
+  "starter_code": "class Solution:\n    def numSteps(self, s: str) -> int:\n        ",
+  "test_cases": []
+}

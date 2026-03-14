@@ -1,0 +1,26 @@
+{
+  "id": "0556",
+  "slug": "next-greater-element-iii",
+  "title": "Next Greater Element III",
+  "difficulty": "Medium",
+  "topics": [
+    "Math",
+    "Two Pointers",
+    "String"
+  ],
+  "description": "Given a positive integer n, find the smallest integer which has exactly the same digits existing in the integer n and is greater in value than n. If no such positive integer exists, return -1.\nNote that the returned integer should fit in 32-bit integer, if there is a valid answer but it does not fit in 32-bit integer, return -1.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= n <= 231 - 1"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = 12\nOutput: 21"
+    },
+    {
+      "example_text": "Input: n = 21\nOutput: -1"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def nextGreaterElement(self, n: int) -> int:\n        ",
+  "test_cases": []
+}

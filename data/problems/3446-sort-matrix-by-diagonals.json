@@ -1,0 +1,34 @@
+{
+  "id": "3446",
+  "slug": "sort-matrix-by-diagonals",
+  "title": "Sort Matrix by Diagonals",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Sorting",
+    "Matrix"
+  ],
+  "description": "You are given an n x n square matrix of integers grid. Return the matrix such that:\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "grid.length == grid[i].length == n",
+    "1 <= n <= 10",
+    "-105 <= grid[i][j] <= 105"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: grid = [[1,7,3],[9,8,2],[4,5,6]]\nOutput: [[8,2,3],[9,6,7],[4,5,1]]\nExplanation:\n\nThe diagonals with a black arrow (bottom-left triangle) should be sorted in non-increasing order:\nThe diagonals with a blue arrow (top-right triangle) should be sorted in non-decreasing order:"
+    },
+    {
+      "example_text": "Input: grid = [[0,1],[1,2]]\nOutput: [[2,1],[1,0]]\nExplanation:\n\nThe diagonals with a black arrow must be non-increasing, so [0, 2] is changed to [2, 0] . The other diagonals are already in the correct order."
+    },
+    {
+      "example_text": "Input: grid = [[1]]\nOutput: [[1]]\nExplanation:\nDiagonals with exactly one element are already in order, so no changes are needed."
+    }
+  ],
+  "hints": [
+    "Use a data structure to store all values in each diagonal.",
+    "Sort and replace them in the matrix."
+  ],
+  "starter_code": "class Solution:\n    def sortMatrix(self, grid: List[List[int]]) -> List[List[int]]:\n        ",
+  "test_cases": []
+}

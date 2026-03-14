@@ -1,0 +1,33 @@
+{
+  "id": "1186",
+  "slug": "maximum-subarray-sum-with-one-deletion",
+  "title": "Maximum Subarray Sum with One Deletion",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "description": "Given an array of integers, return the maximum sum for a non-empty subarray (contiguous elements) with at most one element deletion. In other words, you want to choose a subarray and optionally delete one element from it so that there is still at least one element left and the sum of the remaining elements is maximum possible.\nNote that the subarray needs to be non-empty after deleting one element.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= arr.length <= 105",
+    "-104 <= arr[i] <= 104"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: arr = [1,-2,0,3]\nOutput: 4\nExplanation: Because we can choose [1, -2, 0, 3] and drop -2, thus the subarray [1, 0, 3] becomes the maximum value."
+    },
+    {
+      "example_text": "Input: arr = [1,-2,-2,3]\nOutput: 3\nExplanation: We just choose [3] and it's the maximum sum."
+    },
+    {
+      "example_text": "Input: arr = [-1,-1,-1,-1]\nOutput: -1\nExplanation: The final subarray needs to be non-empty. You can't choose [-1] and delete -1 from it, then get an empty subarray to make the sum equals to 0."
+    }
+  ],
+  "hints": [
+    "How to solve this problem if no deletions are allowed ?",
+    "Try deleting each element and find the maximum subarray sum to both sides of that element.",
+    "To do that efficiently, use the idea of Kadane's algorithm."
+  ],
+  "starter_code": "class Solution:\n    def maximumSum(self, arr: List[int]) -> int:\n        ",
+  "test_cases": []
+}

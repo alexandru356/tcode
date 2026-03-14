@@ -1,0 +1,30 @@
+{
+  "id": "3634",
+  "slug": "minimum-removals-to-balance-array",
+  "title": "Minimum Removals to Balance Array",
+  "difficulty": "Medium",
+  "topics": [],
+  "description": "You are given an integer array nums and an integer k.\nAn array is considered balanced if the value of its maximum element is at most k times the minimum element.\nYou may remove any number of elements from nums​​​​​​​ without making it empty.\nReturn the minimum number of elements to remove so that the remaining array is balanced.\nNote: An array of size 1 is considered balanced as its maximum and minimum are equal, and the condition always holds true.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "1 <= nums[i] <= 109",
+    "1 <= k <= 105"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [2,1,5], k = 2\nOutput: 1\nExplanation:"
+    },
+    {
+      "example_text": "Input: nums = [1,6,2,9], k = 3\nOutput: 2\nExplanation:"
+    },
+    {
+      "example_text": "Input: nums = [4,6], k = 2\nOutput: 0\nExplanation:"
+    }
+  ],
+  "hints": [
+    "Sort <code>nums</code> and use two pointers <code>i</code> and <code>j</code> so that the window's minimum is <code>nums[i]</code> and maximum is <code>nums[j]</code>.",
+    "Expand <code>j</code> while <code>nums[j] <= k * nums[i]</code> to maximize the balanced window; answer = <code>n - (j - i + 1)</code>."
+  ],
+  "starter_code": "class Solution:\n    def minRemoval(self, nums: List[int], k: int) -> int:\n        ",
+  "test_cases": []
+}

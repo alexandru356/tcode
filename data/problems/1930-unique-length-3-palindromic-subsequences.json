@@ -1,0 +1,34 @@
+{
+  "id": "1930",
+  "slug": "unique-length-3-palindromic-subsequences",
+  "title": "Unique Length-3 Palindromic Subsequences",
+  "difficulty": "Medium",
+  "topics": [
+    "Hash Table",
+    "String",
+    "Bit Manipulation",
+    "Prefix Sum"
+  ],
+  "description": "Given a string s, return the number of unique palindromes of length three that are a subsequence of s.\nNote that even if there are multiple ways to obtain the same subsequence, it is still only counted once.\nA palindrome is a string that reads the same forwards and backwards.\nA subsequence of a string is a new string generated from the original string with some characters (can be none) deleted without changing the relative order of the remaining characters.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "3 <= s.length <= 105",
+    "s consists of only lowercase English letters."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"aabca\"\nOutput: 3\nExplanation: The 3 palindromic subsequences of length 3 are:\n- \"aba\" (subsequence of \"aabca\")\n- \"aaa\" (subsequence of \"aabca\")\n- \"aca\" (subsequence of \"aabca\")"
+    },
+    {
+      "example_text": "Input: s = \"adc\"\nOutput: 0\nExplanation: There are no palindromic subsequences of length 3 in \"adc\"."
+    },
+    {
+      "example_text": "Input: s = \"bbcbaba\"\nOutput: 4\nExplanation: The 4 palindromic subsequences of length 3 are:\n- \"bbb\" (subsequence of \"bbcbaba\")\n- \"bcb\" (subsequence of \"bbcbaba\")\n- \"bab\" (subsequence of \"bbcbaba\")\n- \"aba\" (subsequence of \"bbcbaba\")"
+    }
+  ],
+  "hints": [
+    "What is the maximum number of length-3 palindromic strings?",
+    "How can we keep track of the characters that appeared to the left of a given position?"
+  ],
+  "starter_code": "class Solution:\n    def countPalindromicSubsequence(self, s: str) -> int:\n        ",
+  "test_cases": []
+}

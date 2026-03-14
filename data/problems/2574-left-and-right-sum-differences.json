@@ -1,0 +1,29 @@
+{
+  "id": "2574",
+  "slug": "left-and-right-sum-differences",
+  "title": "Left and Right Sum Differences",
+  "difficulty": "Easy",
+  "topics": [
+    "Array",
+    "Prefix Sum"
+  ],
+  "description": "You are given a 0-indexed integer array nums of size n.\nDefine two arrays leftSum and rightSum where:\nReturn an integer array answer of size n where answer[i] = |leftSum[i] - rightSum[i]|.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= nums.length <= 1000",
+    "1 <= nums[i] <= 105"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [10,4,8,3]\nOutput: [15,1,11,22]\nExplanation: The array leftSum is [0,10,14,22] and the array rightSum is [15,11,3,0].\nThe array answer is [|0 - 15|,|10 - 11|,|14 - 3|,|22 - 0|] = [15,1,11,22]."
+    },
+    {
+      "example_text": "Input: nums = [1]\nOutput: [0]\nExplanation: The array leftSum is [0] and the array rightSum is [0].\nThe array answer is [|0 - 0|] = [0]."
+    }
+  ],
+  "hints": [
+    "For each index i, maintain two variables leftSum and rightSum.",
+    "Iterate on the range j: [0 … i - 1] and add nums[j] to the leftSum and similarly iterate on the range j: [i + 1 … nums.length - 1] and add nums[j] to the rightSum."
+  ],
+  "starter_code": "class Solution:\n    def leftRightDifference(self, nums: List[int]) -> List[int]:\n        ",
+  "test_cases": []
+}

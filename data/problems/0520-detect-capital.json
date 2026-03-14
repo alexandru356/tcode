@@ -1,0 +1,25 @@
+{
+  "id": "0520",
+  "slug": "detect-capital",
+  "title": "Detect Capital",
+  "difficulty": "Easy",
+  "topics": [
+    "String"
+  ],
+  "description": "We define the usage of capitals in a word to be right when one of the following cases holds:\nGiven a string word, return true if the usage of capitals in it is right.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= word.length <= 100",
+    "word consists of lowercase and uppercase English letters."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: word = \"USA\"\nOutput: true"
+    },
+    {
+      "example_text": "Input: word = \"FlaG\"\nOutput: false"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def detectCapitalUse(self, word: str) -> bool:\n        ",
+  "test_cases": []
+}

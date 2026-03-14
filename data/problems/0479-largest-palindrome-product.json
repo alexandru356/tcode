@@ -1,0 +1,25 @@
+{
+  "id": "0479",
+  "slug": "largest-palindrome-product",
+  "title": "Largest Palindrome Product",
+  "difficulty": "Hard",
+  "topics": [
+    "Math",
+    "Enumeration"
+  ],
+  "description": "Given an integer n, return the largest palindromic integer that can be represented as the product of two n-digits integers. Since the answer can be very large, return it modulo 1337.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= n <= 8"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = 2\nOutput: 987\nExplanation: 99 x 91 = 9009, 9009 % 1337 = 987"
+    },
+    {
+      "example_text": "Input: n = 1\nOutput: 9"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def largestPalindrome(self, n: int) -> int:\n        ",
+  "test_cases": []
+}

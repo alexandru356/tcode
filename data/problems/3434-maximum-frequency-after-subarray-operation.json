@@ -1,0 +1,34 @@
+{
+  "id": "3434",
+  "slug": "maximum-frequency-after-subarray-operation",
+  "title": "Maximum Frequency After Subarray Operation",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Dynamic Programming",
+    "Greedy",
+    "Enumeration",
+    "Prefix Sum"
+  ],
+  "description": "You are given an array nums of length n. You are also given an integer k.\nYou perform the following operation on nums once:\nFind the maximum frequency of the value k after the operation.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= n == nums.length <= 105",
+    "1 <= nums[i] <= 50",
+    "1 <= k <= 50"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [1,2,3,4,5,6], k = 1\nOutput: 2\nExplanation:\nAfter adding -5 to nums[2..5] , 1 has a frequency of 2 in [1, 2, -2, -1, 0, 1] ."
+    },
+    {
+      "example_text": "Input: nums = [10,2,3,4,5,5,4,3,2,2], k = 10\nOutput: 4\nExplanation:\nAfter adding 8 to nums[1..9] , 10 has a frequency of 4 in [10, 10, 11, 12, 13, 13, 12, 11, 10, 10] ."
+    }
+  ],
+  "hints": [
+    "Fix the element you want to convert to <code>k</code>.",
+    "Use prefix sums to optimize counting occurrences of an element."
+  ],
+  "starter_code": "class Solution:\n    def maxFrequency(self, nums: List[int], k: int) -> int:\n        ",
+  "test_cases": []
+}

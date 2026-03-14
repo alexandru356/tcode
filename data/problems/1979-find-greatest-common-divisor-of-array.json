@@ -1,0 +1,33 @@
+{
+  "id": "1979",
+  "slug": "find-greatest-common-divisor-of-array",
+  "title": "Find Greatest Common Divisor of Array",
+  "difficulty": "Easy",
+  "topics": [
+    "Array",
+    "Math",
+    "Number Theory"
+  ],
+  "description": "Given an integer array nums, return the greatest common divisor of the smallest number and largest number in nums.\nThe greatest common divisor of two numbers is the largest positive integer that evenly divides both numbers.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "2 <= nums.length <= 1000",
+    "1 <= nums[i] <= 1000"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [2,5,6,9,10]\nOutput: 2\nExplanation:\nThe smallest number in nums is 2.\nThe largest number in nums is 10.\nThe greatest common divisor of 2 and 10 is 2."
+    },
+    {
+      "example_text": "Input: nums = [7,5,6,8,3]\nOutput: 1\nExplanation:\nThe smallest number in nums is 3.\nThe largest number in nums is 8.\nThe greatest common divisor of 3 and 8 is 1."
+    },
+    {
+      "example_text": "Input: nums = [3,3]\nOutput: 3\nExplanation:\nThe smallest number in nums is 3.\nThe largest number in nums is 3.\nThe greatest common divisor of 3 and 3 is 3."
+    }
+  ],
+  "hints": [
+    "Find the minimum and maximum in one iteration. Let them be mn and mx.",
+    "Try all the numbers in the range [1, mn] and check the largest number which divides both of them."
+  ],
+  "starter_code": "class Solution:\n    def findGCD(self, nums: List[int]) -> int:\n        ",
+  "test_cases": []
+}

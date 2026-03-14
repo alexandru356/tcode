@@ -1,0 +1,29 @@
+{
+  "id": "0009",
+  "slug": "palindrome-number",
+  "title": "Palindrome Number",
+  "difficulty": "Easy",
+  "topics": [
+    "Math"
+  ],
+  "description": "Given an integer x, return true if x is a palindrome, and false otherwise.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "-231 <= x <= 231 - 1"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: x = 121\nOutput: true\nExplanation: 121 reads as 121 from left to right and from right to left."
+    },
+    {
+      "example_text": "Input: x = -121\nOutput: false\nExplanation: From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome."
+    },
+    {
+      "example_text": "Input: x = 10\nOutput: false\nExplanation: Reads 01 from right to left. Therefore it is not a palindrome."
+    }
+  ],
+  "hints": [
+    "Beware of overflow when you reverse the integer."
+  ],
+  "starter_code": "class Solution:\n    def isPalindrome(self, x: int) -> bool:\n        ",
+  "test_cases": []
+}

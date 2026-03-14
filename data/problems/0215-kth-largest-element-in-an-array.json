@@ -1,0 +1,29 @@
+{
+  "id": "0215",
+  "slug": "kth-largest-element-in-an-array",
+  "title": "Kth Largest Element in an Array",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Divide and Conquer",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Quickselect"
+  ],
+  "description": "Given an integer array nums and an integer k, return the kth largest element in the array.\nNote that it is the kth largest element in the sorted order, not the kth distinct element.\nCan you solve it without sorting?\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= k <= nums.length <= 105",
+    "-104 <= nums[i] <= 104"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [3,2,1,5,6,4], k = 2\nOutput: 5"
+    },
+    {
+      "example_text": "Input: nums = [3,2,3,1,2,4,5,5,6], k = 4\nOutput: 4"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def findKthLargest(self, nums: List[int], k: int) -> int:\n        ",
+  "test_cases": []
+}

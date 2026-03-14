@@ -1,0 +1,30 @@
+{
+  "id": "3228",
+  "slug": "maximum-number-of-operations-to-move-ones-to-the-end",
+  "title": "Maximum Number of Operations to Move Ones to the End",
+  "difficulty": "Medium",
+  "topics": [
+    "String",
+    "Greedy",
+    "Counting"
+  ],
+  "description": "You are given a binary string s.\nYou can perform the following operation on the string any number of times:\nReturn the maximum number of operations that you can perform.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= s.length <= 105",
+    "s[i] is either '0' or '1'."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"1001101\"\nOutput: 4\nExplanation:\nWe can perform the following operations:"
+    },
+    {
+      "example_text": "Input: s = \"00111\"\nOutput: 0"
+    }
+  ],
+  "hints": [
+    "It is optimal to perform the operation on the lowest index possible each time.",
+    "Traverse the string from left to right and perform the operation every time it is possible."
+  ],
+  "starter_code": "class Solution:\n    def maxOperations(self, s: str) -> int:\n        ",
+  "test_cases": []
+}

@@ -1,0 +1,36 @@
+{
+  "id": "3531",
+  "slug": "count-covered-buildings",
+  "title": "Count Covered Buildings",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Sorting"
+  ],
+  "description": "You are given a positive integer n, representing an n x n city. You are also given a 2D grid buildings, where buildings[i] = [x, y] denotes a unique building located at coordinates [x, y].\nA building is covered if there is at least one building in all four directions: left, right, above, and below.\nReturn the number of covered buildings.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "2 <= n <= 105",
+    "1 <= buildings.length <= 105",
+    "buildings[i] = [x, y]",
+    "1 <= x, y <= n",
+    "All coordinates of buildings are unique."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = 3, buildings = [[1,2],[2,2],[3,2],[2,1],[2,3]]\nOutput: 1\nExplanation:"
+    },
+    {
+      "example_text": "Input: n = 3, buildings = [[1,1],[1,2],[2,1],[2,2]]\nOutput: 0\nExplanation:"
+    },
+    {
+      "example_text": "Input: n = 5, buildings = [[1,3],[3,2],[3,3],[3,5],[5,3]]\nOutput: 1\nExplanation:"
+    }
+  ],
+  "hints": [
+    "Group buildings with the same x or y value together, and sort each group.",
+    "In each sorted list, the buildings that are not at the first or last positions are covered in that direction."
+  ],
+  "starter_code": "class Solution:\n    def countCoveredBuildings(self, n: int, buildings: List[List[int]]) -> int:\n        ",
+  "test_cases": []
+}

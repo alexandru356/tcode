@@ -1,0 +1,26 @@
+{
+  "id": "2469",
+  "slug": "convert-the-temperature",
+  "title": "Convert the Temperature",
+  "difficulty": "Easy",
+  "topics": [
+    "Math"
+  ],
+  "description": "You are given a non-negative floating point number rounded to two decimal places celsius, that denotes the temperature in Celsius.\nYou should convert Celsius into Kelvin and Fahrenheit and return it as an array ans = [kelvin, fahrenheit].\nReturn the array ans. Answers within 10-5 of the actual answer will be accepted.\nNote that:\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "0 <= celsius <= 1000"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: celsius = 36.50\nOutput: [309.65000,97.70000]\nExplanation: Temperature at 36.50 Celsius converted in Kelvin is 309.65 and converted in Fahrenheit is 97.70."
+    },
+    {
+      "example_text": "Input: celsius = 122.11\nOutput: [395.26000,251.79800]\nExplanation: Temperature at 122.11 Celsius converted in Kelvin is 395.26 and converted in Fahrenheit is 251.798."
+    }
+  ],
+  "hints": [
+    "Implement formulas that are given in the statement."
+  ],
+  "starter_code": "class Solution:\n    def convertTemperature(self, celsius: float) -> List[float]:\n        ",
+  "test_cases": []
+}

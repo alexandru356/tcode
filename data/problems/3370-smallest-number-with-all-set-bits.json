@@ -1,0 +1,30 @@
+{
+  "id": "3370",
+  "slug": "smallest-number-with-all-set-bits",
+  "title": "Smallest Number With All Set Bits",
+  "difficulty": "Easy",
+  "topics": [
+    "Math",
+    "Bit Manipulation"
+  ],
+  "description": "You are given a positive number n.\nReturn the smallest number x greater than or equal to n, such that the binary representation of x contains only set bits\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= n <= 1000"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = 5\nOutput: 7\nExplanation:\nThe binary representation of 7 is \"111\" ."
+    },
+    {
+      "example_text": "Input: n = 10\nOutput: 15\nExplanation:\nThe binary representation of 15 is \"1111\" ."
+    },
+    {
+      "example_text": "Input: n = 3\nOutput: 3\nExplanation:\nThe binary representation of 3 is \"11\" ."
+    }
+  ],
+  "hints": [
+    "Find the strictly greater power of 2, and subtract 1 from it."
+  ],
+  "starter_code": "class Solution:\n    def smallestNumber(self, n: int) -> int:\n        ",
+  "test_cases": []
+}

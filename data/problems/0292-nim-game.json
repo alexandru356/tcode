@@ -1,0 +1,31 @@
+{
+  "id": "0292",
+  "slug": "nim-game",
+  "title": "Nim Game",
+  "difficulty": "Easy",
+  "topics": [
+    "Math",
+    "Brainteaser",
+    "Game Theory"
+  ],
+  "description": "You are playing the following Nim Game with your friend:\nGiven n, the number of stones in the heap, return true if you can win the game assuming both you and your friend play optimally, otherwise return false.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= n <= 231 - 1"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = 4\nOutput: false\nExplanation: These are the possible outcomes:\n1. You remove 1 stone. Your friend removes 3 stones, including the last stone. Your friend wins.\n2. You remove 2 stones. Your friend removes 2 stones, including the last stone. Your friend wins.\n3. You remove 3 stones. Your friend removes the last stone. Your friend wins.\nIn all outcomes, your friend wins."
+    },
+    {
+      "example_text": "Input: n = 1\nOutput: true"
+    },
+    {
+      "example_text": "Input: n = 2\nOutput: true"
+    }
+  ],
+  "hints": [
+    "If there are 5 stones in the heap, could you figure out a way to remove the stones such that you will always be the winner?"
+  ],
+  "starter_code": "class Solution:\n    def canWinNim(self, n: int) -> bool:\n        ",
+  "test_cases": []
+}

@@ -1,0 +1,28 @@
+{
+  "id": "0404",
+  "slug": "sum-of-left-leaves",
+  "title": "Sum of Left Leaves",
+  "difficulty": "Easy",
+  "topics": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "description": "Given the root of a binary tree, return the sum of all left leaves.\nA leaf is a node with no children. A left leaf is a leaf that is the left child of another node.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "The number of nodes in the tree is in the range [1, 1000].",
+    "-1000 <= Node.val <= 1000"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: root = [3,9,20,null,null,15,7]\nOutput: 24\nExplanation: There are two left leaves in the binary tree, with values 9 and 15 respectively."
+    },
+    {
+      "example_text": "Input: root = [1]\nOutput: 0"
+    }
+  ],
+  "hints": [],
+  "starter_code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def sumOfLeftLeaves(self, root: Optional[TreeNode]) -> int:\n        ",
+  "test_cases": []
+}

@@ -1,0 +1,28 @@
+{
+  "id": "3602",
+  "slug": "hexadecimal-and-hexatrigesimal-conversion",
+  "title": "Hexadecimal and Hexatrigesimal Conversion",
+  "difficulty": "Easy",
+  "topics": [
+    "Math",
+    "String"
+  ],
+  "description": "You are given an integer n.\nReturn the concatenation of the hexadecimal representation of n2 and the hexatrigesimal representation of n3.\nA hexadecimal number is defined as a base-16 numeral system that uses the digits 0 – 9 and the uppercase letters A - F to represent values from 0 to 15.\nA hexatrigesimal number is defined as a base-36 numeral system that uses the digits 0 – 9 and the uppercase letters A - Z to represent values from 0 to 35.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= n <= 1000"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = 13\nOutput: \"A91P1\"\nExplanation:"
+    },
+    {
+      "example_text": "Input: n = 36\nOutput: \"5101000\"\nExplanation:"
+    }
+  ],
+  "hints": [
+    "Implement a function <code>toBase(x, b)</code> that converts integer <code>x</code> into a string in base <code>b</code>, using digits <code>0–9</code> and letters <code>A-Z</code> as needed.",
+    "Simulate as described"
+  ],
+  "starter_code": "class Solution:\n    def concatHex36(self, n: int) -> str:\n        ",
+  "test_cases": []
+}

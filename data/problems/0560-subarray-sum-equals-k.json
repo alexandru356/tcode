@@ -1,0 +1,33 @@
+{
+  "id": "0560",
+  "slug": "subarray-sum-equals-k",
+  "title": "Subarray Sum Equals K",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Prefix Sum"
+  ],
+  "description": "Given an array of integers nums and an integer k, return the total number of subarrays whose sum equals to k.\nA subarray is a contiguous non-empty sequence of elements within an array.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= nums.length <= 2 * 104",
+    "-1000 <= nums[i] <= 1000",
+    "-107 <= k <= 107"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [1,1,1], k = 2\nOutput: 2"
+    },
+    {
+      "example_text": "Input: nums = [1,2,3], k = 3\nOutput: 2"
+    }
+  ],
+  "hints": [
+    "Will Brute force work here? Try to optimize it.",
+    "Can we optimize it by using some extra space?",
+    "What about storing sum frequencies in a hash table? Will it be useful?",
+    "sum(i,j)=sum(0,j)-sum(0,i), where sum(i,j) represents the sum of all the elements from index i to j-1.\r\n\r\nCan we use this property to optimize it."
+  ],
+  "starter_code": "class Solution:\n    def subarraySum(self, nums: List[int], k: int) -> int:\n        ",
+  "test_cases": []
+}

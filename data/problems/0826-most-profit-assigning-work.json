@@ -1,0 +1,32 @@
+{
+  "id": "0826",
+  "slug": "most-profit-assigning-work",
+  "title": "Most Profit Assigning Work",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
+    "Greedy",
+    "Sorting"
+  ],
+  "description": "You have n jobs and m workers. You are given three arrays: difficulty, profit, and worker where:\nEvery worker can be assigned at most one job, but one job can be completed multiple times.\nReturn the maximum profit we can achieve after assigning the workers to the jobs.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "n == difficulty.length",
+    "n == profit.length",
+    "m == worker.length",
+    "1 <= n, m <= 104",
+    "1 <= difficulty[i], profit[i], worker[i] <= 105"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: difficulty = [2,4,6,8,10], profit = [10,20,30,40,50], worker = [4,5,6,7]\nOutput: 100\nExplanation: Workers are assigned jobs of difficulty [4,4,6,6] and they get a profit of [20,20,30,30] separately."
+    },
+    {
+      "example_text": "Input: difficulty = [85,47,57], profit = [24,66,99], worker = [40,25,25]\nOutput: 0"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def maxProfitAssignment(self, difficulty: List[int], profit: List[int], worker: List[int]) -> int:\n        ",
+  "test_cases": []
+}

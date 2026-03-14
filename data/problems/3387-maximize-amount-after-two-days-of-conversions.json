@@ -1,0 +1,46 @@
+{
+  "id": "3387",
+  "slug": "maximize-amount-after-two-days-of-conversions",
+  "title": "Maximize Amount After Two Days of Conversions",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "String",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph"
+  ],
+  "description": "You are given a string initialCurrency, and you start with 1.0 of initialCurrency.\nYou are also given four arrays with currency pairs (strings) and rates (real numbers):\nYou can perform any number of conversions, including zero, using rates1 on day 1, followed by any number of additional conversions, including zero, using rates2 on day 2.\nReturn the maximum amount of initialCurrency you can have after performing any number of conversions on both days in order.\nNote: Conversion rates are valid, and there will be no contradictions in the rates for either day. The rates for the days are independent of each other.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= initialCurrency.length <= 3",
+    "initialCurrency consists only of uppercase English letters.",
+    "1 <= n == pairs1.length <= 10",
+    "1 <= m == pairs2.length <= 10",
+    "pairs1[i] == [startCurrencyi, targetCurrencyi]",
+    "pairs2[i] == [startCurrencyi, targetCurrencyi]",
+    "1 <= startCurrencyi.length, targetCurrencyi.length <= 3",
+    "startCurrencyi and targetCurrencyi consist only of uppercase English letters.",
+    "rates1.length == n",
+    "rates2.length == m",
+    "1.0 <= rates1[i], rates2[i] <= 10.0",
+    "The input is generated such that there are no contradictions or cycles in the conversion graphs for either day.",
+    "The input is generated such that the output is at most 5 * 1010."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: initialCurrency = \"EUR\", pairs1 = [[\"EUR\",\"USD\"],[\"USD\",\"JPY\"]], rates1 = [2.0,3.0], pairs2 = [[\"JPY\",\"USD\"],[\"USD\",\"CHF\"],[\"CHF\",\"EUR\"]], rates2 = [4.0,5.0,6.0]\nOutput: 720.00000\nExplanation:\nTo get the maximum amount of EUR , starting with 1.0 EUR :"
+    },
+    {
+      "example_text": "Input: initialCurrency = \"NGN\", pairs1 = [[\"NGN\",\"EUR\"]] , rates1 = [9.0] , pairs2 = [[\"NGN\",\"EUR\"]] , rates2 = [6.0]\nOutput: 1.50000\nExplanation:\nConverting NGN to EUR on day 1 and EUR to NGN using the inverse rate on day 2 gives the maximum amount."
+    },
+    {
+      "example_text": "Input: initialCurrency = \"USD\", pairs1 = [[\"USD\",\"EUR\"]], rates1 = [1.0], pairs2 = [[\"EUR\",\"JPY\"]], rates2 = [10.0]\nOutput: 1.00000\nExplanation:\nIn this example, there is no need to make any conversions on either day."
+    }
+  ],
+  "hints": [
+    "Choose an intermediate currency. Convert from <code>initialCurrency</code> to this currency on day 1, and from that currency back to <code>initialCurrency</code> on day 2.",
+    "Use a DFS/BFS to calculate the direct conversion rate between any two currencies."
+  ],
+  "starter_code": "class Solution:\n    def maxAmount(self, initialCurrency: str, pairs1: List[List[str]], rates1: List[float], pairs2: List[List[str]], rates2: List[float]) -> float:\n        ",
+  "test_cases": []
+}

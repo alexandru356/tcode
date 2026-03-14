@@ -1,0 +1,33 @@
+{
+  "id": "2089",
+  "slug": "find-target-indices-after-sorting-array",
+  "title": "Find Target Indices After Sorting Array",
+  "difficulty": "Easy",
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Sorting"
+  ],
+  "description": "You are given a 0-indexed integer array nums and a target element target.\nA target index is an index i such that nums[i] == target.\nReturn a list of the target indices of nums after sorting nums in non-decreasing order. If there are no target indices, return an empty list. The returned list must be sorted in increasing order.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= nums.length <= 100",
+    "1 <= nums[i], target <= 100"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [1,2,5,2,3], target = 2\nOutput: [1,2]\nExplanation: After sorting, nums is [1,2,2,3,5].\nThe indices where nums[i] == 2 are 1 and 2."
+    },
+    {
+      "example_text": "Input: nums = [1,2,5,2,3], target = 3\nOutput: [3]\nExplanation: After sorting, nums is [1,2,2,3,5].\nThe index where nums[i] == 3 is 3."
+    },
+    {
+      "example_text": "Input: nums = [1,2,5,2,3], target = 5\nOutput: [4]\nExplanation: After sorting, nums is [1,2,2,3,5].\nThe index where nums[i] == 5 is 4."
+    }
+  ],
+  "hints": [
+    "Try \"sorting\" the array first.",
+    "Now find all indices in the array whose values are equal to target."
+  ],
+  "starter_code": "class Solution:\n    def targetIndices(self, nums: List[int], target: int) -> List[int]:\n        ",
+  "test_cases": []
+}

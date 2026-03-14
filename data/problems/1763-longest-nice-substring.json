@@ -1,0 +1,34 @@
+{
+  "id": "1763",
+  "slug": "longest-nice-substring",
+  "title": "Longest Nice Substring",
+  "difficulty": "Easy",
+  "topics": [
+    "Hash Table",
+    "String",
+    "Divide and Conquer",
+    "Bit Manipulation",
+    "Sliding Window"
+  ],
+  "description": "A string s is nice if, for every letter of the alphabet that s contains, it appears both in uppercase and lowercase. For example, \"abABB\" is nice because 'A' and 'a' appear, and 'B' and 'b' appear. However, \"abA\" is not because 'b' appears, but 'B' does not.\nGiven a string s, return the longest substring of s that is nice. If there are multiple, return the substring of the earliest occurrence. If there are none, return an empty string.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= s.length <= 100",
+    "s consists of uppercase and lowercase English letters."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"YazaAay\"\nOutput: \"aAa\"\nExplanation: \"aAa\" is a nice string because 'A/a' is the only letter of the alphabet in s, and both 'A' and 'a' appear.\n\"aAa\" is the longest nice substring."
+    },
+    {
+      "example_text": "Input: s = \"Bb\"\nOutput: \"Bb\"\nExplanation: \"Bb\" is a nice string because both 'B' and 'b' appear. The whole string is a substring."
+    },
+    {
+      "example_text": "Input: s = \"c\"\nOutput: \"\"\nExplanation: There are no nice substrings."
+    }
+  ],
+  "hints": [
+    "Brute force and check each substring to see if it is nice."
+  ],
+  "starter_code": "class Solution:\n    def longestNiceSubstring(self, s: str) -> str:\n        ",
+  "test_cases": []
+}

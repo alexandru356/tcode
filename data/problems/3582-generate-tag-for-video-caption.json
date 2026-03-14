@@ -1,0 +1,31 @@
+{
+  "id": "3582",
+  "slug": "generate-tag-for-video-caption",
+  "title": "Generate Tag for Video Caption",
+  "difficulty": "Easy",
+  "topics": [
+    "String",
+    "Simulation"
+  ],
+  "description": "You are given a string caption representing the caption for a video.\nThe following actions must be performed in order to generate a valid tag for the video:\nReturn the tag after performing the actions on caption.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= caption.length <= 150",
+    "caption consists only of English letters and ' '."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: caption = \"Leetcode daily streak achieved\"\nOutput: \"#leetcodeDailyStreakAchieved\"\nExplanation:\nThe first letter for all words except \"leetcode\" should be capitalized."
+    },
+    {
+      "example_text": "Input: caption = \"can I Go There\"\nOutput: \"#canIGoThere\"\nExplanation:\nThe first letter for all words except \"can\" should be capitalized."
+    },
+    {
+      "example_text": "Input: caption = \"hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh\"\nOutput: \"#hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh\"\nExplanation:\nSince the first word has length 101, we need to truncate the last two letters from the word."
+    }
+  ],
+  "hints": [
+    "Simulate as described"
+  ],
+  "starter_code": "class Solution:\n    def generateTag(self, caption: str) -> str:\n        ",
+  "test_cases": []
+}

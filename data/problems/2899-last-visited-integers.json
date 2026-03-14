@@ -1,0 +1,28 @@
+{
+  "id": "2899",
+  "slug": "last-visited-integers",
+  "title": "Last Visited Integers",
+  "difficulty": "Easy",
+  "topics": [
+    "Array",
+    "Simulation"
+  ],
+  "description": "Given an integer array nums where nums[i] is either a positive integer or -1. We need to find for each -1 the respective positive integer, which we call the last visited integer.\nTo achieve this goal, let's define two empty arrays: seen and ans.\nStart iterating from the beginning of the array nums.\nReturn the array ans.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= nums.length <= 100",
+    "nums[i] == -1 or 1 <= nums[i] <= 100"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [1,2,-1,-1,-1]\nOutput: [2,1,-1]\nExplanation:\nStart with seen = [] and ans = [] ."
+    },
+    {
+      "example_text": "Input: nums = [1,-1,2,-1,-1]\nOutput: [1,2,1]\nExplanation:\nStart with seen = [] and ans = [] ."
+    }
+  ],
+  "hints": [
+    "It is sufficient to implement what the description is stating."
+  ],
+  "starter_code": "class Solution:\n    def lastVisitedIntegers(self, nums: List[int]) -> List[int]:\n        ",
+  "test_cases": []
+}

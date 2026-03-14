@@ -1,0 +1,26 @@
+{
+  "id": "1556",
+  "slug": "thousand-separator",
+  "title": "Thousand Separator",
+  "difficulty": "Easy",
+  "topics": [
+    "String"
+  ],
+  "description": "Given an integer n, add a dot (\".\") as the thousands separator and return it in string format.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "0 <= n <= 231 - 1"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = 987\nOutput: \"987\""
+    },
+    {
+      "example_text": "Input: n = 1234\nOutput: \"1.234\""
+    }
+  ],
+  "hints": [
+    "Scan from the back of the integer and use dots to connect blocks with length 3 except the last block."
+  ],
+  "starter_code": "class Solution:\n    def thousandSeparator(self, n: int) -> str:\n        ",
+  "test_cases": []
+}

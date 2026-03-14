@@ -1,0 +1,28 @@
+{
+  "id": "3498",
+  "slug": "reverse-degree-of-a-string",
+  "title": "Reverse Degree of a String",
+  "difficulty": "Easy",
+  "topics": [
+    "String",
+    "Simulation"
+  ],
+  "description": "Given a string s, calculate its reverse degree.\nThe reverse degree is calculated as follows:\nReturn the reverse degree of s.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= s.length <= 1000",
+    "s contains only lowercase English letters."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"abc\"\nOutput: 148\nExplanation:\nThe reversed degree is 26 + 50 + 72 = 148 ."
+    },
+    {
+      "example_text": "Input: s = \"zaza\"\nOutput: 160\nExplanation:\nThe reverse degree is 1 + 52 + 3 + 104 = 160 ."
+    }
+  ],
+  "hints": [
+    "Simulate the operations as described."
+  ],
+  "starter_code": "class Solution:\n    def reverseDegree(self, s: str) -> int:\n        ",
+  "test_cases": []
+}

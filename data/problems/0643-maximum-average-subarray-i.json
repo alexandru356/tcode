@@ -1,0 +1,27 @@
+{
+  "id": "0643",
+  "slug": "maximum-average-subarray-i",
+  "title": "Maximum Average Subarray I",
+  "difficulty": "Easy",
+  "topics": [
+    "Array",
+    "Sliding Window"
+  ],
+  "description": "You are given an integer array nums consisting of n elements, and an integer k.\nFind a contiguous subarray whose length is equal to k that has the maximum average value and return this value. Any answer with a calculation error less than 10-5 will be accepted.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "n == nums.length",
+    "1 <= k <= n <= 105",
+    "-104 <= nums[i] <= 104"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [1,12,-5,-6,50,3], k = 4\nOutput: 12.75000\nExplanation: Maximum average is (12 - 5 - 6 + 50) / 4 = 51 / 4 = 12.75"
+    },
+    {
+      "example_text": "Input: nums = [5], k = 1\nOutput: 5.00000"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def findMaxAverage(self, nums: List[int], k: int) -> float:\n        ",
+  "test_cases": []
+}

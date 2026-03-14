@@ -1,0 +1,32 @@
+{
+  "id": "3142",
+  "slug": "check-if-grid-satisfies-conditions",
+  "title": "Check if Grid Satisfies Conditions",
+  "difficulty": "Easy",
+  "topics": [
+    "Array",
+    "Matrix"
+  ],
+  "description": "You are given a 2D matrix grid of size m x n. You need to check if each cell grid[i][j] is:\nReturn true if all the cells satisfy these conditions, otherwise, return false.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= n, m <= 10",
+    "0 <= grid[i][j] <= 9"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: grid = [[1,0,2],[1,0,2]]\nOutput: true\nExplanation:\n\nAll the cells in the grid satisfy the conditions."
+    },
+    {
+      "example_text": "Input: grid = [[1,1,1],[0,0,0]]\nOutput: false\nExplanation:\n\nAll cells in the first row are equal."
+    },
+    {
+      "example_text": "Input: grid = [[1],[2],[3]]\nOutput: false\nExplanation:\n\nCells in the first column have different values."
+    }
+  ],
+  "hints": [
+    "Check if each column has same value in each cell.",
+    "If the previous condition is satisfied, we can simply check the first cells in adjacent columns."
+  ],
+  "starter_code": "class Solution:\n    def satisfiesConditions(self, grid: List[List[int]]) -> bool:\n        ",
+  "test_cases": []
+}

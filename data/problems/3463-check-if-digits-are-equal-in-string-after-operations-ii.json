@@ -1,0 +1,32 @@
+{
+  "id": "3463",
+  "slug": "check-if-digits-are-equal-in-string-after-operations-ii",
+  "title": "Check If Digits Are Equal in String After Operations II",
+  "difficulty": "Hard",
+  "topics": [
+    "Math",
+    "String",
+    "Combinatorics",
+    "Number Theory"
+  ],
+  "description": "You are given a string s consisting of digits. Perform the following operation repeatedly until the string has exactly two digits:\nReturn true if the final two digits in s are the same; otherwise, return false.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "3 <= s.length <= 105",
+    "s consists of only digits."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"3902\"\nOutput: true\nExplanation:"
+    },
+    {
+      "example_text": "Input: s = \"34789\"\nOutput: false\nExplanation:"
+    }
+  ],
+  "hints": [
+    "Can we use <code>nCr</code> and use Pascal's triangle values here?",
+    "<code>nCr mod 10</code> can be uniquely determined from <code>nCr mod 2</code> and <code>nCr mod 5</code>.",
+    "Use Lucas's theorem."
+  ],
+  "starter_code": "class Solution:\n    def hasSameDigits(self, s: str) -> bool:\n        ",
+  "test_cases": []
+}

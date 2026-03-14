@@ -1,0 +1,29 @@
+{
+  "id": "0914",
+  "slug": "x-of-a-kind-in-a-deck-of-cards",
+  "title": "X of a Kind in a Deck of Cards",
+  "difficulty": "Easy",
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Counting",
+    "Number Theory"
+  ],
+  "description": "You are given an integer array deck where deck[i] represents the number written on the ith card.\nPartition the cards into one or more groups such that:\nReturn true if such partition is possible, or false otherwise.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= deck.length <= 104",
+    "0 <= deck[i] < 104"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: deck = [1,2,3,4,4,3,2,1]\nOutput: true\nExplanation: Possible partition [1,1],[2,2],[3,3],[4,4]."
+    },
+    {
+      "example_text": "Input: deck = [1,1,1,2,2,2,3,3]\nOutput: false\nExplanation: No possible partition."
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def hasGroupsSizeX(self, deck: List[int]) -> bool:\n        ",
+  "test_cases": []
+}

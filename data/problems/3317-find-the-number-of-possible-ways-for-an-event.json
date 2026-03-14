@@ -1,0 +1,33 @@
+{
+  "id": "3317",
+  "slug": "find-the-number-of-possible-ways-for-an-event",
+  "title": "Find the Number of Possible Ways for an Event",
+  "difficulty": "Hard",
+  "topics": [
+    "Math",
+    "Dynamic Programming",
+    "Combinatorics"
+  ],
+  "description": "You are given three integers n, x, and y.\nAn event is being held for n performers. When a performer arrives, they are assigned to one of the x stages. All performers assigned to the same stage will perform together as a band, though some stages might remain empty.\nAfter all performances are completed, the jury will award each band a score in the range [1, y].\nReturn the total number of possible ways the event can take place.\nSince the answer may be very large, return it modulo 109 + 7.\nNote that two events are considered to have been held differently if either of the following conditions is satisfied:\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= n, x, y <= 1000"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = 1, x = 2, y = 3\nOutput: 6\nExplanation:"
+    },
+    {
+      "example_text": "Input: n = 5, x = 2, y = 1\nOutput: 32\nExplanation:"
+    },
+    {
+      "example_text": "Input: n = 3, x = 3, y = 4\nOutput: 684"
+    }
+  ],
+  "hints": [
+    "Fix the number of stages.",
+    "Assign the Performers to the stages.",
+    "Use inclusion-exclusion to ensure that no stage has 0 performers."
+  ],
+  "starter_code": "class Solution:\n    def numberOfWays(self, n: int, x: int, y: int) -> int:\n        ",
+  "test_cases": []
+}

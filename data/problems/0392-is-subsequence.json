@@ -1,0 +1,28 @@
+{
+  "id": "0392",
+  "slug": "is-subsequence",
+  "title": "Is Subsequence",
+  "difficulty": "Easy",
+  "topics": [
+    "Two Pointers",
+    "String",
+    "Dynamic Programming"
+  ],
+  "description": "Given two strings s and t, return true if s is a subsequence of t, or false otherwise.\nA subsequence of a string is a new string that is formed from the original string by deleting some (can be none) of the characters without disturbing the relative positions of the remaining characters. (i.e., \"ace\" is a subsequence of \"abcde\" while \"aec\" is not).\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "0 <= s.length <= 100",
+    "0 <= t.length <= 104",
+    "s and t consist only of lowercase English letters."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"abc\", t = \"ahbgdc\"\nOutput: true"
+    },
+    {
+      "example_text": "Input: s = \"axc\", t = \"ahbgdc\"\nOutput: false"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def isSubsequence(self, s: str, t: str) -> bool:\n        ",
+  "test_cases": []
+}

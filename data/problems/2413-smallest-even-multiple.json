@@ -1,0 +1,28 @@
+{
+  "id": "2413",
+  "slug": "smallest-even-multiple",
+  "title": "Smallest Even Multiple",
+  "difficulty": "Easy",
+  "topics": [
+    "Math",
+    "Number Theory"
+  ],
+  "description": "Example 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= n <= 150"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = 5\nOutput: 10\nExplanation: The smallest multiple of both 5 and 2 is 10."
+    },
+    {
+      "example_text": "Input: n = 6\nOutput: 6\nExplanation: The smallest multiple of both 6 and 2 is 6. Note that a number is a multiple of itself."
+    }
+  ],
+  "hints": [
+    "A guaranteed way to find a multiple of 2 and n is to multiply them together. When is this the answer, and when is there a smaller answer?",
+    "There is a smaller answer when n is even."
+  ],
+  "starter_code": "class Solution:\n    def smallestEvenMultiple(self, n: int) -> int:\n        ",
+  "test_cases": []
+}

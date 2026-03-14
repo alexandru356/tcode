@@ -1,0 +1,39 @@
+{
+  "id": "2818",
+  "slug": "apply-operations-to-maximize-score",
+  "title": "Apply Operations to Maximize Score",
+  "difficulty": "Hard",
+  "topics": [
+    "Array",
+    "Math",
+    "Stack",
+    "Greedy",
+    "Sorting",
+    "Monotonic Stack",
+    "Number Theory"
+  ],
+  "description": "You are given an array nums of n positive integers and an integer k.\nInitially, you start with a score of 1. You have to maximize your score by applying the following operation at most k times:\nHere, nums[l, ..., r] denotes the subarray of nums starting at index l and ending at the index r, both ends being inclusive.\nThe prime score of an integer x is equal to the number of distinct prime factors of x. For example, the prime score of 300 is 3 since 300 = 2 * 2 * 3 * 5 * 5.\nReturn the maximum possible score after applying at most k operations.\nSince the answer may be large, return it modulo 109 + 7.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= nums.length == n <= 105",
+    "1 <= nums[i] <= 105",
+    "1 <= k <= min(n * (n + 1) / 2, 109)"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [8,3,9,3,8], k = 2\nOutput: 81\nExplanation: To get a score of 81, we can apply the following operations:\n- Choose subarray nums[2, ..., 2]. nums[2] is the only element in this subarray. Hence, we multiply the score by nums[2]. The score becomes 1 * 9 = 9.\n- Choose subarray nums[2, ..., 3]. Both nums[2] and nums[3] have a prime score of 1, but nums[2] has the smaller index. Hence, we multiply the score by nums[2]. The score becomes 9 * 9 = 81.\nIt can be proven that 81 is the highest score one can obtain."
+    },
+    {
+      "example_text": "Input: nums = [19,12,14,6,10,18], k = 3\nOutput: 4788\nExplanation: To get a score of 4788, we can apply the following operations: \n- Choose subarray nums[0, ..., 0]. nums[0] is the only element in this subarray. Hence, we multiply the score by nums[0]. The score becomes 1 * 19 = 19.\n- Choose subarray nums[5, ..., 5]. nums[5] is the only element in this subarray. Hence, we multiply the score by nums[5]. The score becomes 19 * 18 = 342.\n- Choose subarray nums[2, ..., 3]. Both nums[2] and nums[3] have a prime score of 2, but nums[2] has the smaller index. Hence, we multipy the score by nums[2]. The score becomes 342 * 14 = 4788.\nIt can be proven that 4788 is the highest score one can obtain."
+    }
+  ],
+  "hints": [
+    "<div class=\"_1l1MA\">Calculate <code>nums[i]</code>'s prime score <code>s[i]</code> by factoring in <code>O(sqrt(nums[i]))</code> time.</div>",
+    "<div class=\"_1l1MA\">For each <code>nums[i]</code>, find the nearest index <code>left[i]</code> on the left (if any) such that <code>s[left[i]] >= s[i]</code>. if none is found, set <code>left[i]</code> to <code>-1</code>. Similarly, find the nearest index <code>right[i]</code> on the right (if any) such that <code>s[right[i]] > s[i]</code>. If none is found, set <code>right[i]</code> to <code>n</code>.</div>",
+    "<div class=\"_1l1MA\">Use a monotonic stack to compute <code>right[i]</code> and <code>left[i]</code>.</div>",
+    "<div class=\"_1l1MA\">For each index <code>i</code>, if <code>left[i] + 1 <= l <= i <= r <= right[i] - 1</code>, then <code>s[i]</code> is the maximum value in the range <code>[l, r]</code>. For this particular <code>i</code>, there are <code>ranges[i] = (i - left[i]) * (right[i] - i)</code> ranges where index <code>i</code> will be chosen.</div>",
+    "<div class=\"_1l1MA\">Loop over all elements of <code>nums</code> by non-increasing prime score, each element will be chosen <code>min(ranges[i], remainingK)</code> times, where <code>reaminingK</code> denotes the number of remaining operations. Therefore, the score will be multiplied by <code>s[i]^min(ranges[i],remainingK)</code>.</div>",
+    "<div class=\"_1l1MA\">Use fast exponentiation to quickly calculate <code>A^B mod C</code>.</div>"
+  ],
+  "starter_code": "class Solution:\n    def maximumScore(self, nums: List[int], k: int) -> int:\n        ",
+  "test_cases": []
+}

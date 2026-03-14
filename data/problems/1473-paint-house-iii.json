@@ -1,0 +1,37 @@
+{
+  "id": "1473",
+  "slug": "paint-house-iii",
+  "title": "Paint House III",
+  "difficulty": "Hard",
+  "topics": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "description": "There is a row of m houses in a small city, each house must be painted with one of the n colors (labeled from 1 to n), some houses that have been painted last summer should not be painted again.\nA neighborhood is a maximal group of continuous houses that are painted with the same color.\nGiven an array houses, an m x n matrix cost and an integer target where:\nReturn the minimum cost of painting all the remaining houses in such a way that there are exactly target neighborhoods. If it is not possible, return -1.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "m == houses.length == cost.length",
+    "n == cost[i].length",
+    "1 <= m <= 100",
+    "1 <= n <= 20",
+    "1 <= target <= m",
+    "0 <= houses[i] <= n",
+    "1 <= cost[i][j] <= 104"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: houses = [0,0,0,0,0], cost = [[1,10],[10,1],[10,1],[1,10],[5,1]], m = 5, n = 2, target = 3\nOutput: 9\nExplanation: Paint houses of this way [1,2,2,1,1]\nThis array contains target = 3 neighborhoods, [{1}, {2,2}, {1,1}].\nCost of paint all houses (1 + 1 + 1 + 1 + 5) = 9."
+    },
+    {
+      "example_text": "Input: houses = [0,2,1,2,0], cost = [[1,10],[10,1],[10,1],[1,10],[5,1]], m = 5, n = 2, target = 3\nOutput: 11\nExplanation: Some houses are already painted, Paint the houses of this way [2,2,1,2,2]\nThis array contains target = 3 neighborhoods, [{2,2}, {1}, {2,2}]. \nCost of paint the first and last house (10 + 1) = 11."
+    },
+    {
+      "example_text": "Input: houses = [3,1,2,3], cost = [[1,1,1],[1,1,1],[1,1,1],[1,1,1]], m = 4, n = 3, target = 3\nOutput: -1\nExplanation: Houses are already painted with a total of 4 neighborhoods [{3},{1},{2},{3}] different of target = 3."
+    }
+  ],
+  "hints": [
+    "Use Dynamic programming.",
+    "Define dp[i][j][k] as the minimum cost where we have k neighborhoods in the first i houses and the i-th house is painted with the color j."
+  ],
+  "starter_code": "class Solution:\n    def minCost(self, houses: List[int], cost: List[List[int]], m: int, n: int, target: int) -> int:\n        ",
+  "test_cases": []
+}

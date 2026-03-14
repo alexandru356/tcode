@@ -1,0 +1,29 @@
+{
+  "id": "3402",
+  "slug": "minimum-operations-to-make-columns-strictly-increasing",
+  "title": "Minimum Operations to Make Columns Strictly Increasing",
+  "difficulty": "Easy",
+  "topics": [
+    "Array",
+    "Greedy",
+    "Matrix"
+  ],
+  "description": "You are given a m x n matrix grid consisting of non-negative integers.\nIn one operation, you can increment the value of any grid[i][j] by 1.\nReturn the minimum number of operations needed to make all columns of grid strictly increasing.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "m == grid.length",
+    "n == grid[i].length",
+    "1 <= m, n <= 50",
+    "0 <= grid[i][j] < 2500"
+  ],
+  "examples": [
+    {
+      "example_text": ""
+    }
+  ],
+  "hints": [
+    "<code>grid[i + 1][j]</code> must be at least equal to <code>grid[i][j] + 1<code>.",
+    "Iterate on <code>i</code> in increasing order, and set <code>grid[i + 1][j] = max(grid[i][j]+1, grid[i + 1][j])<code>."
+  ],
+  "starter_code": "class Solution:\n    def minimumOperations(self, grid: List[List[int]]) -> int:\n        ",
+  "test_cases": []
+}

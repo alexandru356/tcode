@@ -1,0 +1,26 @@
+{
+  "id": "0668",
+  "slug": "kth-smallest-number-in-multiplication-table",
+  "title": "Kth Smallest Number in Multiplication Table",
+  "difficulty": "Hard",
+  "topics": [
+    "Math",
+    "Binary Search"
+  ],
+  "description": "Nearly everyone has used the Multiplication Table. The multiplication table of size m x n is an integer matrix mat where mat[i][j] == i * j (1-indexed).\nGiven three integers m, n, and k, return the kth smallest element in the m x n multiplication table.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= m, n <= 3 * 104",
+    "1 <= k <= m * n"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: m = 3, n = 3, k = 5\nOutput: 3\nExplanation: The 5th smallest number is 3."
+    },
+    {
+      "example_text": "Input: m = 2, n = 3, k = 6\nOutput: 6\nExplanation: The 6th smallest number is 6."
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def findKthNumber(self, m: int, n: int, k: int) -> int:\n        ",
+  "test_cases": []
+}

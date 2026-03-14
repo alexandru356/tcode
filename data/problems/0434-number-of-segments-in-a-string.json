@@ -1,0 +1,26 @@
+{
+  "id": "0434",
+  "slug": "number-of-segments-in-a-string",
+  "title": "Number of Segments in a String",
+  "difficulty": "Easy",
+  "topics": [
+    "String"
+  ],
+  "description": "Given a string s, return the number of segments in the string.\nA segment is defined to be a contiguous sequence of non-space characters.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "0 <= s.length <= 300",
+    "s consists of lowercase and uppercase English letters, digits, or one of the following characters \"!@#$%^&*()_+-=',.:\".",
+    "The only space character in s is ' '."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"Hello, my name is John\"\nOutput: 5\nExplanation: The five segments are [\"Hello,\", \"my\", \"name\", \"is\", \"John\"]"
+    },
+    {
+      "example_text": "Input: s = \"Hello\"\nOutput: 1"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def countSegments(self, s: str) -> int:\n        ",
+  "test_cases": []
+}

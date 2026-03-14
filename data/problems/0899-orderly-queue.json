@@ -1,0 +1,27 @@
+{
+  "id": "0899",
+  "slug": "orderly-queue",
+  "title": "Orderly Queue",
+  "difficulty": "Hard",
+  "topics": [
+    "Math",
+    "String",
+    "Sorting"
+  ],
+  "description": "You are given a string s and an integer k. You can choose one of the first k letters of s and append it at the end of the string.\nReturn the lexicographically smallest string you could have after applying the mentioned step any number of moves.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= k <= s.length <= 1000",
+    "s consist of lowercase English letters."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"cba\", k = 1\nOutput: \"acb\"\nExplanation: \nIn the first move, we move the 1st character 'c' to the end, obtaining the string \"bac\".\nIn the second move, we move the 1st character 'b' to the end, obtaining the final result \"acb\"."
+    },
+    {
+      "example_text": "Input: s = \"baaca\", k = 3\nOutput: \"aaabc\"\nExplanation: \nIn the first move, we move the 1st character 'b' to the end, obtaining the string \"aacab\".\nIn the second move, we move the 3rd character 'c' to the end, obtaining the final result \"aaabc\"."
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def orderlyQueue(self, s: str, k: int) -> str:\n        ",
+  "test_cases": []
+}

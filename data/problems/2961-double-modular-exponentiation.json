@@ -1,0 +1,29 @@
+{
+  "id": "2961",
+  "slug": "double-modular-exponentiation",
+  "title": "Double Modular Exponentiation",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Math",
+    "Simulation"
+  ],
+  "description": "You are given a 0-indexed 2D array variables where variables[i] = [ai, bi, ci, mi], and an integer target.\nAn index i is good if the following formula holds:\nReturn an array consisting of good indices in any order.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= variables.length <= 100",
+    "variables[i] == [ai, bi, ci, mi]",
+    "1 <= ai, bi, ci, mi <= 103",
+    "0 <= target <= 103"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: variables = [[2,3,3,10],[3,3,3,1],[6,1,1,4]], target = 2\nOutput: [0,2]\nExplanation: For each index i in the variables array:\n1) For the index 0, variables[0] = [2,3,3,10], (23 % 10)3 % 10 = 2.\n2) For the index 1, variables[1] = [3,3,3,1], (33 % 10)3 % 1 = 0.\n3) For the index 2, variables[2] = [6,1,1,4], (61 % 10)1 % 4 = 2.\nTherefore we return [0,2] as the answer."
+    },
+    {
+      "example_text": "Input: variables = [[39,3,1000,1000]], target = 17\nOutput: []\nExplanation: For each index i in the variables array:\n1) For the index 0, variables[0] = [39,3,1000,1000], (393 % 10)1000 % 1000 = 1.\nTherefore we return [] as the answer."
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def getGoodIndices(self, variables: List[List[int]], target: int) -> List[int]:\n        ",
+  "test_cases": []
+}

@@ -1,0 +1,31 @@
+{
+  "id": "2390",
+  "slug": "removing-stars-from-a-string",
+  "title": "Removing Stars From a String",
+  "difficulty": "Medium",
+  "topics": [
+    "String",
+    "Stack",
+    "Simulation"
+  ],
+  "description": "You are given a string s, which contains stars *.\nIn one operation, you can:\nReturn the string after all stars have been removed.\nNote:\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= s.length <= 105",
+    "s consists of lowercase English letters and stars *.",
+    "The operation above can be performed on s."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"leet**cod*e\"\nOutput: \"lecoe\"\nExplanation: Performing the removals from left to right:\n- The closest character to the 1st star is 't' in \"leet**cod*e\". s becomes \"lee*cod*e\".\n- The closest character to the 2nd star is 'e' in \"lee*cod*e\". s becomes \"lecod*e\".\n- The closest character to the 3rd star is 'd' in \"lecod*e\". s becomes \"lecoe\".\nThere are no more stars, so we return \"lecoe\"."
+    },
+    {
+      "example_text": "Input: s = \"erase*****\"\nOutput: \"\"\nExplanation: The entire string is removed, so we return an empty string."
+    }
+  ],
+  "hints": [
+    "What data structure could we use to efficiently perform these removals?",
+    "Use a stack to store the characters. Pop one character off the stack at each star. Otherwise, we push the character onto the stack."
+  ],
+  "starter_code": "class Solution:\n    def removeStars(self, s: str) -> str:\n        ",
+  "test_cases": []
+}

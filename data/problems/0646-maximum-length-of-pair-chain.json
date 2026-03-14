@@ -1,0 +1,29 @@
+{
+  "id": "0646",
+  "slug": "maximum-length-of-pair-chain",
+  "title": "Maximum Length of Pair Chain",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Greedy",
+    "Sorting"
+  ],
+  "description": "You are given an array of n pairs pairs where pairs[i] = [lefti, righti] and lefti < righti.\nA pair p2 = [c, d] follows a pair p1 = [a, b] if b < c. A chain of pairs can be formed in this fashion.\nReturn the length longest chain which can be formed.\nYou do not need to use up all the given intervals. You can select pairs in any order.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "n == pairs.length",
+    "1 <= n <= 1000",
+    "-1000 <= lefti < righti <= 1000"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: pairs = [[1,2],[2,3],[3,4]]\nOutput: 2\nExplanation: The longest chain is [1,2] -> [3,4]."
+    },
+    {
+      "example_text": "Input: pairs = [[1,2],[7,8],[4,5]]\nOutput: 3\nExplanation: The longest chain is [1,2] -> [4,5] -> [7,8]."
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def findLongestChain(self, pairs: List[List[int]]) -> int:\n        ",
+  "test_cases": []
+}

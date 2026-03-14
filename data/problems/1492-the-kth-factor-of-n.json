@@ -1,0 +1,31 @@
+{
+  "id": "1492",
+  "slug": "the-kth-factor-of-n",
+  "title": "The kth Factor of n",
+  "difficulty": "Medium",
+  "topics": [
+    "Math",
+    "Number Theory"
+  ],
+  "description": "You are given two positive integers n and k. A factor of an integer n is defined as an integer i where n % i == 0.\nConsider a list of all factors of n sorted in ascending order, return the kth factor in this list or return -1 if n has less than k factors.\nExample 1:\nExample 2:\nExample 3:\nConstraints:\nFollow up:\nCould you solve this problem in less than O(n) complexity?",
+  "constraints": [
+    "1 <= k <= n <= 1000"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = 12, k = 3\nOutput: 3\nExplanation: Factors list is [1, 2, 3, 4, 6, 12], the 3rd factor is 3."
+    },
+    {
+      "example_text": "Input: n = 7, k = 2\nOutput: 7\nExplanation: Factors list is [1, 7], the 2nd factor is 7."
+    },
+    {
+      "example_text": "Input: n = 4, k = 4\nOutput: -1\nExplanation: Factors list is [1, 2, 4], there is only 3 factors. We should return -1."
+    }
+  ],
+  "hints": [
+    "The factors of n will be always in the range [1, n].",
+    "Keep a list of all factors sorted.  Loop i from 1 to n and add i if n % i == 0. Return the kth factor if it exist in this list."
+  ],
+  "starter_code": "class Solution:\n    def kthFactor(self, n: int, k: int) -> int:\n        ",
+  "test_cases": []
+}

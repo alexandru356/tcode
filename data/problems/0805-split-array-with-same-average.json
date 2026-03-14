@@ -1,0 +1,29 @@
+{
+  "id": "0805",
+  "slug": "split-array-with-same-average",
+  "title": "Split Array With Same Average",
+  "difficulty": "Hard",
+  "topics": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Bitmask"
+  ],
+  "description": "You are given an integer array nums.\nYou should move each element of nums into one of the two arrays A and B such that A and B are non-empty, and average(A) == average(B).\nReturn true if it is possible to achieve that and false otherwise.\nNote that for an array arr, average(arr) is the sum of all the elements of arr over the length of arr.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= nums.length <= 30",
+    "0 <= nums[i] <= 104"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [1,2,3,4,5,6,7,8]\nOutput: true\nExplanation: We can split the array into [1,4,5,8] and [2,3,6,7], and both of them have an average of 4.5."
+    },
+    {
+      "example_text": "Input: nums = [3,1]\nOutput: false"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def splitArraySameAverage(self, nums: List[int]) -> bool:\n        ",
+  "test_cases": []
+}

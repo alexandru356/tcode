@@ -1,0 +1,28 @@
+{
+  "id": "1446",
+  "slug": "consecutive-characters",
+  "title": "Consecutive Characters",
+  "difficulty": "Easy",
+  "topics": [
+    "String"
+  ],
+  "description": "The power of the string is the maximum length of a non-empty substring that contains only one unique character.\nGiven a string s, return the power of s.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= s.length <= 500",
+    "s consists of only lowercase English letters."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"leetcode\"\nOutput: 2\nExplanation: The substring \"ee\" is of length 2 with the character 'e' only."
+    },
+    {
+      "example_text": "Input: s = \"abbcccddddeeeeedcba\"\nOutput: 5\nExplanation: The substring \"eeeee\" is of length 5 with the character 'e' only."
+    }
+  ],
+  "hints": [
+    "Keep an array power where power[i] is the maximum power of the i-th character.",
+    "The answer is max(power[i])."
+  ],
+  "starter_code": "class Solution:\n    def maxPower(self, s: str) -> int:\n        ",
+  "test_cases": []
+}

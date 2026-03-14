@@ -1,0 +1,34 @@
+{
+  "id": "0230",
+  "slug": "kth-smallest-element-in-a-bst",
+  "title": "Kth Smallest Element in a BST",
+  "difficulty": "Medium",
+  "topics": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Search Tree",
+    "Binary Tree"
+  ],
+  "description": "Given the root of a binary search tree, and an integer k, return the kth smallest value (1-indexed) of all the values of the nodes in the tree.\nExample 1:\nExample 2:\nConstraints:\nFollow up: If the BST is modified often (i.e., we can do insert and delete operations) and you need to find the kth smallest frequently, how would you optimize?",
+  "constraints": [
+    "The number of nodes in the tree is n.",
+    "1 <= k <= n <= 104",
+    "0 <= Node.val <= 104"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: root = [3,1,4,null,2], k = 1\nOutput: 1"
+    },
+    {
+      "example_text": "Input: root = [5,3,6,2,4,null,null,1], k = 3\nOutput: 3"
+    }
+  ],
+  "hints": [
+    "Try to utilize the property of a BST.",
+    "Try in-order traversal. (Credits to @chan13)",
+    "What if you could modify the BST node's structure?",
+    "The optimal runtime complexity is O(height of BST)."
+  ],
+  "starter_code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def kthSmallest(self, root: Optional[TreeNode], k: int) -> int:\n        ",
+  "test_cases": []
+}

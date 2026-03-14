@@ -1,0 +1,27 @@
+{
+  "id": "0263",
+  "slug": "ugly-number",
+  "title": "Ugly Number",
+  "difficulty": "Easy",
+  "topics": [
+    "Math"
+  ],
+  "description": "An ugly number is a positive integer which does not have a prime factor other than 2, 3, and 5.\nGiven an integer n, return true if n is an ugly number.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "-231 <= n <= 231 - 1"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = 6\nOutput: true\nExplanation: 6 = 2 × 3"
+    },
+    {
+      "example_text": "Input: n = 1\nOutput: true\nExplanation: 1 has no prime factors."
+    },
+    {
+      "example_text": "Input: n = 14\nOutput: false\nExplanation: 14 is not ugly since it includes the prime factor 7."
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def isUgly(self, n: int) -> bool:\n        ",
+  "test_cases": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": "0365",
+  "slug": "water-and-jug-problem",
+  "title": "Water and Jug Problem",
+  "difficulty": "Medium",
+  "topics": [
+    "Math",
+    "Depth-First Search",
+    "Breadth-First Search"
+  ],
+  "description": "You are given two jugs with capacities x liters and y liters. You have an infinite water supply. Return whether the total amount of water in both jugs may reach target using the following operations:\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= x, y, target <= 103"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: x = 3, y = 5, target = 4\nOutput: true\nExplanation:\nFollow these steps to reach a total of 4 liters:\nReference: The Die Hard example."
+    },
+    {
+      "example_text": "Input: x = 2, y = 6, target = 5\nOutput: false"
+    },
+    {
+      "example_text": "Input: x = 1, y = 2, target = 3\nOutput: true\nExplanation: Fill both jugs. The total amount of water in both jugs is equal to 3 now."
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def canMeasureWater(self, x: int, y: int, target: int) -> bool:\n        ",
+  "test_cases": []
+}

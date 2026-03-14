@@ -1,0 +1,29 @@
+{
+  "id": "0920",
+  "slug": "number-of-music-playlists",
+  "title": "Number of Music Playlists",
+  "difficulty": "Hard",
+  "topics": [
+    "Math",
+    "Dynamic Programming",
+    "Combinatorics"
+  ],
+  "description": "Your music player contains n different songs. You want to listen to goal songs (not necessarily different) during your trip. To avoid boredom, you will create a playlist so that:\nGiven n, goal, and k, return the number of possible playlists that you can create. Since the answer can be very large, return it modulo 109 + 7.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "0 <= k < n <= goal <= 100"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = 3, goal = 3, k = 1\nOutput: 6\nExplanation: There are 6 possible playlists: [1, 2, 3], [1, 3, 2], [2, 1, 3], [2, 3, 1], [3, 1, 2], and [3, 2, 1]."
+    },
+    {
+      "example_text": "Input: n = 2, goal = 3, k = 0\nOutput: 6\nExplanation: There are 6 possible playlists: [1, 1, 2], [1, 2, 1], [2, 1, 1], [2, 2, 1], [2, 1, 2], and [1, 2, 2]."
+    },
+    {
+      "example_text": "Input: n = 2, goal = 3, k = 1\nOutput: 2\nExplanation: There are 2 possible playlists: [1, 2, 1] and [2, 1, 2]."
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def numMusicPlaylists(self, n: int, goal: int, k: int) -> int:\n        ",
+  "test_cases": []
+}

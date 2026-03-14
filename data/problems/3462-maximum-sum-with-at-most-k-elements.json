@@ -1,0 +1,36 @@
+{
+  "id": "3462",
+  "slug": "maximum-sum-with-at-most-k-elements",
+  "title": "Maximum Sum With at Most K Elements",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Matrix"
+  ],
+  "description": "You are given a 2D integer matrix grid of size n x m, an integer array limits of length n, and an integer k. The task is to find the maximum sum of at most k elements from the matrix grid such that:\nReturn the maximum sum.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "n == grid.length == limits.length",
+    "m == grid[i].length",
+    "1 <= n, m <= 500",
+    "0 <= grid[i][j] <= 105",
+    "0 <= limits[i] <= m",
+    "0 <= k <= min(n * m, sum(limits))"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: grid = [[1,2],[3,4]], limits = [1,2], k = 2\nOutput: 7\nExplanation:"
+    },
+    {
+      "example_text": "Input: grid = [[5,3,7],[8,2,6]], limits = [2,2], k = 3\nOutput: 21\nExplanation:"
+    }
+  ],
+  "hints": [
+    "Sort each row in descending order and extract the top <code>limits[i]</code> elements.",
+    "Use a max-heap to efficiently pick the largest <code>k</code> elements across all rows."
+  ],
+  "starter_code": "class Solution:\n    def maxSum(self, grid: List[List[int]], limits: List[int], k: int) -> int:\n        ",
+  "test_cases": []
+}

@@ -1,0 +1,26 @@
+{
+  "id": "0062",
+  "slug": "unique-paths",
+  "title": "Unique Paths",
+  "difficulty": "Medium",
+  "topics": [
+    "Math",
+    "Dynamic Programming",
+    "Combinatorics"
+  ],
+  "description": "There is a robot on an m x n grid. The robot is initially located at the top-left corner (i.e., grid[0][0]). The robot tries to move to the bottom-right corner (i.e., grid[m - 1][n - 1]). The robot can only move either down or right at any point in time.\nGiven the two integers m and n, return the number of possible unique paths that the robot can take to reach the bottom-right corner.\nThe test cases are generated so that the answer will be less than or equal to 2 * 109.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= m, n <= 100"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: m = 3, n = 7\nOutput: 28"
+    },
+    {
+      "example_text": "Input: m = 3, n = 2\nOutput: 3\nExplanation: From the top-left corner, there are a total of 3 ways to reach the bottom-right corner:\n1. Right -> Down -> Down\n2. Down -> Down -> Right\n3. Down -> Right -> Down"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def uniquePaths(self, m: int, n: int) -> int:\n        ",
+  "test_cases": []
+}

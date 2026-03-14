@@ -1,0 +1,30 @@
+{
+  "id": "1290",
+  "slug": "convert-binary-number-in-a-linked-list-to-integer",
+  "title": "Convert Binary Number in a Linked List to Integer",
+  "difficulty": "Easy",
+  "topics": [
+    "Linked List",
+    "Math"
+  ],
+  "description": "Given head which is a reference node to a singly-linked list. The value of each node in the linked list is either 0 or 1. The linked list holds the binary representation of a number.\nReturn the decimal value of the number in the linked list.\nThe most significant bit is at the head of the linked list.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "The Linked List is not empty.",
+    "Number of nodes will not exceed 30.",
+    "Each node's value is either 0 or 1."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: head = [1,0,1]\nOutput: 5\nExplanation: (101) in base 2 = (5) in base 10"
+    },
+    {
+      "example_text": "Input: head = [0]\nOutput: 0"
+    }
+  ],
+  "hints": [
+    "Traverse the linked list and store all values in a string or array. convert the values obtained to decimal value.",
+    "You can solve the problem in O(1) memory using bits operation. use shift left operation ( << ) and or operation ( | ) to get the decimal value in one operation."
+  ],
+  "starter_code": "# Definition for singly-linked list.\n# class ListNode:\n#     def __init__(self, val=0, next=None):\n#         self.val = val\n#         self.next = next\nclass Solution:\n    def getDecimalValue(self, head: Optional[ListNode]) -> int:\n        ",
+  "test_cases": []
+}

@@ -1,0 +1,37 @@
+{
+  "id": "1497",
+  "slug": "check-if-array-pairs-are-divisible-by-k",
+  "title": "Check If Array Pairs Are Divisible by k",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Counting"
+  ],
+  "description": "Given an array of integers arr of even length n and an integer k.\nWe want to divide the array into exactly n / 2 pairs such that the sum of each pair is divisible by k.\nReturn true If you can find a way to do that or false otherwise.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "arr.length == n",
+    "1 <= n <= 105",
+    "n is even.",
+    "-109 <= arr[i] <= 109",
+    "1 <= k <= 105"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: arr = [1,2,3,4,5,10,6,7,8,9], k = 5\nOutput: true\nExplanation: Pairs are (1,9),(2,8),(3,7),(4,6) and (5,10)."
+    },
+    {
+      "example_text": "Input: arr = [1,2,3,4,5,6], k = 7\nOutput: true\nExplanation: Pairs are (1,6),(2,5) and(3,4)."
+    },
+    {
+      "example_text": "Input: arr = [1,2,3,4,5,6], k = 10\nOutput: false\nExplanation: You can try all possible pairs to see that there is no way to divide arr into 3 pairs each with sum divisible by 10."
+    }
+  ],
+  "hints": [
+    "Keep an array of the frequencies of ((x % k) + k) % k for each x in arr.",
+    "for each i in [0, k - 1] we need to check if freq[i] == freq[k - i]",
+    "Take care of the case when i == k - i and when i == 0"
+  ],
+  "starter_code": "class Solution:\n    def canArrange(self, arr: List[int], k: int) -> bool:\n        ",
+  "test_cases": []
+}

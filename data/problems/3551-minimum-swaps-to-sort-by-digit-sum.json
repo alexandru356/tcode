@@ -1,0 +1,34 @@
+{
+  "id": "3551",
+  "slug": "minimum-swaps-to-sort-by-digit-sum",
+  "title": "Minimum Swaps to Sort by Digit Sum",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Sorting"
+  ],
+  "description": "You are given an array nums of distinct positive integers. You need to sort the array in increasing order based on the sum of the digits of each number. If two numbers have the same digit sum, the smaller number appears first in the sorted order.\nReturn the minimum number of swaps required to rearrange nums into this sorted order.\nA swap is defined as exchanging the values at two distinct positions in the array.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "1 <= nums[i] <= 109",
+    "nums consists of distinct positive integers."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [37,100]\nOutput: 1\nExplanation:"
+    },
+    {
+      "example_text": "Input: nums = [22,14,33,7]\nOutput: 0\nExplanation:"
+    },
+    {
+      "example_text": "Input: nums = [18,43,34,16]\nOutput: 2\nExplanation:"
+    }
+  ],
+  "hints": [
+    "First, sort the array based on digit sum (and value as a tiebreaker). Then, map each original value to its index in the sorted array.",
+    "Now, the problem reduces to finding the minimum number of swaps to sort this mapped array. The answer is <code>n - number_of_cycles</code> in the permutation."
+  ],
+  "starter_code": "class Solution:\n    def minSwaps(self, nums: List[int]) -> int:\n        ",
+  "test_cases": []
+}

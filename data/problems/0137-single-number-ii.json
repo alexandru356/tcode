@@ -1,0 +1,27 @@
+{
+  "id": "0137",
+  "slug": "single-number-ii",
+  "title": "Single Number II",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Bit Manipulation"
+  ],
+  "description": "Given an integer array nums where every element appears three times except for one, which appears exactly once. Find the single element and return it.\nYou must implement a solution with a linear runtime complexity and use only constant extra space.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= nums.length <= 3 * 104",
+    "-231 <= nums[i] <= 231 - 1",
+    "Each element in nums appears exactly three times except for one element which appears once."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [2,2,3,2]\nOutput: 3"
+    },
+    {
+      "example_text": "Input: nums = [0,1,0,1,0,1,99]\nOutput: 99"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def singleNumber(self, nums: List[int]) -> int:\n        ",
+  "test_cases": []
+}

@@ -1,0 +1,34 @@
+{
+  "id": "3321",
+  "slug": "find-x-sum-of-all-k-long-subarrays-ii",
+  "title": "Find X-Sum of All K-Long Subarrays II",
+  "difficulty": "Hard",
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Sliding Window",
+    "Heap (Priority Queue)"
+  ],
+  "description": "You are given an array nums of n integers and two integers k and x.\nThe x-sum of an array is calculated by the following procedure:\nNote that if an array has less than x distinct elements, its x-sum is the sum of the array.\nReturn an integer array answer of length n - k + 1 where answer[i] is the x-sum of the subarray nums[i..i + k - 1].\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "nums.length == n",
+    "1 <= n <= 105",
+    "1 <= nums[i] <= 109",
+    "1 <= x <= k <= nums.length"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [1,1,2,2,3,4,2,3], k = 6, x = 2\nOutput: [6,10,12]\nExplanation:"
+    },
+    {
+      "example_text": "Input: nums = [3,8,7,8,7,5], k = 2, x = 2\nOutput: [11,15,15,15,12]\nExplanation:\nSince k == x , answer[i] is equal to the sum of the subarray nums[i..i + k - 1] ."
+    }
+  ],
+  "hints": [
+    "Use sliding window.",
+    "Use two sets ordered by frequency. One of the sets will only contain the top <code>x</code> frequent elements, and the second will contain all other elements.",
+    "Update the two sets whenever you slide the window, and maintain a sum of the elements in the set with <code>x</code> elements"
+  ],
+  "starter_code": "class Solution:\n    def findXSum(self, nums: List[int], k: int, x: int) -> List[int]:\n        ",
+  "test_cases": []
+}

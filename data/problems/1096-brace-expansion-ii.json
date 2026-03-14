@@ -1,0 +1,31 @@
+{
+  "id": "1096",
+  "slug": "brace-expansion-ii",
+  "title": "Brace Expansion II",
+  "difficulty": "Hard",
+  "topics": [
+    "String",
+    "Backtracking",
+    "Stack",
+    "Breadth-First Search"
+  ],
+  "description": "Under the grammar given below, strings can represent a set of lowercase words. Let R(expr) denote the set of words the expression represents.\nThe grammar can best be understood through simple examples:\nFormally, the three rules for our grammar:\nGiven an expression representing a set of words under the given grammar, return the sorted list of words that the expression represents.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= expression.length <= 60",
+    "expression[i] consists of '{', '}', ','or lowercase English letters.",
+    "The given expression represents a set of words based on the grammar given in the description."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: expression = \"{a,b}{c,{d,e}}\"\nOutput: [\"ac\",\"ad\",\"ae\",\"bc\",\"bd\",\"be\"]"
+    },
+    {
+      "example_text": "Input: expression = \"{{a,z},a{b,c},{ab,z}}\"\nOutput: [\"a\",\"ab\",\"ac\",\"z\"]\nExplanation: Each distinct word is written only once in the final answer."
+    }
+  ],
+  "hints": [
+    "You can write helper methods to parse the next \"chunk\" of the expression.  If you see eg. \"a\", the answer is just the set {a}.  If you see \"{\", you parse until you complete the \"}\" (the number of { and } seen are equal) and that becomes a chunk that you find where the appropriate commas are, and parse each individual expression between the commas."
+  ],
+  "starter_code": "class Solution:\n    def braceExpansionII(self, expression: str) -> List[str]:\n        ",
+  "test_cases": []
+}

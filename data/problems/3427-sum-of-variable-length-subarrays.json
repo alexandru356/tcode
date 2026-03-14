@@ -1,0 +1,28 @@
+{
+  "id": "3427",
+  "slug": "sum-of-variable-length-subarrays",
+  "title": "Sum of Variable Length Subarrays",
+  "difficulty": "Easy",
+  "topics": [
+    "Array",
+    "Prefix Sum"
+  ],
+  "description": "You are given an integer array nums of size n. For each index i where 0 <= i < n, define a subarray nums[start ... i] where start = max(0, i - nums[i]).\nReturn the total sum of all elements from the subarray defined for each index in the array.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= n == nums.length <= 100",
+    "1 <= nums[i] <= 1000"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [2,3,1]\nOutput: 11\nExplanation:\nThe total sum is 11. Hence, 11 is the output."
+    },
+    {
+      "example_text": "Input: nums = [3,1,1,2]\nOutput: 13\nExplanation:\nThe total sum is 13. Hence, 13 is the output."
+    }
+  ],
+  "hints": [
+    "The constraints are small, so brute force for each index."
+  ],
+  "starter_code": "class Solution:\n    def subarraySum(self, nums: List[int]) -> int:\n        ",
+  "test_cases": []
+}

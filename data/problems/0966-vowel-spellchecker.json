@@ -1,0 +1,28 @@
+{
+  "id": "0966",
+  "slug": "vowel-spellchecker",
+  "title": "Vowel Spellchecker",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String"
+  ],
+  "description": "Given a wordlist, we want to implement a spellchecker that converts a query word into a correct word.\nFor a given query word, the spell checker handles two categories of spelling mistakes:\nIn addition, the spell checker operates under the following precedence rules:\nGiven some queries, return a list of words answer, where answer[i] is the correct word for query = queries[i].\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= wordlist.length, queries.length <= 5000",
+    "1 <= wordlist[i].length, queries[i].length <= 7",
+    "wordlist[i] and queries[i] consist only of only English letters."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: wordlist = [\"KiTe\",\"kite\",\"hare\",\"Hare\"], queries = [\"kite\",\"Kite\",\"KiTe\",\"Hare\",\"HARE\",\"Hear\",\"hear\",\"keti\",\"keet\",\"keto\"]\nOutput: [\"kite\",\"KiTe\",\"KiTe\",\"Hare\",\"hare\",\"\",\"\",\"KiTe\",\"\",\"KiTe\"]"
+    },
+    {
+      "example_text": "Input: wordlist = [\"yellow\"], queries = [\"YellOw\"]\nOutput: [\"yellow\"]"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def spellchecker(self, wordlist: List[str], queries: List[str]) -> List[str]:\n        ",
+  "test_cases": []
+}

@@ -1,0 +1,31 @@
+{
+  "id": "3202",
+  "slug": "find-the-maximum-length-of-valid-subsequence-ii",
+  "title": "Find the Maximum Length of Valid Subsequence II",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "description": "A subsequence sub of nums with length x is called valid if it satisfies:\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "2 <= nums.length <= 103",
+    "1 <= nums[i] <= 107",
+    "1 <= k <= 103"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [1,2,3,4,5], k = 2\nOutput: 5\nExplanation:\nThe longest valid subsequence is [1, 2, 3, 4, 5] ."
+    },
+    {
+      "example_text": "Input: nums = [1,4,2,3,1,4], k = 3\nOutput: 4\nExplanation:\nThe longest valid subsequence is [1, 4, 1, 4] ."
+    }
+  ],
+  "hints": [
+    "Fix the value of <code>(subs[0] + subs[1]) % k</code> from the <code>k</code> possible values. Let it be <code>val</code>.",
+    "Let <code>dp[i]</code> store the maximum length of a subsequence with its last element <code>x</code> such that <code>x % k == i</code>.",
+    "Answer for a subsequence ending at index <code>y</code> is <code>dp[(k + val - (y % k)) % k] + 1</code>."
+  ],
+  "starter_code": "class Solution:\n    def maximumLength(self, nums: List[int], k: int) -> int:\n        ",
+  "test_cases": []
+}

@@ -1,0 +1,36 @@
+{
+  "id": "3413",
+  "slug": "maximum-coins-from-k-consecutive-bags",
+  "title": "Maximum Coins From K Consecutive Bags",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Greedy",
+    "Sliding Window",
+    "Sorting",
+    "Prefix Sum"
+  ],
+  "description": "There are an infinite amount of bags on a number line, one bag for each coordinate. Some of these bags contain coins.\nYou are given a 2D array coins, where coins[i] = [li, ri, ci] denotes that every bag from li to ri contains ci coins.\nThe segments that coins contain are non-overlapping.\nYou are also given an integer k.\nReturn the maximum amount of coins you can obtain by collecting k consecutive bags.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= coins.length <= 105",
+    "1 <= k <= 109",
+    "coins[i] == [li, ri, ci]",
+    "1 <= li <= ri <= 109",
+    "1 <= ci <= 1000",
+    "The given segments are non-overlapping."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: coins = [[8,10,1],[1,3,2],[5,6,4]], k = 4\nOutput: 10\nExplanation:\nSelecting bags at positions [3, 4, 5, 6] gives the maximum number of coins: 2 + 0 + 4 + 4 = 10 ."
+    },
+    {
+      "example_text": "Input: coins = [[1,10,3]], k = 2\nOutput: 6\nExplanation:\nSelecting bags at positions [1, 2] gives the maximum number of coins: 3 + 3 = 6 ."
+    }
+  ],
+  "hints": [
+    "An optimal starting position for <code>k</code> consecutive bags will be either <code>l<sub>i</sub></code> or <code>r<sub>i</sub> - k + 1</code>."
+  ],
+  "starter_code": "class Solution:\n    def maximumCoins(self, coins: List[List[int]], k: int) -> int:\n        ",
+  "test_cases": []
+}

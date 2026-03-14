@@ -1,0 +1,33 @@
+{
+  "id": "1372",
+  "slug": "longest-zigzag-path-in-a-binary-tree",
+  "title": "Longest ZigZag Path in a Binary Tree",
+  "difficulty": "Medium",
+  "topics": [
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "description": "You are given the root of a binary tree.\nA ZigZag path for a binary tree is defined as follow:\nZigzag length is defined as the number of nodes visited - 1. (A single node has a length of 0).\nReturn the longest ZigZag path contained in that tree.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "The number of nodes in the tree is in the range [1, 5 * 104].",
+    "1 <= Node.val <= 100"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: root = [1,null,1,1,1,null,null,1,1,null,1,null,null,null,1]\nOutput: 3\nExplanation: Longest ZigZag path in blue nodes (right -> left -> right)."
+    },
+    {
+      "example_text": "Input: root = [1,1,1,null,1,null,null,1,1,null,1]\nOutput: 4\nExplanation: Longest ZigZag path in blue nodes (left -> right -> left -> right)."
+    },
+    {
+      "example_text": "Input: root = [1]\nOutput: 0"
+    }
+  ],
+  "hints": [
+    "Create this function maxZigZag(node, direction) maximum zigzag given a node and direction (right or left)."
+  ],
+  "starter_code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def longestZigZag(self, root: Optional[TreeNode]) -> int:\n        ",
+  "test_cases": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": "0338",
+  "slug": "counting-bits",
+  "title": "Counting Bits",
+  "difficulty": "Easy",
+  "topics": [
+    "Dynamic Programming",
+    "Bit Manipulation"
+  ],
+  "description": "Given an integer n, return an array ans of length n + 1 such that for each i (0 <= i <= n), ans[i] is the number of 1's in the binary representation of i.\nExample 1:\nExample 2:\nConstraints:\nFollow up:",
+  "constraints": [
+    "0 <= n <= 105"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = 2\nOutput: [0,1,1]\nExplanation:\n0 --> 0\n1 --> 1\n2 --> 10"
+    },
+    {
+      "example_text": "Input: n = 5\nOutput: [0,1,1,2,1,2]\nExplanation:\n0 --> 0\n1 --> 1\n2 --> 10\n3 --> 11\n4 --> 100\n5 --> 101"
+    }
+  ],
+  "hints": [
+    "You should make use of what you have produced already.",
+    "Divide the numbers in ranges like [2-3], [4-7], [8-15] and so on. And try to generate new range from previous.",
+    "Or does the odd/even status of the number help you in calculating the number of 1s?"
+  ],
+  "starter_code": "class Solution:\n    def countBits(self, n: int) -> List[int]:\n        ",
+  "test_cases": []
+}

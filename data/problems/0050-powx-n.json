@@ -1,0 +1,32 @@
+{
+  "id": "0050",
+  "slug": "powx-n",
+  "title": "Pow(x, n)",
+  "difficulty": "Medium",
+  "topics": [
+    "Math",
+    "Recursion"
+  ],
+  "description": "Implement pow(x, n), which calculates x raised to the power n (i.e., xn).\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "-100.0 < x < 100.0",
+    "-231 <= n <= 231-1",
+    "n is an integer.",
+    "Either x is not zero or n > 0.",
+    "-104 <= xn <= 104"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: x = 2.00000, n = 10\nOutput: 1024.00000"
+    },
+    {
+      "example_text": "Input: x = 2.10000, n = 3\nOutput: 9.26100"
+    },
+    {
+      "example_text": "Input: x = 2.00000, n = -2\nOutput: 0.25000\nExplanation: 2-2 = 1/22 = 1/4 = 0.25"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def myPow(self, x: float, n: int) -> float:\n        ",
+  "test_cases": []
+}

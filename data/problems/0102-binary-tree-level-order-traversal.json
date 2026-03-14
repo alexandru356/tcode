@@ -1,0 +1,32 @@
+{
+  "id": "0102",
+  "slug": "binary-tree-level-order-traversal",
+  "title": "Binary Tree Level Order Traversal",
+  "difficulty": "Medium",
+  "topics": [
+    "Tree",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "description": "Given the root of a binary tree, return the level order traversal of its nodes' values. (i.e., from left to right, level by level).\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "The number of nodes in the tree is in the range [0, 2000].",
+    "-1000 <= Node.val <= 1000"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: root = [3,9,20,null,null,15,7]\nOutput: [[3],[9,20],[15,7]]"
+    },
+    {
+      "example_text": "Input: root = [1]\nOutput: [[1]]"
+    },
+    {
+      "example_text": "Input: root = []\nOutput: []"
+    }
+  ],
+  "hints": [
+    "Use a queue to perform BFS."
+  ],
+  "starter_code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:\n        ",
+  "test_cases": []
+}

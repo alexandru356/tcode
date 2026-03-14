@@ -1,0 +1,31 @@
+{
+  "id": "0844",
+  "slug": "backspace-string-compare",
+  "title": "Backspace String Compare",
+  "difficulty": "Easy",
+  "topics": [
+    "Two Pointers",
+    "String",
+    "Stack",
+    "Simulation"
+  ],
+  "description": "Given two strings s and t, return true if they are equal when both are typed into empty text editors. '#' means a backspace character.\nNote that after backspacing an empty text, the text will continue empty.\nExample 1:\nExample 2:\nExample 3:\nConstraints:\nFollow up: Can you solve it in O(n) time and O(1) space?",
+  "constraints": [
+    "1 <= s.length, t.length <= 200",
+    "s and t only contain lowercase letters and '#' characters."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"ab#c\", t = \"ad#c\"\nOutput: true\nExplanation: Both s and t become \"ac\"."
+    },
+    {
+      "example_text": "Input: s = \"ab##\", t = \"c#d#\"\nOutput: true\nExplanation: Both s and t become \"\"."
+    },
+    {
+      "example_text": "Input: s = \"a#c\", t = \"b\"\nOutput: false\nExplanation: s becomes \"c\" while t becomes \"b\"."
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def backspaceCompare(self, s: str, t: str) -> bool:\n        ",
+  "test_cases": []
+}

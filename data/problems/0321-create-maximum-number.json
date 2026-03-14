@@ -1,0 +1,36 @@
+{
+  "id": "0321",
+  "slug": "create-maximum-number",
+  "title": "Create Maximum Number",
+  "difficulty": "Hard",
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Stack",
+    "Greedy",
+    "Monotonic Stack"
+  ],
+  "description": "You are given two integer arrays nums1 and nums2 of lengths m and n respectively. nums1 and nums2 represent the digits of two numbers. You are also given an integer k.\nCreate the maximum number of length k <= m + n from digits of the two numbers. The relative order of the digits from the same array must be preserved.\nReturn an array of the k digits representing the answer.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "m == nums1.length",
+    "n == nums2.length",
+    "1 <= m, n <= 500",
+    "0 <= nums1[i], nums2[i] <= 9",
+    "1 <= k <= m + n",
+    "nums1 and nums2 do not have leading zeros."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums1 = [3,4,6,5], nums2 = [9,1,2,5,8,3], k = 5\nOutput: [9,8,6,5,3]"
+    },
+    {
+      "example_text": "Input: nums1 = [6,7], nums2 = [6,0,4], k = 5\nOutput: [6,7,6,0,4]"
+    },
+    {
+      "example_text": "Input: nums1 = [3,9], nums2 = [8,9], k = 3\nOutput: [9,8,9]"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def maxNumber(self, nums1: List[int], nums2: List[int], k: int) -> List[int]:\n        ",
+  "test_cases": []
+}

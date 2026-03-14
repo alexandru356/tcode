@@ -1,0 +1,31 @@
+{
+  "id": "3039",
+  "slug": "apply-operations-to-make-string-empty",
+  "title": "Apply Operations to Make String Empty",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Sorting",
+    "Counting"
+  ],
+  "description": "You are given a string s.\nConsider performing the following operation until s becomes empty:\nFor example, let initially s = \"aabcbbca\". We do the following operations:\nReturn the value of the string s right before applying the last operation. In the example above, answer is \"ba\".\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= s.length <= 5 * 105",
+    "s consists only of lowercase English letters."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"aabcbbca\"\nOutput: \"ba\"\nExplanation: Explained in the statement."
+    },
+    {
+      "example_text": "Input: s = \"abcd\"\nOutput: \"abcd\"\nExplanation: We do the following operation:\n- Remove the underlined characters s = \"abcd\". The resulting string is s = \"\".\nThe string just before the last operation is \"abcd\"."
+    }
+  ],
+  "hints": [
+    "Before the last operation, only the most frequent characters in the original string will remain.",
+    "Keep only the last occurence of each of the most frequent characters."
+  ],
+  "starter_code": "class Solution:\n    def lastNonEmptyString(self, s: str) -> str:\n        ",
+  "test_cases": []
+}

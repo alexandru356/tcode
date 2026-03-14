@@ -1,0 +1,31 @@
+{
+  "id": "2750",
+  "slug": "ways-to-split-array-into-good-subarrays",
+  "title": "Ways to Split Array Into Good Subarrays",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Math",
+    "Dynamic Programming"
+  ],
+  "description": "You are given a binary array nums.\nA subarray of an array is good if it contains exactly one element with the value 1.\nReturn an integer denoting the number of ways to split the array nums into good subarrays. As the number may be too large, return it modulo 109 + 7.\nA subarray is a contiguous non-empty sequence of elements within an array.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "0 <= nums[i] <= 1"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [0,1,0,0,1]\nOutput: 3\nExplanation: There are 3 ways to split nums into good subarrays:\n- [0,1] [0,0,1]\n- [0,1,0] [0,1]\n- [0,1,0,0] [1]"
+    },
+    {
+      "example_text": "Input: nums = [0,1,0]\nOutput: 1\nExplanation: There is 1 way to split nums into good subarrays:\n- [0,1,0]"
+    }
+  ],
+  "hints": [
+    "If the array consists of only 0s answer is 0.",
+    "In the final split, exactly one separation point exists between two consecutive 1s.",
+    "In how many ways can separation points be put?"
+  ],
+  "starter_code": "class Solution:\n    def numberOfGoodSubarraySplits(self, nums: List[int]) -> int:\n        ",
+  "test_cases": []
+}

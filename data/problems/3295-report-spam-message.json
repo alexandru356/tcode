@@ -1,0 +1,30 @@
+{
+  "id": "3295",
+  "slug": "report-spam-message",
+  "title": "Report Spam Message",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String"
+  ],
+  "description": "You are given an array of strings message and an array of strings bannedWords.\nAn array of words is considered spam if there are at least two words in it that exactly match any word in bannedWords.\nReturn true if the array message is spam, and false otherwise.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= message.length, bannedWords.length <= 105",
+    "1 <= message[i].length, bannedWords[i].length <= 15",
+    "message[i] and bannedWords[i] consist only of lowercase English letters."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: message = [\"hello\",\"world\",\"leetcode\"], bannedWords = [\"world\",\"hello\"]\nOutput: true\nExplanation:\nThe words \"hello\" and \"world\" from the message array both appear in the bannedWords array."
+    },
+    {
+      "example_text": "Input: message = [\"hello\",\"programming\",\"fun\"], bannedWords = [\"world\",\"programming\",\"leetcode\"]\nOutput: false\nExplanation:\nOnly one word from the message array ( \"programming\" ) appears in the bannedWords array."
+    }
+  ],
+  "hints": [
+    "Use hash set."
+  ],
+  "starter_code": "class Solution:\n    def reportSpam(self, message: List[str], bannedWords: List[str]) -> bool:\n        ",
+  "test_cases": []
+}

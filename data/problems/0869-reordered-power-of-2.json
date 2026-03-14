@@ -1,0 +1,28 @@
+{
+  "id": "0869",
+  "slug": "reordered-power-of-2",
+  "title": "Reordered Power of 2",
+  "difficulty": "Medium",
+  "topics": [
+    "Hash Table",
+    "Math",
+    "Sorting",
+    "Counting",
+    "Enumeration"
+  ],
+  "description": "You are given an integer n. We reorder the digits in any order (including the original order) such that the leading digit is not zero.\nReturn true if and only if we can do this so that the resulting number is a power of two.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= n <= 109"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = 1\nOutput: true"
+    },
+    {
+      "example_text": "Input: n = 10\nOutput: false"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def reorderedPowerOf2(self, n: int) -> bool:\n        ",
+  "test_cases": []
+}

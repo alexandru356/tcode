@@ -1,0 +1,34 @@
+{
+  "id": "3239",
+  "slug": "minimum-number-of-flips-to-make-binary-grid-palindromic-i",
+  "title": "Minimum Number of Flips to Make Binary Grid Palindromic I",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Matrix"
+  ],
+  "description": "You are given an m x n binary matrix grid.\nA row or column is considered palindromic if its values read the same forward and backward.\nYou can flip any number of cells in grid from 0 to 1, or from 1 to 0.\nReturn the minimum number of cells that need to be flipped to make either all rows palindromic or all columns palindromic.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "m == grid.length",
+    "n == grid[i].length",
+    "1 <= m * n <= 2 * 105",
+    "0 <= grid[i][j] <= 1"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: grid = [[1,0,0],[0,0,0],[0,0,1]]\nOutput: 2\nExplanation:\n\nFlipping the highlighted cells makes all the rows palindromic."
+    },
+    {
+      "example_text": "Input: grid = [[0,1],[0,1],[0,0]]\nOutput: 1\nExplanation:\n\nFlipping the highlighted cell makes all the columns palindromic."
+    },
+    {
+      "example_text": "Input: grid = [[1],[0]]\nOutput: 0\nExplanation:\nAll rows are already palindromic."
+    }
+  ],
+  "hints": [
+    "We need to perform the operation only when the equivalent element of <code>i</code> from the back is not equal."
+  ],
+  "starter_code": "class Solution:\n    def minFlips(self, grid: List[List[int]]) -> int:\n        ",
+  "test_cases": []
+}

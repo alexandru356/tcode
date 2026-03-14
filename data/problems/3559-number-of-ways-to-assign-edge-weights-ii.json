@@ -1,0 +1,37 @@
+{
+  "id": "3559",
+  "slug": "number-of-ways-to-assign-edge-weights-ii",
+  "title": "Number of Ways to Assign Edge Weights II",
+  "difficulty": "Hard",
+  "topics": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search"
+  ],
+  "description": "There is an undirected tree with n nodes labeled from 1 to n, rooted at node 1. The tree is represented by a 2D integer array edges of length n - 1, where edges[i] = [ui, vi] indicates that there is an edge between nodes ui and vi.\nInitially, all edges have a weight of 0. You must assign each edge a weight of either 1 or 2.\nThe cost of a path between any two nodes u and v is the total weight of all edges in the path connecting them.\nYou are given a 2D integer array queries. For each queries[i] = [ui, vi], determine the number of ways to assign weights to edges in the path such that the cost of the path between ui and vi is odd.\nReturn an array answer, where answer[i] is the number of valid assignments for queries[i].\nSince the answer may be large, apply modulo 109 + 7 to each answer[i].\nNote: For each query, disregard all edges not in the path between node ui and vi.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "2 <= n <= 105",
+    "edges.length == n - 1",
+    "edges[i] == [ui, vi]",
+    "1 <= queries.length <= 105",
+    "queries[i] == [ui, vi]",
+    "1 <= ui, vi <= n",
+    "edges represents a valid tree."
+  ],
+  "examples": [
+    {
+      "example_text": "\nInput: edges = [[1,2]], queries = [[1,1],[1,2]]\nOutput: [0,1]\nExplanation:"
+    },
+    {
+      "example_text": "Input: edges = [[1,2],[1,3],[3,4],[3,5]], queries = [[1,4],[3,4],[2,5]]\nOutput: [2,1,4]\nExplanation:"
+    }
+  ],
+  "hints": [
+    "Dynamic programming with states <code>chainLength</code> and <code>sumParity</code>.",
+    "Use Lowest Common Ancestor to find the distance between any two nodes quickly in <code>O(logn)</code>."
+  ],
+  "starter_code": "class Solution:\n    def assignEdgeWeights(self, edges: List[List[int]], queries: List[List[int]]) -> List[int]:\n        ",
+  "test_cases": []
+}

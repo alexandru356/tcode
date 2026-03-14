@@ -1,0 +1,28 @@
+{
+  "id": "0991",
+  "slug": "broken-calculator",
+  "title": "Broken Calculator",
+  "difficulty": "Medium",
+  "topics": [
+    "Math",
+    "Greedy"
+  ],
+  "description": "There is a broken calculator that has the integer startValue on its display initially. In one operation, you can:\nGiven two integers startValue and target, return the minimum number of operations needed to display target on the calculator.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= startValue, target <= 109"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: startValue = 2, target = 3\nOutput: 2\nExplanation: Use double operation and then decrement operation {2 -> 4 -> 3}."
+    },
+    {
+      "example_text": "Input: startValue = 5, target = 8\nOutput: 2\nExplanation: Use decrement and then double {5 -> 4 -> 8}."
+    },
+    {
+      "example_text": "Input: startValue = 3, target = 10\nOutput: 3\nExplanation: Use double, decrement and double {3 -> 6 -> 5 -> 10}."
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def brokenCalc(self, startValue: int, target: int) -> int:\n        ",
+  "test_cases": []
+}
