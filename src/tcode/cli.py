@@ -12,6 +12,5 @@ def start(file: str) -> None:
     from tcode.config import SessionConfig
     TCodeApp().run()
 
-# Guard to prevent imports used in other files to execute the whole cli
 if __name__ == "__main__":
     cli()
