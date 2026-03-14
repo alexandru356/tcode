@@ -1,0 +1,28 @@
+{
+  "id": "0326",
+  "slug": "power-of-three",
+  "title": "Power of Three",
+  "difficulty": "Easy",
+  "topics": [
+    "Math",
+    "Recursion"
+  ],
+  "description": "Given an integer n, return true if it is a power of three. Otherwise, return false.\nAn integer n is a power of three, if there exists an integer x such that n == 3x.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "-231 <= n <= 231 - 1"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = 27\nOutput: true\nExplanation: 27 = 33"
+    },
+    {
+      "example_text": "Input: n = 0\nOutput: false\nExplanation: There is no x where 3x = 0."
+    },
+    {
+      "example_text": "Input: n = -1\nOutput: false\nExplanation: There is no x where 3x = (-1)."
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def isPowerOfThree(self, n: int) -> bool:\n        ",
+  "test_cases": []
+}

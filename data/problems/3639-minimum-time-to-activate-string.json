@@ -1,0 +1,32 @@
+{
+  "id": "3639",
+  "slug": "minimum-time-to-activate-string",
+  "title": "Minimum Time to Activate String",
+  "difficulty": "Medium",
+  "topics": [],
+  "description": "You are given a string s of length n and an integer array order, where order is a permutation of the numbers in the range [0, n - 1].\nStarting from time t = 0, replace the character at index order[t] in s with '*' at each time step.\nA substring is valid if it contains at least one '*'.\nA string is active if the total number of valid substrings is greater than or equal to k.\nReturn the minimum time t at which the string s becomes active. If it is impossible, return -1.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= n == s.length <= 105",
+    "order.length == n",
+    "0 <= order[i] <= n - 1",
+    "s consists of lowercase English letters.",
+    "order is a permutation of integers from 0 to n - 1.",
+    "1 <= k <= 109"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"abc\", order = [1,0,2], k = 2\nOutput: 0\nExplanation:\nThe string s becomes active at t = 0 . Thus, the answer is 0."
+    },
+    {
+      "example_text": "Input: s = \"cat\", order = [0,2,1], k = 6\nOutput: 2\nExplanation:\nThe string s becomes active at t = 2 . Thus, the answer is 2."
+    },
+    {
+      "example_text": "Input: s = \"xy\", order = [0,1], k = 4\nOutput: -1\nExplanation:\nEven after all replacements, it is impossible to obtain k = 4 valid substrings. Thus, the answer is -1."
+    }
+  ],
+  "hints": [
+    "Binary-search on <code>t</code> and for each <code>t</code> mark the first <code>t+1</code> positions in <code>order</code> as <code></code>, then in one pass subtract from <code>n(n+1)/2</code> the substrings of each non-<code></code> run of length <code>L</code> (<code>L(L+1)/2</code>) and check if the remainder >= <code>k</code>."
+  ],
+  "starter_code": "class Solution:\n    def minTime(self, s: str, order: List[int], k: int) -> int:\n        ",
+  "test_cases": []
+}

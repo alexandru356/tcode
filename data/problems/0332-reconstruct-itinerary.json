@@ -1,0 +1,31 @@
+{
+  "id": "0332",
+  "slug": "reconstruct-itinerary",
+  "title": "Reconstruct Itinerary",
+  "difficulty": "Hard",
+  "topics": [
+    "Depth-First Search",
+    "Graph",
+    "Eulerian Circuit"
+  ],
+  "description": "You are given a list of airline tickets where tickets[i] = [fromi, toi] represent the departure and the arrival airports of one flight. Reconstruct the itinerary in order and return it.\nAll of the tickets belong to a man who departs from \"JFK\", thus, the itinerary must begin with \"JFK\". If there are multiple valid itineraries, you should return the itinerary that has the smallest lexical order when read as a single string.\nYou may assume all tickets form at least one valid itinerary. You must use all the tickets once and only once.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= tickets.length <= 300",
+    "tickets[i].length == 2",
+    "fromi.length == 3",
+    "toi.length == 3",
+    "fromi and toi consist of uppercase English letters.",
+    "fromi != toi"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: tickets = [[\"MUC\",\"LHR\"],[\"JFK\",\"MUC\"],[\"SFO\",\"SJC\"],[\"LHR\",\"SFO\"]]\nOutput: [\"JFK\",\"MUC\",\"LHR\",\"SFO\",\"SJC\"]"
+    },
+    {
+      "example_text": "Input: tickets = [[\"JFK\",\"SFO\"],[\"JFK\",\"ATL\"],[\"SFO\",\"ATL\"],[\"ATL\",\"JFK\"],[\"ATL\",\"SFO\"]]\nOutput: [\"JFK\",\"ATL\",\"JFK\",\"SFO\",\"ATL\",\"SFO\"]\nExplanation: Another possible reconstruction is [\"JFK\",\"SFO\",\"ATL\",\"JFK\",\"ATL\",\"SFO\"] but it is larger in lexical order."
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def findItinerary(self, tickets: List[List[str]]) -> List[str]:\n        ",
+  "test_cases": []
+}

@@ -1,0 +1,32 @@
+{
+  "id": "2716",
+  "slug": "minimize-string-length",
+  "title": "Minimize String Length",
+  "difficulty": "Easy",
+  "topics": [
+    "Hash Table",
+    "String"
+  ],
+  "description": "Given a string s, you have two types of operation:\nYour task is to minimize the length of s by performing the above operations zero or more times.\nReturn an integer denoting the length of the minimized string.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= s.length <= 100",
+    "s contains only lowercase English letters"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"aaabc\"\nOutput: 3\nExplanation:"
+    },
+    {
+      "example_text": "Input: s = \"cbbd\"\nOutput: 3\nExplanation:"
+    },
+    {
+      "example_text": "Input: s = \"baadccab\"\nOutput: 4\nExplanation:"
+    }
+  ],
+  "hints": [
+    "The minimized string will not contain duplicate characters.",
+    "The minimized string will contain all distinct characters of the original string."
+  ],
+  "starter_code": "class Solution:\n    def minimizedStringLength(self, s: str) -> int:\n        ",
+  "test_cases": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": "0857",
+  "slug": "minimum-cost-to-hire-k-workers",
+  "title": "Minimum Cost to Hire K Workers",
+  "difficulty": "Hard",
+  "topics": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)"
+  ],
+  "description": "There are n workers. You are given two integer arrays quality and wage where quality[i] is the quality of the ith worker and wage[i] is the minimum wage expectation for the ith worker.\nWe want to hire exactly k workers to form a paid group. To hire a group of k workers, we must pay them according to the following rules:\nGiven the integer k, return the least amount of money needed to form a paid group satisfying the above conditions. Answers within 10-5 of the actual answer will be accepted.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "n == quality.length == wage.length",
+    "1 <= k <= n <= 104",
+    "1 <= quality[i], wage[i] <= 104"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: quality = [10,20,5], wage = [70,50,30], k = 2\nOutput: 105.00000\nExplanation: We pay 70 to 0th worker and 35 to 2nd worker."
+    },
+    {
+      "example_text": "Input: quality = [3,1,10,10,1], wage = [4,8,2,2,7], k = 3\nOutput: 30.66667\nExplanation: We pay 4 to 0th worker, 13.33333 to 2nd and 3rd workers separately."
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def mincostToHireWorkers(self, quality: List[int], wage: List[int], k: int) -> float:\n        ",
+  "test_cases": []
+}

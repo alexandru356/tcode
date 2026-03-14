@@ -1,0 +1,30 @@
+{
+  "id": "0032",
+  "slug": "longest-valid-parentheses",
+  "title": "Longest Valid Parentheses",
+  "difficulty": "Hard",
+  "topics": [
+    "String",
+    "Dynamic Programming",
+    "Stack"
+  ],
+  "description": "Given a string containing just the characters '(' and ')', return the length of the longest valid (well-formed) parentheses substring.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "0 <= s.length <= 3 * 104",
+    "s[i] is '(', or ')'."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"(()\"\nOutput: 2\nExplanation: The longest valid parentheses substring is \"()\"."
+    },
+    {
+      "example_text": "Input: s = \")()())\"\nOutput: 4\nExplanation: The longest valid parentheses substring is \"()()\"."
+    },
+    {
+      "example_text": "Input: s = \"\"\nOutput: 0"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def longestValidParentheses(self, s: str) -> int:\n        ",
+  "test_cases": []
+}

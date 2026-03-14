@@ -1,0 +1,43 @@
+{
+  "id": "3615",
+  "slug": "longest-palindromic-path-in-graph",
+  "title": "Longest Palindromic Path in Graph",
+  "difficulty": "Hard",
+  "topics": [
+    "String",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Graph",
+    "Bitmask"
+  ],
+  "description": "You are given an integer n and an undirected graph with n nodes labeled from 0 to n - 1 and a 2D array edges, where edges[i] = [ui, vi] indicates an edge between nodes ui and vi.\nYou are also given a string label of length n, where label[i] is the character associated with node i.\nYou may start at any node and move to any adjacent node, visiting each node at most once.\nReturn the maximum possible length of a palindrome that can be formed by visiting a set of unique nodes along a valid path.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= n <= 14",
+    "n - 1 <= edges.length <= n * (n - 1) / 2",
+    "edges[i] == [ui, vi]",
+    "0 <= ui, vi <= n - 1",
+    "ui != vi",
+    "label.length == n",
+    "label consists of lowercase English letters.",
+    "There are no duplicate edges."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = 3, edges = [[0,1],[1,2]], label = \"aba\"\nOutput: 3\nExp lanation:\n"
+    },
+    {
+      "example_text": "Input: n = 3, edges = [[0,1],[0,2]], label = \"abc\"\nOutput: 1\nExplanation:\n"
+    },
+    {
+      "example_text": "Input: n = 4, edges = [[0,2],[0,3],[3,1]], label = \"bbac\"\nOutput: 3\nExplanation:\n"
+    }
+  ],
+  "hints": [
+    "Use bitmask dynamic programming.",
+    "Build the palindrome by expanding from both endpoints: you can include a new pair of nodes as endpoints if neither is already in the current bitmask <code>mask</code>.",
+    "Before adding new endpoints to the current palindrome, ensure their labels match the labels at the previous endpoints <code>prev_l</code> and <code>prev_r</code>.",
+    "Memoize each state as <code>dp[mask][prev_l][prev_r]</code>, representing the maximum palindrome length achievable using the set of visited nodes in <code>mask</code> with current endpoints at <code>prev_l</code> and <code>prev_r</code>."
+  ],
+  "starter_code": "class Solution:\n    def maxLen(self, n: int, edges: List[List[int]], label: str) -> int:\n        ",
+  "test_cases": []
+}

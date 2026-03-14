@@ -1,0 +1,33 @@
+{
+  "id": "3301",
+  "slug": "maximize-the-total-height-of-unique-towers",
+  "title": "Maximize the Total Height of Unique Towers",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "description": "You are given an array maximumHeight, where maximumHeight[i] denotes the maximum height the ith tower can be assigned.\nYour task is to assign a height to each tower so that:\nReturn the maximum possible total sum of the tower heights. If it's not possible to assign heights, return -1.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= maximumHeight.length <= 105",
+    "1 <= maximumHeight[i] <= 109"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: maximumHeight = [2,3,4,3]\nOutput: 10\nExplanation:\nWe can assign heights in the following way: [1, 2, 4, 3] ."
+    },
+    {
+      "example_text": "Input: maximumHeight = [15,10]\nOutput: 25\nExplanation:\nWe can assign heights in the following way: [15, 10] ."
+    },
+    {
+      "example_text": "Input: maximumHeight = [2,2,1]\nOutput: -1\nExplanation:\nIt's impossible to assign positive heights to each index so that no two towers have the same height."
+    }
+  ],
+  "hints": [
+    "Sort the array <code>maximumHeight</code> in descending order.",
+    "After sorting, it can be seen that the maximum height that we can assign to the <code>i<sup>th</sup></code> element is <code>min(maximumHeight[i], maximumHeight[i - 1] - 1)</code>."
+  ],
+  "starter_code": "class Solution:\n    def maximumTotalSum(self, maximumHeight: List[int]) -> int:\n        ",
+  "test_cases": []
+}

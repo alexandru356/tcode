@@ -1,0 +1,32 @@
+{
+  "id": "0640",
+  "slug": "solve-the-equation",
+  "title": "Solve the Equation",
+  "difficulty": "Medium",
+  "topics": [
+    "Math",
+    "String",
+    "Simulation"
+  ],
+  "description": "Solve a given equation and return the value of 'x' in the form of a string \"x=#value\". The equation contains only '+', '-' operation, the variable 'x' and its coefficient. You should return \"No solution\" if there is no solution for the equation, or \"Infinite solutions\" if there are infinite solutions for the equation.\nIf there is exactly one solution for the equation, we ensure that the value of 'x' is an integer.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "3 <= equation.length <= 1000",
+    "equation has exactly one '='.",
+    "equation consists of integers with an absolute value in the range [0, 100] without any leading zeros, and the variable 'x'.",
+    "The input is generated that if there is a single solution, it will be an integer."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: equation = \"x+5-3+x=6+x-2\"\nOutput: \"x=2\""
+    },
+    {
+      "example_text": "Input: equation = \"x=x\"\nOutput: \"Infinite solutions\""
+    },
+    {
+      "example_text": "Input: equation = \"2x=x\"\nOutput: \"x=0\""
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def solveEquation(self, equation: str) -> str:\n        ",
+  "test_cases": []
+}

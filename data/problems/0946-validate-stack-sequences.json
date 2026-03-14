@@ -1,0 +1,30 @@
+{
+  "id": "0946",
+  "slug": "validate-stack-sequences",
+  "title": "Validate Stack Sequences",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Stack",
+    "Simulation"
+  ],
+  "description": "Given two integer arrays pushed and popped each with distinct values, return true if this could have been the result of a sequence of push and pop operations on an initially empty stack, or false otherwise.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= pushed.length <= 1000",
+    "0 <= pushed[i] <= 1000",
+    "All the elements of pushed are unique.",
+    "popped.length == pushed.length",
+    "popped is a permutation of pushed."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: pushed = [1,2,3,4,5], popped = [4,5,3,2,1]\nOutput: true\nExplanation: We might do the following sequence:\npush(1), push(2), push(3), push(4),\npop() -> 4,\npush(5),\npop() -> 5, pop() -> 3, pop() -> 2, pop() -> 1"
+    },
+    {
+      "example_text": "Input: pushed = [1,2,3,4,5], popped = [4,3,5,1,2]\nOutput: false\nExplanation: 1 cannot be popped before 2."
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def validateStackSequences(self, pushed: List[int], popped: List[int]) -> bool:\n        ",
+  "test_cases": []
+}

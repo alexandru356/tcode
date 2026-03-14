@@ -1,0 +1,26 @@
+{
+  "id": "0345",
+  "slug": "reverse-vowels-of-a-string",
+  "title": "Reverse Vowels of a String",
+  "difficulty": "Easy",
+  "topics": [
+    "Two Pointers",
+    "String"
+  ],
+  "description": "Given a string s, reverse only all the vowels in the string and return it.\nThe vowels are 'a', 'e', 'i', 'o', and 'u', and they can appear in both lower and upper cases, more than once.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= s.length <= 3 * 105",
+    "s consist of printable ASCII characters."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"IceCreAm\"\nOutput: \"AceCreIm\"\nExplanation:\nThe vowels in s are ['I', 'e', 'e', 'A'] . On reversing the vowels, s becomes \"AceCreIm\" ."
+    },
+    {
+      "example_text": "Input: s = \"leetcode\"\nOutput: \"leotcede\""
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def reverseVowels(self, s: str) -> str:\n        ",
+  "test_cases": []
+}

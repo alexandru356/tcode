@@ -1,0 +1,38 @@
+{
+  "id": "3545",
+  "slug": "minimum-deletions-for-at-most-k-distinct-characters",
+  "title": "Minimum Deletions for At Most K Distinct Characters",
+  "difficulty": "Easy",
+  "topics": [
+    "Hash Table",
+    "String",
+    "Greedy",
+    "Sorting",
+    "Counting"
+  ],
+  "description": "You are given a string s consisting of lowercase English letters, and an integer k.\nYour task is to delete some (possibly none) of the characters in the string so that the number of distinct characters in the resulting string is at most k.\nReturn the minimum number of deletions required to achieve this.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= s.length <= 16",
+    "1 <= k <= 16",
+    "s consists only of lowercase English letters."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"abc\", k = 2\nOutput: 1\nExplanation:"
+    },
+    {
+      "example_text": "Input: s = \"aabb\", k = 2\nOutput: 0\nExplanation:"
+    },
+    {
+      "example_text": "Input: s = \"yyyzz\", k = 1\nOutput: 2\nExplanation:"
+    }
+  ],
+  "hints": [
+    "Compute the frequency of each character in <code>s</code> and collect these into a list <code>counts</code>.",
+    "Sort <code>counts</code> in ascending order.",
+    "Let <code>d</code> = (number of distinct characters) – <code>k</code>. If <code>d <= 0</code>, return 0.",
+    "Otherwise, the minimum deletions is the sum of the first <code>d</code> entries in <code>counts</code> (removing the <code>d</code> least-frequent characters)."
+  ],
+  "starter_code": "class Solution:\n    def minDeletion(self, s: str, k: int) -> int:\n        ",
+  "test_cases": []
+}

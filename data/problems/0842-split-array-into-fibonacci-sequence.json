@@ -1,0 +1,29 @@
+{
+  "id": "0842",
+  "slug": "split-array-into-fibonacci-sequence",
+  "title": "Split Array into Fibonacci Sequence",
+  "difficulty": "Medium",
+  "topics": [
+    "String",
+    "Backtracking"
+  ],
+  "description": "You are given a string of digits num, such as \"123456579\". We can split it into a Fibonacci-like sequence [123, 456, 579].\nFormally, a Fibonacci-like sequence is a list f of non-negative integers such that:\nNote that when splitting the string into pieces, each piece must not have extra leading zeroes, except if the piece is the number 0 itself.\nReturn any Fibonacci-like sequence split from num, or return [] if it cannot be done.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= num.length <= 200",
+    "num contains only digits."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: num = \"1101111\"\nOutput: [11,0,11,11]\nExplanation: The output [110, 1, 111] would also be accepted."
+    },
+    {
+      "example_text": "Input: num = \"112358130\"\nOutput: []\nExplanation: The task is impossible."
+    },
+    {
+      "example_text": "Input: num = \"0123\"\nOutput: []\nExplanation: Leading zeroes are not allowed, so \"01\", \"2\", \"3\" is not valid."
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def splitIntoFibonacci(self, num: str) -> List[int]:\n        ",
+  "test_cases": []
+}

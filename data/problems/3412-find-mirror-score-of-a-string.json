@@ -1,0 +1,31 @@
+{
+  "id": "3412",
+  "slug": "find-mirror-score-of-a-string",
+  "title": "Find Mirror Score of a String",
+  "difficulty": "Medium",
+  "topics": [
+    "Hash Table",
+    "String",
+    "Stack",
+    "Simulation"
+  ],
+  "description": "You are given a string s.\nWe define the mirror of a letter in the English alphabet as its corresponding letter when the alphabet is reversed. For example, the mirror of 'a' is 'z', and the mirror of 'y' is 'b'.\nInitially, all characters in the string s are unmarked.\nYou start with a score of 0, and you perform the following process on the string s:\nReturn the total score at the end of the process.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= s.length <= 105",
+    "s consists only of lowercase English letters."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"aczzx\"\nOutput: 5\nExplanation:"
+    },
+    {
+      "example_text": "Input: s = \"abcdef\"\nOutput: 0\nExplanation:\nFor each index i , there is no index j that satisfies the conditions."
+    }
+  ],
+  "hints": [
+    "Create a stack for every character.",
+    "For each index, check if the stack for mirror of the letter at that index is empty."
+  ],
+  "starter_code": "class Solution:\n    def calculateScore(self, s: str) -> int:\n        ",
+  "test_cases": []
+}

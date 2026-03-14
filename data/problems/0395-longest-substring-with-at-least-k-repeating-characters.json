@@ -1,0 +1,29 @@
+{
+  "id": "0395",
+  "slug": "longest-substring-with-at-least-k-repeating-characters",
+  "title": "Longest Substring with At Least K Repeating Characters",
+  "difficulty": "Medium",
+  "topics": [
+    "Hash Table",
+    "String",
+    "Divide and Conquer",
+    "Sliding Window"
+  ],
+  "description": "Given a string s and an integer k, return the length of the longest substring of s such that the frequency of each character in this substring is greater than or equal to k.\nif no such substring exists, return 0.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= s.length <= 104",
+    "s consists of only lowercase English letters.",
+    "1 <= k <= 105"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"aaabb\", k = 3\nOutput: 3\nExplanation: The longest substring is \"aaa\", as 'a' is repeated 3 times."
+    },
+    {
+      "example_text": "Input: s = \"ababbc\", k = 2\nOutput: 5\nExplanation: The longest substring is \"ababb\", as 'a' is repeated 2 times and 'b' is repeated 3 times."
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def longestSubstring(self, s: str, k: int) -> int:\n        ",
+  "test_cases": []
+}

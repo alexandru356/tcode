@@ -1,0 +1,29 @@
+{
+  "id": "1611",
+  "slug": "minimum-one-bit-operations-to-make-integers-zero",
+  "title": "Minimum One Bit Operations to Make Integers Zero",
+  "difficulty": "Hard",
+  "topics": [
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Memoization"
+  ],
+  "description": "Given an integer n, you must transform it into 0 using the following operations any number of times:\nReturn the minimum number of operations to transform n into 0.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "0 <= n <= 109"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = 3\nOutput: 2\nExplanation: The binary representation of 3 is \"11\".\n\"11\" -> \"01\" with the 2nd operation since the 0th bit is 1.\n\"01\" -> \"00\" with the 1st operation."
+    },
+    {
+      "example_text": "Input: n = 6\nOutput: 4\nExplanation: The binary representation of 6 is \"110\".\n\"110\" -> \"010\" with the 2nd operation since the 1st bit is 1 and 0th through 0th bits are 0.\n\"010\" -> \"011\" with the 1st operation.\n\"011\" -> \"001\" with the 2nd operation since the 0th bit is 1.\n\"001\" -> \"000\" with the 1st operation."
+    }
+  ],
+  "hints": [
+    "The fastest way to convert n to zero is to remove all set bits starting from the leftmost one. Try some simple examples to learn the rule of how many steps are needed to remove one set bit.",
+    "consider n=2^k case first, then solve for all n."
+  ],
+  "starter_code": "class Solution:\n    def minimumOneBitOperations(self, n: int) -> int:\n        ",
+  "test_cases": []
+}

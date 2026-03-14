@@ -1,0 +1,32 @@
+{
+  "id": "3366",
+  "slug": "minimum-array-sum",
+  "title": "Minimum Array Sum",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "description": "You are given an integer array nums and three integers k, op1, and op2.\nYou can perform the following operations on nums:\nNote: Both operations can be applied to the same index, but at most once each.\nReturn the minimum possible sum of all elements in nums after performing any number of operations.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= nums.length <= 100",
+    "0 <= nums[i] <= 105",
+    "0 <= k <= 105",
+    "0 <= op1, op2 <= nums.length"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [2,8,3,19,3], k = 3, op1 = 1, op2 = 1\nOutput: 23\nExplanation:"
+    },
+    {
+      "example_text": "Input: nums = [2,4,3], k = 3, op1 = 2, op2 = 1\nOutput: 3\nExplanation:"
+    }
+  ],
+  "hints": [
+    "Think of dynamic programming with states to track progress and remaining operations.",
+    "Use <code>dp[index][op1][op2]</code> where each state tracks progress at <code>index</code> with <code>op1</code> and <code>op2</code> operations left.",
+    "At each state, try applying only operation 1, only operation 2, both in sequence, or skip both to find optimal results."
+  ],
+  "starter_code": "class Solution:\n    def minArraySum(self, nums: List[int], k: int, op1: int, op2: int) -> int:\n        ",
+  "test_cases": []
+}

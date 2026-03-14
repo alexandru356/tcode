@@ -1,0 +1,27 @@
+{
+  "id": "3386",
+  "slug": "button-with-longest-push-time",
+  "title": "Button with Longest Push Time",
+  "difficulty": "Easy",
+  "topics": [
+    "Array"
+  ],
+  "description": "You are given a 2D array events which represents a sequence of events where a child pushes a series of buttons on a keyboard.\nEach events[i] = [indexi, timei] indicates that the button at index indexi was pressed at time timei.\nReturn the index of the button that took the longest time to push. If multiple buttons have the same longest time, return the button with the smallest index.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= events.length <= 1000",
+    "events[i] == [indexi, timei]",
+    "1 <= indexi, timei <= 105",
+    "The input is generated such that events is sorted in increasing order of timei."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: events = [[1,2],[2,5],[3,9],[1,15]]\nOutput: 1\nExplanation:"
+    },
+    {
+      "example_text": "Input: events = [[10,5],[1,7]]\nOutput: 10\nExplanation:"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def buttonWithLongestTime(self, events: List[List[int]]) -> int:\n        ",
+  "test_cases": []
+}

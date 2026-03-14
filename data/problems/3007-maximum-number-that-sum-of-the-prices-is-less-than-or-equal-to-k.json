@@ -1,0 +1,30 @@
+{
+  "id": "3007",
+  "slug": "maximum-number-that-sum-of-the-prices-is-less-than-or-equal-to-k",
+  "title": "Maximum Number That Sum of the Prices Is Less Than or Equal to K",
+  "difficulty": "Medium",
+  "topics": [
+    "Binary Search",
+    "Dynamic Programming",
+    "Bit Manipulation"
+  ],
+  "description": "You are given an integer k and an integer x. The price of a number num is calculated by the count of set bits at positions x, 2x, 3x, etc., in its binary representation, starting from the least significant bit. The following table contains examples of how price is calculated.\nThe accumulated price of num is the total price of numbers from 1 to num. num is considered cheap if its accumulated price is less than or equal to k.\nReturn the greatest cheap number.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= k <= 1015",
+    "1 <= x <= 8"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: k = 9, x = 1\nOutput: 6\nExplanation:\nAs shown in the table below, 6 is the greatest cheap number."
+    },
+    {
+      "example_text": "Input: k = 7, x = 2\nOutput: 9\nExplanation:\nAs shown in the table below, 9 is the greatest cheap number."
+    }
+  ],
+  "hints": [
+    "Binary search the answer.",
+    "In each step of the binary search you should calculate the number of the set bits in the <code>i<sup>th</sup></code> position. Then calculate the sum of them."
+  ],
+  "starter_code": "class Solution:\n    def findMaximumNumber(self, k: int, x: int) -> int:\n        ",
+  "test_cases": []
+}

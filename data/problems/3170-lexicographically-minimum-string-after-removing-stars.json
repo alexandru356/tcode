@@ -1,0 +1,30 @@
+{
+  "id": "3170",
+  "slug": "lexicographically-minimum-string-after-removing-stars",
+  "title": "Lexicographically Minimum String After Removing Stars",
+  "difficulty": "Medium",
+  "topics": [
+    "Hash Table",
+    "String",
+    "Stack",
+    "Greedy",
+    "Heap (Priority Queue)"
+  ],
+  "description": "You are given a string s. It may contain any number of '*' characters. Your task is to remove all '*' characters.\nWhile there is a '*', do the following operation:\nReturn the lexicographically smallest resulting string after removing all '*' characters.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= s.length <= 105",
+    "s consists only of lowercase English letters and '*'.",
+    "The input is generated such that it is possible to delete all '*' characters."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"aaba*\"\nOutput: \"aab\"\nExplanation:\nWe should delete one of the 'a' characters with '*' . If we choose s[3] , s becomes the lexicographically smallest."
+    },
+    {
+      "example_text": "Input: s = \"abc\"\nOutput: \"abc\"\nExplanation:\nThere is no '*' in the string."
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def clearStars(self, s: str) -> str:\n        ",
+  "test_cases": []
+}

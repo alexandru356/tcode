@@ -1,0 +1,35 @@
+{
+  "id": "3357",
+  "slug": "minimize-the-maximum-adjacent-element-difference",
+  "title": "Minimize the Maximum Adjacent Element Difference",
+  "difficulty": "Hard",
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Greedy"
+  ],
+  "description": "You are given an array of integers nums. Some values in nums are missing and are denoted by -1.\nYou must choose a pair of positive integers (x, y) exactly once and replace each missing element with either x or y.\nYou need to minimize the maximum absolute difference between adjacent elements of nums after replacements.\nReturn the minimum possible difference.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "2 <= nums.length <= 105",
+    "nums[i] is either -1 or in the range [1, 109]."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [1,2,-1,10,8]\nOutput: 4\nExplanation:\nBy choosing the pair as (6, 7) , nums can be changed to [1, 2, 6, 10, 8] .\nThe absolute differences between adjacent elements are:"
+    },
+    {
+      "example_text": "Input: nums = [-1,-1,-1]\nOutput: 0\nExplanation:\nBy choosing the pair as (4, 4) , nums can be changed to [4, 4, 4] ."
+    },
+    {
+      "example_text": "Input: nums = [-1,10,-1,8]\nOutput: 1\nExplanation:\nBy choosing the pair as (11, 9) , nums can be changed to [11, 10, 9, 8] ."
+    }
+  ],
+  "hints": [
+    "More than 2 occurrences of -1 can be ignored.",
+    "We can add the first positive number to the beginning and the last positive number to the end so that any consecutive of -1s are surrounded by positive numbers.",
+    "Suppose the answer is <code>d</code>, it can be proved that for the optimal case we'll replace -1s with values <code>0 < x <= y</code> and it's always optimal to select <code>x = min(a) + d</code>. So we only need to select <code>y</code>.",
+    "Binary search on <code>d</code>."
+  ],
+  "starter_code": "class Solution:\n    def minDifference(self, nums: List[int]) -> int:\n        ",
+  "test_cases": []
+}

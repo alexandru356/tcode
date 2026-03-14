@@ -1,0 +1,33 @@
+{
+  "id": "2762",
+  "slug": "continuous-subarrays",
+  "title": "Continuous Subarrays",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Queue",
+    "Sliding Window",
+    "Heap (Priority Queue)",
+    "Ordered Set",
+    "Monotonic Queue"
+  ],
+  "description": "You are given a 0-indexed integer array nums. A subarray of nums is called continuous if:\nReturn the total number of continuous subarrays.\nA subarray is a contiguous non-empty sequence of elements within an array.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "1 <= nums[i] <= 109"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [5,4,2,4]\nOutput: 8\nExplanation: \nContinuous subarray of size 1: [5], [4], [2], [4].\nContinuous subarray of size 2: [5,4], [4,2], [2,4].\nContinuous subarray of size 3: [4,2,4].\nThere are no subarrys of size 4.\nTotal continuous subarrays = 4 + 3 + 1 = 8.\nIt can be shown that there are no more continuous subarrays."
+    },
+    {
+      "example_text": "Input: nums = [1,2,3]\nOutput: 6\nExplanation: \nContinuous subarray of size 1: [1], [2], [3].\nContinuous subarray of size 2: [1,2], [2,3].\nContinuous subarray of size 3: [1,2,3].\nTotal continuous subarrays = 3 + 2 + 1 = 6."
+    }
+  ],
+  "hints": [
+    "Try using the sliding window technique.",
+    "Use a set or map to keep track of the maximum and minimum of subarrays."
+  ],
+  "starter_code": "class Solution:\n    def continuousSubarrays(self, nums: List[int]) -> int:\n        ",
+  "test_cases": []
+}

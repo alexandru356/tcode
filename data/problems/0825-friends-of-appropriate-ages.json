@@ -1,0 +1,32 @@
+{
+  "id": "0825",
+  "slug": "friends-of-appropriate-ages",
+  "title": "Friends Of Appropriate Ages",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
+    "Sorting"
+  ],
+  "description": "There are n persons on a social media website. You are given an integer array ages where ages[i] is the age of the ith person.\nA Person x will not send a friend request to a person y (x != y) if any of the following conditions is true:\nOtherwise, x will send a friend request to y.\nNote that if x sends a request to y, y will not necessarily send a request to x. Also, a person will not send a friend request to themself.\nReturn the total number of friend requests made.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "n == ages.length",
+    "1 <= n <= 2 * 104",
+    "1 <= ages[i] <= 120"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: ages = [16,16]\nOutput: 2\nExplanation: 2 people friend request each other."
+    },
+    {
+      "example_text": "Input: ages = [16,17,18]\nOutput: 2\nExplanation: Friend requests are made 17 -> 16, 18 -> 17."
+    },
+    {
+      "example_text": "Input: ages = [20,30,100,110,120]\nOutput: 3\nExplanation: Friend requests are made 110 -> 100, 120 -> 110, 120 -> 100."
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def numFriendRequests(self, ages: List[int]) -> int:\n        ",
+  "test_cases": []
+}

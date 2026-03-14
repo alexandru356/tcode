@@ -1,0 +1,37 @@
+{
+  "id": "3209",
+  "slug": "number-of-subarrays-with-and-value-of-k",
+  "title": "Number of Subarrays With AND Value of K",
+  "difficulty": "Hard",
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Bit Manipulation",
+    "Segment Tree"
+  ],
+  "description": "Given an array of integers nums and an integer k, return the number of subarrays of nums where the bitwise AND of the elements of the subarray equals k.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "0 <= nums[i], k <= 109"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [1,1,1], k = 1\nOutput: 6\nExplanation:\nAll subarrays contain only 1's."
+    },
+    {
+      "example_text": "Input: nums = [1,1,2], k = 1\nOutput: 3\nExplanation:\nSubarrays having an AND value of 1 are: [ 1 ,1,2] , [1, 1 ,2] , [ 1,1 ,2] ."
+    },
+    {
+      "example_text": "Input: nums = [1,2,3], k = 2\nOutput: 2\nExplanation:\nSubarrays having an AND value of 2 are: [1, 2 ,3] , [1, 2,3 ] ."
+    }
+  ],
+  "hints": [
+    "Let’s say we want to count the number of pairs <code>(l, r)</code> such that <code>nums[l] & nums[l + 1] & … & nums[r] == k</code>.",
+    "Fix the left index <code>l</code>.",
+    "Note that if you increase <code>r</code> for a fixed <code>l</code>, then the AND value of the subarray either decreases or remains unchanged.",
+    "Therefore, consider using binary search.",
+    "To calculate the AND value of a subarray, use sparse tables."
+  ],
+  "starter_code": "class Solution:\n    def countSubarrays(self, nums: List[int], k: int) -> int:\n        ",
+  "test_cases": []
+}

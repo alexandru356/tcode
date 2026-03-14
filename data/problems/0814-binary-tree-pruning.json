@@ -1,0 +1,30 @@
+{
+  "id": "0814",
+  "slug": "binary-tree-pruning",
+  "title": "Binary Tree Pruning",
+  "difficulty": "Medium",
+  "topics": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "description": "Given the root of a binary tree, return the same tree where every subtree (of the given tree) not containing a 1 has been removed.\nA subtree of a node node is node plus every node that is a descendant of node.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "The number of nodes in the tree is in the range [1, 200].",
+    "Node.val is either 0 or 1."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: root = [1,null,0,0,1]\nOutput: [1,null,0,null,1]\nExplanation: \nOnly the red nodes satisfy the property \"every subtree not containing a 1\".\nThe diagram on the right represents the answer."
+    },
+    {
+      "example_text": "Input: root = [1,0,1,0,0,0,1]\nOutput: [1,null,1,null,1]"
+    },
+    {
+      "example_text": "Input: root = [1,1,0,1,1,0,1,0]\nOutput: [1,1,0,1,1,null,1]"
+    }
+  ],
+  "hints": [],
+  "starter_code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def pruneTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:\n        ",
+  "test_cases": []
+}

@@ -1,0 +1,28 @@
+{
+  "id": "3612",
+  "slug": "process-string-with-special-operations-i",
+  "title": "Process String with Special Operations I",
+  "difficulty": "Medium",
+  "topics": [
+    "String",
+    "Simulation"
+  ],
+  "description": "You are given a string s consisting of lowercase English letters and the special characters: *, #, and %.\nBuild a new string result by processing s according to the following rules from left to right:\nReturn the final string result after processing all characters in s.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= s.length <= 20",
+    "s consists of only lowercase English letters and special characters *, #, and %."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"a#b%*\"\nOutput: \"ba\"\nExplanation:\nThus, the final result is \"ba\" ."
+    },
+    {
+      "example_text": "Input: s = \"z*#\"\nOutput: \"\"\nExplanation:\nThus, the final result is \"\" ."
+    }
+  ],
+  "hints": [
+    "Simulate as described"
+  ],
+  "starter_code": "class Solution:\n    def processStr(self, s: str) -> str:\n        ",
+  "test_cases": []
+}

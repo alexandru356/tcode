@@ -1,0 +1,37 @@
+{
+  "id": "1363",
+  "slug": "largest-multiple-of-three",
+  "title": "Largest Multiple of Three",
+  "difficulty": "Hard",
+  "topics": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Greedy",
+    "Sorting"
+  ],
+  "description": "Given an array of digits digits, return the largest multiple of three that can be formed by concatenating some of the given digits in any order. If there is no answer return an empty string.\nSince the answer may not fit in an integer data type, return the answer as a string. Note that the returning answer must not contain unnecessary leading zeros.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= digits.length <= 104",
+    "0 <= digits[i] <= 9"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: digits = [8,1,9]\nOutput: \"981\""
+    },
+    {
+      "example_text": "Input: digits = [8,6,7,1,0]\nOutput: \"8760\""
+    },
+    {
+      "example_text": "Input: digits = [1]\nOutput: \"\""
+    }
+  ],
+  "hints": [
+    "A number is a multiple of three if and only if its sum of digits is a multiple of three.",
+    "Use dynamic programming.",
+    "To find the maximum number, try to maximize the number of digits of the number.",
+    "Sort the digits in descending order to find the maximum number."
+  ],
+  "starter_code": "class Solution:\n    def largestMultipleOfThree(self, digits: List[int]) -> str:\n        ",
+  "test_cases": []
+}

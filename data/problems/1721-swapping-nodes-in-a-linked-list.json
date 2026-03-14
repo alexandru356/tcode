@@ -1,0 +1,31 @@
+{
+  "id": "1721",
+  "slug": "swapping-nodes-in-a-linked-list",
+  "title": "Swapping Nodes in a Linked List",
+  "difficulty": "Medium",
+  "topics": [
+    "Linked List",
+    "Two Pointers"
+  ],
+  "description": "You are given the head of a linked list, and an integer k.\nReturn the head of the linked list after swapping the values of the kth node from the beginning and the kth node from the end (the list is 1-indexed).\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "The number of nodes in the list is n.",
+    "1 <= k <= n <= 105",
+    "0 <= Node.val <= 100"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: head = [1,2,3,4,5], k = 2\nOutput: [1,4,3,2,5]"
+    },
+    {
+      "example_text": "Input: head = [7,9,6,6,7,8,3,0,9,5], k = 5\nOutput: [7,9,6,6,8,7,3,0,9,5]"
+    }
+  ],
+  "hints": [
+    "We can traverse the linked list and store the elements in an array.",
+    "Upon conversion to an array, we can swap the required elements by indexing the array.",
+    "We can rebuild the linked list using the order of the elements in the array."
+  ],
+  "starter_code": "# Definition for singly-linked list.\n# class ListNode:\n#     def __init__(self, val=0, next=None):\n#         self.val = val\n#         self.next = next\nclass Solution:\n    def swapNodes(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:\n        ",
+  "test_cases": []
+}

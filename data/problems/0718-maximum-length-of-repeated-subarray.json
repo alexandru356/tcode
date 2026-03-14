@@ -1,0 +1,33 @@
+{
+  "id": "0718",
+  "slug": "maximum-length-of-repeated-subarray",
+  "title": "Maximum Length of Repeated Subarray",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Dynamic Programming",
+    "Sliding Window",
+    "Rolling Hash",
+    "Hash Function"
+  ],
+  "description": "Given two integer arrays nums1 and nums2, return the maximum length of a subarray that appears in both arrays.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= nums1.length, nums2.length <= 1000",
+    "0 <= nums1[i], nums2[i] <= 100"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums1 = [1,2,3,2,1], nums2 = [3,2,1,4,7]\nOutput: 3\nExplanation: The repeated subarray with maximum length is [3,2,1]."
+    },
+    {
+      "example_text": "Input: nums1 = [0,0,0,0,0], nums2 = [0,0,0,0,0]\nOutput: 5\nExplanation: The repeated subarray with maximum length is [0,0,0,0,0]."
+    }
+  ],
+  "hints": [
+    "Use dynamic programming.  dp[i][j] will be the longest common prefix of A[i:] and B[j:].",
+    "The answer is max(dp[i][j]) over all i, j."
+  ],
+  "starter_code": "class Solution:\n    def findLength(self, nums1: List[int], nums2: List[int]) -> int:\n        ",
+  "test_cases": []
+}

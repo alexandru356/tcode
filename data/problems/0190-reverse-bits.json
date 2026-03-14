@@ -1,0 +1,26 @@
+{
+  "id": "0190",
+  "slug": "reverse-bits",
+  "title": "Reverse Bits",
+  "difficulty": "Easy",
+  "topics": [
+    "Divide and Conquer",
+    "Bit Manipulation"
+  ],
+  "description": "Reverse bits of a given 32 bits unsigned integer.\nNote:\nExample 1:\nExample 2:\nConstraints:\nFollow up: If this function is called many times, how would you optimize it?",
+  "constraints": [
+    "0 <= n <= 231 - 2",
+    "n is even."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = 43261596\nOutput: 964176192\nExplanation:"
+    },
+    {
+      "example_text": "Input: n = 2147483644\nOutput: 1073741822\nExplanation:"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def reverseBits(self, n: int) -> int:\n        ",
+  "test_cases": []
+}

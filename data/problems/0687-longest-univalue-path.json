@@ -1,0 +1,28 @@
+{
+  "id": "0687",
+  "slug": "longest-univalue-path",
+  "title": "Longest Univalue Path",
+  "difficulty": "Medium",
+  "topics": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "description": "Given the root of a binary tree, return the length of the longest path, where each node in the path has the same value. This path may or may not pass through the root.\nThe length of the path between two nodes is represented by the number of edges between them.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "The number of nodes in the tree is in the range [0, 104].",
+    "-1000 <= Node.val <= 1000",
+    "The depth of the tree will not exceed 1000."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: root = [5,4,5,1,1,null,5]\nOutput: 2\nExplanation: The shown image shows that the longest path of the same value (i.e. 5)."
+    },
+    {
+      "example_text": "Input: root = [1,4,5,4,4,null,5]\nOutput: 2\nExplanation: The shown image shows that the longest path of the same value (i.e. 4)."
+    }
+  ],
+  "hints": [],
+  "starter_code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def longestUnivaluePath(self, root: Optional[TreeNode]) -> int:\n        ",
+  "test_cases": []
+}

@@ -1,0 +1,30 @@
+{
+  "id": "3618",
+  "slug": "split-array-by-prime-indices",
+  "title": "Split Array by Prime Indices",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Math",
+    "Number Theory"
+  ],
+  "description": "You are given an integer array nums.\nSplit nums into two arrays A and B using the following rule:\nReturn the absolute difference between the sums of the two arrays: |sum(A) - sum(B)|.\nNote: An empty array has a sum of 0.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "-109 <= nums[i] <= 109"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [2,3,4]\nOutput: 1\nExplanation:"
+    },
+    {
+      "example_text": "Input: nums = [-1,5,7,0]\nOutput: 3\nExplanation:"
+    }
+  ],
+  "hints": [
+    "Generate all primes up to <code>nums.length</code> (e.g., with the Sieve of Eratosthenes).",
+    "Iterate through <code>nums</code>, adding <code>nums[i]</code> to <code>sumA</code> if <code>i</code> is prime, otherwise to <code>sumB</code>, then return <code>|sumA - sumB|</code>."
+  ],
+  "starter_code": "class Solution:\n    def splitArray(self, nums: List[int]) -> int:\n        ",
+  "test_cases": []
+}

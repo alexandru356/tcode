@@ -1,0 +1,30 @@
+{
+  "id": "1507",
+  "slug": "reformat-date",
+  "title": "Reformat Date",
+  "difficulty": "Easy",
+  "topics": [
+    "String"
+  ],
+  "description": "Given a date string in the form Day Month Year, where:\nConvert the date string to the format YYYY-MM-DD, where:\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "The given dates are guaranteed to be valid, so no error handling is necessary."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: date = \"20th Oct 2052\"\nOutput: \"2052-10-20\""
+    },
+    {
+      "example_text": "Input: date = \"6th Jun 1933\"\nOutput: \"1933-06-06\""
+    },
+    {
+      "example_text": "Input: date = \"26th May 1960\"\nOutput: \"1960-05-26\""
+    }
+  ],
+  "hints": [
+    "Handle the conversions of day, month and year separately.",
+    "Notice that days always have a two-word ending, so if you erase the last two characters of this days you'll get the number."
+  ],
+  "starter_code": "class Solution:\n    def reformatDate(self, date: str) -> str:\n        ",
+  "test_cases": []
+}

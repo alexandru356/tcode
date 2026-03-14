@@ -1,0 +1,29 @@
+{
+  "id": "3001",
+  "slug": "minimum-moves-to-capture-the-queen",
+  "title": "Minimum Moves to Capture The Queen",
+  "difficulty": "Medium",
+  "topics": [
+    "Math",
+    "Enumeration"
+  ],
+  "description": "There is a 1-indexed 8 x 8 chessboard containing 3 pieces.\nYou are given 6 integers a, b, c, d, e, and f where:\nGiven that you can only move the white pieces, return the minimum number of moves required to capture the black queen.\nNote that:\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= a, b, c, d, e, f <= 8",
+    "No two pieces are on the same square."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: a = 1, b = 1, c = 8, d = 8, e = 2, f = 3\nOutput: 2\nExplanation: We can capture the black queen in two moves by moving the white rook to (1, 3) then to (2, 3).\nIt is impossible to capture the black queen in less than two moves since it is not being attacked by any of the pieces at the beginning."
+    },
+    {
+      "example_text": "Input: a = 5, b = 3, c = 3, d = 4, e = 5, f = 2\nOutput: 1\nExplanation: We can capture the black queen in a single move by doing one of the following: \n- Move the white rook to (5, 2).\n- Move the white bishop to (5, 2)."
+    }
+  ],
+  "hints": [
+    "The minimum number of moves can be either <code>1</code> or <code>2</code>.",
+    "The answer will be <code>1</code> if the queen is on the path of the rook or bishop and none of them is in between."
+  ],
+  "starter_code": "class Solution:\n    def minMovesToCaptureTheQueen(self, a: int, b: int, c: int, d: int, e: int, f: int) -> int:\n        ",
+  "test_cases": []
+}

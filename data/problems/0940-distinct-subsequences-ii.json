@@ -1,0 +1,29 @@
+{
+  "id": "0940",
+  "slug": "distinct-subsequences-ii",
+  "title": "Distinct Subsequences II",
+  "difficulty": "Hard",
+  "topics": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "description": "Given a string s, return the number of distinct non-empty subsequences of s. Since the answer may be very large, return it modulo 109 + 7.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= s.length <= 2000",
+    "s consists of lowercase English letters."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"abc\"\nOutput: 7\nExplanation: The 7 distinct subsequences are \"a\", \"b\", \"c\", \"ab\", \"ac\", \"bc\", and \"abc\"."
+    },
+    {
+      "example_text": "Input: s = \"aba\"\nOutput: 6\nExplanation: The 6 distinct subsequences are \"a\", \"b\", \"ab\", \"aa\", \"ba\", and \"aba\"."
+    },
+    {
+      "example_text": "Input: s = \"aaa\"\nOutput: 3\nExplanation: The 3 distinct subsequences are \"a\", \"aa\" and \"aaa\"."
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def distinctSubseqII(self, s: str) -> int:\n        ",
+  "test_cases": []
+}

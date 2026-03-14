@@ -1,0 +1,36 @@
+{
+  "id": "2944",
+  "slug": "minimum-number-of-coins-for-fruits",
+  "title": "Minimum Number of Coins for Fruits",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Queue",
+    "Heap (Priority Queue)",
+    "Monotonic Queue"
+  ],
+  "description": "You are given an 0-indexed integer array prices where prices[i] denotes the number of coins needed to purchase the (i + 1)th fruit.\nThe fruit market has the following reward for each fruit:\nNote that even if you can take fruit j for free, you can still purchase it for prices[j - 1] coins to receive its reward.\nReturn the minimum number of coins needed to acquire all the fruits.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= prices.length <= 1000",
+    "1 <= prices[i] <= 105"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: prices = [3,1,2]\nOutput: 4\nExplanation:\nNote that even though you could take the 2 nd fruit for free as a reward of buying 1 st fruit, you purchase it to receive its reward, which is more optimal."
+    },
+    {
+      "example_text": "Input: prices = [1,10,1,1]\nOutput: 2\nExplanation:"
+    },
+    {
+      "example_text": "Input: prices = [26,18,6,12,49,7,45,45]\nOutput: 39\nExplanation:\nNote that even though you could take the 6 th fruit for free as a reward of buying 3 rd fruit, you purchase it to receive its reward, which is more optimal."
+    }
+  ],
+  "hints": [
+    "The intended solution uses Dynamic Programming.",
+    "Let <code>dp[i]</code> denote the minimum number of coins, such that we bought <code>i<sup>th</sup></code> fruit and acquired all the fruits in the range <code>[i...n]</code>.",
+    "<code>dp[i] = min(dp[i], dp[j] + prices[i]) </code>, where <code>j</code> is in the range <code>[i + 1, i + 1 + i]</code>."
+  ],
+  "starter_code": "class Solution:\n    def minimumCoins(self, prices: List[int]) -> int:\n        ",
+  "test_cases": []
+}

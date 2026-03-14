@@ -1,0 +1,27 @@
+{
+  "id": "1550",
+  "slug": "three-consecutive-odds",
+  "title": "Three Consecutive Odds",
+  "difficulty": "Easy",
+  "topics": [
+    "Array"
+  ],
+  "description": "Example 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= arr.length <= 1000",
+    "1 <= arr[i] <= 1000"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: arr = [2,6,4,1]\nOutput: false\nExplanation: There are no three consecutive odds."
+    },
+    {
+      "example_text": "Input: arr = [1,2,34,3,4,5,7,23,12]\nOutput: true\nExplanation: [5,7,23] are three consecutive odds."
+    }
+  ],
+  "hints": [
+    "Check every three consecutive numbers in the array for parity."
+  ],
+  "starter_code": "class Solution:\n    def threeConsecutiveOdds(self, arr: List[int]) -> bool:\n        ",
+  "test_cases": []
+}

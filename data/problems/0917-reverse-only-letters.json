@@ -1,0 +1,32 @@
+{
+  "id": "0917",
+  "slug": "reverse-only-letters",
+  "title": "Reverse Only Letters",
+  "difficulty": "Easy",
+  "topics": [
+    "Two Pointers",
+    "String"
+  ],
+  "description": "Given a string s, reverse the string according to the following rules:\nReturn s after reversing it.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= s.length <= 100",
+    "s consists of characters with ASCII values in the range [33, 122].",
+    "s does not contain '\\\"' or '\\\\'."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"ab-cd\"\nOutput: \"dc-ba\""
+    },
+    {
+      "example_text": "Input: s = \"a-bC-dEf-ghIj\"\nOutput: \"j-Ih-gfE-dCba\""
+    },
+    {
+      "example_text": "Input: s = \"Test1ng-Leet=code-Q!\"\nOutput: \"Qedo1ct-eeLg=ntse-T!\""
+    }
+  ],
+  "hints": [
+    "This problem is exactly like reversing a normal string except that there are certain characters that we have to simply skip. That should be easy enough to do if you know how to reverse a string using the two-pointer approach."
+  ],
+  "starter_code": "class Solution:\n    def reverseOnlyLetters(self, s: str) -> str:\n        ",
+  "test_cases": []
+}

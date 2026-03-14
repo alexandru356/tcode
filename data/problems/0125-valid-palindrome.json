@@ -1,0 +1,29 @@
+{
+  "id": "0125",
+  "slug": "valid-palindrome",
+  "title": "Valid Palindrome",
+  "difficulty": "Easy",
+  "topics": [
+    "Two Pointers",
+    "String"
+  ],
+  "description": "A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers.\nGiven a string s, return true if it is a palindrome, or false otherwise.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= s.length <= 2 * 105",
+    "s consists only of printable ASCII characters."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"A man, a plan, a canal: Panama\"\nOutput: true\nExplanation: \"amanaplanacanalpanama\" is a palindrome."
+    },
+    {
+      "example_text": "Input: s = \"race a car\"\nOutput: false\nExplanation: \"raceacar\" is not a palindrome."
+    },
+    {
+      "example_text": "Input: s = \" \"\nOutput: true\nExplanation: s is an empty string \"\" after removing non-alphanumeric characters.\nSince an empty string reads the same forward and backward, it is a palindrome."
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def isPalindrome(self, s: str) -> bool:\n        ",
+  "test_cases": []
+}

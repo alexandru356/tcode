@@ -1,0 +1,35 @@
+{
+  "id": "2946",
+  "slug": "matrix-similarity-after-cyclic-shifts",
+  "title": "Matrix Similarity After Cyclic Shifts",
+  "difficulty": "Easy",
+  "topics": [
+    "Array",
+    "Math",
+    "Matrix",
+    "Simulation"
+  ],
+  "description": "You are given an m x n integer matrix mat and an integer k. The matrix rows are 0-indexed.\nThe following proccess happens k times:\nReturn true if the final modified matrix after k steps is identical to the original matrix, and false otherwise.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= mat.length <= 25",
+    "1 <= mat[i].length <= 25",
+    "1 <= mat[i][j] <= 25",
+    "1 <= k <= 50"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: mat = [[1,2,3],[4,5,6],[7,8,9]], k = 4\nOutput: false\nExplanation:\nIn each step left shift is applied to rows 0 and 2 (even indices), and right shift to row 1 (odd index).\n"
+    },
+    {
+      "example_text": "Input: mat = [[1,2,1,2],[5,5,5,5],[6,3,6,3]], k = 2\nOutput: true\nExplanation:\n"
+    },
+    {
+      "example_text": "Input: mat = [[2,2],[2,2]], k = 3\nOutput: true\nExplanation:\nAs all the values are equal in the matrix, even after performing cyclic shifts the matrix will remain the same."
+    }
+  ],
+  "hints": [
+    "You can reduce <code>k</code> shifts to <code>(k % n)</code> shifts as after <code>n</code> shifts the matrix will become similar to the initial matrix."
+  ],
+  "starter_code": "class Solution:\n    def areSimilar(self, mat: List[List[int]], k: int) -> bool:\n        ",
+  "test_cases": []
+}

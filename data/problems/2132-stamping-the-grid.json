@@ -1,0 +1,34 @@
+{
+  "id": "2132",
+  "slug": "stamping-the-grid",
+  "title": "Stamping the Grid",
+  "difficulty": "Hard",
+  "topics": [
+    "Array",
+    "Greedy",
+    "Matrix",
+    "Prefix Sum"
+  ],
+  "description": "You are given an m x n binary matrix grid where each cell is either 0 (empty) or 1 (occupied).\nYou are then given stamps of size stampHeight x stampWidth. We want to fit the stamps such that they follow the given restrictions and requirements:\nReturn true if it is possible to fit the stamps while following the given restrictions and requirements. Otherwise, return false.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "m == grid.length",
+    "n == grid[r].length",
+    "1 <= m, n <= 105",
+    "1 <= m * n <= 2 * 105",
+    "grid[r][c] is either 0 or 1.",
+    "1 <= stampHeight, stampWidth <= 105"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: grid = [[1,0,0,0],[1,0,0,0],[1,0,0,0],[1,0,0,0],[1,0,0,0]], stampHeight = 4, stampWidth = 3\nOutput: true\nExplanation: We have two overlapping stamps (labeled 1 and 2 in the image) that are able to cover all the empty cells."
+    },
+    {
+      "example_text": "Input: grid = [[1,0,0,0],[0,1,0,0],[0,0,1,0],[0,0,0,1]], stampHeight = 2, stampWidth = 2 \nOutput: false \nExplanation: There is no way to fit the stamps onto all the empty cells without the stamps going outside the grid."
+    }
+  ],
+  "hints": [
+    "Can we use prefix sums here?"
+  ],
+  "starter_code": "class Solution:\n    def possibleToStamp(self, grid: List[List[int]], stampHeight: int, stampWidth: int) -> bool:\n        ",
+  "test_cases": []
+}

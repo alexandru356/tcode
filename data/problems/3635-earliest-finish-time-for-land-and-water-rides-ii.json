@@ -1,0 +1,30 @@
+{
+  "id": "3635",
+  "slug": "earliest-finish-time-for-land-and-water-rides-ii",
+  "title": "Earliest Finish Time for Land and Water Rides II",
+  "difficulty": "Medium",
+  "topics": [],
+  "description": "You are given two categories of theme park attractions: land rides and water rides.\nA tourist must experience exactly one ride from each category, in either order.\nReturn the earliest possible time at which the tourist can finish both rides.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= n, m <= 5 * 104",
+    "landStartTime.length == landDuration.length == n",
+    "waterStartTime.length == waterDuration.length == m",
+    "1 <= landStartTime[i], landDuration[i], waterStartTime[j], waterDuration[j] <= 105"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: landStartTime = [2,8], landDuration = [4,1], waterStartTime = [6], waterDuration = [3]\nOutput: 9\nExplanation: ​​​​​​​\nPlan A gives the earliest finish time of 9."
+    },
+    {
+      "example_text": "Input: landStartTime = [5], landDuration = [3], waterStartTime = [1], waterDuration = [10]\nOutput: 14\nExplanation: ​​​​​​​\nPlan A provides the earliest finish time of 14. ​​​​​​​"
+    }
+  ],
+  "hints": [
+    "Sort each ride list by opening time and build a prefix minimum of ride durations and a suffix minimum of ride finish times (<code>start + duration</code>).",
+    "Try both orders, land then water and water then land. For each ride in the first list compute <code>finish1 = start1 + duration1</code>.",
+    "Binary‑search the second list (sorted by <code>start</code>) to split rides into those with <code>start <= finish1</code> and those with <code>start > finish1</code>. Use the prefix minimum duration on the early group to get an earliest finish of <code>finish1 + minDuration</code> and the suffix minimum finish time on the late group.",
+    "For each pairing take the smaller finish time and track the overall minimum."
+  ],
+  "starter_code": "class Solution:\n    def earliestFinishTime(self, landStartTime: List[int], landDuration: List[int], waterStartTime: List[int], waterDuration: List[int]) -> int:\n        ",
+  "test_cases": []
+}

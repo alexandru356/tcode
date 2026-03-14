@@ -1,0 +1,34 @@
+{
+  "id": "1094",
+  "slug": "car-pooling",
+  "title": "Car Pooling",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Simulation",
+    "Prefix Sum"
+  ],
+  "description": "There is a car with capacity empty seats. The vehicle only drives east (i.e., it cannot turn around and drive west).\nYou are given the integer capacity and an array trips where trips[i] = [numPassengersi, fromi, toi] indicates that the ith trip has numPassengersi passengers and the locations to pick them up and drop them off are fromi and toi respectively. The locations are given as the number of kilometers due east from the car's initial location.\nReturn true if it is possible to pick up and drop off all passengers for all the given trips, or false otherwise.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= trips.length <= 1000",
+    "trips[i].length == 3",
+    "1 <= numPassengersi <= 100",
+    "0 <= fromi < toi <= 1000",
+    "1 <= capacity <= 105"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: trips = [[2,1,5],[3,3,7]], capacity = 4\nOutput: false"
+    },
+    {
+      "example_text": "Input: trips = [[2,1,5],[3,3,7]], capacity = 5\nOutput: true"
+    }
+  ],
+  "hints": [
+    "Sort the pickup and dropoff events by location, then process them in order."
+  ],
+  "starter_code": "class Solution:\n    def carPooling(self, trips: List[List[int]], capacity: int) -> bool:\n        ",
+  "test_cases": []
+}

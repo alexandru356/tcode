@@ -1,0 +1,29 @@
+{
+  "id": "2119",
+  "slug": "a-number-after-a-double-reversal",
+  "title": "A Number After a Double Reversal",
+  "difficulty": "Easy",
+  "topics": [
+    "Math"
+  ],
+  "description": "Reversing an integer means to reverse all its digits.\nGiven an integer num, reverse num to get reversed1, then reverse reversed1 to get reversed2. Return true if reversed2 equals num. Otherwise return false.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "0 <= num <= 106"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: num = 526\nOutput: true\nExplanation: Reverse num to get 625, then reverse 625 to get 526, which equals num."
+    },
+    {
+      "example_text": "Input: num = 1800\nOutput: false\nExplanation: Reverse num to get 81, then reverse 81 to get 18, which does not equal num."
+    },
+    {
+      "example_text": "Input: num = 0\nOutput: true\nExplanation: Reverse num to get 0, then reverse 0 to get 0, which equals num."
+    }
+  ],
+  "hints": [
+    "Other than the number 0 itself, any number that ends with 0 would lose some digits permanently when reversed."
+  ],
+  "starter_code": "class Solution:\n    def isSameAfterReversals(self, num: int) -> bool:\n        ",
+  "test_cases": []
+}

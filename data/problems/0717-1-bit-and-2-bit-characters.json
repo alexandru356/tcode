@@ -1,0 +1,27 @@
+{
+  "id": "0717",
+  "slug": "1-bit-and-2-bit-characters",
+  "title": "1-bit and 2-bit Characters",
+  "difficulty": "Easy",
+  "topics": [
+    "Array"
+  ],
+  "description": "We have two special characters:\nGiven a binary array bits that ends with 0, return true if the last character must be a one-bit character.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= bits.length <= 1000",
+    "bits[i] is either 0 or 1."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: bits = [1,0,0]\nOutput: true\nExplanation: The only way to decode it is two-bit character and one-bit character.\nSo the last character is one-bit character."
+    },
+    {
+      "example_text": "Input: bits = [1,1,1,0]\nOutput: false\nExplanation: The only way to decode it is two-bit character and two-bit character.\nSo the last character is not one-bit character."
+    }
+  ],
+  "hints": [
+    "Keep track of where the next character starts.  At the end, you want to know if you started on the last bit."
+  ],
+  "starter_code": "class Solution:\n    def isOneBitCharacter(self, bits: List[int]) -> bool:\n        ",
+  "test_cases": []
+}

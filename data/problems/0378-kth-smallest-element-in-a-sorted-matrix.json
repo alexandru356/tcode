@@ -1,0 +1,32 @@
+{
+  "id": "0378",
+  "slug": "kth-smallest-element-in-a-sorted-matrix",
+  "title": "Kth Smallest Element in a Sorted Matrix",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Matrix"
+  ],
+  "description": "Given an n x n matrix where each of the rows and columns is sorted in ascending order, return the kth smallest element in the matrix.\nNote that it is the kth smallest element in the sorted order, not the kth distinct element.\nYou must find a solution with a memory complexity better than O(n2).\nExample 1:\nExample 2:\nConstraints:\nFollow up:",
+  "constraints": [
+    "n == matrix.length == matrix[i].length",
+    "1 <= n <= 300",
+    "-109 <= matrix[i][j] <= 109",
+    "All the rows and columns of matrix are guaranteed to be sorted in non-decreasing order.",
+    "1 <= k <= n2"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: matrix = [[1,5,9],[10,11,13],[12,13,15]], k = 8\nOutput: 13\nExplanation: The elements in the matrix are [1,5,9,10,11,12,13,13,15], and the 8th smallest number is 13"
+    },
+    {
+      "example_text": "Input: matrix = [[-5]], k = 1\nOutput: -5"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def kthSmallest(self, matrix: List[List[int]], k: int) -> int:\n        ",
+  "test_cases": []
+}

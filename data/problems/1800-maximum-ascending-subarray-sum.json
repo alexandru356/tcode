@@ -1,0 +1,31 @@
+{
+  "id": "1800",
+  "slug": "maximum-ascending-subarray-sum",
+  "title": "Maximum Ascending Subarray Sum",
+  "difficulty": "Easy",
+  "topics": [
+    "Array"
+  ],
+  "description": "Given an array of positive integers nums, return the maximum possible sum of an strictly increasing subarray in nums.\nA subarray is defined as a contiguous sequence of numbers in an array.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= nums.length <= 100",
+    "1 <= nums[i] <= 100"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [10,20,30,5,10,50]\nOutput: 65\nExplanation: [5,10,50] is the ascending subarray with the maximum sum of 65."
+    },
+    {
+      "example_text": "Input: nums = [10,20,30,40,50]\nOutput: 150\nExplanation: [10,20,30,40,50] is the ascending subarray with the maximum sum of 150."
+    },
+    {
+      "example_text": "Input: nums = [12,17,15,13,10,11,12]\nOutput: 33\nExplanation: [10,11,12] is the ascending subarray with the maximum sum of 33."
+    }
+  ],
+  "hints": [
+    "It is fast enough to check all possible subarrays",
+    "The end of each ascending subarray will be the start of the next"
+  ],
+  "starter_code": "class Solution:\n    def maxAscendingSum(self, nums: List[int]) -> int:\n        ",
+  "test_cases": []
+}

@@ -1,0 +1,34 @@
+{
+  "id": "0529",
+  "slug": "minesweeper",
+  "title": "Minesweeper",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Matrix"
+  ],
+  "description": "Let's play the minesweeper game (Wikipedia, online game)!\nYou are given an m x n char matrix board representing the game board where:\nYou are also given an integer array click where click = [clickr, clickc] represents the next click position among all the unrevealed squares ('M' or 'E').\nReturn the board after revealing this position according to the following rules:\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "m == board.length",
+    "n == board[i].length",
+    "1 <= m, n <= 50",
+    "board[i][j] is either 'M', 'E', 'B', or a digit from '1' to '8'.",
+    "click.length == 2",
+    "0 <= clickr < m",
+    "0 <= clickc < n",
+    "board[clickr][clickc] is either 'M' or 'E'."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: board = [[\"E\",\"E\",\"E\",\"E\",\"E\"],[\"E\",\"E\",\"M\",\"E\",\"E\"],[\"E\",\"E\",\"E\",\"E\",\"E\"],[\"E\",\"E\",\"E\",\"E\",\"E\"]], click = [3,0]\nOutput: [[\"B\",\"1\",\"E\",\"1\",\"B\"],[\"B\",\"1\",\"M\",\"1\",\"B\"],[\"B\",\"1\",\"1\",\"1\",\"B\"],[\"B\",\"B\",\"B\",\"B\",\"B\"]]"
+    },
+    {
+      "example_text": "Input: board = [[\"B\",\"1\",\"E\",\"1\",\"B\"],[\"B\",\"1\",\"M\",\"1\",\"B\"],[\"B\",\"1\",\"1\",\"1\",\"B\"],[\"B\",\"B\",\"B\",\"B\",\"B\"]], click = [1,2]\nOutput: [[\"B\",\"1\",\"E\",\"1\",\"B\"],[\"B\",\"1\",\"X\",\"1\",\"B\"],[\"B\",\"1\",\"1\",\"1\",\"B\"],[\"B\",\"B\",\"B\",\"B\",\"B\"]]"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def updateBoard(self, board: List[List[str]], click: List[int]) -> List[List[str]]:\n        ",
+  "test_cases": []
+}

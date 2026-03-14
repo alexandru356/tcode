@@ -1,0 +1,29 @@
+{
+  "id": "3090",
+  "slug": "maximum-length-substring-with-two-occurrences",
+  "title": "Maximum Length Substring With Two Occurrences",
+  "difficulty": "Easy",
+  "topics": [
+    "Hash Table",
+    "String",
+    "Sliding Window"
+  ],
+  "description": "Example 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "2 <= s.length <= 100",
+    "s consists only of lowercase English letters."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"bcbbbcba\"\nOutput: 4\nExplanation:"
+    },
+    {
+      "example_text": "Input: s = \"aaaa\"\nOutput: 2\nExplanation:"
+    }
+  ],
+  "hints": [
+    "We can try all substrings by brute-force since the constraints are very small."
+  ],
+  "starter_code": "class Solution:\n    def maximumLengthSubstring(self, s: str) -> int:\n        ",
+  "test_cases": []
+}

@@ -1,0 +1,33 @@
+{
+  "id": "0341",
+  "slug": "flatten-nested-list-iterator",
+  "title": "Flatten Nested List Iterator",
+  "difficulty": "Medium",
+  "topics": [
+    "Stack",
+    "Tree",
+    "Depth-First Search",
+    "Design",
+    "Queue",
+    "Iterator"
+  ],
+  "description": "You are given a nested list of integers nestedList. Each element is either an integer or a list whose elements may also be integers or other lists. Implement an iterator to flatten it.\nImplement the NestedIterator class:\nYour code will be tested with the following pseudocode:\nIf res matches the expected flattened list, then your code will be judged as correct.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= nestedList.length <= 500",
+    "The values of the integers in the nested list is in the range [-106, 106]."
+  ],
+  "examples": [
+    {
+      "example_text": "initialize iterator with nestedList\nres = []\nwhile iterator.hasNext()\n    append iterator.next() to the end of res\nreturn res"
+    },
+    {
+      "example_text": "Input: nestedList = [[1,1],2,[1,1]]\nOutput: [1,1,2,1,1]\nExplanation: By calling next repeatedly until hasNext returns false, the order of elements returned by next should be: [1,1,2,1,1]."
+    },
+    {
+      "example_text": "Input: nestedList = [1,[4,[6]]]\nOutput: [1,4,6]\nExplanation: By calling next repeatedly until hasNext returns false, the order of elements returned by next should be: [1,4,6]."
+    }
+  ],
+  "hints": [],
+  "starter_code": "# \"\"\"\n# This is the interface that allows for creating nested lists.\n# You should not implement it, or speculate about its implementation\n# \"\"\"\n#class NestedInteger:\n#    def isInteger(self) -> bool:\n#        \"\"\"\n#        @return True if this NestedInteger holds a single integer, rather than a nested list.\n#        \"\"\"\n#\n#    def getInteger(self) -> int:\n#        \"\"\"\n#        @return the single integer that this NestedInteger holds, if it holds a single integer\n#        Return None if this NestedInteger holds a nested list\n#        \"\"\"\n#\n#    def getList(self) -> [NestedInteger]:\n#        \"\"\"\n#        @return the nested list that this NestedInteger holds, if it holds a nested list\n#        Return None if this NestedInteger holds a single integer\n#        \"\"\"\n\nclass NestedIterator:\n    def __init__(self, nestedList: [NestedInteger]):\n        \n    \n    def next(self) -> int:\n        \n    \n    def hasNext(self) -> bool:\n         \n\n# Your NestedIterator object will be instantiated and called as such:\n# i, v = NestedIterator(nestedList), []\n# while i.hasNext(): v.append(i.next())",
+  "test_cases": []
+}

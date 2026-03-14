@@ -1,0 +1,32 @@
+{
+  "id": "3561",
+  "slug": "resulting-string-after-adjacent-removals",
+  "title": "Resulting String After Adjacent Removals",
+  "difficulty": "Medium",
+  "topics": [
+    "String",
+    "Stack",
+    "Simulation"
+  ],
+  "description": "You are given a string s consisting of lowercase English letters.\nYou must repeatedly perform the following operation while the string s has at least two consecutive characters:\nReturn the resulting string after no more operations can be performed.\nNote: Consider the alphabet as circular, thus 'a' and 'z' are consecutive.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= s.length <= 105",
+    "s consists only of lowercase English letters."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"abc\"\nOutput: \"c\"\nExplanation:"
+    },
+    {
+      "example_text": "Input: s = \"adcb\"\nOutput: \"\"\nExplanation:"
+    },
+    {
+      "example_text": "Input: s = \"zadb\"\nOutput: \"db\"\nExplanation:"
+    }
+  ],
+  "hints": [
+    "Traverse the string from left to right and use a stack to perform the removals."
+  ],
+  "starter_code": "class Solution:\n    def resultingString(self, s: str) -> str:\n        ",
+  "test_cases": []
+}

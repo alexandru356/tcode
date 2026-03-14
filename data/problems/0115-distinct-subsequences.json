@@ -1,0 +1,26 @@
+{
+  "id": "0115",
+  "slug": "distinct-subsequences",
+  "title": "Distinct Subsequences",
+  "difficulty": "Hard",
+  "topics": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "description": "Given two strings s and t, return the number of distinct subsequences of s which equals t.\nThe test cases are generated so that the answer fits on a 32-bit signed integer.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= s.length, t.length <= 1000",
+    "s and t consist of English letters."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"rabbbit\", t = \"rabbit\"\nOutput: 3\nExplanation:\nAs shown below, there are 3 ways you can generate \"rabbit\" from s.\nrabbbit\nrabbbit\nrabbbit"
+    },
+    {
+      "example_text": "Input: s = \"babgbag\", t = \"bag\"\nOutput: 5\nExplanation:\nAs shown below, there are 5 ways you can generate \"bag\" from s.\nbabgbag\nbabgbag\nbabgbag\nbabgbag\nbabgbag"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def numDistinct(self, s: str, t: str) -> int:\n        ",
+  "test_cases": []
+}

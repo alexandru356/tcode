@@ -1,0 +1,34 @@
+{
+  "id": "0114",
+  "slug": "flatten-binary-tree-to-linked-list",
+  "title": "Flatten Binary Tree to Linked List",
+  "difficulty": "Medium",
+  "topics": [
+    "Linked List",
+    "Stack",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "description": "Given the root of a binary tree, flatten the tree into a \"linked list\":\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "The number of nodes in the tree is in the range [0, 2000].",
+    "-100 <= Node.val <= 100"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: root = [1,2,5,3,4,null,6]\nOutput: [1,null,2,null,3,null,4,null,5,null,6]"
+    },
+    {
+      "example_text": "Input: root = []\nOutput: []"
+    },
+    {
+      "example_text": "Input: root = [0]\nOutput: [0]"
+    }
+  ],
+  "hints": [
+    "If you notice carefully in the flattened tree, each node's right child points to the next node of a pre-order traversal."
+  ],
+  "starter_code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def flatten(self, root: Optional[TreeNode]) -> None:\n        \"\"\"\n        Do not return anything, modify root in-place instead.\n        \"\"\"\n        ",
+  "test_cases": []
+}

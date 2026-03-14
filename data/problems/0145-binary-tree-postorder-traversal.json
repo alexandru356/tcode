@@ -1,0 +1,34 @@
+{
+  "id": "0145",
+  "slug": "binary-tree-postorder-traversal",
+  "title": "Binary Tree Postorder Traversal",
+  "difficulty": "Easy",
+  "topics": [
+    "Stack",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "description": "Given the root of a binary tree, return the postorder traversal of its nodes' values.\nExample 1:\nExample 2:\nExample 3:\nExample 4:\nConstraints:",
+  "constraints": [
+    "The number of the nodes in the tree is in the range [0, 100].",
+    "-100 <= Node.val <= 100"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: root = [1,null,2,3]\nOutput: [3,2,1]\nExplanation:\n"
+    },
+    {
+      "example_text": "Input: root = [1,2,3,4,5,null,8,null,null,6,7,9]\nOutput: [4,6,7,5,2,9,8,3,1]\nExplanation:\n"
+    },
+    {
+      "example_text": "Input: root = []\nOutput: []"
+    },
+    {
+      "example_text": "Input: root = [1]\nOutput: [1]"
+    }
+  ],
+  "hints": [],
+  "starter_code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def postorderTraversal(self, root: Optional[TreeNode]) -> List[int]:\n        ",
+  "test_cases": []
+}

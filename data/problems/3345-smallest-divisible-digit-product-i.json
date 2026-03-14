@@ -1,0 +1,29 @@
+{
+  "id": "3345",
+  "slug": "smallest-divisible-digit-product-i",
+  "title": "Smallest Divisible Digit Product I",
+  "difficulty": "Easy",
+  "topics": [
+    "Math",
+    "Enumeration"
+  ],
+  "description": "You are given two integers n and t. Return the smallest number greater than or equal to n such that the product of its digits is divisible by t.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= n <= 100",
+    "1 <= t <= 10"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = 10, t = 2\nOutput: 10\nExplanation:\nThe digit product of 10 is 0, which is divisible by 2, making it the smallest number greater than or equal to 10 that satisfies the condition."
+    },
+    {
+      "example_text": "Input: n = 15, t = 3\nOutput: 16\nExplanation:\nThe digit product of 16 is 6, which is divisible by 3, making it the smallest number greater than or equal to 15 that satisfies the condition."
+    }
+  ],
+  "hints": [
+    "You have to check at most 10 numbers.",
+    "Apply a brute-force approach by checking each possible number."
+  ],
+  "starter_code": "class Solution:\n    def smallestNumber(self, n: int, t: int) -> int:\n        ",
+  "test_cases": []
+}

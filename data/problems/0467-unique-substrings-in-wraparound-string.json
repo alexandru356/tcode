@@ -1,0 +1,31 @@
+{
+  "id": "0467",
+  "slug": "unique-substrings-in-wraparound-string",
+  "title": "Unique Substrings in Wraparound String",
+  "difficulty": "Medium",
+  "topics": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "description": "We define the string base to be the infinite wraparound string of \"abcdefghijklmnopqrstuvwxyz\", so base will look like this:\nGiven a string s, return the number of unique non-empty substrings of s are present in base.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= s.length <= 105",
+    "s consists of lowercase English letters."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"a\"\nOutput: 1\nExplanation: Only the substring \"a\" of s is in base."
+    },
+    {
+      "example_text": "Input: s = \"cac\"\nOutput: 2\nExplanation: There are two substrings (\"a\", \"c\") of s in base."
+    },
+    {
+      "example_text": "Input: s = \"zab\"\nOutput: 6\nExplanation: There are six substrings (\"z\", \"a\", \"b\", \"za\", \"ab\", and \"zab\") of s in base."
+    }
+  ],
+  "hints": [
+    "One possible solution might be to consider allocating an array size of 26 for each character in the alphabet. (Credits to @r2ysxu)"
+  ],
+  "starter_code": "class Solution:\n    def findSubstringInWraproundString(self, s: str) -> int:\n        ",
+  "test_cases": []
+}

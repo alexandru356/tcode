@@ -1,0 +1,41 @@
+{
+  "id": "3590",
+  "slug": "kth-smallest-path-xor-sum",
+  "title": "Kth Smallest Path XOR Sum",
+  "difficulty": "Hard",
+  "topics": [
+    "Array",
+    "Tree",
+    "Depth-First Search",
+    "Ordered Set"
+  ],
+  "description": "You are given an undirected tree rooted at node 0 with n nodes numbered from 0 to n - 1. Each node i has an integer value vals[i], and its parent is given by par[i].\nThe path XOR sum from the root to a node u is defined as the bitwise XOR of all vals[i] for nodes i on the path from the root node to node u, inclusive.\nYou are given a 2D integer array queries, where queries[j] = [uj, kj]. For each query, find the kjth smallest distinct path XOR sum among all nodes in the subtree rooted at uj. If there are fewer than kj distinct path XOR sums in that subtree, the answer is -1.\nReturn an integer array where the jth element is the answer to the jth query.\nIn a rooted tree, the subtree of a node v includes v and all nodes whose path to the root passes through v, that is, v and its descendants.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= n == vals.length <= 5 * 104",
+    "0 <= vals[i] <= 105",
+    "par.length == n",
+    "par[0] == -1",
+    "0 <= par[i] < n for i in [1, n - 1]",
+    "1 <= queries.length <= 5 * 104",
+    "queries[j] == [uj, kj]",
+    "0 <= uj < n",
+    "1 <= kj <= n",
+    "The input is generated such that the parent array par represents a valid tree."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: par = [-1,0,0], vals = [1,1,1], queries = [[0,1],[0,2],[0,3]]\nOutput: [0,1,-1]\nExplanation:\n\nPath XORs:\nSubtree of 0 : Subtree rooted at node 0 includes nodes [0, 1, 2] with Path XORs = [1, 0, 0] . The distinct XORs are [0, 1] .\nQueries:\nOutput: [0, 1, -1]"
+    },
+    {
+      "example_text": "Input: par = [-1,0,1], vals = [5,2,7], queries = [[0,1],[1,2],[1,3],[2,1]]\nOutput: [0,7,-1,0]\nExplanation:\n\nPath XORs:\nSubtrees and Distinct Path XORs:\nQueries:\nOutput: [0, 7, -1, 0]"
+    }
+  ],
+  "hints": [
+    "For each node <code>u</code>, maintain the set of XOR values along the path from the root to <code>u</code>.",
+    "Use DSU on tree (small‑to‑large merging) during DFS to efficiently merge each child's set into its parent's set.",
+    "Store all XOR values in an <code>ordered_set</code> (in Python you can use the <code>sortedcontainers</code> module's <code>SortedList</code>) so you can quickly find the <code>k</code>th smallest XOR in any subtree.",
+    "At node <code>u</code>, process each query <code>[u, k]</code> by calling <code>find_by_order(k − 1)</code> (C++ PBDS) or indexing <code>sorted_list[k-1]</code> (Python <code>SortedList</code>)."
+  ],
+  "starter_code": "class Solution:\n    def kthSmallest(self, par: List[int], vals: List[int], queries: List[List[int]]) -> List[int]:\n        ",
+  "test_cases": []
+}

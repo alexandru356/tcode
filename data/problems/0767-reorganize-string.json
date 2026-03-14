@@ -1,0 +1,32 @@
+{
+  "id": "0767",
+  "slug": "reorganize-string",
+  "title": "Reorganize String",
+  "difficulty": "Medium",
+  "topics": [
+    "Hash Table",
+    "String",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Counting"
+  ],
+  "description": "Given a string s, rearrange the characters of s so that any two adjacent characters are not the same.\nReturn any possible rearrangement of s or return \"\" if not possible.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= s.length <= 500",
+    "s consists of lowercase English letters."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"aab\"\nOutput: \"aba\""
+    },
+    {
+      "example_text": "Input: s = \"aaab\"\nOutput: \"\""
+    }
+  ],
+  "hints": [
+    "Alternate placing the most common letters."
+  ],
+  "starter_code": "class Solution:\n    def reorganizeString(self, s: str) -> str:\n        ",
+  "test_cases": []
+}

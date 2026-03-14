@@ -1,0 +1,33 @@
+{
+  "id": "0171",
+  "slug": "excel-sheet-column-number",
+  "title": "Excel Sheet Column Number",
+  "difficulty": "Easy",
+  "topics": [
+    "Math",
+    "String"
+  ],
+  "description": "Given a string columnTitle that represents the column title as appears in an Excel sheet, return its corresponding column number.\nFor example:\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= columnTitle.length <= 7",
+    "columnTitle consists only of uppercase English letters.",
+    "columnTitle is in the range [\"A\", \"FXSHRXW\"]."
+  ],
+  "examples": [
+    {
+      "example_text": "A -> 1\nB -> 2\nC -> 3\n...\nZ -> 26\nAA -> 27\nAB -> 28 \n..."
+    },
+    {
+      "example_text": "Input: columnTitle = \"A\"\nOutput: 1"
+    },
+    {
+      "example_text": "Input: columnTitle = \"AB\"\nOutput: 28"
+    },
+    {
+      "example_text": "Input: columnTitle = \"ZY\"\nOutput: 701"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def titleToNumber(self, columnTitle: str) -> int:\n        ",
+  "test_cases": []
+}

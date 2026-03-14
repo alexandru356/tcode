@@ -1,0 +1,34 @@
+{
+  "id": "2040",
+  "slug": "kth-smallest-product-of-two-sorted-arrays",
+  "title": "Kth Smallest Product of Two Sorted Arrays",
+  "difficulty": "Hard",
+  "topics": [
+    "Array",
+    "Binary Search"
+  ],
+  "description": "Example 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= nums1.length, nums2.length <= 5 * 104",
+    "-105 <= nums1[i], nums2[j] <= 105",
+    "1 <= k <= nums1.length * nums2.length",
+    "nums1 and nums2 are sorted."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums1 = [2,5], nums2 = [3,4], k = 2\nOutput: 8\nExplanation: The 2 smallest products are:\n- nums1[0] * nums2[0] = 2 * 3 = 6\n- nums1[0] * nums2[1] = 2 * 4 = 8\nThe 2nd smallest product is 8."
+    },
+    {
+      "example_text": "Input: nums1 = [-4,-2,0,3], nums2 = [2,4], k = 6\nOutput: 0\nExplanation: The 6 smallest products are:\n- nums1[0] * nums2[1] = (-4) * 4 = -16\n- nums1[0] * nums2[0] = (-4) * 2 = -8\n- nums1[1] * nums2[1] = (-2) * 4 = -8\n- nums1[1] * nums2[0] = (-2) * 2 = -4\n- nums1[2] * nums2[0] = 0 * 2 = 0\n- nums1[2] * nums2[1] = 0 * 4 = 0\nThe 6th smallest product is 0."
+    },
+    {
+      "example_text": "Input: nums1 = [-2,-1,0,1,2], nums2 = [-3,-1,2,4,5], k = 3\nOutput: -6\nExplanation: The 3 smallest products are:\n- nums1[0] * nums2[4] = (-2) * 5 = -10\n- nums1[0] * nums2[3] = (-2) * 4 = -8\n- nums1[4] * nums2[0] = 2 * (-3) = -6\nThe 3rd smallest product is -6."
+    }
+  ],
+  "hints": [
+    "Can we split this problem into four cases depending on the sign of the numbers?",
+    "Can we binary search the value?"
+  ],
+  "starter_code": "class Solution:\n    def kthSmallestProduct(self, nums1: List[int], nums2: List[int], k: int) -> int:\n        ",
+  "test_cases": []
+}

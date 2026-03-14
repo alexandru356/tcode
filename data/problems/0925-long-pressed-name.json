@@ -1,0 +1,26 @@
+{
+  "id": "0925",
+  "slug": "long-pressed-name",
+  "title": "Long Pressed Name",
+  "difficulty": "Easy",
+  "topics": [
+    "Two Pointers",
+    "String"
+  ],
+  "description": "Your friend is typing his name into a keyboard. Sometimes, when typing a character c, the key might get long pressed, and the character will be typed 1 or more times.\nYou examine the typed characters of the keyboard. Return True if it is possible that it was your friends name, with some characters (possibly none) being long pressed.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= name.length, typed.length <= 1000",
+    "name and typed consist of only lowercase English letters."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: name = \"alex\", typed = \"aaleex\"\nOutput: true\nExplanation: 'a' and 'e' in 'alex' were long pressed."
+    },
+    {
+      "example_text": "Input: name = \"saeed\", typed = \"ssaaedd\"\nOutput: false\nExplanation: 'e' must have been pressed twice, but it was not in the typed output."
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def isLongPressedName(self, name: str, typed: str) -> bool:\n        ",
+  "test_cases": []
+}

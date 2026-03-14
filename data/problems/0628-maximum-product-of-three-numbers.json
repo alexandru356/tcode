@@ -1,0 +1,30 @@
+{
+  "id": "0628",
+  "slug": "maximum-product-of-three-numbers",
+  "title": "Maximum Product of Three Numbers",
+  "difficulty": "Easy",
+  "topics": [
+    "Array",
+    "Math",
+    "Sorting"
+  ],
+  "description": "Given an integer array nums, find three numbers whose product is maximum and return the maximum product.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "3 <= nums.length <= 104",
+    "-1000 <= nums[i] <= 1000"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [1,2,3]\nOutput: 6"
+    },
+    {
+      "example_text": "Input: nums = [1,2,3,4]\nOutput: 24"
+    },
+    {
+      "example_text": "Input: nums = [-1,-2,-3]\nOutput: -6"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def maximumProduct(self, nums: List[int]) -> int:\n        ",
+  "test_cases": []
+}

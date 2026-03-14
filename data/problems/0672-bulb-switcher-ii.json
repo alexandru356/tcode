@@ -1,0 +1,31 @@
+{
+  "id": "0672",
+  "slug": "bulb-switcher-ii",
+  "title": "Bulb Switcher II",
+  "difficulty": "Medium",
+  "topics": [
+    "Math",
+    "Bit Manipulation",
+    "Depth-First Search",
+    "Breadth-First Search"
+  ],
+  "description": "There is a room with n bulbs labeled from 1 to n that all are turned on initially, and four buttons on the wall. Each of the four buttons has a different functionality where:\nYou must make exactly presses button presses in total. For each press, you may pick any of the four buttons to press.\nGiven the two integers n and presses, return the number of different possible statuses after performing all presses button presses.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= n <= 1000",
+    "0 <= presses <= 1000"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = 1, presses = 1\nOutput: 2\nExplanation: Status can be:\n- [off] by pressing button 1\n- [on] by pressing button 2"
+    },
+    {
+      "example_text": "Input: n = 2, presses = 1\nOutput: 3\nExplanation: Status can be:\n- [off, off] by pressing button 1\n- [on, off] by pressing button 2\n- [off, on] by pressing button 3"
+    },
+    {
+      "example_text": "Input: n = 3, presses = 1\nOutput: 4\nExplanation: Status can be:\n- [off, off, off] by pressing button 1\n- [off, on, off] by pressing button 2\n- [on, off, on] by pressing button 3\n- [off, on, on] by pressing button 4"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def flipLights(self, n: int, presses: int) -> int:\n        ",
+  "test_cases": []
+}

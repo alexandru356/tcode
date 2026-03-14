@@ -1,0 +1,32 @@
+{
+  "id": "3519",
+  "slug": "count-numbers-with-non-decreasing-digits",
+  "title": "Count Numbers with Non-Decreasing Digits ",
+  "difficulty": "Hard",
+  "topics": [
+    "Math",
+    "String",
+    "Dynamic Programming"
+  ],
+  "description": "You are given two integers, l and r, represented as strings, and an integer b. Return the count of integers in the inclusive range [l, r] whose digits are in non-decreasing order when represented in base b.\nAn integer is considered to have non-decreasing digits if, when read from left to right (from the most significant digit to the least significant digit), each digit is greater than or equal to the previous one.\nSince the answer may be too large, return it modulo 109 + 7.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= l.length <= r.length <= 100",
+    "2 <= b <= 10",
+    "l and r consist only of digits.",
+    "The value represented by l is less than or equal to the value represented by r.",
+    "l and r do not contain leading zeros."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: l = \"23\", r = \"28\", b = 8\nOutput: 3\nExplanation:"
+    },
+    {
+      "example_text": "Input: l = \"2\", r = \"7\", b = 2\nOutput: 2\nExplanation:"
+    }
+  ],
+  "hints": [
+    "Use digit dynamic programming."
+  ],
+  "starter_code": "class Solution:\n    def countNumbers(self, l: str, r: str, b: int) -> int:\n        ",
+  "test_cases": []
+}

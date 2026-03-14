@@ -1,0 +1,34 @@
+{
+  "id": "1091",
+  "slug": "shortest-path-in-binary-matrix",
+  "title": "Shortest Path in Binary Matrix",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Breadth-First Search",
+    "Matrix"
+  ],
+  "description": "Given an n x n binary matrix grid, return the length of the shortest clear path in the matrix. If there is no clear path, return -1.\nA clear path in a binary matrix is a path from the top-left cell (i.e., (0, 0)) to the bottom-right cell (i.e., (n - 1, n - 1)) such that:\nThe length of a clear path is the number of visited cells of this path.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "n == grid.length",
+    "n == grid[i].length",
+    "1 <= n <= 100",
+    "grid[i][j] is 0 or 1"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: grid = [[0,1],[1,0]]\nOutput: 2"
+    },
+    {
+      "example_text": "Input: grid = [[0,0,0],[1,1,0],[1,1,0]]\nOutput: 4"
+    },
+    {
+      "example_text": "Input: grid = [[1,0,0],[1,1,0],[1,1,0]]\nOutput: -1"
+    }
+  ],
+  "hints": [
+    "Do a breadth first search to find the shortest path."
+  ],
+  "starter_code": "class Solution:\n    def shortestPathBinaryMatrix(self, grid: List[List[int]]) -> int:\n        ",
+  "test_cases": []
+}

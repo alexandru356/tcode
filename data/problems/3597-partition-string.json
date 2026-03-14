@@ -1,0 +1,30 @@
+{
+  "id": "3597",
+  "slug": "partition-string",
+  "title": "Partition String ",
+  "difficulty": "Medium",
+  "topics": [
+    "Hash Table",
+    "String",
+    "Trie",
+    "Simulation"
+  ],
+  "description": "Given a string s, partition it into unique segments according to the following procedure:\nReturn an array of strings segments, where segments[i] is the ith segment created.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= s.length <= 105",
+    "s contains only lowercase English letters."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"abbccccd\"\nOutput: [\"a\",\"b\",\"bc\",\"c\",\"cc\",\"d\"]\nExplanation:\nHence, the final output is [\"a\", \"b\", \"bc\", \"c\", \"cc\", \"d\"] ."
+    },
+    {
+      "example_text": "Input: s = \"aaaa\"\nOutput: [\"a\",\"aa\"]\nExplanation:\nHence, the final output is [\"a\", \"aa\"] ."
+    }
+  ],
+  "hints": [
+    "Simulate as described"
+  ],
+  "starter_code": "class Solution:\n    def partitionString(self, s: str) -> List[str]:\n        ",
+  "test_cases": []
+}

@@ -1,0 +1,30 @@
+{
+  "id": "0856",
+  "slug": "score-of-parentheses",
+  "title": "Score of Parentheses",
+  "difficulty": "Medium",
+  "topics": [
+    "String",
+    "Stack"
+  ],
+  "description": "Given a balanced parentheses string s, return the score of the string.\nThe score of a balanced parentheses string is based on the following rule:\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "2 <= s.length <= 50",
+    "s consists of only '(' and ')'.",
+    "s is a balanced parentheses string."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"()\"\nOutput: 1"
+    },
+    {
+      "example_text": "Input: s = \"(())\"\nOutput: 2"
+    },
+    {
+      "example_text": "Input: s = \"()()\"\nOutput: 2"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def scoreOfParentheses(self, s: str) -> int:\n        ",
+  "test_cases": []
+}

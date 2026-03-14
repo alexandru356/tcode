@@ -1,0 +1,34 @@
+{
+  "id": "3273",
+  "slug": "minimum-amount-of-damage-dealt-to-bob",
+  "title": "Minimum Amount of Damage Dealt to Bob",
+  "difficulty": "Hard",
+  "topics": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "description": "You are given an integer power and two integer arrays damage and health, both having length n.\nBob has n enemies, where enemy i will deal Bob damage[i] points of damage per second while they are alive (i.e. health[i] > 0).\nEvery second, after the enemies deal damage to Bob, he chooses one of the enemies that is still alive and deals power points of damage to them.\nDetermine the minimum total amount of damage points that will be dealt to Bob before all n enemies are dead.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= power <= 104",
+    "1 <= n == damage.length == health.length <= 105",
+    "1 <= damage[i], health[i] <= 104"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: power = 4, damage = [1,2,3,4], health = [4,5,6,8]\nOutput: 39\nExplanation:"
+    },
+    {
+      "example_text": "Input: power = 1, damage = [1,1,1,1], health = [1,2,3,4]\nOutput: 20\nExplanation:"
+    },
+    {
+      "example_text": "Input: power = 8, damage = [40], health = [59]\nOutput: 320"
+    }
+  ],
+  "hints": [
+    "Can we use sorting here along with a custom comparator?",
+    "For any two enemies <code>i</code> and <code>j</code> with damages <code>damage[i]</code> and <code>damage[j]</code>, and time to take each of them down <code>t<sub>i</sub></code> and <code>t<sub>j</sub></code>, when is it better to choose enemy <code>i</code> over enemy <code>j</code> first?"
+  ],
+  "starter_code": "class Solution:\n    def minDamage(self, power: int, damage: List[int], health: List[int]) -> int:\n        ",
+  "test_cases": []
+}

@@ -1,0 +1,31 @@
+{
+  "id": "1140",
+  "slug": "stone-game-ii",
+  "title": "Stone Game II",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Prefix Sum",
+    "Game Theory"
+  ],
+  "description": "Alice and Bob continue their games with piles of stones. There are a number of piles arranged in a row, and each pile has a positive integer number of stones piles[i]. The objective of the game is to end with the most stones.\nAlice and Bob take turns, with Alice starting first.\nOn each player's turn, that player can take all the stones in the first X remaining piles, where 1 <= X <= 2M. Then, we set M = max(M, X). Initially, M = 1.\nThe game continues until all the stones have been taken.\nAssuming Alice and Bob play optimally, return the maximum number of stones Alice can get.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= piles.length <= 100",
+    "1 <= piles[i] <= 104"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: piles = [2,7,9,4,4]\nOutput: 10\nExplanation:\nSo we return 10 since it's larger."
+    },
+    {
+      "example_text": "Input: piles = [1,2,3,4,5,100]\nOutput: 104"
+    }
+  ],
+  "hints": [
+    "Use dynamic programming: the states are (i, m) for the answer of piles[i:] and that given m."
+  ],
+  "starter_code": "class Solution:\n    def stoneGameII(self, piles: List[int]) -> int:\n        ",
+  "test_cases": []
+}

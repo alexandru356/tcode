@@ -1,0 +1,28 @@
+{
+  "id": "0501",
+  "slug": "find-mode-in-binary-search-tree",
+  "title": "Find Mode in Binary Search Tree",
+  "difficulty": "Easy",
+  "topics": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Search Tree",
+    "Binary Tree"
+  ],
+  "description": "Given the root of a binary search tree (BST) with duplicates, return all the mode(s) (i.e., the most frequently occurred element) in it.\nIf the tree has more than one mode, return them in any order.\nAssume a BST is defined as follows:\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "The number of nodes in the tree is in the range [1, 104].",
+    "-105 <= Node.val <= 105"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: root = [1,null,2,2]\nOutput: [2]"
+    },
+    {
+      "example_text": "Input: root = [0]\nOutput: [0]"
+    }
+  ],
+  "hints": [],
+  "starter_code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def findMode(self, root: Optional[TreeNode]) -> List[int]:\n        ",
+  "test_cases": []
+}

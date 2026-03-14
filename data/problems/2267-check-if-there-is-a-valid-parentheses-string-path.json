@@ -1,0 +1,33 @@
+{
+  "id": "2267",
+  "slug": "check-if-there-is-a-valid-parentheses-string-path",
+  "title": " Check if There Is a Valid Parentheses String Path",
+  "difficulty": "Hard",
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "description": "A parentheses string is a non-empty string consisting only of '(' and ')'. It is valid if any of the following conditions is true:\nYou are given an m x n matrix of parentheses grid. A valid parentheses string path in the grid is a path satisfying all of the following conditions:\nReturn true if there exists a valid parentheses string path in the grid. Otherwise, return false.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "m == grid.length",
+    "n == grid[i].length",
+    "1 <= m, n <= 100",
+    "grid[i][j] is either '(' or ')'."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: grid = [[\"(\",\"(\",\"(\"],[\")\",\"(\",\")\"],[\"(\",\"(\",\")\"],[\"(\",\"(\",\")\"]]\nOutput: true\nExplanation: The above diagram shows two possible paths that form valid parentheses strings.\nThe first path shown results in the valid parentheses string \"()(())\".\nThe second path shown results in the valid parentheses string \"((()))\".\nNote that there may be other valid parentheses string paths."
+    },
+    {
+      "example_text": "Input: grid = [[\")\",\")\"],[\"(\",\"(\"]]\nOutput: false\nExplanation: The two possible paths form the parentheses strings \"))(\" and \")((\". Since neither of them are valid parentheses strings, we return false."
+    }
+  ],
+  "hints": [
+    "What observations can you make about the number of open brackets and close brackets for any prefix of a valid bracket sequence?",
+    "The number of open brackets must always be greater than or equal to the number of close brackets.",
+    "Could you use dynamic programming?"
+  ],
+  "starter_code": "class Solution:\n    def hasValidPath(self, grid: List[List[str]]) -> bool:\n        ",
+  "test_cases": []
+}

@@ -1,0 +1,30 @@
+{
+  "id": "0893",
+  "slug": "groups-of-special-equivalent-strings",
+  "title": "Groups of Special-Equivalent Strings",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Sorting"
+  ],
+  "description": "You are given an array of strings of the same length words.\nIn one move, you can swap any two even indexed characters or any two odd indexed characters of a string words[i].\nTwo strings words[i] and words[j] are special-equivalent if after any number of moves, words[i] == words[j].\nA group of special-equivalent strings from words is a non-empty subset of words such that:\nReturn the number of groups of special-equivalent strings from words.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= words.length <= 1000",
+    "1 <= words[i].length <= 20",
+    "words[i] consist of lowercase English letters.",
+    "All the strings are of the same length."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: words = [\"abcd\",\"cdab\",\"cbad\",\"xyzz\",\"zzxy\",\"zzyx\"]\nOutput: 3\nExplanation: \nOne group is [\"abcd\", \"cdab\", \"cbad\"], since they are all pairwise special equivalent, and none of the other strings is all pairwise special equivalent to these.\nThe other two groups are [\"xyzz\", \"zzxy\"] and [\"zzyx\"].\nNote that in particular, \"zzxy\" is not special equivalent to \"zzyx\"."
+    },
+    {
+      "example_text": "Input: words = [\"abc\",\"acb\",\"bac\",\"bca\",\"cab\",\"cba\"]\nOutput: 3"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def numSpecialEquivGroups(self, words: List[str]) -> int:\n        ",
+  "test_cases": []
+}

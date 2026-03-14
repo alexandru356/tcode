@@ -1,0 +1,26 @@
+{
+  "id": "3622",
+  "slug": "check-divisibility-by-digit-sum-and-product",
+  "title": "Check Divisibility by Digit Sum and Product",
+  "difficulty": "Easy",
+  "topics": [
+    "Math"
+  ],
+  "description": "You are given a positive integer n. Determine whether n is divisible by the sum of the following two values:\nReturn true if n is divisible by this sum; otherwise, return false.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= n <= 106"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = 99\nOutput: true\nExplanation:\nSince 99 is divisible by the sum (9 + 9 = 18) plus product (9 * 9 = 81) of its digits (total 99), the output is true."
+    },
+    {
+      "example_text": "Input: n = 23\nOutput: false\nExplanation:\nSince 23 is not divisible by the sum (2 + 3 = 5) plus product (2 * 3 = 6) of its digits (total 11), the output is false."
+    }
+  ],
+  "hints": [
+    "Compute the digits' sum and product, then check if <code>n % (sum + product) == 0</code>."
+  ],
+  "starter_code": "class Solution:\n    def checkDivisibility(self, n: int) -> bool:\n        ",
+  "test_cases": []
+}

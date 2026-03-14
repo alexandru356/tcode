@@ -1,0 +1,35 @@
+{
+  "id": "2954",
+  "slug": "count-the-number-of-infection-sequences",
+  "title": "Count the Number of Infection Sequences",
+  "difficulty": "Hard",
+  "topics": [
+    "Array",
+    "Math",
+    "Combinatorics"
+  ],
+  "description": "You are given an integer n and an array sick sorted in increasing order, representing positions of infected people in a line of n people.\nAt each step, one uninfected person adjacent to an infected person gets infected. This process continues until everyone is infected.\nAn infection sequence is the order in which uninfected people become infected, excluding those initially infected.\nReturn the number of different infection sequences possible, modulo 109+7.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "2 <= n <= 105",
+    "1 <= sick.length <= n - 1",
+    "0 <= sick[i] <= n - 1",
+    "sick is sorted in increasing order."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = 5, sick = [0,4]\nOutput: 4\nExplanation:\nThere is a total of 6 different sequences overall."
+    },
+    {
+      "example_text": "Input: n = 4, sick = [1]\nOutput: 3\nExplanation:\nThere is a total of 6 different sequences overall."
+    }
+  ],
+  "hints": [
+    "Consider infected children as <code>0</code> and non-infected as <code>1</code>, then divide the array into segments with the same value.",
+    "For each segment of non-infected children whose indices are <code>[i, j]</code> and indices <code>(i - 1)</code> and <code>(j + 1)</code>, if they exist, are already infected. Then if <code>i == 0</code> or <code>j == n - 1</code>, each second there is only one kid that can be infected (which is at the other endpoint).",
+    "If <code>i > 0</code> and <code>j < n - 1</code>, we have two choices per second since the children at the two endpoints can both be the infect candidates. So there are <code>2<sup>j - i</sup></code> orders to infect all children in the segment.",
+    "Each second we can select a segment and select one endpoint from it.",
+    "The answer is: \r\n<code>S! / (len[1]! * len[2]! * ... * len[m]! * len<sub>start</sub>! * len<sub>end</sub>!) * 2<sup>k</sup></code> \r\nwhere <code>len[1], len[2], ..., len[m]</code> are the lengths of each segment of non-infected children that have an infected child at both endpoints, <code>len<sub>start</sub></code> and <code>len<sub>end</sub></code> denote the number of non-infected children with infected child at one endpoint, <code>S</code> is the total length of all segments of non-infected children, and <code>k = (len[1] - 1) + (len[2] - 1) + ... + (len[m] - 1)</code>."
+  ],
+  "starter_code": "class Solution:\n    def numberOfSequence(self, n: int, sick: List[int]) -> int:\n        ",
+  "test_cases": []
+}

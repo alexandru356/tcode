@@ -1,0 +1,31 @@
+{
+  "id": "1895",
+  "slug": "largest-magic-square",
+  "title": "Largest Magic Square",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Matrix",
+    "Prefix Sum"
+  ],
+  "description": "A k x k magic square is a k x k grid filled with integers such that every row sum, every column sum, and both diagonal sums are all equal. The integers in the magic square do not have to be distinct. Every 1 x 1 grid is trivially a magic square.\nGiven an m x n integer grid, return the size (i.e., the side length k) of the largest magic square that can be found within this grid.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "m == grid.length",
+    "n == grid[i].length",
+    "1 <= m, n <= 50",
+    "1 <= grid[i][j] <= 106"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: grid = [[7,1,4,5,6],[2,5,1,6,4],[1,5,4,3,2],[1,2,7,3,4]]\nOutput: 3\nExplanation: The largest magic square has a size of 3.\nEvery row sum, column sum, and diagonal sum of this magic square is equal to 12.\n- Row sums: 5+1+6 = 5+4+3 = 2+7+3 = 12\n- Column sums: 5+5+2 = 1+4+7 = 6+3+3 = 12\n- Diagonal sums: 5+4+3 = 6+4+2 = 12"
+    },
+    {
+      "example_text": "Input: grid = [[5,1,3,1],[9,3,3,1],[1,3,3,8]]\nOutput: 2"
+    }
+  ],
+  "hints": [
+    "Check all squares in the matrix and find the largest one."
+  ],
+  "starter_code": "class Solution:\n    def largestMagicSquare(self, grid: List[List[int]]) -> int:\n        ",
+  "test_cases": []
+}

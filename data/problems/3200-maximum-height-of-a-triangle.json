@@ -1,0 +1,34 @@
+{
+  "id": "3200",
+  "slug": "maximum-height-of-a-triangle",
+  "title": "Maximum Height of a Triangle",
+  "difficulty": "Easy",
+  "topics": [
+    "Array",
+    "Enumeration"
+  ],
+  "description": "You are given two integers red and blue representing the count of red and blue colored balls. You have to arrange these balls to form a triangle such that the 1st row will have 1 ball, the 2nd row will have 2 balls, the 3rd row will have 3 balls, and so on.\nAll the balls in a particular row should be the same color, and adjacent rows should have different colors.\nReturn the maximum height of the triangle that can be achieved.\nExample 1:\nExample 2:\nExample 3:\nExample 4:\nConstraints:",
+  "constraints": [
+    "1 <= red, blue <= 100"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: red = 2, blue = 4\nOutput: 3\nExplanation:\n\nThe only possible arrangement is shown above."
+    },
+    {
+      "example_text": "Input: red = 2, blue = 1\nOutput: 2\nExplanation:\nThe only possible arrangement is shown above."
+    },
+    {
+      "example_text": "Input: red = 1, blue = 1\nOutput: 1"
+    },
+    {
+      "example_text": "Input: red = 10, blue = 1\nOutput: 2\nExplanation:\nThe only possible arrangement is shown above."
+    }
+  ],
+  "hints": [
+    "Count the max height using both possibilities. That is, red ball as top and blue ball as top.",
+    "For counting the max height, use a simple for loop and remove the number of balls required at this level."
+  ],
+  "starter_code": "class Solution:\n    def maxHeightOfTriangle(self, red: int, blue: int) -> int:\n        ",
+  "test_cases": []
+}

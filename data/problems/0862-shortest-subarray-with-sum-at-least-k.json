@@ -1,0 +1,35 @@
+{
+  "id": "0862",
+  "slug": "shortest-subarray-with-sum-at-least-k",
+  "title": "Shortest Subarray with Sum at Least K",
+  "difficulty": "Hard",
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Queue",
+    "Sliding Window",
+    "Heap (Priority Queue)",
+    "Prefix Sum",
+    "Monotonic Queue"
+  ],
+  "description": "Given an integer array nums and an integer k, return the length of the shortest non-empty subarray of nums with a sum of at least k. If there is no such subarray, return -1.\nA subarray is a contiguous part of an array.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "-105 <= nums[i] <= 105",
+    "1 <= k <= 109"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [1], k = 1\nOutput: 1"
+    },
+    {
+      "example_text": "Input: nums = [1,2], k = 4\nOutput: -1"
+    },
+    {
+      "example_text": "Input: nums = [2,-1,2], k = 3\nOutput: 3"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def shortestSubarray(self, nums: List[int], k: int) -> int:\n        ",
+  "test_cases": []
+}

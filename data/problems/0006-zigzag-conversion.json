@@ -1,0 +1,35 @@
+{
+  "id": "0006",
+  "slug": "zigzag-conversion",
+  "title": "Zigzag Conversion",
+  "difficulty": "Medium",
+  "topics": [
+    "String"
+  ],
+  "description": "The string \"PAYPALISHIRING\" is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility)\nAnd then read line by line: \"PAHNAPLSIIGYIR\"\nWrite the code that will take a string and make this conversion given a number of rows:\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= s.length <= 1000",
+    "s consists of English letters (lower-case and upper-case), ',' and '.'.",
+    "1 <= numRows <= 1000"
+  ],
+  "examples": [
+    {
+      "example_text": "P   A   H   N\nA P L S I I G\nY   I   R"
+    },
+    {
+      "example_text": "string convert(string s, int numRows);"
+    },
+    {
+      "example_text": "Input: s = \"PAYPALISHIRING\", numRows = 3\nOutput: \"PAHNAPLSIIGYIR\""
+    },
+    {
+      "example_text": "Input: s = \"PAYPALISHIRING\", numRows = 4\nOutput: \"PINALSIGYAHRPI\"\nExplanation:\nP     I    N\nA   L S  I G\nY A   H R\nP     I"
+    },
+    {
+      "example_text": "Input: s = \"A\", numRows = 1\nOutput: \"A\""
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def convert(self, s: str, numRows: int) -> str:\n        ",
+  "test_cases": []
+}

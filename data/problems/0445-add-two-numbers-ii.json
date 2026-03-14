@@ -1,0 +1,31 @@
+{
+  "id": "0445",
+  "slug": "add-two-numbers-ii",
+  "title": "Add Two Numbers II",
+  "difficulty": "Medium",
+  "topics": [
+    "Linked List",
+    "Math",
+    "Stack"
+  ],
+  "description": "You are given two non-empty linked lists representing two non-negative integers. The most significant digit comes first and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.\nYou may assume the two numbers do not contain any leading zero, except the number 0 itself.\nExample 1:\nExample 2:\nExample 3:\nConstraints:\nFollow up: Could you solve it without reversing the input lists?",
+  "constraints": [
+    "The number of nodes in each linked list is in the range [1, 100].",
+    "0 <= Node.val <= 9",
+    "It is guaranteed that the list represents a number that does not have leading zeros."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: l1 = [7,2,4,3], l2 = [5,6,4]\nOutput: [7,8,0,7]"
+    },
+    {
+      "example_text": "Input: l1 = [2,4,3], l2 = [5,6,4]\nOutput: [8,0,7]"
+    },
+    {
+      "example_text": "Input: l1 = [0], l2 = [0]\nOutput: [0]"
+    }
+  ],
+  "hints": [],
+  "starter_code": "# Definition for singly-linked list.\n# class ListNode:\n#     def __init__(self, val=0, next=None):\n#         self.val = val\n#         self.next = next\nclass Solution:\n    def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:\n        ",
+  "test_cases": []
+}

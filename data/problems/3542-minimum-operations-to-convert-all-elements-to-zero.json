@@ -1,0 +1,36 @@
+{
+  "id": "3542",
+  "slug": "minimum-operations-to-convert-all-elements-to-zero",
+  "title": "Minimum Operations to Convert All Elements to Zero",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Stack",
+    "Greedy",
+    "Monotonic Stack"
+  ],
+  "description": "You are given an array nums of size n, consisting of non-negative integers. Your task is to apply some (possibly zero) operations on the array so that all elements become 0.\nIn one operation, you can select a subarray [i, j] (where 0 <= i <= j < n) and set all occurrences of the minimum non-negative integer in that subarray to 0.\nReturn the minimum number of operations required to make all elements in the array 0.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= n == nums.length <= 105",
+    "0 <= nums[i] <= 105"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [0,2]\nOutput: 1\nExplanation:"
+    },
+    {
+      "example_text": "Input: nums = [3,1,2,1]\nOutput: 3\nExplanation:"
+    },
+    {
+      "example_text": "Input: nums = [1,2,1,2,1,2]\nOutput: 4\nExplanation:"
+    }
+  ],
+  "hints": [
+    "Process the values in nums from smallest to largest (excluding 0).",
+    "For each target value v, identify its maximal contiguous segments (subarrays where nums[i] == v); each segment can be zeroed out in one operation.",
+    "After setting those segments to zero, dynamically update the remaining array and repeat with the next value."
+  ],
+  "starter_code": "class Solution:\n    def minOperations(self, nums: List[int]) -> int:\n        ",
+  "test_cases": []
+}

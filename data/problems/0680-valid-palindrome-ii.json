@@ -1,0 +1,30 @@
+{
+  "id": "0680",
+  "slug": "valid-palindrome-ii",
+  "title": "Valid Palindrome II",
+  "difficulty": "Easy",
+  "topics": [
+    "Two Pointers",
+    "String",
+    "Greedy"
+  ],
+  "description": "Given a string s, return true if the s can be palindrome after deleting at most one character from it.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= s.length <= 105",
+    "s consists of lowercase English letters."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"aba\"\nOutput: true"
+    },
+    {
+      "example_text": "Input: s = \"abca\"\nOutput: true\nExplanation: You could delete the character 'c'."
+    },
+    {
+      "example_text": "Input: s = \"abc\"\nOutput: false"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def validPalindrome(self, s: str) -> bool:\n        ",
+  "test_cases": []
+}

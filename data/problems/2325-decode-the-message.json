@@ -1,0 +1,33 @@
+{
+  "id": "2325",
+  "slug": "decode-the-message",
+  "title": "Decode the Message",
+  "difficulty": "Easy",
+  "topics": [
+    "Hash Table",
+    "String"
+  ],
+  "description": "You are given the strings key and message, which represent a cipher key and a secret message, respectively. The steps to decode message are as follows:\nReturn the decoded message.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "26 <= key.length <= 2000",
+    "key consists of lowercase English letters and ' '.",
+    "key contains every letter in the English alphabet ('a' to 'z') at least once.",
+    "1 <= message.length <= 2000",
+    "message consists of lowercase English letters and ' '."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: key = \"the quick brown fox jumps over the lazy dog\", message = \"vkbs bs t suepuv\"\nOutput: \"this is a secret\"\nExplanation: The diagram above shows the substitution table.\nIt is obtained by taking the first appearance of each letter in \"the quick brown fox jumps over the lazy dog\"."
+    },
+    {
+      "example_text": "Input: key = \"eljuxhpwnyrdgtqkviszcfmabo\", message = \"zwx hnfx lqantp mnoeius ycgk vcnjrdb\"\nOutput: \"the five boxing wizards jump quickly\"\nExplanation: The diagram above shows the substitution table.\nIt is obtained by taking the first appearance of each letter in \"eljuxhpwnyrdgtqkviszcfmabo\"."
+    }
+  ],
+  "hints": [
+    "Iterate through the characters in the key to construct a mapping to the English alphabet.",
+    "Make sure to check that the current character is not already in the mapping (only the first appearance is considered).",
+    "Map the characters in the message according to the constructed mapping."
+  ],
+  "starter_code": "class Solution:\n    def decodeMessage(self, key: str, message: str) -> str:\n        ",
+  "test_cases": []
+}

@@ -1,0 +1,36 @@
+{
+  "id": "1436",
+  "slug": "destination-city",
+  "title": "Destination City",
+  "difficulty": "Easy",
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String"
+  ],
+  "description": "You are given the array paths, where paths[i] = [cityAi, cityBi] means there exists a direct path going from cityAi to cityBi. Return the destination city, that is, the city without any path outgoing to another city.\nIt is guaranteed that the graph of paths forms a line without any loop, therefore, there will be exactly one destination city.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= paths.length <= 100",
+    "paths[i].length == 2",
+    "1 <= cityAi.length, cityBi.length <= 10",
+    "cityAi != cityBi",
+    "All strings consist of lowercase and uppercase English letters and the space character."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: paths = [[\"London\",\"New York\"],[\"New York\",\"Lima\"],[\"Lima\",\"Sao Paulo\"]]\nOutput: \"Sao Paulo\" \nExplanation: Starting at \"London\" city you will reach \"Sao Paulo\" city which is the destination city. Your trip consist of: \"London\" -> \"New York\" -> \"Lima\" -> \"Sao Paulo\"."
+    },
+    {
+      "example_text": "Input: paths = [[\"B\",\"C\"],[\"D\",\"B\"],[\"C\",\"A\"]]\nOutput: \"A\"\nExplanation: All possible trips are: \n\"D\" -> \"B\" -> \"C\" -> \"A\". \n\"B\" -> \"C\" -> \"A\". \n\"C\" -> \"A\". \n\"A\". \nClearly the destination city is \"A\"."
+    },
+    {
+      "example_text": "Input: paths = [[\"A\",\"Z\"]]\nOutput: \"Z\""
+    }
+  ],
+  "hints": [
+    "Start in any city and use the path to move to the next city.",
+    "Eventually, you will reach a city with no path outgoing, this is the destination city."
+  ],
+  "starter_code": "class Solution:\n    def destCity(self, paths: List[List[str]]) -> str:\n        ",
+  "test_cases": []
+}

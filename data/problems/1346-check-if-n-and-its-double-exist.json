@@ -1,0 +1,33 @@
+{
+  "id": "1346",
+  "slug": "check-if-n-and-its-double-exist",
+  "title": "Check If N and Its Double Exist",
+  "difficulty": "Easy",
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Two Pointers",
+    "Binary Search",
+    "Sorting"
+  ],
+  "description": "Given an array arr of integers, check if there exist two indices i and j such that :\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "2 <= arr.length <= 500",
+    "-103 <= arr[i] <= 103"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: arr = [10,2,5,3]\nOutput: true\nExplanation: For i = 0 and j = 2, arr[i] == 10 == 2 * 5 == 2 * arr[j]"
+    },
+    {
+      "example_text": "Input: arr = [3,1,7,11]\nOutput: false\nExplanation: There is no i and j that satisfy the conditions."
+    }
+  ],
+  "hints": [
+    "Loop from i = 0 to arr.length, maintaining in a hashTable the array elements from [0, i - 1].",
+    "On each step of the loop check if we have seen the element <code>2 * arr[i]</code> so far.",
+    "Also check if we have seen <code>arr[i] / 2</code> in case <code>arr[i] % 2 == 0</code>."
+  ],
+  "starter_code": "class Solution:\n    def checkIfExist(self, arr: List[int]) -> bool:\n        ",
+  "test_cases": []
+}

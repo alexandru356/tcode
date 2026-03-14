@@ -1,0 +1,25 @@
+{
+  "id": "0670",
+  "slug": "maximum-swap",
+  "title": "Maximum Swap",
+  "difficulty": "Medium",
+  "topics": [
+    "Math",
+    "Greedy"
+  ],
+  "description": "You are given an integer num. You can swap two digits at most once to get the maximum valued number.\nReturn the maximum valued number you can get.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "0 <= num <= 108"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: num = 2736\nOutput: 7236\nExplanation: Swap the number 2 and the number 7."
+    },
+    {
+      "example_text": "Input: num = 9973\nOutput: 9973\nExplanation: No swap."
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def maximumSwap(self, num: int) -> int:\n        ",
+  "test_cases": []
+}

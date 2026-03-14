@@ -1,0 +1,30 @@
+{
+  "id": "2567",
+  "slug": "minimum-score-by-changing-two-elements",
+  "title": "Minimum Score by Changing Two Elements",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "description": "You are given an integer array nums.\nReturn the minimum score after changing two elements of nums.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "3 <= nums.length <= 105",
+    "1 <= nums[i] <= 109"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [1,4,7,8,5]\nOutput: 3\nExplanation:"
+    },
+    {
+      "example_text": "Input: nums = [1,4,3]\nOutput: 0\nExplanation:"
+    }
+  ],
+  "hints": [
+    "Changing the minimum or maximum values will only minimize the score.",
+    "Think about what all possible pairs of minimum and maximum values can be changed to form the minimum score."
+  ],
+  "starter_code": "class Solution:\n    def minimizeSum(self, nums: List[int]) -> int:\n        ",
+  "test_cases": []
+}

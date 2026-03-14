@@ -1,0 +1,37 @@
+{
+  "id": "1248",
+  "slug": "count-number-of-nice-subarrays",
+  "title": "Count Number of Nice Subarrays",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Sliding Window",
+    "Prefix Sum"
+  ],
+  "description": "Given an array of integers nums and an integer k. A continuous subarray is called nice if there are k odd numbers on it.\nReturn the number of nice sub-arrays.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= nums.length <= 50000",
+    "1 <= nums[i] <= 10^5",
+    "1 <= k <= nums.length"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [1,1,2,1,1], k = 3\nOutput: 2\nExplanation: The only sub-arrays with 3 odd numbers are [1,1,2,1] and [1,2,1,1]."
+    },
+    {
+      "example_text": "Input: nums = [2,4,6], k = 1\nOutput: 0\nExplanation: There are no odd numbers in the array."
+    },
+    {
+      "example_text": "Input: nums = [2,2,2,1,2,2,1,2,2,2], k = 2\nOutput: 16"
+    }
+  ],
+  "hints": [
+    "After replacing each even by zero and every odd by one can we use prefix sum to find answer ?",
+    "Can we use two pointers to count number of sub-arrays ?",
+    "Can we store the indices of odd numbers and for each k indices count the number of sub-arrays that contains them ?"
+  ],
+  "starter_code": "class Solution:\n    def numberOfSubarrays(self, nums: List[int], k: int) -> int:\n        ",
+  "test_cases": []
+}

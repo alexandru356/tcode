@@ -1,0 +1,30 @@
+{
+  "id": "2864",
+  "slug": "maximum-odd-binary-number",
+  "title": "Maximum Odd Binary Number",
+  "difficulty": "Easy",
+  "topics": [
+    "Math",
+    "String",
+    "Greedy"
+  ],
+  "description": "You are given a binary string s that contains at least one '1'.\nYou have to rearrange the bits in such a way that the resulting binary number is the maximum odd binary number that can be created from this combination.\nReturn a string representing the maximum odd binary number that can be created from the given combination.\nNote that the resulting string can have leading zeros.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= s.length <= 100",
+    "s consists only of '0' and '1'.",
+    "s contains at least one '1'."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"010\"\nOutput: \"001\"\nExplanation: Because there is just one '1', it must be in the last position. So the answer is \"001\"."
+    },
+    {
+      "example_text": "Input: s = \"0101\"\nOutput: \"1001\"\nExplanation: One of the '1's must be in the last position. The maximum number that can be made with the remaining digits is \"100\". So the answer is \"1001\"."
+    }
+  ],
+  "hints": [
+    "The binary representation of an odd number contains <code>'1'</code> in the least significant place."
+  ],
+  "starter_code": "class Solution:\n    def maximumOddBinaryNumber(self, s: str) -> str:\n        ",
+  "test_cases": []
+}

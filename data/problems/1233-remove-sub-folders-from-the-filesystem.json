@@ -1,0 +1,37 @@
+{
+  "id": "1233",
+  "slug": "remove-sub-folders-from-the-filesystem",
+  "title": "Remove Sub-Folders from the Filesystem",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "String",
+    "Depth-First Search",
+    "Trie"
+  ],
+  "description": "Given a list of folders folder, return the folders after removing all sub-folders in those folders. You may return the answer in any order.\nIf a folder[i] is located within another folder[j], it is called a sub-folder of it. A sub-folder of folder[j] must start with folder[j], followed by a \"/\". For example, \"/a/b\" is a sub-folder of \"/a\", but \"/b\" is not a sub-folder of \"/a/b/c\".\nThe format of a path is one or more concatenated strings of the form: '/' followed by one or more lowercase English letters.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= folder.length <= 4 * 104",
+    "2 <= folder[i].length <= 100",
+    "folder[i] contains only lowercase letters and '/'.",
+    "folder[i] always starts with the character '/'.",
+    "Each folder name is unique."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: folder = [\"/a\",\"/a/b\",\"/c/d\",\"/c/d/e\",\"/c/f\"]\nOutput: [\"/a\",\"/c/d\",\"/c/f\"]\nExplanation: Folders \"/a/b\" is a subfolder of \"/a\" and \"/c/d/e\" is inside of folder \"/c/d\" in our filesystem."
+    },
+    {
+      "example_text": "Input: folder = [\"/a\",\"/a/b/c\",\"/a/b/d\"]\nOutput: [\"/a\"]\nExplanation: Folders \"/a/b/c\" and \"/a/b/d\" will be removed because they are subfolders of \"/a\"."
+    },
+    {
+      "example_text": "Input: folder = [\"/a/b/c\",\"/a/b/ca\",\"/a/b/d\"]\nOutput: [\"/a/b/c\",\"/a/b/ca\",\"/a/b/d\"]"
+    }
+  ],
+  "hints": [
+    "Sort the folders lexicographically.",
+    "Insert the current element in an array and then loop until we get rid of all of their subfolders, repeat this until no element is left."
+  ],
+  "starter_code": "class Solution:\n    def removeSubfolders(self, folder: List[str]) -> List[str]:\n        ",
+  "test_cases": []
+}

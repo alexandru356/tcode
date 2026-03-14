@@ -1,0 +1,28 @@
+{
+  "id": "0433",
+  "slug": "minimum-genetic-mutation",
+  "title": "Minimum Genetic Mutation",
+  "difficulty": "Medium",
+  "topics": [
+    "Hash Table",
+    "String",
+    "Breadth-First Search"
+  ],
+  "description": "A gene string can be represented by an 8-character long string, with choices from 'A', 'C', 'G', and 'T'.\nSuppose we need to investigate a mutation from a gene string startGene to a gene string endGene where one mutation is defined as one single character changed in the gene string.\nThere is also a gene bank bank that records all the valid gene mutations. A gene must be in bank to make it a valid gene string.\nGiven the two gene strings startGene and endGene and the gene bank bank, return the minimum number of mutations needed to mutate from startGene to endGene. If there is no such a mutation, return -1.\nNote that the starting point is assumed to be valid, so it might not be included in the bank.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "0 <= bank.length <= 10",
+    "startGene.length == endGene.length == bank[i].length == 8",
+    "startGene, endGene, and bank[i] consist of only the characters ['A', 'C', 'G', 'T']."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: startGene = \"AACCGGTT\", endGene = \"AACCGGTA\", bank = [\"AACCGGTA\"]\nOutput: 1"
+    },
+    {
+      "example_text": "Input: startGene = \"AACCGGTT\", endGene = \"AAACGGTA\", bank = [\"AACCGGTA\",\"AACCGCTA\",\"AAACGGTA\"]\nOutput: 2"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def minMutation(self, startGene: str, endGene: str, bank: List[str]) -> int:\n        ",
+  "test_cases": []
+}

@@ -1,0 +1,28 @@
+{
+  "id": "0069",
+  "slug": "sqrtx",
+  "title": "Sqrt(x)",
+  "difficulty": "Easy",
+  "topics": [
+    "Math",
+    "Binary Search"
+  ],
+  "description": "Given a non-negative integer x, return the square root of x rounded down to the nearest integer. The returned integer should be non-negative as well.\nYou must not use any built-in exponent function or operator.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "0 <= x <= 231 - 1"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: x = 4\nOutput: 2\nExplanation: The square root of 4 is 2, so we return 2."
+    },
+    {
+      "example_text": "Input: x = 8\nOutput: 2\nExplanation: The square root of 8 is 2.82842..., and since we round it down to the nearest integer, 2 is returned."
+    }
+  ],
+  "hints": [
+    "Try exploring all integers. (Credits: @annujoshi)",
+    "Use the sorted property of integers to reduced the search space. (Credits: @annujoshi)"
+  ],
+  "starter_code": "class Solution:\n    def mySqrt(self, x: int) -> int:\n        ",
+  "test_cases": []
+}

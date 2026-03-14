@@ -1,0 +1,32 @@
+{
+  "id": "3598",
+  "slug": "longest-common-prefix-between-adjacent-strings-after-removals",
+  "title": "Longest Common Prefix Between Adjacent Strings After Removals",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "String"
+  ],
+  "description": "You are given an array of strings words. For each index i in the range [0, words.length - 1], perform the following steps:\nReturn an array answer, where answer[i] is the length of the longest common prefix between the adjacent pairs after removing the element at index i. If no adjacent pairs remain or if none share a common prefix, then answer[i] should be 0.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= words.length <= 105",
+    "1 <= words[i].length <= 104",
+    "words[i] consists of lowercase English letters.",
+    "The sum of words[i].length is smaller than or equal 105."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: words = [\"jump\",\"run\",\"run\",\"jump\",\"run\"]\nOutput: [3,0,0,3,3]\nExplanation:"
+    },
+    {
+      "example_text": "Input: words = [\"dog\",\"racer\",\"car\"]\nOutput: [0,0,0]\nExplanation:"
+    }
+  ],
+  "hints": [
+    "Precompute the longest common prefix length for adjacent prefixes and suffixes.",
+    "After deleting <code>words[i]</code>, compute the longest common prefix for <code>words[i - 1]</code> and <code>words[i + 1]</code> (if they exist).",
+    "Use the result of the prefix computation up to <code>i - 1</code> and the suffix computation from <code>i + 1</code> onwards."
+  ],
+  "starter_code": "class Solution:\n    def longestCommonPrefix(self, words: List[str]) -> List[int]:\n        ",
+  "test_cases": []
+}

@@ -1,0 +1,28 @@
+{
+  "id": "0214",
+  "slug": "shortest-palindrome",
+  "title": "Shortest Palindrome",
+  "difficulty": "Hard",
+  "topics": [
+    "String",
+    "Rolling Hash",
+    "String Matching",
+    "Hash Function"
+  ],
+  "description": "You are given a string s. You can convert s to a palindrome by adding characters in front of it.\nReturn the shortest palindrome you can find by performing this transformation.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "0 <= s.length <= 5 * 104",
+    "s consists of lowercase English letters only."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"aacecaaa\"\nOutput: \"aaacecaaa\""
+    },
+    {
+      "example_text": "Input: s = \"abcd\"\nOutput: \"dcbabcd\""
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def shortestPalindrome(self, s: str) -> str:\n        ",
+  "test_cases": []
+}

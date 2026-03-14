@@ -1,0 +1,30 @@
+{
+  "id": "0383",
+  "slug": "ransom-note",
+  "title": "Ransom Note",
+  "difficulty": "Easy",
+  "topics": [
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "description": "Given two strings ransomNote and magazine, return true if ransomNote can be constructed by using the letters from magazine and false otherwise.\nEach letter in magazine can only be used once in ransomNote.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= ransomNote.length, magazine.length <= 105",
+    "ransomNote and magazine consist of lowercase English letters."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: ransomNote = \"a\", magazine = \"b\"\nOutput: false"
+    },
+    {
+      "example_text": "Input: ransomNote = \"aa\", magazine = \"ab\"\nOutput: false"
+    },
+    {
+      "example_text": "Input: ransomNote = \"aa\", magazine = \"aab\"\nOutput: true"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def canConstruct(self, ransomNote: str, magazine: str) -> bool:\n        ",
+  "test_cases": []
+}

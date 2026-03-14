@@ -1,0 +1,35 @@
+{
+  "id": "3342",
+  "slug": "find-minimum-time-to-reach-last-room-ii",
+  "title": "Find Minimum Time to Reach Last Room II",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Graph",
+    "Heap (Priority Queue)",
+    "Matrix",
+    "Shortest Path"
+  ],
+  "description": "There is a dungeon with n x m rooms arranged as a grid.\nYou are given a 2D array moveTime of size n x m, where moveTime[i][j] represents the minimum time in seconds when you can start moving to that room. You start from the room (0, 0) at time t = 0 and can move to an adjacent room. Moving between adjacent rooms takes one second for one move and two seconds for the next, alternating between the two.\nReturn the minimum time to reach the room (n - 1, m - 1).\nTwo rooms are adjacent if they share a common wall, either horizontally or vertically.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "2 <= n == moveTime.length <= 750",
+    "2 <= m == moveTime[i].length <= 750",
+    "0 <= moveTime[i][j] <= 109"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: moveTime = [[0,4],[4,4]]\nOutput: 7\nExplanation:\nThe minimum time required is 7 seconds."
+    },
+    {
+      "example_text": "Input: moveTime = [[0,0,0,0],[0,0,0,0]]\nOutput: 6\nExplanation:\nThe minimum time required is 6 seconds."
+    },
+    {
+      "example_text": "Input: moveTime = [[0,1],[1,2]]\nOutput: 4"
+    }
+  ],
+  "hints": [
+    "Use shortest path algorithms with a state for the last move being odd or even indexed."
+  ],
+  "starter_code": "class Solution:\n    def minTimeToReach(self, moveTime: List[List[int]]) -> int:\n        ",
+  "test_cases": []
+}

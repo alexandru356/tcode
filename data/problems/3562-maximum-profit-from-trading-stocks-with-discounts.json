@@ -1,0 +1,50 @@
+{
+  "id": "3562",
+  "slug": "maximum-profit-from-trading-stocks-with-discounts",
+  "title": "Maximum Profit from Trading Stocks with Discounts",
+  "difficulty": "Hard",
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search"
+  ],
+  "description": "You are given an integer n, representing the number of employees in a company. Each employee is assigned a unique ID from 1 to n, and employee 1 is the CEO. You are given two 1-based integer arrays, present and future, each of length n, where:\nThe company's hierarchy is represented by a 2D integer array hierarchy, where hierarchy[i] = [ui, vi] means that employee ui is the direct boss of employee vi.\nAdditionally, you have an integer budget representing the total funds available for investment.\nHowever, the company has a discount policy: if an employee's direct boss purchases their own stock, then the employee can buy their stock at half the original price (floor(present[v] / 2)).\nReturn the maximum profit that can be achieved without exceeding the given budget.\nNote:\nExample 1:\nExample 2:\nExample 3:\nExample 4:\nConstraints:",
+  "constraints": [
+    "1 <= n <= 160",
+    "present.length, future.length == n",
+    "1 <= present[i], future[i] <= 50",
+    "hierarchy.length == n - 1",
+    "hierarchy[i] == [ui, vi]",
+    "1 <= ui, vi <= n",
+    "ui != vi",
+    "1 <= budget <= 160",
+    "There are no duplicate edges.",
+    "Employee 1 is the direct or indirect boss of every employee.",
+    "The input graph hierarchy is guaranteed to have no cycles."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = 2, present = [1,2], future = [4,3], hierarchy = [[1,2]], budget = 3\nOutput: 5\nExplanation:\n"
+    },
+    {
+      "example_text": "Input: n = 2, present = [3,4], future = [5,8], hierarchy = [[1,2]], budget = 4\nOutput: 4\nExplanation:\n"
+    },
+    {
+      "example_text": "Input: n = 3, present = [4,6,8], future = [7,9,11], hierarchy = [[1,2],[1,3]], budget = 10\nOutput: 10\nExplanation:\n"
+    },
+    {
+      "example_text": "Input: n = 3, present = [5,2,3], future = [8,5,6], hierarchy = [[1,2],[2,3]], budget = 7\nOutput: 12\nExplanation:\n"
+    }
+  ],
+  "hints": [
+    "- Compute <code>max_profit[u]</code> and <code>max_profit1[u]</code> for each node <code>u</code>",
+    "- <code>max_profit[u]</code> = maximum profit in the subtree of <code>u</code> assuming the parent of <code>u</code> has not bought the stock",
+    "- <code>max_profit1[u]</code> = maximum profit in the subtree of <code>u</code> assuming the parent of <code>u</code> has bought the stock",
+    "For each node <code>u</code>, consider two cases:",
+    "Buy the stock for <code>u</code> (at <code>present[u]</code> price if parent did not buy, or at <code>floor(present[u]/2)</code> if parent bought), then add the best <code>max_profit1</code> values of its children",
+    "Skip buying for <code>u</code>, then add the best <code>max_profit</code> values of its children"
+  ],
+  "starter_code": "class Solution:\n    def maxProfit(self, n: int, present: List[int], future: List[int], hierarchy: List[List[int]], budget: int) -> int:\n        ",
+  "test_cases": []
+}

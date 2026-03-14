@@ -1,0 +1,34 @@
+{
+  "id": "0126",
+  "slug": "word-ladder-ii",
+  "title": "Word Ladder II",
+  "difficulty": "Hard",
+  "topics": [
+    "Hash Table",
+    "String",
+    "Backtracking",
+    "Breadth-First Search"
+  ],
+  "description": "A transformation sequence from word beginWord to word endWord using a dictionary wordList is a sequence of words beginWord -> s1 -> s2 -> ... -> sk such that:\nGiven two words, beginWord and endWord, and a dictionary wordList, return all the shortest transformation sequences from beginWord to endWord, or an empty list if no such sequence exists. Each sequence should be returned as a list of the words [beginWord, s1, s2, ..., sk].\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= beginWord.length <= 5",
+    "endWord.length == beginWord.length",
+    "1 <= wordList.length <= 500",
+    "wordList[i].length == beginWord.length",
+    "beginWord, endWord, and wordList[i] consist of lowercase English letters.",
+    "beginWord != endWord",
+    "All the words in wordList are unique.",
+    "The sum of all shortest transformation sequences does not exceed 105."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: beginWord = \"hit\", endWord = \"cog\", wordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\",\"cog\"]\nOutput: [[\"hit\",\"hot\",\"dot\",\"dog\",\"cog\"],[\"hit\",\"hot\",\"lot\",\"log\",\"cog\"]]\nExplanation: There are 2 shortest transformation sequences:\n\"hit\" -> \"hot\" -> \"dot\" -> \"dog\" -> \"cog\"\n\"hit\" -> \"hot\" -> \"lot\" -> \"log\" -> \"cog\""
+    },
+    {
+      "example_text": "Input: beginWord = \"hit\", endWord = \"cog\", wordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\"]\nOutput: []\nExplanation: The endWord \"cog\" is not in wordList, therefore there is no valid transformation sequence."
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def findLadders(self, beginWord: str, endWord: str, wordList: List[str]) -> List[List[str]]:\n        ",
+  "test_cases": []
+}

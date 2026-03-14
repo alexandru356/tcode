@@ -1,0 +1,31 @@
+{
+  "id": "0832",
+  "slug": "flipping-an-image",
+  "title": "Flipping an Image",
+  "difficulty": "Easy",
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Bit Manipulation",
+    "Matrix",
+    "Simulation"
+  ],
+  "description": "Given an n x n binary matrix image, flip the image horizontally, then invert it, and return the resulting image.\nTo flip an image horizontally means that each row of the image is reversed.\nTo invert an image means that each 0 is replaced by 1, and each 1 is replaced by 0.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "n == image.length",
+    "n == image[i].length",
+    "1 <= n <= 20",
+    "images[i][j] is either 0 or 1."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: image = [[1,1,0],[1,0,1],[0,0,0]]\nOutput: [[1,0,0],[0,1,0],[1,1,1]]\nExplanation: First reverse each row: [[0,1,1],[1,0,1],[0,0,0]].\nThen, invert the image: [[1,0,0],[0,1,0],[1,1,1]]"
+    },
+    {
+      "example_text": "Input: image = [[1,1,0,0],[1,0,0,1],[0,1,1,1],[1,0,1,0]]\nOutput: [[1,1,0,0],[0,1,1,0],[0,0,0,1],[1,0,1,0]]\nExplanation: First reverse each row: [[0,0,1,1],[1,0,0,1],[1,1,1,0],[0,1,0,1]].\nThen invert the image: [[1,1,0,0],[0,1,1,0],[0,0,0,1],[1,0,1,0]]"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def flipAndInvertImage(self, image: List[List[int]]) -> List[List[int]]:\n        ",
+  "test_cases": []
+}

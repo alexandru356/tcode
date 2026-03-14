@@ -1,0 +1,29 @@
+{
+  "id": "0058",
+  "slug": "length-of-last-word",
+  "title": "Length of Last Word",
+  "difficulty": "Easy",
+  "topics": [
+    "String"
+  ],
+  "description": "Given a string s consisting of words and spaces, return the length of the last word in the string.\nA word is a maximal substring consisting of non-space characters only.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= s.length <= 104",
+    "s consists of only English letters and spaces ' '.",
+    "There will be at least one word in s."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"Hello World\"\nOutput: 5\nExplanation: The last word is \"World\" with length 5."
+    },
+    {
+      "example_text": "Input: s = \"   fly me   to   the moon  \"\nOutput: 4\nExplanation: The last word is \"moon\" with length 4."
+    },
+    {
+      "example_text": "Input: s = \"luffy is still joyboy\"\nOutput: 6\nExplanation: The last word is \"joyboy\" with length 6."
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def lengthOfLastWord(self, s: str) -> int:\n        ",
+  "test_cases": []
+}

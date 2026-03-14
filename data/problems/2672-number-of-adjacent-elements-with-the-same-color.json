@@ -1,0 +1,32 @@
+{
+  "id": "2672",
+  "slug": "number-of-adjacent-elements-with-the-same-color",
+  "title": "Number of Adjacent Elements With the Same Color",
+  "difficulty": "Medium",
+  "topics": [
+    "Array"
+  ],
+  "description": "You are given an integer n representing an array colors of length n where all elements are set to 0's meaning uncolored. You are also given a 2D integer array queries where queries[i] = [indexi, colori]. For the ith query:\nReturn an array answer of the same length as queries where answer[i] is the answer to the ith query.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= n <= 105",
+    "1 <= queries.length <= 105",
+    "queries[i].length == 2",
+    "0 <= indexi <= n - 1",
+    "1 <=  colori <= 105"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = 4, queries = [[0,2],[1,2],[3,1],[1,1],[2,1]]\nOutput: [0,1,1,0,2]\nExplanation:"
+    },
+    {
+      "example_text": "Input: n = 1, queries = [[0,100000]]\nOutput: [0]\nExplanation:\nAfter the 1 st query colors = [100000]. The count of adjacent pairs with the same color is 0."
+    }
+  ],
+  "hints": [
+    "Since at each query, only one element is being recolored, we just need to focus on its neighbors.",
+    "If an element that is changed on the i-th query had the same color as its right element answer decreases by 1. Similarly contributes its left element too.",
+    "After changing the color, if the element has the same color as its right element answer increases by 1. Similarly contributes its left element too."
+  ],
+  "starter_code": "class Solution:\n    def colorTheArray(self, n: int, queries: List[List[int]]) -> List[int]:\n        ",
+  "test_cases": []
+}

@@ -1,0 +1,32 @@
+{
+  "id": "3513",
+  "slug": "number-of-unique-xor-triplets-i",
+  "title": "Number of Unique XOR Triplets I",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Math",
+    "Bit Manipulation"
+  ],
+  "description": "You are given an integer array nums of length n, where nums is a permutation of the numbers in the range [1, n].\nA XOR triplet is defined as the XOR of three elements nums[i] XOR nums[j] XOR nums[k] where i <= j <= k.\nReturn the number of unique XOR triplet values from all possible triplets (i, j, k).\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= n == nums.length <= 105",
+    "1 <= nums[i] <= n",
+    "nums is a permutation of integers from 1 to n."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [1,2]\nOutput: 2\nExplanation:\nThe possible XOR triplet values are:\nThe unique XOR values are {1, 2} , so the output is 2."
+    },
+    {
+      "example_text": "Input: nums = [3,1,2]\nOutput: 4\nExplanation:\nThe possible XOR triplet values include:\nThe unique XOR values are {0, 1, 2, 3} , so the output is 4."
+    }
+  ],
+  "hints": [
+    "What is the maximum and minimum value we can obtain using the given numbers?",
+    "Can we generate all numbers within that range?",
+    "For <code>n >= 3</code> we can obtain all numbers in <code>[0, 2^(msb(n) + 1) - 1]</code>, where <code>msb(n)</code> is the index of the most significant bit in <code>n</code>’s binary representation (i.e., the highest power of 2 less than or equal to <code>n</code>). Handle the case when <code>n <= 2</code> separately."
+  ],
+  "starter_code": "class Solution:\n    def uniqueXorTriplets(self, nums: List[int]) -> int:\n        ",
+  "test_cases": []
+}

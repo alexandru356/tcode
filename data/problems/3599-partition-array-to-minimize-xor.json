@@ -1,0 +1,37 @@
+{
+  "id": "3599",
+  "slug": "partition-array-to-minimize-xor",
+  "title": "Partition Array to Minimize XOR",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Prefix Sum"
+  ],
+  "description": "You are given an integer array nums and an integer k.\nYour task is to partition nums into k non-empty subarrays. For each subarray, compute the bitwise XOR of all its elements.\nReturn the minimum possible value of the maximum XOR among these k subarrays.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= nums.length <= 250",
+    "1 <= nums[i] <= 109",
+    "1 <= k <= n"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [1,2,3], k = 2\nOutput: 1\nExplanation:\nThe optimal partition is [1] and [2, 3] .\nThe maximum XOR among the subarrays is 1, which is the minimum possible."
+    },
+    {
+      "example_text": "Input: nums = [2,3,3,2], k = 3\nOutput: 2\nExplanation:\nThe optimal partition is [2] , [3, 3] , and [2] .\nThe maximum XOR among the subarrays is 2, which is the minimum possible."
+    },
+    {
+      "example_text": "Input: nums = [1,1,2,3,1], k = 2\nOutput: 0\nExplanation:\nThe optimal partition is [1, 1] and [2, 3, 1] .\nThe maximum XOR among the subarrays is 0, which is the minimum possible."
+    }
+  ],
+  "hints": [
+    "Use dynamic programming.",
+    "Precompute <code>pre[i] = nums[0] ^ … ^ nums[i-1]</code> so any subarray XOR is <code>pre[r] ^ pre[l]</code>.",
+    "Define <code>dp[i][j]</code> = minimum possible “max‑XOR” when splitting the first <code>i</code> elements into <code>j</code> parts.",
+    "For each <code>dp[i][j]</code>, try all splits <code>t < i</code> and take the minimum over <code>max(dp[t][j-1], pre[i] ^ pre[t])</code>."
+  ],
+  "starter_code": "class Solution:\n    def minXor(self, nums: List[int], k: int) -> int:\n        ",
+  "test_cases": []
+}

@@ -1,0 +1,32 @@
+{
+  "id": "0990",
+  "slug": "satisfiability-of-equality-equations",
+  "title": "Satisfiability of Equality Equations",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "String",
+    "Union Find",
+    "Graph"
+  ],
+  "description": "You are given an array of strings equations that represent relationships between variables where each string equations[i] is of length 4 and takes one of two different forms: \"xi==yi\" or \"xi!=yi\".Here, xi and yi are lowercase letters (not necessarily different) that represent one-letter variable names.\nReturn true if it is possible to assign integers to variable names so as to satisfy all the given equations, or false otherwise.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= equations.length <= 500",
+    "equations[i].length == 4",
+    "equations[i][0] is a lowercase letter.",
+    "equations[i][1] is either '=' or '!'.",
+    "equations[i][2] is '='.",
+    "equations[i][3] is a lowercase letter."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: equations = [\"a==b\",\"b!=a\"]\nOutput: false\nExplanation: If we assign say, a = 1 and b = 1, then the first equation is satisfied, but not the second.\nThere is no way to assign the variables to satisfy both equations."
+    },
+    {
+      "example_text": "Input: equations = [\"b==a\",\"a==b\"]\nOutput: true\nExplanation: We could assign a = 1 and b = 1 to satisfy both equations."
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def equationsPossible(self, equations: List[str]) -> bool:\n        ",
+  "test_cases": []
+}

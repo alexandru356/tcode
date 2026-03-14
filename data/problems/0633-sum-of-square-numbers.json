@@ -1,0 +1,26 @@
+{
+  "id": "0633",
+  "slug": "sum-of-square-numbers",
+  "title": "Sum of Square Numbers",
+  "difficulty": "Medium",
+  "topics": [
+    "Math",
+    "Two Pointers",
+    "Binary Search"
+  ],
+  "description": "Given a non-negative integer c, decide whether there're two integers a and b such that a2 + b2 = c.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "0 <= c <= 231 - 1"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: c = 5\nOutput: true\nExplanation: 1 * 1 + 2 * 2 = 5"
+    },
+    {
+      "example_text": "Input: c = 3\nOutput: false"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def judgeSquareSum(self, c: int) -> bool:\n        ",
+  "test_cases": []
+}

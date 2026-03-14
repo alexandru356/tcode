@@ -1,0 +1,38 @@
+{
+  "id": "3603",
+  "slug": "minimum-cost-path-with-alternating-directions-ii",
+  "title": "Minimum Cost Path with Alternating Directions II",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "description": "You are given two integers m and n representing the number of rows and columns of a grid, respectively.\nThe cost to enter cell (i, j) is defined as (i + 1) * (j + 1).\nYou are also given a 2D integer array waitCost where waitCost[i][j] defines the cost to wait on that cell.\nThe path will always begin by entering cell (0, 0) on move 1 and paying the entrance cost.\nAt each step, you follow an alternating pattern:\nReturn the minimum total cost required to reach (m - 1, n - 1).\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= m, n <= 105",
+    "2 <= m * n <= 105",
+    "waitCost.length == m",
+    "waitCost[0].length == n",
+    "0 <= waitCost[i][j] <= 105"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: m = 1, n = 2, waitCost = [[1,2]]\nOutput: 3\nExplanation:\nThe optimal path is:\nThus, the total cost is 1 + 2 = 3 ."
+    },
+    {
+      "example_text": "Input: m = 2, n = 2, waitCost = [[3,5],[2,4]]\nOutput: 9\nExplanation:\nThe optimal path is:\nThus, the total cost is 1 + 2 + 2 + 4 = 9 ."
+    },
+    {
+      "example_text": "Input: m = 2, n = 3, waitCost = [[6,1,4],[3,2,5]]\nOutput: 16\nExplanation:\nThe optimal path is:\nThus, the total cost is 1 + 2 + 1 + 4 + 2 + 6 = 16 ."
+    }
+  ],
+  "hints": [
+    "Use dynamic programming",
+    "Observe that you need to wait at each cell except the first and last",
+    "Transition: <code>dp[i][j]</code> <- min(<code>dp[i‑1][j]</code>, <code>dp[i][j‑1]</code>) + <code>waitCost[i][j]</code> + (<code>i+1</code>)*(<code>j+1</code>)",
+    "The answer is <code>dp[m‑1][n‑1]</code> - <code>waitCost[m‑1][n‑1]</code>"
+  ],
+  "starter_code": "class Solution:\n    def minCost(self, m: int, n: int, waitCost: List[List[int]]) -> int:\n        ",
+  "test_cases": []
+}

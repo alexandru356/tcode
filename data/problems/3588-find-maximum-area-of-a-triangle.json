@@ -1,0 +1,35 @@
+{
+  "id": "3588",
+  "slug": "find-maximum-area-of-a-triangle",
+  "title": "Find Maximum Area of a Triangle",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Greedy",
+    "Geometry",
+    "Enumeration"
+  ],
+  "description": "You are given a 2D array coords of size n x 2, representing the coordinates of n points in an infinite Cartesian plane.\nFind twice the maximum area of a triangle with its corners at any three elements from coords, such that at least one side of this triangle is parallel to the x-axis or y-axis. Formally, if the maximum area of such a triangle is A, return 2 * A.\nIf no such triangle exists, return -1.\nNote that a triangle cannot have zero area.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= n == coords.length <= 105",
+    "1 <= coords[i][0], coords[i][1] <= 106",
+    "All coords[i] are unique."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: coords = [[1,1],[1,2],[3,2],[3,3]]\nOutput: 2\nExplanation:\n\nThe triangle shown in the image has a base 1 and height 2. Hence its area is 1/2 * base * height = 1 ."
+    },
+    {
+      "example_text": "Input: coords = [[1,1],[2,2],[3,3]]\nOutput: -1\nExplanation:\nThe only possible triangle has corners (1, 1) , (2, 2) , and (3, 3) . None of its sides are parallel to the x-axis or the y-axis."
+    }
+  ],
+  "hints": [
+    "<code>area * 2 = base * height</code>",
+    "Let the base be parallel to the x‑axis or y‑axis",
+    "Sort to find the maximum base for each fixed <code>x</code> (or <code>y</code>), then the maximum height comes from the extreme values of the other coordinate."
+  ],
+  "starter_code": "class Solution:\n    def maxArea(self, coords: List[List[int]]) -> int:\n        ",
+  "test_cases": []
+}

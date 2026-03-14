@@ -1,0 +1,34 @@
+{
+  "id": "0347",
+  "slug": "top-k-frequent-elements",
+  "title": "Top K Frequent Elements",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Divide and Conquer",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Bucket Sort",
+    "Counting",
+    "Quickselect"
+  ],
+  "description": "Given an integer array nums and an integer k, return the k most frequent elements. You may return the answer in any order.\nExample 1:\nExample 2:\nConstraints:\nFollow up: Your algorithm's time complexity must be better than O(n log n), where n is the array's size.",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "-104 <= nums[i] <= 104",
+    "k is in the range [1, the number of unique elements in the array].",
+    "It is guaranteed that the answer is unique."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [1,1,1,2,2,3], k = 2\nOutput: [1,2]"
+    },
+    {
+      "example_text": "Input: nums = [1], k = 1\nOutput: [1]"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def topKFrequent(self, nums: List[int], k: int) -> List[int]:\n        ",
+  "test_cases": []
+}

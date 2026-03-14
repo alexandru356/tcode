@@ -1,0 +1,26 @@
+{
+  "id": "0858",
+  "slug": "mirror-reflection",
+  "title": "Mirror Reflection",
+  "difficulty": "Medium",
+  "topics": [
+    "Math",
+    "Geometry",
+    "Number Theory"
+  ],
+  "description": "There is a special square room with mirrors on each of the four walls. Except for the southwest corner, there are receptors on each of the remaining corners, numbered 0, 1, and 2.\nThe square room has walls of length p and a laser ray from the southwest corner first meets the east wall at a distance q from the 0th receptor.\nGiven the two integers p and q, return the number of the receptor that the ray meets first.\nThe test cases are guaranteed so that the ray will meet a receptor eventually.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= q <= p <= 1000"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: p = 2, q = 1\nOutput: 2\nExplanation: The ray meets receptor 2 the first time it gets reflected back to the left wall."
+    },
+    {
+      "example_text": "Input: p = 3, q = 1\nOutput: 1"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def mirrorReflection(self, p: int, q: int) -> int:\n        ",
+  "test_cases": []
+}

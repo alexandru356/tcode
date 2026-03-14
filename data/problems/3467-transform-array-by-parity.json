@@ -1,0 +1,29 @@
+{
+  "id": "3467",
+  "slug": "transform-array-by-parity",
+  "title": "Transform Array by Parity",
+  "difficulty": "Easy",
+  "topics": [
+    "Array",
+    "Sorting",
+    "Counting"
+  ],
+  "description": "You are given an integer array nums. Transform nums by performing the following operations in the exact order specified:\nReturn the resulting array after performing these operations.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= nums.length <= 100",
+    "1 <= nums[i] <= 1000"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: nums = [4,3,2,1]\nOutput: [0,0,1,1]\nExplanation:"
+    },
+    {
+      "example_text": "Input: nums = [1,5,1,4,2]\nOutput: [0,0,1,1,1]\nExplanation:"
+    }
+  ],
+  "hints": [
+    "Let <code>x</code> be the number of even numbers, and <code>y</code> be the number of odd numbers. Output <code>0</code> <code>x</code> times, followed by <code>1</code> <code>y</code> times."
+  ],
+  "starter_code": "class Solution:\n    def transformArray(self, nums: List[int]) -> List[int]:\n        ",
+  "test_cases": []
+}

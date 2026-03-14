@@ -1,0 +1,30 @@
+{
+  "id": "3146",
+  "slug": "permutation-difference-between-two-strings",
+  "title": "Permutation Difference between Two Strings",
+  "difficulty": "Easy",
+  "topics": [
+    "Hash Table",
+    "String"
+  ],
+  "description": "You are given two strings s and t such that every character occurs at most once in s and t is a permutation of s.\nThe permutation difference between s and t is defined as the sum of the absolute difference between the index of the occurrence of each character in s and the index of the occurrence of the same character in t.\nReturn the permutation difference between s and t.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= s.length <= 26",
+    "Each character occurs at most once in s.",
+    "t is a permutation of s.",
+    "s consists only of lowercase English letters."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"abc\", t = \"bac\"\nOutput: 2\nExplanation:\nFor s = \"abc\" and t = \"bac\" , the permutation difference of s and t is equal to the sum of:\nThat is, the permutation difference between s and t is equal to |0 - 1| + |1 - 0| + |2 - 2| = 2 ."
+    },
+    {
+      "example_text": "Input: s = \"abcde\", t = \"edbac\"\nOutput: 12\nExplanation: The permutation difference between s and t is equal to |0 - 3| + |1 - 2| + |2 - 4| + |3 - 1| + |4 - 0| = 12 ."
+    }
+  ],
+  "hints": [
+    "For each character, find the indices of its occurrences in string <code>s</code> then in string <code>t</code>."
+  ],
+  "starter_code": "class Solution:\n    def findPermutationDifference(self, s: str, t: str) -> int:\n        ",
+  "test_cases": []
+}

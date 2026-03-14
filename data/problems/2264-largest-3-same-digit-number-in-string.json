@@ -1,0 +1,31 @@
+{
+  "id": "2264",
+  "slug": "largest-3-same-digit-number-in-string",
+  "title": "Largest 3-Same-Digit Number in String",
+  "difficulty": "Easy",
+  "topics": [
+    "String"
+  ],
+  "description": "You are given a string num representing a large integer. An integer is good if it meets the following conditions:\nReturn the maximum good integer as a string or an empty string \"\" if no such integer exists.\nNote:\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "3 <= num.length <= 1000",
+    "num only consists of digits."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: num = \"6777133339\"\nOutput: \"777\"\nExplanation: There are two distinct good integers: \"777\" and \"333\".\n\"777\" is the largest, so we return \"777\"."
+    },
+    {
+      "example_text": "Input: num = \"2300019\"\nOutput: \"000\"\nExplanation: \"000\" is the only good integer."
+    },
+    {
+      "example_text": "Input: num = \"42352338\"\nOutput: \"\"\nExplanation: No substring of length 3 consists of only one unique digit. Therefore, there are no good integers."
+    }
+  ],
+  "hints": [
+    "We can sequentially check if “999”, “888”, “777”, … , “000” exists in num in that order. The first to be found is the maximum good integer.",
+    "If we cannot find any of the above integers, we return an empty string “”."
+  ],
+  "starter_code": "class Solution:\n    def largestGoodInteger(self, num: str) -> str:\n        ",
+  "test_cases": []
+}

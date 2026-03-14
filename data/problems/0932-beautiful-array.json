@@ -1,0 +1,26 @@
+{
+  "id": "0932",
+  "slug": "beautiful-array",
+  "title": "Beautiful Array",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Math",
+    "Divide and Conquer"
+  ],
+  "description": "An array nums of length n is beautiful if:\nGiven the integer n, return any beautiful array nums of length n. There will be at least one valid answer for the given n.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= n <= 1000"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = 4\nOutput: [2,1,4,3]"
+    },
+    {
+      "example_text": "Input: n = 5\nOutput: [3,1,2,5,4]"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def beautifulArray(self, n: int) -> List[int]:\n        ",
+  "test_cases": []
+}

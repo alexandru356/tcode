@@ -1,0 +1,29 @@
+{
+  "id": "0412",
+  "slug": "fizz-buzz",
+  "title": "Fizz Buzz",
+  "difficulty": "Easy",
+  "topics": [
+    "Math",
+    "String",
+    "Simulation"
+  ],
+  "description": "Given an integer n, return a string array answer (1-indexed) where:\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "1 <= n <= 104"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = 3\nOutput: [\"1\",\"2\",\"Fizz\"]"
+    },
+    {
+      "example_text": "Input: n = 5\nOutput: [\"1\",\"2\",\"Fizz\",\"4\",\"Buzz\"]"
+    },
+    {
+      "example_text": "Input: n = 15\nOutput: [\"1\",\"2\",\"Fizz\",\"4\",\"Buzz\",\"Fizz\",\"7\",\"8\",\"Fizz\",\"Buzz\",\"11\",\"Fizz\",\"13\",\"14\",\"FizzBuzz\"]"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def fizzBuzz(self, n: int) -> List[str]:\n        ",
+  "test_cases": []
+}

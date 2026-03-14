@@ -1,0 +1,28 @@
+{
+  "id": "0845",
+  "slug": "longest-mountain-in-array",
+  "title": "Longest Mountain in Array",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Dynamic Programming",
+    "Enumeration"
+  ],
+  "description": "You may recall that an array arr is a mountain array if and only if:\nGiven an integer array arr, return the length of the longest subarray, which is a mountain. Return 0 if there is no mountain subarray.\nExample 1:\nExample 2:\nConstraints:\nFollow up:",
+  "constraints": [
+    "1 <= arr.length <= 104",
+    "0 <= arr[i] <= 104"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: arr = [2,1,4,7,3,2,5]\nOutput: 5\nExplanation: The largest mountain is [1,4,7,3,2] which has length 5."
+    },
+    {
+      "example_text": "Input: arr = [2,2,2]\nOutput: 0\nExplanation: There is no mountain."
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def longestMountain(self, arr: List[int]) -> int:\n        ",
+  "test_cases": []
+}

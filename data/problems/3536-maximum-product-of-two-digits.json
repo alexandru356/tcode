@@ -1,0 +1,30 @@
+{
+  "id": "3536",
+  "slug": "maximum-product-of-two-digits",
+  "title": "Maximum Product of Two Digits",
+  "difficulty": "Easy",
+  "topics": [
+    "Math",
+    "Sorting"
+  ],
+  "description": "You are given a positive integer n.\nReturn the maximum product of any two digits in n.\nNote: You may use the same digit twice if it appears more than once in n.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "10 <= n <= 109"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = 31\nOutput: 3\nExplanation:"
+    },
+    {
+      "example_text": "Input: n = 22\nOutput: 4\nExplanation:"
+    },
+    {
+      "example_text": "Input: n = 124\nOutput: 8\nExplanation:"
+    }
+  ],
+  "hints": [
+    "Use brute force"
+  ],
+  "starter_code": "class Solution:\n    def maxProduct(self, n: int) -> int:\n        ",
+  "test_cases": []
+}

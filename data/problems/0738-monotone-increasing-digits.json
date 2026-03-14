@@ -1,0 +1,30 @@
+{
+  "id": "0738",
+  "slug": "monotone-increasing-digits",
+  "title": "Monotone Increasing Digits",
+  "difficulty": "Medium",
+  "topics": [
+    "Math",
+    "Greedy"
+  ],
+  "description": "An integer has monotone increasing digits if and only if each pair of adjacent digits x and y satisfy x <= y.\nGiven an integer n, return the largest number that is less than or equal to n with monotone increasing digits.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "0 <= n <= 109"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = 10\nOutput: 9"
+    },
+    {
+      "example_text": "Input: n = 1234\nOutput: 1234"
+    },
+    {
+      "example_text": "Input: n = 332\nOutput: 299"
+    }
+  ],
+  "hints": [
+    "Build the answer digit by digit, adding the largest possible one that would make the number still less than or equal to N."
+  ],
+  "starter_code": "class Solution:\n    def monotoneIncreasingDigits(self, n: int) -> int:\n        ",
+  "test_cases": []
+}

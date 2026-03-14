@@ -1,0 +1,29 @@
+{
+  "id": "0854",
+  "slug": "k-similar-strings",
+  "title": "K-Similar Strings",
+  "difficulty": "Hard",
+  "topics": [
+    "Hash Table",
+    "String",
+    "Breadth-First Search"
+  ],
+  "description": "Strings s1 and s2 are k-similar (for some non-negative integer k) if we can swap the positions of two letters in s1 exactly k times so that the resulting string equals s2.\nGiven two anagrams s1 and s2, return the smallest k for which s1 and s2 are k-similar.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= s1.length <= 20",
+    "s2.length == s1.length",
+    "s1 and s2 contain only lowercase letters from the set {'a', 'b', 'c', 'd', 'e', 'f'}.",
+    "s2 is an anagram of s1."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s1 = \"ab\", s2 = \"ba\"\nOutput: 1\nExplanation: The two string are 1-similar because we can use one swap to change s1 to s2: \"ab\" --> \"ba\"."
+    },
+    {
+      "example_text": "Input: s1 = \"abc\", s2 = \"bca\"\nOutput: 2\nExplanation: The two strings are 2-similar because we can use two swaps to change s1 to s2: \"abc\" --> \"bac\" --> \"bca\"."
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def kSimilarity(self, s1: str, s2: str) -> int:\n        ",
+  "test_cases": []
+}

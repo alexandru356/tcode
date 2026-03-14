@@ -1,0 +1,29 @@
+{
+  "id": "0342",
+  "slug": "power-of-four",
+  "title": "Power of Four",
+  "difficulty": "Easy",
+  "topics": [
+    "Math",
+    "Bit Manipulation",
+    "Recursion"
+  ],
+  "description": "Given an integer n, return true if it is a power of four. Otherwise, return false.\nAn integer n is a power of four, if there exists an integer x such that n == 4x.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "-231 <= n <= 231 - 1"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = 16\nOutput: true"
+    },
+    {
+      "example_text": "Input: n = 5\nOutput: false"
+    },
+    {
+      "example_text": "Input: n = 1\nOutput: true"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def isPowerOfFour(self, n: int) -> bool:\n        ",
+  "test_cases": []
+}

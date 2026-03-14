@@ -1,0 +1,32 @@
+{
+  "id": "0883",
+  "slug": "projection-area-of-3d-shapes",
+  "title": "Projection Area of 3D Shapes",
+  "difficulty": "Easy",
+  "topics": [
+    "Array",
+    "Math",
+    "Geometry",
+    "Matrix"
+  ],
+  "description": "You are given an n x n grid where we place some 1 x 1 x 1 cubes that are axis-aligned with the x, y, and z axes.\nEach value v = grid[i][j] represents a tower of v cubes placed on top of the cell (i, j).\nWe view the projection of these cubes onto the xy, yz, and zx planes.\nA projection is like a shadow, that maps our 3-dimensional figure to a 2-dimensional plane. We are viewing the \"shadow\" when looking at the cubes from the top, the front, and the side.\nReturn the total area of all three projections.\nExample 1:\nExample 2:\nExample 3:\nConstraints:",
+  "constraints": [
+    "n == grid.length == grid[i].length",
+    "1 <= n <= 50",
+    "0 <= grid[i][j] <= 50"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: grid = [[1,2],[3,4]]\nOutput: 17\nExplanation: Here are the three projections (\"shadows\") of the shape made with each axis-aligned plane."
+    },
+    {
+      "example_text": "Input: grid = [[2]]\nOutput: 5"
+    },
+    {
+      "example_text": "Input: grid = [[1,0],[0,2]]\nOutput: 8"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def projectionArea(self, grid: List[List[int]]) -> int:\n        ",
+  "test_cases": []
+}

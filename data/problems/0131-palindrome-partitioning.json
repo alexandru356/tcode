@@ -1,0 +1,27 @@
+{
+  "id": "0131",
+  "slug": "palindrome-partitioning",
+  "title": "Palindrome Partitioning",
+  "difficulty": "Medium",
+  "topics": [
+    "String",
+    "Dynamic Programming",
+    "Backtracking"
+  ],
+  "description": "Given a string s, partition s such that every substring of the partition is a palindrome. Return all possible palindrome partitioning of s.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= s.length <= 16",
+    "s contains only lowercase English letters."
+  ],
+  "examples": [
+    {
+      "example_text": "Input: s = \"aab\"\nOutput: [[\"a\",\"a\",\"b\"],[\"aa\",\"b\"]]"
+    },
+    {
+      "example_text": "Input: s = \"a\"\nOutput: [[\"a\"]]"
+    }
+  ],
+  "hints": [],
+  "starter_code": "class Solution:\n    def partition(self, s: str) -> List[List[str]]:\n        ",
+  "test_cases": []
+}

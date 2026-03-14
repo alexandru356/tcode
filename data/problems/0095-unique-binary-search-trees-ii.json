@@ -1,0 +1,28 @@
+{
+  "id": "0095",
+  "slug": "unique-binary-search-trees-ii",
+  "title": "Unique Binary Search Trees II",
+  "difficulty": "Medium",
+  "topics": [
+    "Dynamic Programming",
+    "Backtracking",
+    "Tree",
+    "Binary Search Tree",
+    "Binary Tree"
+  ],
+  "description": "Given an integer n, return all the structurally unique BST's (binary search trees), which has exactly n nodes of unique values from 1 to n. Return the answer in any order.\nExample 1:\nExample 2:\nConstraints:",
+  "constraints": [
+    "1 <= n <= 8"
+  ],
+  "examples": [
+    {
+      "example_text": "Input: n = 3\nOutput: [[1,null,2,null,3],[1,null,3,2],[2,1,3],[3,1,null,null,2],[3,2,null,1]]"
+    },
+    {
+      "example_text": "Input: n = 1\nOutput: [[1]]"
+    }
+  ],
+  "hints": [],
+  "starter_code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def generateTrees(self, n: int) -> List[Optional[TreeNode]]:\n        ",
+  "test_cases": []
+}
