@@ -8,7 +8,8 @@ def cli() -> None:
 @cli.command()
 @click.option("--file", "-f", required=True, type=click.Path(), help="Path to your solution file")
 def start(file: str) -> None:
-    from tcode.home import TCodeApp
+    from tcode.tui import TCodeApp
+    from tcode.config import SessionConfig
     TCodeApp().run()
 
 # Guard to prevent imports used in other files to execute the whole cli
