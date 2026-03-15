@@ -1,10 +1,17 @@
 from textual.app import ComposeResult
 from textual.screen import Screen
-from textual.widgets import Label, Button, Static
+from textual.widgets import Label, Button, Static, Input, Select
 from textual.containers import Grid, Horizontal
 from tcode.problems import load_index
 
 PAGE_SIZE = 20
+
+DIFFICULTIES = [
+    ("All Difficulties", "all"),
+    ("Easy", "easy"),
+    ("Medium", "medium"),
+    ("Hard", "hard"),
+]
 
 class SearchProblems(Screen):
     CSS_PATH = "assets/search.tcss"
@@ -23,6 +30,13 @@ class SearchProblems(Screen):
 
     def compose(self) -> ComposeResult:
         yield Label("Search Problems", id="title")
+        with Horizontal(id="search-bar-container"):
+            yield Input(placeholder="Search problems...", id="search-bar")
+            yield Select(
+                options=DIFFICULTIES,
+                id="difficulty-filter",
+                value="all"
+             )
         with Grid(id="problems-grid"):
             for p in self.get_page():
                 yield Static(f"[b] #{p.id} · {p.title}[/b] · {p.difficulty}\nTopics: {', '.join(p.topics)}", classes="card", id=f"problem-{p.id}")

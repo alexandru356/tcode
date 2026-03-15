@@ -27,3 +27,17 @@
 #page-label{
     margin: 1
 }
+
+#search-bar-container {
+    height: auto;
+    width: 100%;
+    margin: 1;
+}
+
+#search-bar {
+    width: 2fr;
+}
+
+#difficulty-filter {
+    width: 1fr;
+}
