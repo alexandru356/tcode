@@ -1,7 +1,8 @@
 from textual.app import ComposeResult
-from textual.screen import Screen
-from textual.widgets import Label, Button, Static, Input, Select
 from textual.containers import Grid, Horizontal
+from textual.screen import Screen
+from textual.widgets import Button, Input, Label, Select, Static
+
 from tcode.problems import load_index
 
 PAGE_SIZE = 20
