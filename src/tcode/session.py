@@ -1,9 +1,10 @@
 import re
 from pathlib import Path
 
-from textual.app import App, ComposeResult
+from textual.app import ComposeResult
 from textual.containers import Horizontal
-from textual.widgets import Footer, Header, Static
+from textual.screen import Screen
+from textual.widgets import Button, Footer, Header, Static
 
 from tcode.config import SessionConfig
 from tcode.problems import load_problem_by_id
