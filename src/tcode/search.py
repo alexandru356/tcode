@@ -1,11 +1,12 @@
 from textual.app import ComposeResult
 from textual.containers import Grid, Horizontal
 from textual.events import Click
-from tcode.config import SessionConfig
-from tcode.problems import load_index, load_problem_by_id
-from tcode.session import SessionApp
 from textual.screen import Screen
 from textual.widgets import Button, Input, Label, Select, Static
+
+from tcode.config import SessionConfig
+from tcode.problems import load_index
+from tcode.session import SessionApp
 
 PAGE_SIZE = 20
 
@@ -85,6 +86,10 @@ class SearchProblems(Screen):
             card = Static(content, classes="card", id=f"problem-{p.id}")
             card.can_focus = True
             grid.mount(card)
-        self.query_one("#page-label", Label).update(f"Page {self.page + 1} / {self.total_pages()}")
+        self.query_one("#page-label", Label).update(
+            f"Page {self.page + 1} / {self.total_pages()}"
+            )
         self.query_one("#prev", Button).disabled = self.page == 0
-        self.query_one("#next", Button).disabled = self.page >= self.total_pages() - 1
+        self.query_one("#next", Button).disabled = (
+            self.page >= self.total_pages() - 1
+        )
