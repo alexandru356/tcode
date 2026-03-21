@@ -2,7 +2,10 @@ from textual.app import ComposeResult
 from textual.screen import Screen
 from textual.widgets import Label, Button, Static, Input, Select
 from textual.containers import Grid, Horizontal
-from tcode.problems import load_index
+from textual.events import Click
+from tcode.config import SessionConfig
+from tcode.problems import load_index, load_problem_by_id
+from tcode.session import SessionApp
 
 PAGE_SIZE = 20
 
@@ -39,12 +42,27 @@ class SearchProblems(Screen):
              )
         with Grid(id="problems-grid"):
             for p in self.get_page():
-                yield Static(f"[b] #{p.id} · {p.title}[/b] · {p.difficulty}\nTopics: {', '.join(p.topics)}", classes="card", id=f"problem-{p.id}")
+                content = (
+                    f"[b] #{p.id} · {p.title}[/b] · {p.difficulty}\n"
+                    f"Topics: {', '.join(p.topics)}"
+                )
+                card = Static(content, classes="card", id=f"problem-{p.id}")
+                card.can_focus = True
+                yield card
         with Horizontal(id="pagination"):
             yield Button("← Prev", id="prev", disabled=True)
             yield Label(f"Page 1 / {self.total_pages()}", id="page-label")
             yield Button("Next →", id="next")
         yield Button("Back", id="back-button")
+        
+    def on_click(self, event: Click) -> None:
+        widget = event.widget
+        if isinstance(widget, Static) and widget.has_class("card"):
+            problem_id = widget.id.split("-")[1]
+            self.app.push_screen(SessionApp(
+                watch_path=self.app.watch_path,
+                config=SessionConfig(problem_id=problem_id)
+            ))
 
     def on_button_pressed(self, event: Button.Pressed) -> None:
         if event.button.id == "back-button":
@@ -60,7 +78,13 @@ class SearchProblems(Screen):
         grid = self.query_one("#problems-grid", Grid)
         grid.remove_children()
         for p in self.get_page():
-            grid.mount(Static(f"[b] #{p.id} · {p.title}[/b] · {p.difficulty}\nTopics: {', '.join(p.topics)}", classes="card", id=f"problem-{p.id}"))
+            content = (
+                f"[b] #{p.id} · {p.title}[/b] · {p.difficulty}\n"
+                f"Topics: {', '.join(p.topics)}"
+            )
+            card = Static(content, classes="card", id=f"problem-{p.id}")
+            card.can_focus = True
+            grid.mount(card)
         self.query_one("#page-label", Label).update(f"Page {self.page + 1} / {self.total_pages()}")
         self.query_one("#prev", Button).disabled = self.page == 0
         self.query_one("#next", Button).disabled = self.page >= self.total_pages() - 1
